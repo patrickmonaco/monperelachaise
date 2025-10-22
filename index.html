@@ -166,7 +166,10 @@ function applyFilters() {
 
 // === Initialisation des filtres ===
 function setupFilters() {
-  const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean);
+  //const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean);
+  const categories = [...new Set(data.map(item => item.categorie))].sort((a, b) =>
+    a.localeCompare(b, 'fr', { sensitivity: 'base' })
+  );
   categoryContainer.innerHTML = categories.map(cat => `
     <label class="flex items-center space-x-2 text-sm">
       <input type="checkbox" value="${cat}" class="accent-blue-600">
@@ -246,6 +249,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
