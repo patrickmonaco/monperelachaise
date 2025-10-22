@@ -5,19 +5,9 @@
 "lat": 48.861016,
 "long": 2.399096,
 "categorie": "Ecrivain",
-"description": "philosophe, écrivain ou écrivaine, journaliste, en",
+"description": null,
 "siecle": "20e",
 "wikidata": "Q275003"
-},
-{
-"tri": "Apollinaire",
-"nom": "Guillaume Apollinaire",
-"lat": 48.8626557,
-"long": 2.3947199,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, dramatur",
-"siecle": "20e",
-"wikidata": "Q133855"
 },
 {
 "tri": "Arago",
@@ -25,7 +15,7 @@
 "lat": 48.860536,
 "long": 2.391114,
 "categorie": "Scientifique",
-"description": "astronome, mathématicien ou mathématicienne, physi",
+"description": "Dominique François Jean Arago est un astronome, physicien et homme d'État français, né le 26 février 1786 à Estagel (Roussillon) et mort le 2 octobre 1853 à Paris.",
 "siecle": "19e",
 "wikidata": "Q154353"
 },
@@ -35,7 +25,7 @@
 "lat": 48.8627718,
 "long": 2.3931199,
 "categorie": "Ecrivain",
-"description": "romancier ou romancière, critique littéraire, écri",
+"description": "Honoré de Balzac, nom de plume d'Honoré Balzac, né le 20 mai 1799 à Tours et mort le 18 août 1850 à Paris, est un écrivain français. Romancier, critique d'art, dramaturge, critique littéraire, essayiste, journaliste et imprimeur, il a laissé l'une des plus imposantes œuvres romanesques de la littérature française, avec plus de quatre-vingt-dix romans et nouvelles parus de 1829 à 1855, réunis sous le titre de La Comédie humaine. À cela s'ajoutent Les Cent Contes drolatiques, ainsi que des romans de jeunesse publiés sous des pseudonymes et quelque vingt-cinq œuvres ébauchées.",
 "siecle": "19e",
 "wikidata": "Q9711"
 },
@@ -45,19 +35,9 @@
 "lat": 48.861327,
 "long": 2.395384,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, acteur ou actrice de",
+"description": "Sarah Bernhardt, née le 22 octobre 1844 à Paris et morte le 26 mars 1923 à Paris 17e, est une comédienne, peintre et sculptrice française. Elle est considérée comme une des plus importantes actrices françaises du XIXe et du début du XXe siècle.",
 "siecle": "20e",
 "wikidata": "Q4605"
-},
-{
-"tri": "Bienvenüe",
-"nom": "Fulgence Bienvenüe",
-"lat": 48.864009,
-"long": 2.394676,
-"categorie": "Ingénieur",
-"description": "ingénieur des ponts et chaussées, ingénieur civil,",
-"siecle": "20e",
-"wikidata": "Q964297"
 },
 {
 "tri": "Bizet",
@@ -65,19 +45,9 @@
 "lat": 48.8623244,
 "long": 2.391787,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice de musique classique, ",
+"description": "Alexandre-César-Léopold Bizet, plus connu sous le nom de Georges Bizet, est un compositeur français né le 25 octobre 1838 à Paris et mort le 3 juin 1875 à Bougival (Seine-et-Oise). Il est un des compositeurs les plus connus de la période romantique. Il l'est surtout pour ses opéras, dont le très populaire Carmen, et ses suites orchestrales, créés sur une courte période, puisqu'il meurt prématurément à l'âge de 36 ans.",
 "siecle": "19e",
 "wikidata": "Q56158"
-},
-{
-"tri": "Blanc",
-"nom": "Louis Blanc",
-"lat": 48.861779,
-"long": 2.391286,
-"categorie": "Politique",
-"description": "journaliste, personnalité politique, historien ou ",
-"siecle": "19e",
-"wikidata": "Q355112"
 },
 {
 "tri": "Blanqui",
@@ -85,19 +55,9 @@
 "lat": 48.861214,
 "long": 2.396071,
 "categorie": "Politique",
-"description": "philosophe, personnalité politique, journaliste, c",
+"description": "Louis Auguste Blanqui, surnommé « l’Enfermé », né le 19 mai de l'an 13 de la République à Puget-Théniers (Alpes-Maritimes) et mort le 1er janvier 1881 à Paris, est un révolutionnaire socialiste français, souvent associé aux socialistes utopiques. Il défend pour l'essentiel les mêmes idées que le mouvement socialiste du XIXe siècle et fait partie des socialistes non-marxistes.",
 "siecle": "19e",
 "wikidata": "Q309722"
-},
-{
-"tri": "Bourdieu",
-"nom": "Pierre Bourdieu",
-"lat": 48.859703,
-"long": 2.395651,
-"categorie": "Ecrivain",
-"description": "philosophe, sociologue, anthropologue, écrivain ou",
-"siecle": "21e",
-"wikidata": "Q156268"
 },
 {
 "tri": "Branly",
@@ -105,7 +65,7 @@
 "lat": 48.860536,
 "long": 2.392423,
 "categorie": "Scientifique",
-"description": "physicien ou physicienne, médecin, professeur d'un",
+"description": "Édouard Branly, né le 23 octobre 1844 à Amiens et mort le 24 mars 1940 à Paris 5e, est un physicien et médecin français.",
 "siecle": "20e",
 "wikidata": "Q274251"
 },
@@ -115,7 +75,7 @@
 "lat": 48.86072,
 "long": 2.389226,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"description": "Pierre Brasseur est un acteur français né le 22 décembre 1905 à Paris  et mort le 14 août 1972 à Brunico (Italie). Membre d'une dynastie de comédiens célèbres, il est le père de Claude Brasseur et grand-père d'Alexandre Brasseur.",
 "siecle": "20e",
 "wikidata": "Q945890"
 },
@@ -125,19 +85,9 @@
 "lat": 48.860635,
 "long": 2.392809,
 "categorie": "Scientifique",
-"description": "botaniste, géologue, chimiste, minéralogiste, zool",
+"description": "Alexandre Brongniart (1770-1847) est un scientifique français connu principalement pour ses travaux de minéralogie. Avec Cuvier, il établit un principe de base de la cartographie géologique moderne.",
 "siecle": "19e",
 "wikidata": "Q442937"
-},
-{
-"tri": "Brosset",
-"nom": "Claude Brosset",
-"lat": 48.858196,
-"long": 2.395227,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
-"siecle": "21e",
-"wikidata": "Q2977082"
 },
 {
 "tri": "Bécaud",
@@ -145,19 +95,9 @@
 "lat": 48.861141,
 "long": 2.394935,
 "categorie": "Chanteur",
-"description": "compositeur ou compositrice, pianiste, chanteur ou",
+"description": "Gilbert Bécaud, né François Gilbert Léopold Silly le 24 octobre 1927 à Toulon et mort le 18 décembre 2001 à Boulogne-Billancourt, est un chanteur, compositeur et pianiste français.",
 "siecle": "21e",
 "wikidata": "Q160433"
-},
-{
-"tri": "Cachin",
-"nom": "Marcel Cachin",
-"lat": 48.8599157,
-"long": 2.3998601,
-"categorie": "Politique",
-"description": "personnalité politique, éditeur ou éditrice, profe",
-"siecle": "20e",
-"wikidata": "Q658479"
 },
 {
 "tri": "Caillebotte",
@@ -165,7 +105,7 @@
 "lat": 48.862414,
 "long": 2.392123,
 "categorie": "Peintre",
-"description": "artiste peintre, collectionneur ou collectionneuse",
+"description": "Gustave Caillebotte, né le 19 août 1848 à Paris et mort le 21 février 1894 à Gennevilliers, est un peintre français, collectionneur, mécène et organisateur des expositions impressionnistes de 1877, 1879, 1880 et 1882.",
 "siecle": "19e",
 "wikidata": "Q295144"
 },
@@ -175,19 +115,9 @@
 "lat": 48.859252,
 "long": 2.396457,
 "categorie": "Politique",
-"description": "juriste, personnalité politique",
+"description": "Jean-Jacques-Régis de Cambacérès, né le 18 octobre 1753 à Montpellier et mort le 8 mars 1824 à Paris, est un jurisconsulte et homme d'État français.",
 "siecle": "19e",
 "wikidata": "Q290045"
-},
-{
-"tri": "Caron de Beaumarchais",
-"nom": "Pierre-Augustin Caron de Beaumarchais",
-"lat": 48.858842,
-"long": 2.396264,
-"categorie": "Musicien",
-"description": "musicien ou musicienne, poète ou poétesse, personn",
-"siecle": "18e",
-"wikidata": "Q70326"
 },
 {
 "tri": "Chabrol",
@@ -195,7 +125,7 @@
 "lat": 48.860558,
 "long": 2.392547,
 "categorie": "Réalisateur",
-"description": "acteur ou actrice de cinéma, scénariste de cinéma,",
+"description": "Claude Chabrol, né le 24 juin 1930 à Paris 10e et mort le 12 septembre 2010 à Paris 3e, est un réalisateur français, également producteur, scénariste, dialoguiste et à l'occasion acteur.",
 "siecle": "21e",
 "wikidata": "Q55375"
 },
@@ -205,7 +135,7 @@
 "lat": 48.8599858,
 "long": 2.3940879,
 "categorie": "Scientifique",
-"description": "égyptologue, professeur d'université, linguiste, a",
+"description": "Jean-François Champollion dit Champollion le Jeune, né le 23 décembre 1790 à Figeac (Lot) et mort le 4 mars 1832 à Paris, est un linguiste, historien et égyptologue français, principalement reconnu pour avoir déchiffré les hiéroglyphes égyptiens, ouvrant ainsi la voie à l'égyptologie moderne.",
 "siecle": "19e",
 "wikidata": "Q260"
 },
@@ -215,19 +145,9 @@
 "lat": 48.859068,
 "long": 2.395148,
 "categorie": "Ingénieur",
-"description": "inventeur, ingénieur",
+"description": "Claude Chappe (né le 25 décembre 1763 à Brûlon et mort le 23 janvier 1805 à Paris, est un ingénieur français.",
 "siecle": "19e",
 "wikidata": "Q361305"
-},
-{
-"tri": "Chaptal",
-"nom": "Jean-Antoine Chaptal",
-"lat": 48.86192,
-"long": 2.39826,
-"categorie": "Scientifique",
-"description": "chimiste, personnalité politique",
-"siecle": "19e",
-"wikidata": "Q708011"
 },
 {
 "tri": "Chopin",
@@ -235,7 +155,7 @@
 "lat": 48.8601213,
 "long": 2.392808,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, pianiste, professeur ",
+"description": "Frédéric Chopin est un compositeur et pianiste d'ascendance franco-polonaise, né le 1er mars 1810 à Żelazowa Wola et mort le 17 octobre 1849 à Paris (Seine).",
 "siecle": "19e",
 "wikidata": "Q1268"
 },
@@ -245,19 +165,9 @@
 "lat": 48.859112,
 "long": 2.394645,
 "categorie": "Acteur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de ",
+"description": "Patrice Chéreau, né le 2 novembre 1944 à Lézigné (Maine-et-Loire) et mort le 7 octobre 2013 à Clichy (Hauts-de-Seine), est un metteur en scène de théâtre et d'opéra, réalisateur, scénariste, producteur de cinéma et acteur français. Ses travaux mêlent recherches plastiques, réflexions politiques et exploration des obsessions humaines.",
 "siecle": "21e",
 "wikidata": "Q366057"
-},
-{
-"tri": "Clidat",
-"nom": "France Clidat",
-"lat": 48.859673,
-"long": 2.392798,
-"categorie": "Musicien",
-"description": "pianiste, professeur ou professeure de musique",
-"siecle": "21e",
-"wikidata": "Q112325264"
 },
 {
 "tri": "Colette",
@@ -265,7 +175,7 @@
 "lat": 48.860579,
 "long": 2.390578,
 "categorie": "Acteur",
-"description": "romancier ou romancière, prête-plume, journaliste,",
+"description": "Sidonie Gabrielle Colette, dite Colette, est une femme de lettres, actrice et journaliste française, née le 28 janvier 1873 à Saint-Sauveur-en-Puisaye (Yonne) et morte le 3 août 1954 à Paris. Elle est considérée, à l’instar de Voltaire ou Victor Hugo avant elle, comme l'un des plus grands écrivains français, symbolisant son époque et la littérature.",
 "siecle": "20e",
 "wikidata": "Q218679"
 },
@@ -275,19 +185,9 @@
 "lat": 48.8597855,
 "long": 2.3942322,
 "categorie": "Scientifique",
-"description": "philosophe, sociologue, mathématicien ou mathémati",
+"description": "Auguste Comte, né Isidore Marie Auguste François Xavier Comte le 19 janvier 1798 à Montpellier et mort le 5 septembre 1857 à Paris, est un philosophe et sociologue français, fondateur du positivisme.",
 "siecle": "19e",
 "wikidata": "Q12718"
-},
-{
-"tri": "Constant",
-"nom": "Benjamin Constant",
-"lat": 48.859096,
-"long": 2.39547,
-"categorie": "Peintre",
-"description": "artiste peintre, biographe, graveur ou graveuse d'",
-"siecle": "20e",
-"wikidata": "Q968357"
 },
 {
 "tri": "Coquatrix",
@@ -295,7 +195,7 @@
 "lat": 48.859393,
 "long": 2.398152,
 "categorie": "Réalisateur",
-"description": "producteur de musique, personnalité du monde des a",
+"description": "Bruno Coquatrix, né le 4 août 1910 à Ronchin (Nord) et mort le 1er avril 1979 à Paris, est un directeur de salle de spectacle français. Il est directeur général de l'Olympia de Paris de 1954 à 1979.",
 "siecle": "20e",
 "wikidata": "Q2661519"
 },
@@ -305,7 +205,7 @@
 "lat": 48.8607223,
 "long": 2.3916025,
 "categorie": "Peintre",
-"description": "artiste peintre, enseignant ou enseignante",
+"description": "Thomas Couture, né le 21 décembre 1815 à Senlis et mort le 29 mars 1879 à Villiers-le-Bel, est un peintre français. Réputé pour ses compositions historiques, il fut un important enseignant sous le Second Empire. Son œuvre la plus connue est Les Romains de la décadence.",
 "siecle": "19e",
 "wikidata": "Q326434"
 },
@@ -315,19 +215,9 @@
 "lat": 48.862357,
 "long": 2.39341,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, fondeur ou fondeuse, mécè",
+"description": "Charles Crozatier, né au Puy-en-Velay (Haute-Loire) le 18 février 1795 et mort à Paris le 8 février 1855, est un bronzier d'art, fondeur et mécène français.",
 "siecle": "19e",
 "wikidata": "Q785956"
-},
-{
-"tri": "Cuvier",
-"nom": "Georges Cuvier",
-"lat": 48.8599553,
-"long": 2.3920732,
-"categorie": "Scientifique",
-"description": "géologue, paléontologue, personnalité politique, z",
-"siecle": "19e",
-"wikidata": "Q171969"
 },
 {
 "tri": "Barbusse",
@@ -335,7 +225,7 @@
 "lat": 48.860169,
 "long": 2.399848,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, journaliste, scénariste, bi",
+"description": "Henri Barbusse est un écrivain, homme politique, scénariste et journaliste français, né le 17 mai 1873 à Asnières et mort le 30 août 1935 à Moscou.",
 "siecle": "20e",
 "wikidata": "Q18404"
 },
@@ -345,19 +235,9 @@
 "lat": 48.859139,
 "long": 2.395985,
 "categorie": "Politique",
-"description": "personnalité politique, salonnier ou salonnière, j",
+"description": "Paul de Barras, dit le vicomte de Barras, puis Paul Barras, né le 30 juin 1755 à Fox-Amphoux et mort le 29 janvier 1829 à Paris, est un noble français, homme politique révolutionnaire, général de la Révolution et de l’Empire qui fut l'un des principaux Directeurs de la République à partir du 31 octobre 1795, et jusqu'au coup d'État du 18 brumaire an VIII.",
 "siecle": "19e",
 "wikidata": "Q333843"
-},
-{
-"tri": "Bashung",
-"nom": "Alain Bashung",
-"lat": 48.860254,
-"long": 2.39341,
-"categorie": "Chanteur",
-"description": "acteur ou actrice, auteur-compositeur-interprète o",
-"siecle": "21e",
-"wikidata": "Q380045"
 },
 {
 "tri": "Baudelocque",
@@ -365,7 +245,7 @@
 "lat": 48.861482,
 "long": 2.394698,
 "categorie": "Scientifique",
-"description": "médecin, professeur d'université, gynécologue, obs",
+"description": "Jean-Louis Baudelocque, né le 30 novembre 1745 à Heilly en Picardie et mort le 2 mai 1810 à Paris, est un médecin accoucheur et professeur d'obstétrique français. Il est le plus célèbre des médecins accoucheurs de son époque. Auteur de L’art des accouchements, il a fait de l'obstétrique une discipline scientifique.",
 "siecle": "19e",
 "wikidata": "Q545477"
 },
@@ -375,7 +255,7 @@
 "lat": 48.860438,
 "long": 2.393024,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice",
+"description": "Vincenzo Bellini est un compositeur italien romantique, né le 3 novembre 1801 à Catane, et mort le 23 septembre 1835 à Puteaux (France). Compositeur de musiques de chambre et de musiques sacrées, Bellini a laissé malgré sa courte carrière des opéras parmi les plus joués du répertoire lyrique, dont I Capuleti e i Montecchi (1830) , La sonnambula (1831), Norma (1831) et I puritani (1835).",
 "siecle": "19e",
 "wikidata": "Q170209"
 },
@@ -385,7 +265,7 @@
 "lat": 48.860635,
 "long": 2.393582,
 "categorie": "Scientifique",
-"description": "médecin écrivain, personnalité politique, psycholo",
+"description": "Claude Bernard, né le 12 juillet 1813 à Saint-Julien (Rhône) et mort le 10 février 1878 à Paris, est un médecin, physiologiste et épistémologue français.",
 "siecle": "19e",
 "wikidata": "Q208230"
 },
@@ -395,7 +275,7 @@
 "lat": 48.859887,
 "long": 2.399826,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste, résistant ou",
+"description": "Jacques Duclos, né le 2 octobre 1896 à Louey (Hautes-Pyrénées) et mort le 25 avril 1975 à Montreuil (Seine-Saint-Denis), est un homme politique français, dirigeant du Parti communiste français (PCF).",
 "siecle": "20e",
 "wikidata": "Q377790"
 },
@@ -405,7 +285,7 @@
 "lat": 48.8624253,
 "long": 2.3954178,
 "categorie": "Acteur",
-"description": "danseur ou danseuse, chorégraphe, autobiographe, s",
+"description": "Angela Isadora Duncan, simplement dite Isadora Duncan, est une danseuse d'origine américaine naturalisée soviétique, née le 26 ou 27 mai 1877 dans le quartier irlandais de San Francisco et morte le 14 septembre 1927 à Nice.",
 "siecle": "20e",
 "wikidata": "Q483512"
 },
@@ -415,7 +295,7 @@
 "lat": 48.859703,
 "long": 2.399611,
 "categorie": "Militaire",
-"description": "résistant ou résistante",
+"description": "Pierre Georges, dit Colonel Fabien ou « Frédo », est un militant communiste et résistant français, né le 21 janvier 1919 à Paris et mort en opération militaire le 27 décembre 1944 à Habsheim (Alsace). Il est déclaré mort pour la France.",
 "siecle": "20e",
 "wikidata": "Q1110656"
 },
@@ -425,19 +305,9 @@
 "lat": 48.860875,
 "long": 2.392187,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, artiste peintre, artiste",
+"description": "Alexandre Falguière, né à Toulouse (Haute-Garonne) le 7 septembre 1831 et mort à Paris le 19 avril 1900, est un sculpteur et peintre français.",
 "siecle": "20e",
 "wikidata": "Q2140000"
-},
-{
-"tri": "Faure",
-"nom": "Félix Faure",
-"lat": 48.860734,
-"long": 2.391651,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q296076"
 },
 {
 "tri": "Fourier",
@@ -445,7 +315,7 @@
 "lat": 48.8600462,
 "long": 2.3938832,
 "categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, physicien ou phy",
+"description": "Jean Baptiste Joseph Fourier est un mathématicien et physicien français, né le 21 mars 1768 à Auxerre et mort le 17 mai 1830 à Paris.",
 "siecle": "19e",
 "wikidata": "Q8772"
 },
@@ -455,29 +325,9 @@
 "lat": 48.859181,
 "long": 2.39356,
 "categorie": "Politique",
-"description": "personnalité politique, linguiste, traducteur ou t",
+"description": "Charles-François Lebrun, duc de Plaisance, né le 19 mars 1739 à la Bouchelière, hameau de Saint-Sauveur-Lendelin dans le diocèse de Coutances (Manche), et mort le 16 juin 1824 à Sainte-Mesme (Yvelines) est un homme d'État français.",
 "siecle": "19e",
 "wikidata": "Q707712"
-},
-{
-"tri": "Ledru-Rollin",
-"nom": "Alexandre Ledru-Rollin",
-"lat": 48.860706,
-"long": 2.391565,
-"categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journal",
-"siecle": "19e",
-"wikidata": "Q1382222"
-},
-{
-"tri": "Lesseps",
-"nom": "Ferdinand de Lesseps",
-"lat": 48.8588033,
-"long": 2.3945025,
-"categorie": "Entrepreneur",
-"description": "diplomate, entrepreneur ou entrepreneuse, écrivain",
-"siecle": "19e",
-"wikidata": "Q209169"
 },
 {
 "tri": "Lyotard",
@@ -485,7 +335,7 @@
 "lat": 48.858729,
 "long": 2.393517,
 "categorie": "Ecrivain",
-"description": "philosophe, philologue, écrivain ou écrivaine, lin",
+"description": "Jean-François Lyotard, né le 10 août 1924 à Versailles et mort le 21 avril 1998 à Paris 15e, est un philosophe français associé au post-structuralisme et surtout connu pour son usage critique de la notion de postmodernité.",
 "siecle": "20e",
 "wikidata": "Q193257"
 },
@@ -495,19 +345,9 @@
 "lat": 48.859718,
 "long": 2.394783,
 "categorie": "Sportif",
-"description": "joueur ou joueuse de rugby à XV, militaire",
+"description": "Yves Le Pelley Dumanoir dit Yves du Manoir, né le 11 août 1904 à Vaucresson en Seine-et-Oise est un joueur international français de rugby à XV, polytechnicien français mort le 2 janvier 1928 aux commandes de son avion à Reuilly dans l'Indre.",
 "siecle": "20e",
 "wikidata": "Q2602308"
-},
-{
-"tri": "Marceau",
-"nom": "Marcel Marceau",
-"lat": 48.860879,
-"long": 2.393314,
-"categorie": "Acteur",
-"description": "mime, acteur ou actrice, clown, artiste de cirque,",
-"siecle": "21e",
-"wikidata": "Q157191"
 },
 {
 "tri": "Marchais",
@@ -515,7 +355,7 @@
 "lat": 48.859746,
 "long": 2.399676,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste",
+"description": "Georges Marchais, né le 7 juin 1920 à La Hoguette (Calvados) et mort le 16 novembre 1997 à Paris, est un homme politique français. Il est secrétaire général du Parti communiste français (PCF) de 1972 à 1994, député de 1973 à 1997 et député européen de 1979 à 1989. Candidat communiste à l’élection présidentielle de 1981, il arrive en quatrième position du premier tour avec 15,3 % des voix.",
 "siecle": "20e",
 "wikidata": "Q182192"
 },
@@ -525,19 +365,9 @@
 "lat": 48.859012,
 "long": 2.396586,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "André Masséna, né Andrea Massena, 1er duc de Rivoli et prince d'Essling, né le 6 mai 1758 à Nice et mort le 4 avril 1817 à Paris, est un militaire français, élevé à la dignité de maréchal d'Empire par Napoléon en 1804.",
 "siecle": "19e",
 "wikidata": "Q242609"
-},
-{
-"tri": "Merleau-Ponty",
-"nom": "Maurice Merleau-Ponty",
-"lat": 48.862287,
-"long": 2.393196,
-"categorie": "Ecrivain",
-"description": "philosophe, professeur, théoricien ou théoricienne",
-"siecle": "20e",
-"wikidata": "Q212639"
 },
 {
 "tri": "Michelet",
@@ -545,7 +375,7 @@
 "lat": 48.862569,
 "long": 2.393045,
 "categorie": "Ecrivain",
-"description": "historien ou historienne, archiviste, écrivain ou ",
+"description": "Jules Michelet, né le 5 fructidor an VI à Paris 6e arrondissement et mort le 9 février 1874 à Hyères, est un historien français.",
 "siecle": "19e",
 "wikidata": "Q310791"
 },
@@ -555,19 +385,9 @@
 "lat": 48.8629618,
 "long": 2.3902204,
 "categorie": "Acteur",
-"description": "artiste lyrique",
+"description": "Marie-Caroline Miolan-Carvalho est une cantatrice française, née le 31 décembre 1827 à Marseille et morte le 10 juillet 1895 au hameau balnéaire de Puys, près de Dieppe.",
 "siecle": "19e",
 "wikidata": "Q1630239"
-},
-{
-"tri": "Modigliani",
-"nom": "Amedeo Modigliani",
-"lat": 48.8598029,
-"long": 2.3985154,
-"categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, dessinat",
-"siecle": "20e",
-"wikidata": "Q120993"
 },
 {
 "tri": "Molière",
@@ -575,19 +395,9 @@
 "lat": 48.860536,
 "long": 2.395105,
 "categorie": "Ecrivain",
-"description": "dramaturge, acteur ou actrice de théâtre, poète ou",
+"description": "Jean-Baptiste Poquelin, dit Molière, baptisé le 15 janvier 1622 à l'église Saint-Eustache de Paris et mort le soir du 17 février 1673 à son domicile de la rue de Richelieu, est le plus célèbre des comédiens et dramaturges de la langue française.",
 "siecle": "17e",
 "wikidata": "Q687"
-},
-{
-"tri": "Monfort",
-"nom": "Silvia Monfort",
-"lat": 48.861242,
-"long": 2.39841,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
-"siecle": "20e",
-"wikidata": "Q3320631"
 },
 {
 "tri": "Monge",
@@ -595,7 +405,7 @@
 "lat": 48.860212,
 "long": 2.393603,
 "categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, personnalité pol",
+"description": "Gaspard Monge, comte de Péluse, né le 9 mai 1746 à Beaune et mort le 28 juillet 1818 à Paris, est un mathématicien et homme politique français.",
 "siecle": "19e",
 "wikidata": "Q206832"
 },
@@ -605,19 +415,9 @@
 "lat": 48.8592676,
 "long": 2.393752,
 "categorie": "Chanteur",
-"description": "vocaliste, réalisateur ou réalisatrice, auteur-com",
+"description": "James Douglas Morrison, dit Jim Morrison [ d͡ʒɪm ˈmɔɹɪsən], né le 8 décembre 1943 à Melbourne (Floride) et mort le 3 juillet 1971 à Paris (France), est un chanteur et poète américain, cofondateur du groupe de rock américain The Doors, dont il fut membre de 1965 à sa mort.",
 "siecle": "20e",
 "wikidata": "Q44301"
-},
-{
-"tri": "Mouchotte",
-"nom": "René Mouchotte",
-"lat": 48.8631279,
-"long": 2.3912635,
-"categorie": "Militaire",
-"description": "diariste, militaire, aviateur ou aviatrice",
-"siecle": "20e",
-"wikidata": "Q3426652"
 },
 {
 "tri": "Mouloudji",
@@ -625,7 +425,7 @@
 "lat": 48.861157,
 "long": 2.395277,
 "categorie": "Chanteur",
-"description": "acteur ou actrice de cinéma, chanteur ou chanteuse",
+"description": "Marcel Mouloudji, dit Mouloudji, né le 16 septembre 1922 dans le 4e arrondissement de Paris et mort le 14 juin 1994 à Neuilly-sur-Seine, est un chanteur, auteur-compositeur-interprète, peintre, romancier et acteur français.",
 "siecle": "20e",
 "wikidata": "Q993521"
 },
@@ -635,29 +435,9 @@
 "lat": 48.859068,
 "long": 2.396672,
 "categorie": "Militaire",
-"description": "personnalité politique, officier, militaire",
+"description": "Joachim Murat [ ʒoaʃɛ̃ myʁa][réf. nécessaire], né le 25 mars 1767 à Labastide-Fortunière et mort fusillé le 13 octobre 1815 au château de Pizzo, est un militaire français, haut dignitaire du Premier Empire. Fait maréchal d'Empire et prince français par Napoléon Ier, il est également grand amiral de l'Empire, grand-duc de Clèves et de Berg, puis roi de Naples à partir de 1808 sous le nom de Joachim-Napoléon Ier.",
 "siecle": "19e",
 "wikidata": "Q151173"
-},
-{
-"tri": "Méliès",
-"nom": "Georges Méliès",
-"lat": 48.863331,
-"long": 2.390664,
-"categorie": "Réalisateur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de ",
-"siecle": "20e",
-"wikidata": "Q152272"
-},
-{
-"tri": "Nerval",
-"nom": "Gérard de Nerval",
-"lat": 48.862739,
-"long": 2.393174,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, romancier ou romanc",
-"siecle": "19e",
-"wikidata": "Q191305"
 },
 {
 "tri": "Noailles",
@@ -665,19 +445,9 @@
 "lat": 48.85904,
 "long": 2.395706,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, salonnier ou salonnière, po",
+"description": "Anna de Noailles, née Anna Elisabeth Bassaraba de Brancovan, est une poétesse et une romancière française d'origines roumaine et grecque, née à Paris le 15 novembre 1876 et morte dans la même ville le 30 avril 1933.",
 "siecle": "20e",
 "wikidata": "Q6050"
-},
-{
-"tri": "Nohain",
-"nom": "Jean Nohain",
-"lat": 48.862089,
-"long": 2.39738,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, parolier ou parolière, aute",
-"siecle": "20e",
-"wikidata": "Q963719"
 },
 {
 "tri": "Noir",
@@ -685,29 +455,9 @@
 "lat": 48.860819,
 "long": 2.396543,
 "categorie": "Journaliste",
-"description": "journaliste",
+"description": "Victor Noir, nom de plume d’Yvan Salmon, né le 27 juillet 1848 à Attigny (Vosges) et mort à Paris le 10 janvier 1870, est un journaliste français tué à l'âge de 21 ans d'un coup de feu par le prince Pierre-Napoléon Bonaparte, cousin germain de l'empereur des Français, Napoléon III.",
 "siecle": "19e",
 "wikidata": "Q714788"
-},
-{
-"tri": "Oberkampf",
-"nom": "Christophe-Philippe Oberkampf",
-"lat": 48.859689,
-"long": 2.396071,
-"categorie": "Entrepreneur",
-"description": "personnalité du monde des affaires, personnalité p",
-"siecle": "19e",
-"wikidata": "Q74518"
-},
-{
-"tri": "Panhard",
-"nom": "René Panhard",
-"lat": 48.858475,
-"long": 2.395771,
-"categorie": "Entrepreneur",
-"description": "ingénieur, personnalité politique, pilote de cours",
-"siecle": "20e",
-"wikidata": "Q266561"
 },
 {
 "tri": "Perier",
@@ -715,19 +465,9 @@
 "lat": 48.8600225,
 "long": 2.3936303,
 "categorie": "Entrepreneur",
-"description": "banquier, personnalité politique",
+"description": "Casimir-Pierre Perier, né le 12 décembre 1777, Grande-rue à Grenoble et mort le 16 mai 1832 à Paris, est un banquier et homme d'État français, régent de la Banque de France, président du Conseil du 13 mars 1831 à sa mort, due à l'épidémie de choléra de 1832.",
 "siecle": "19e",
 "wikidata": "Q284683"
-},
-{
-"tri": "Perrin",
-"nom": "Claude-Victor Perrin",
-"lat": 48.859627,
-"long": 2.394392,
-"categorie": "Politique",
-"description": "personnalité politique, militaire",
-"siecle": "19e",
-"wikidata": "Q372750"
 },
 {
 "tri": "Petrucciani",
@@ -735,7 +475,7 @@
 "lat": 48.860056,
 "long": 2.392874,
 "categorie": "Musicien",
-"description": "pianiste de jazz, compositeur ou compositrice, art",
+"description": "Michel Petrucciani, né le 28 décembre 1962 à Orange et mort le 6 janvier 1999 à New York (États-Unis), est un pianiste et compositeur de jazz français.",
 "siecle": "20e",
 "wikidata": null
 },
@@ -745,19 +485,9 @@
 "lat": 48.859096,
 "long": 2.395577,
 "categorie": "Politique",
-"description": "personnalité politique, officier",
+"description": "Maximilien Sébastien Foy, né le 3 février 1775 à Ham et mort le 28 novembre 1825 à Paris, est un général de division français du Premier Empire et un homme politique.",
 "siecle": "19e",
 "wikidata": "Q633498"
-},
-{
-"tri": "Fresnel",
-"nom": "Augustin Fresnel",
-"lat": 48.8597319,
-"long": 2.3936651,
-"categorie": "Scientifique",
-"description": "physicien ou physicienne, ingénieur civil, ingénie",
-"siecle": "19e",
-"wikidata": "Q187241"
 },
 {
 "tri": "Galli-Marié",
@@ -765,19 +495,9 @@
 "lat": 48.8615073,
 "long": 2.3918887,
 "categorie": "Chanteur",
-"description": "artiste lyrique",
+"description": "Célestine Galli-Marié est une mezzo-soprano française née le 15 mars 1837 dans l'Ancien 2e arrondissement de Paris et morte le 21 septembre 1905 à Vence. Elle est particulièrement connue comme créatrice du rôle de Carmen dans l'opéra de Georges Bizet. Elle a aussi créé, dans le rôle-titre, l'opéra Fantasio de Jacques Offenbach, en 1872.",
 "siecle": "20e",
 "wikidata": "Q2413117"
-},
-{
-"tri": "Garnier-Pagès",
-"nom": "Louis-Antoine Garnier-Pagès",
-"lat": 48.859463,
-"long": 2.395062,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q601266"
 },
 {
 "tri": "Girardot",
@@ -785,29 +505,9 @@
 "lat": 48.862089,
 "long": 2.39356,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, acteur ou actrice de",
+"description": "Annie Girardot, née le 25 octobre 1931 à Paris 10e où elle est morte le 28 février 2011, est une actrice française.",
 "siecle": "21e",
 "wikidata": "Q106443"
-},
-{
-"tri": "Gobert",
-"nom": "Jacques Nicolas Gobert",
-"lat": 48.8588,
-"long": 2.39635,
-"categorie": "Militaire",
-"description": "officier",
-"siecle": "19e",
-"wikidata": "Q3159659"
-},
-{
-"tri": "Gramme",
-"nom": "Zénobe Gramme",
-"lat": 48.860833,
-"long": 2.397895,
-"categorie": "Scientifique",
-"description": "physicien ou physicienne, inventeur",
-"siecle": "20e",
-"wikidata": "Q247603"
 },
 {
 "tri": "Grappelli",
@@ -815,7 +515,7 @@
 "lat": 48.862174,
 "long": 2.395663,
 "categorie": "Musicien",
-"description": "artiste de rue, compositeur ou compositrice, music",
+"description": "Stéphane Grappelli, né le 26 janvier 1908 à Paris, mort le 1er décembre 1997 dans la même ville, est un violoniste, pianiste, et jazzman français. Il fait partie des plus grands violonistes de jazz du XXe siècle et créa le Quintette du Hot Club de France avec Django Reinhardt.",
 "siecle": "20e",
 "wikidata": "Q206244"
 },
@@ -825,7 +525,7 @@
 "lat": 48.860536,
 "long": 2.395406,
 "categorie": "Entrepreneur",
-"description": "banquier, personnalité politique",
+"description": "Jean-Henry-Louis, comte Greffulhe, né le 21 mai 1774 à Amsterdam et mort le 23 février 1820 à Paris, est un banquier et homme politique français.",
 "siecle": "19e",
 "wikidata": null
 },
@@ -835,19 +535,9 @@
 "lat": 48.8611069,
 "long": 2.3916616,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire, soldat",
+"description": "Emmanuel de Grouchy, marquis de Grouchy, né le 23 octobre 1766 à Paris et mort le 29 mai 1847 à Saint-Étienne (Loire), est un général français de la Révolution et de l’Empire, maréchal d'Empire, comte de l'Empire, grand aigle de la Légion d'honneur, pair de France.",
 "siecle": "19e",
 "wikidata": "Q333821"
-},
-{
-"tri": "Guesde",
-"nom": "Jules Guesde",
-"lat": 48.862541,
-"long": 2.395384,
-"categorie": "Politique",
-"description": "personnalité politique, journaliste, écrivain ou é",
-"siecle": "20e",
-"wikidata": "Q379699"
 },
 {
 "tri": "Géricault",
@@ -855,7 +545,7 @@
 "lat": 48.86096,
 "long": 2.392831,
 "categorie": "Peintre",
-"description": "artiste peintre, artiste graphique, sculpteur ou s",
+"description": "Théodore Géricault est un peintre, sculpteur, dessinateur et lithographe français, né le 26 septembre 1791 à Rouen et mort le 26 janvier 1824 à Paris.",
 "siecle": "19e",
 "wikidata": "Q184212"
 },
@@ -865,19 +555,9 @@
 "lat": 48.860536,
 "long": 2.39429,
 "categorie": "Scientifique",
-"description": "médecin, homéopathe, pharmacologue, chimiste, phar",
+"description": "Christian Friedrich Samuel Hahnemann, né le 10 avril 1755 à Meissen, en Saxe, et mort le 2 juillet 1843 à Paris, est un médecin qui fonda et participa grandement au développement de l'homéopathie, à partir de 1796.",
 "siecle": "19e",
 "wikidata": "Q157056"
-},
-{
-"tri": "Hernandez",
-"nom": "Téo Hernandez",
-"lat": 48.861059,
-"long": 2.395363,
-"categorie": "Réalisateur",
-"description": "cinéaste",
-"siecle": "20e",
-"wikidata": null
 },
 {
 "tri": "Hersent",
@@ -885,7 +565,7 @@
 "lat": 48.858574,
 "long": 2.39484,
 "categorie": "Peintre",
-"description": "artiste peintre, graveur ou graveuse d'estampes",
+"description": "Louis Hersent né le 10 mars 1777 à Paris et mort le 2 octobre 1860 dans la même ville est un peintre et graveur français.",
 "siecle": "19e",
 "wikidata": "Q761853"
 },
@@ -895,7 +575,7 @@
 "lat": 48.860889,
 "long": 2.39223,
 "categorie": "Militaire",
-"description": "soldat",
+"description": "Ignace Hoff, communément appelé le Sergent Hoff, est un sous-officier français célèbre pour s'être illustré pendant le siège de Paris durant la guerre franco-prussienne de 1870.",
 "siecle": "20e",
 "wikidata": "Q3148168"
 },
@@ -905,29 +585,9 @@
 "lat": 48.861666,
 "long": 2.394526,
 "categorie": "Acteur",
-"description": "secrétaire, acteur ou actrice de cinéma, acteur ou",
+"description": "Joseph Holgado, dit Ticky Holgado, est un acteur, chanteur et musicien français, né le 24 juin 1944 à Toulouse et mort le 22 janvier 2004 à Paris 16e.",
 "siecle": "21e",
 "wikidata": "Q2121322"
-},
-{
-"tri": "Hugo",
-"nom": "Joseph Léopold Sigisbert Hugo",
-"lat": 48.85983,
-"long": 2.395406,
-"categorie": "Militaire",
-"description": "officier, militaire",
-"siecle": "19e",
-"wikidata": "Q2299673"
-},
-{
-"tri": "Ingres",
-"nom": "Jean-Auguste-Dominique Ingres",
-"lat": 48.861412,
-"long": 2.394333,
-"categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, violonist",
-"siecle": "19e",
-"wikidata": "Q23380"
 },
 {
 "tri": "Itasse",
@@ -935,7 +595,7 @@
 "lat": 48.858459,
 "long": 2.395362,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice",
+"description": "Adolphe Itasse, né le 18 février 1829 à Lourmarin (Vaucluse) et mort le 13 mars 1893 à Hyères (Var), est un sculpteur français.",
 "siecle": "19e",
 "wikidata": "Q14660072"
 },
@@ -945,7 +605,7 @@
 "lat": 48.860226,
 "long": 2.39826,
 "categorie": "Politique",
-"description": "personnalité politique, communard",
+"description": "Jules Joffrin, né le 16 mars 1846 à Vendeuvre-sur-Barse et mort le 15 septembre 1890 à Paris, est un ouvrier mécanicien, militant socialiste sous le Second Empire puis membre de la Commune de Paris. Sous la Troisième République, il devient homme politique et l'un des chefs de file des socialistes possibilistes dirigés par Paul Brousse.",
 "siecle": "19e",
 "wikidata": "Q3188690"
 },
@@ -955,7 +615,7 @@
 "lat": 48.863049,
 "long": 2.397015,
 "categorie": "Politique",
-"description": "syndicaliste",
+"description": "Léon Henri Jouhaux est un syndicaliste français, né à Paris (15e) le 1er juillet 1879 et mort à Paris (12e) le 28 avril 1954.",
 "siecle": "20e",
 "wikidata": "Q155415"
 },
@@ -965,19 +625,9 @@
 "lat": 48.859774,
 "long": 2.394569,
 "categorie": "Politique",
-"description": "personnalité politique, officier, militaire",
+"description": "François Étienne Kellermann (1770-1835) est un général français du Premier Empire.",
 "siecle": "19e",
 "wikidata": "Q138105"
-},
-{
-"tri": "Khorsand",
-"nom": "Philippe Khorsand",
-"lat": 48.8613527,
-"long": 2.3946884,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
-"siecle": "21e",
-"wikidata": null
 },
 {
 "tri": "Krasucki",
@@ -985,19 +635,9 @@
 "lat": 48.859417,
 "long": 2.399038,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste, résistant ou",
+"description": "Henri Krasucki, né Henoch Krasucki le 2 septembre 1924 à Wołomin dans la banlieue de Varsovie en Pologne et mort le 24 janvier 2003 à Paris, est un syndicaliste français, secrétaire général de la Confédération générale du travail de 1982 à 1992. Résistant, il est membre actif de la section juive des FTP-MOI pendant la Seconde Guerre mondiale, déporté à Auschwitz puis Buchenwald.",
 "siecle": "21e",
 "wikidata": "Q477747"
-},
-{
-"tri": "La Fontaine",
-"nom": "Jean de La Fontaine",
-"lat": 48.860565,
-"long": 2.395062,
-"categorie": "Ecrivain",
-"description": "fabuliste, poète ou poétesse, avocat ou avocate, a",
-"siecle": "17e",
-"wikidata": "Q49496"
 },
 {
 "tri": "Lachambeaudie",
@@ -1005,7 +645,7 @@
 "lat": 48.862812,
 "long": 2.392937,
 "categorie": "Ecrivain",
-"description": "chansonnier, poète ou poétesse, écrivain ou écriva",
+"description": "Pierre Casimir Hyppolyte Lachambeaudie, né à Montignac (Dordogne) le 16 décembre 1806 et mort à Brunoy (Essonne) le 7 juillet 1872, est un fabuliste, poète, goguettier et chansonnier français, adepte des saint-simoniens.",
 "siecle": "19e",
 "wikidata": "Q1346280"
 },
@@ -1015,29 +655,9 @@
 "lat": 48.860649,
 "long": 2.39532,
 "categorie": "Entrepreneur",
-"description": "personnalité du monde des affaires",
+"description": "Alphonse Lavallée, né le 1er juillet 1797 à Savigné-l'Évêque et mort le 15 mai 1873 à Paris, est un homme d'affaires à Nantes puis à Paris, fondateur sur sa fortune personnelle de l'École centrale des arts et manufactures, plus connue sous le nom d'École centrale Paris.",
 "siecle": "19e",
 "wikidata": "Q1327266"
-},
-{
-"tri": "Lazareff",
-"nom": "Pierre et Hélène Lazareff",
-"lat": 48.859365,
-"long": 2.391479,
-"categorie": "Journaliste",
-"description": null,
-"siecle": "e",
-"wikidata": null
-},
-{
-"tri": "Dabadie de Bernet",
-"nom": "Jean Melchior Dabadie de Bernet",
-"lat": 48.859051,
-"long": 2.397138,
-"categorie": "Politique",
-"description": "personnalité politique, officier, militaire",
-"siecle": "19e",
-"wikidata": "Q1429885"
 },
 {
 "tri": "Dac",
@@ -1045,7 +665,7 @@
 "lat": 48.862767,
 "long": 2.396243,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"description": "André Isaac, dit Pierre Dac, officiellement André Pierre-Dac à partir de 1950, né le 15 août 1893 à Châlons-sur-Marne et mort le 9 février 1975 dans le 17e arrondissement de Paris, est un humoriste et comédien français. Il a également été, pendant la Seconde Guerre mondiale, une figure de la Résistance contre l'occupation de la France par l'Allemagne nazie grâce à ses interventions sur Radio Londres.",
 "siecle": "20e",
 "wikidata": "Q165910"
 },
@@ -1055,19 +675,9 @@
 "lat": 48.863501,
 "long": 2.391264,
 "categorie": "Politique",
-"description": "personnalité politique",
+"description": "Édouard Daladier, né le 18 juin 1884 à Carpentras (Vaucluse) et mort le 10 octobre 1970 à Paris, est un homme d'État français, figure du Parti radical socialiste et de la IIIe République pendant l'entre-deux-guerres.",
 "siecle": "20e",
 "wikidata": "Q213526"
-},
-{
-"tri": "Daudet",
-"nom": "Alphonse Daudet",
-"lat": 48.860198,
-"long": 2.395277,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, poète ou poétes",
-"siecle": "19e",
-"wikidata": "Q228546"
 },
 {
 "tri": "Daumier",
@@ -1075,7 +685,7 @@
 "lat": 48.8611655,
 "long": 2.3949235,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"description": "Élisabeth Hugon, dite Sophie Daumier, est une comédienne et humoriste française, née le 24 novembre 1934 à Boulogne-sur-Mer et morte le 1er janvier 2004 à Paris 11e.",
 "siecle": "21e",
 "wikidata": "Q3490902"
 },
@@ -1085,19 +695,9 @@
 "lat": 48.860875,
 "long": 2.394698,
 "categorie": "Peintre",
-"description": "artiste peintre, dessinateur ou dessinatrice en bâ",
+"description": "Honoré Victorin Daumier, né le 26 février 1808 à Marseille et mort le 10 février 1879 à Valmondois, est un lithographe, caricaturiste, peintre et sculpteur français, dont les œuvres commentent la vie sociale et politique en France au XIXe siècle. Dessinateur prolifique, il est surtout connu pour ses caricatures d'hommes politiques et ses satires du comportement de ses compatriotes. Il a changé la perception que nous avons sur l'art de la caricature politique.",
 "siecle": "19e",
 "wikidata": "Q187506"
-},
-{
-"tri": "Davout",
-"nom": "Louis Nicolas Davout",
-"lat": 48.8589314,
-"long": 2.3964384,
-"categorie": "Militaire",
-"description": "personnalité politique, officier, chef militaire, ",
-"siecle": "19e",
-"wikidata": "Q158778"
 },
 {
 "tri": "Del Duca",
@@ -1105,19 +705,9 @@
 "lat": 48.861525,
 "long": 2.392509,
 "categorie": "Entrepreneur",
-"description": "entrepreneur ou entrepreneuse, éditeur ou éditrice",
+"description": "Pacifico « Cino » Del Duca, né le 25 juillet 1899 à Montedinove et mort le 24 mai 1967 à Milan, est un éditeur de presse écrite, producteur de films français et italiens et philanthrope italien qui s'est installé en France en 1932.",
 "siecle": "20e",
 "wikidata": "Q1069399"
-},
-{
-"tri": "Delacroix",
-"nom": "Eugène Delacroix",
-"lat": 48.862787,
-"long": 2.3936382,
-"categorie": "Peintre",
-"description": "artiste peintre, diariste, lithographe, photograph",
-"siecle": "19e",
-"wikidata": "Q33477"
 },
 {
 "tri": "Desproges",
@@ -1125,7 +715,7 @@
 "lat": 48.860056,
 "long": 2.392809,
 "categorie": "Journaliste",
-"description": "humoriste, journaliste, animateur ou animatrice de",
+"description": "Pierre Desproges, né le 9 mai 1939 à Pantin et mort le 18 avril 1988 à Neuilly-sur-Seine, est un humoriste français réputé pour son humour noir, son anticonformisme et son sens de l'absurde.",
 "siecle": "20e",
 "wikidata": "Q2196"
 },
@@ -1135,7 +725,7 @@
 "lat": 48.859774,
 "long": 2.395513,
 "categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, écrivai",
+"description": "Jean Anthelme Brillat-Savarin, né le 1er avril 1755 à Belley et mort le 2 février 1826 à Paris est un avocat, magistrat, homme politique, et connu comme gastronome français. En plus de son action pendant la Révolution française et à Belley, il est fréquemment considéré comme l'un des fondateurs de la gastronomie, en particulier grâce à son ouvrage la Physiologie du goût.",
 "siecle": "19e",
 "wikidata": "Q313027"
 },
@@ -1145,7 +735,7 @@
 "lat": 48.862329,
 "long": 2.397316,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, journaliste, ro",
+"description": "Georges Victor Marcel Moineau, dit Georges Courteline, né le 25 juin 1858 à Tours et mort le 25 juin 1929 à Paris 13e, est un romancier et dramaturge français.",
 "siecle": "20e",
 "wikidata": "Q51107"
 },
@@ -1155,7 +745,7 @@
 "lat": 48.86072,
 "long": 2.391114,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, poète ou poétesse, dramatur",
+"description": "Alfred de Musset est un poète, dramaturge et écrivain français de la période romantique, né le 11 décembre 1810 à Paris, où il meurt le 2 mai 1857.",
 "siecle": "19e",
 "wikidata": "Q179680"
 },
@@ -1165,7 +755,7 @@
 "lat": 48.858983,
 "long": 2.397037,
 "categorie": "Scientifique",
-"description": "photographe, aérostier, dessinateur ou dessinatric",
+"description": "Félix Tournachon, dit Nadar, né le 5 ou le 6 avril 1820 à Paris et mort le 20 mars 1910 dans la même ville, est un caricaturiste, écrivain, aéronaute et photographe français.",
 "siecle": "20e",
 "wikidata": "Q40116"
 },
@@ -1175,7 +765,7 @@
 "lat": 48.860141,
 "long": 2.395492,
 "categorie": "Scientifique",
-"description": "botaniste, pharmacien ou pharmacienne, agronome, d",
+"description": "Antoine Augustin Parmentier est un pharmacien militaire, agronome, nutritionniste et hygiéniste français, né le 12 août 1737 à Montdidier et mort le 17 décembre 1813 à Paris.",
 "siecle": "19e",
 "wikidata": "Q360312"
 },
@@ -1185,19 +775,9 @@
 "lat": 48.86319,
 "long": 2.395985,
 "categorie": "Réalisateur",
-"description": "metteur ou metteuse en scène, acteur ou actrice de",
+"description": "Elvira Popescu, est une comédienne roumaine et française et directrice de théâtre, née le 10 mai 1896 à Colentina, quartier de Bucarest (Roumanie) et morte le 11 décembre 1993 à Paris, dans sa 98e année.",
 "siecle": "20e",
 "wikidata": "Q455878"
-},
-{
-"tri": "Sieyès",
-"nom": "Emmanuel-Joseph Sieyès",
-"lat": 48.858532,
-"long": 2.395599,
-"categorie": "Politique",
-"description": "personnalité politique, diplomate, sociologue, écr",
-"siecle": "19e",
-"wikidata": "Q294344"
 },
 {
 "tri": "Topart",
@@ -1205,7 +785,7 @@
 "lat": 48.8615364,
 "long": 2.3918726,
 "categorie": "Acteur",
-"description": "acteur ou actrice, acteur ou actrice de doublage",
+"description": "Jean Topart est un acteur français, né le 13 avril 1922 dans le 20e arrondissement de Paris et mort le 29 décembre 2012 à Port-Marly (Yvelines).",
 "siecle": "21e",
 "wikidata": "Q2110802"
 },
@@ -1215,7 +795,7 @@
 "lat": 48.8601567,
 "long": 2.3927356,
 "categorie": "Ecrivain",
-"description": "historien ou historienne de l'art, égyptologue, di",
+"description": "Dominique Vivant, baron Denon, dit Vivant Denon ou Dominique-Vivant Denon, né le 4 janvier 1747 à Chalon-sur-Saône et mort le 27 avril 1825 à Paris, est un graveur, écrivain, diplomate et administrateur français.",
 "siecle": "19e",
 "wikidata": "Q468618"
 },
@@ -1225,19 +805,9 @@
 "lat": 48.8586237,
 "long": 2.396391,
 "categorie": "Politique",
-"description": "personnalité politique, diplomate, officier, milit",
+"description": "Étienne (Jacques-Joseph-Alexandre) Macdonald, 1er duc de Tarente, né le 17 novembre 1765 à Sedan (Champagne) et mort le 25 septembre 1840 à Beaulieu-sur-Loire (Loiret), est un général français de la Révolution et un maréchal d'Empire.",
 "siecle": "19e",
 "wikidata": "Q298784"
-},
-{
-"tri": "David",
-"nom": "Jacques-Louis David",
-"lat": 48.861355,
-"long": 2.392359,
-"categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, dessinate",
-"siecle": "19e",
-"wikidata": "Q83155"
 },
 {
 "tri": "Raspail",
@@ -1245,7 +815,7 @@
 "lat": 48.860141,
 "long": 2.393904,
 "categorie": "Scientifique",
-"description": "chimiste, biologiste, personnalité politique, bota",
+"description": "François-Vincent Raspail, né le 24 ou le 29 janvier 1794 à Carpentras et mort le 7 janvier 1878 à Arcueil, est un chimiste, botaniste et homme politique français.",
 "siecle": "19e",
 "wikidata": "Q682230"
 },
@@ -1255,7 +825,7 @@
 "lat": 48.8601705,
 "long": 2.3927894,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, chef ou cheffe d'orch",
+"description": "Marie-Louis-Charles-Zénobi-Salvador Cherubini, né Maria Luigi Carlo Zenobio Salvatore Cherubini le 14 septembre 1760 à Florence et mort le 15 mars 1842 à Paris, est un compositeur italien de la fin du XVIIIe et du début du XIXe siècle, dont la carrière, à partir de 1787, se déroule principalement en France.",
 "siecle": "19e",
 "wikidata": "Q20721"
 },
@@ -1265,19 +835,9 @@
 "lat": 48.86048,
 "long": 2.394376,
 "categorie": "Politique",
-"description": "personnalité politique",
+"description": "Martin Michel Charles Gaudin, duc de Gaëte, né le 16 janvier 1756 à Saint-Denis près de Paris et mort le 5 novembre 1841 au château de Gennevilliers, est un homme politique français qui commença sa carrière politique sous la Révolution avant d'être le ministre des Finances du Consulat et de l'Empire entre 1799 et 1814.",
 "siecle": "19e",
 "wikidata": "Q708596"
-},
-{
-"tri": "Alamo",
-"nom": "Frank Alamo",
-"lat": 48.861065,
-"long": 2.39491,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice de cinéma",
-"siecle": "21e",
-"wikidata": "Q112324100"
 },
 {
 "tri": "Corot",
@@ -1285,7 +845,7 @@
 "lat": 48.860903,
 "long": 2.394612,
 "categorie": "Peintre",
-"description": "artiste peintre, photographe, graveur ou graveuse ",
+"description": "Jean-Baptiste Camille Corot, généralement appelé Camille Corot, né le 16 juillet 1796 à Paris où il est mort le 22 février 1875, est un peintre et graveur français, un des fondateurs de l'école de Barbizon.",
 "siecle": "19e",
 "wikidata": "Q148475"
 },
@@ -1295,7 +855,7 @@
 "lat": 48.860423,
 "long": 2.392917,
 "categorie": "Ecrivain",
-"description": "ingénieur géographe, romancier ou romancière, bota",
+"description": "Jacques-Henri Bernardin de Saint-Pierre, né le 19 janvier 1737 au Havre et mort le 21 janvier 1814 à Éragny, formé comme ingénieur des ponts et chaussées, est un écrivain et botaniste français, resté célèbre pour son roman Paul et Virginie.",
 "siecle": "19e",
 "wikidata": "Q361976"
 },
@@ -1305,7 +865,7 @@
 "lat": 48.8622181,
 "long": 2.3963152,
 "categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, poète ou",
+"description": "Maximilian Maria Ernst, dit Max Ernst, né le 2 avril 1891 à Brühl dans l'Empire allemand et mort le 1er avril 1976 à Paris, est un peintre et sculpteur germano-américano-français dont l'œuvre se rattache aux mouvements dadaïste et surréaliste. Allemand de naissance, il acquiert la nationalité américaine en 1948 puis française en 1958.",
 "siecle": "20e",
 "wikidata": "Q154842"
 },
@@ -1315,19 +875,39 @@
 "lat": 48.860748,
 "long": 2.391179,
 "categorie": "Politique",
-"description": "personnalité politique, haut fonctionnaire ou haut",
+"description": "Georges Eugène Haussmann, communément appelé le baron Haussmann, né le 27 mars 1809 à Paris et mort le 11 janvier 1891 dans la même ville, est un haut fonctionnaire et homme politique français.",
 "siecle": "19e",
 "wikidata": "Q191798"
 },
 {
-"tri": "Piaf",
-"nom": "Édith Piaf",
-"lat": 48.8596833,
-"long": 2.3988939,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice, artiste ",
+"tri": "Apollinaire",
+"nom": "Guillaume Apollinaire",
+"lat": 48.8626557,
+"long": 2.3947199,
+"categorie": "Ecrivain",
+"description": "Wilhelm Apollinaris de Kostrowitzky, dit Guillaume Apollinaire, est un poète et écrivain français, critique et théoricien d'art. Né le 26 août 1880 à Rome, il meurt à Paris le 9 novembre 1918 de la grippe espagnole, mais est déclaré mort pour la France en raison de son engagement durant la guerre.",
 "siecle": "20e",
-"wikidata": "Q1631"
+"wikidata": "Q133855"
+},
+{
+"tri": "Bienvenüe",
+"nom": "Fulgence Bienvenüe",
+"lat": 48.864009,
+"long": 2.394676,
+"categorie": "Ingénieur",
+"description": "Fulgence Bienvenüe, né le 27 janvier 1852 à Uzel (Côtes-du-Nord) et mort le 3 août 1936 à Paris, est un ingénieur français qui a notamment conçu le réseau métropolitain de Paris.",
+"siecle": "20e",
+"wikidata": "Q964297"
+},
+{
+"tri": "Blanc",
+"nom": "Louis Blanc",
+"lat": 48.861779,
+"long": 2.391286,
+"categorie": "Politique",
+"description": "Louis Jean Joseph Blanc, né le 29 octobre 1811 à Madrid et mort le 6 décembre 1882 à Cannes, est un journaliste et historien français, membre du gouvernement provisoire de 1848 et député sous la Troisième République.",
+"siecle": "19e",
+"wikidata": "Q355112"
 },
 {
 "tri": "Pineau",
@@ -1335,7 +915,7 @@
 "lat": 48.859576,
 "long": 2.398882,
 "categorie": "Politique",
-"description": "personnalité politique, diplomate, syndicaliste, a",
+"description": "Christian Pineau, né le 14 octobre 1904 à Chaumont (Haute-Marne) et mort le 5 avril 1995 à Paris, est un syndicaliste, homme politique et déporté résistant socialiste français. Il est compagnon de la Libération.",
 "siecle": "20e",
 "wikidata": "Q661825"
 },
@@ -1345,19 +925,9 @@
 "lat": 48.8591071,
 "long": 2.3914902,
 "categorie": "Peintre",
-"description": "pastelliste, dessinateur ou dessinatrice en bâtime",
+"description": "Jacob Abraham Camille Pissarro, dit Camille Pissarro, né le 10 juillet 1830 à Charlotte-Amélie, sur l'île de Saint-Thomas, dans les Antilles danoises — aujourd'hui Îles Vierges des États-Unis —, et mort le 13 novembre 1903 à Paris, est un peintre impressionniste puis néo-impressionniste franco-danois.",
 "siecle": "20e",
 "wikidata": "Q134741"
-},
-{
-"tri": "Planchon",
-"nom": "Roger Planchon",
-"lat": 48.86076,
-"long": 2.3938,
-"categorie": "Réalisateur",
-"description": "scénariste, metteur ou metteuse en scène, acteur o",
-"siecle": "21e",
-"wikidata": "Q374912"
 },
 {
 "tri": "Pleyel",
@@ -1365,39 +935,9 @@
 "lat": 48.860508,
 "long": 2.393131,
 "categorie": "Entrepreneur",
-"description": "facteur ou factrice de pianos, éditeur musical, co",
+"description": "Ignace Joseph Pleyel ([plɛjɛl], né le 18 juin 1757 à Ruppersthal  , près de Vienne, et mort le 14 novembre 1831 à Paris, est un compositeur, éditeur de musique et facteur de pianos autrichien naturalisé français, fondateur des pianos Pleyel, facteur de pianos officiel du roi sous la Restauration et sous la monarchie de Juillet.",
 "siecle": "19e",
 "wikidata": "Q314019"
-},
-{
-"tri": "Poulenc",
-"nom": "Francis Poulenc",
-"lat": 48.858758,
-"long": 2.393088,
-"categorie": "Musicien",
-"description": "compositeur ou compositrice, pianiste, critique de",
-"siecle": "20e",
-"wikidata": "Q191408"
-},
-{
-"tri": "Proust",
-"nom": "Marcel Proust",
-"lat": 48.8630712,
-"long": 2.394975,
-"categorie": "Ecrivain",
-"description": "romancier ou romancière, essayiste, écrivain ou éc",
-"siecle": "20e",
-"wikidata": "Q7199"
-},
-{
-"tri": "Romains",
-"nom": "Jules Romains",
-"lat": 48.860113,
-"long": 2.390428,
-"categorie": "Ecrivain",
-"description": "dramaturge, écrivain ou écrivaine, poète ou poétes",
-"siecle": "20e",
-"wikidata": "Q334983"
 },
 {
 "tri": "Rossini",
@@ -1405,7 +945,7 @@
 "lat": 48.860706,
 "long": 2.39105,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice",
+"description": "Gioachino Rossini — Gioacchino Rossini pour certains auteurs francophones et Giovacchino Antonio Rossini pour l'état civil — est un compositeur italien né le 29 février 1792 à Pesaro et mort le 13 novembre 1868 à Passy, Paris.",
 "siecle": "19e",
 "wikidata": "Q9726"
 },
@@ -1415,19 +955,9 @@
 "lat": 48.859351,
 "long": 2.391286,
 "categorie": "Entrepreneur",
-"description": null,
+"description": "Le baron Jacob Mayer de Rothschild, dit James de Rothschild, né le 15 mai 1792 à Francfort-sur-le-Main (Saint-Empire) et mort le 15 novembre 1868 à Paris 9e, est un banquier allemand, fondateur de la branche de Paris de la famille Rothschild.",
 "siecle": "e",
 "wikidata": "Q922667"
-},
-{
-"tri": "Salvador",
-"nom": "Henri Salvador",
-"lat": 48.859633,
-"long": 2.398839,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, humoriste, compositeur ou c",
-"siecle": "21e",
-"wikidata": "Q318060"
 },
 {
 "tri": "Sans-Gêne",
@@ -1435,7 +965,7 @@
 "lat": 48.85904,
 "long": 2.396586,
 "categorie": "Acteur",
-"description": null,
+"description": "Catherine Hubscher, née le 2 février 1753 à Altenbach et morte le 29 décembre 1835 à Paris, est une femme d'origine modeste ayant connu une ascension sociale en devenant l'épouse du maréchal d'empire Lefebvre, duc de Dantzig.",
 "siecle": "e",
 "wikidata": "Q3275319"
 },
@@ -1445,19 +975,9 @@
 "lat": 48.858578,
 "long": 2.396377,
 "categorie": "Scientifique",
-"description": "économiste",
+"description": "Horace Émile Say, né à Noisy-le-Sec le 11 mars 1794 et mort le 25 juillet 1860, est un économiste français de l'école libérale. Il appartient à la famille protestante Say.",
 "siecle": "19e",
 "wikidata": "Q3140480"
-},
-{
-"tri": "Schœlcher",
-"nom": "Victor Schœlcher",
-"lat": 48.861412,
-"long": 2.393947,
-"categorie": "Politique",
-"description": "personnalité politique, écrivain ou écrivaine",
-"siecle": "19e",
-"wikidata": "Q120417"
 },
 {
 "tri": "Scribe",
@@ -1465,7 +985,7 @@
 "lat": 48.859365,
 "long": 2.397187,
 "categorie": "Ecrivain",
-"description": "dramaturge, librettiste, écrivain ou écrivaine, co",
+"description": "Eugène Scribe est un dramaturge et librettiste français, né le 24 décembre 1791 à Paris et mort à Paris 9e le 20 février 1861.",
 "siecle": "19e",
 "wikidata": "Q319261"
 },
@@ -1475,19 +995,9 @@
 "lat": 48.8623521,
 "long": 2.390531,
 "categorie": "Peintre",
-"description": "artiste peintre, dessinateur ou dessinatrice, dess",
+"description": "Georges Seurat, né le 2 décembre 1859 à Paris 5e et mort le 29 mars 1891 à Paris 10e, est un peintre et dessinateur français.",
 "siecle": "19e",
 "wikidata": "Q34013"
-},
-{
-"tri": "Solo",
-"nom": "Mano Solo",
-"lat": 48.860452,
-"long": 2.392552,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, auteur-compositeur-interprè",
-"siecle": "21e",
-"wikidata": "Q1335349"
 },
 {
 "tri": "Soulié",
@@ -1495,7 +1005,7 @@
 "lat": 48.8628596,
 "long": 2.392869,
 "categorie": "Ecrivain",
-"description": "romancier ou romancière, journaliste, dramaturge, ",
+"description": "Melchior Frédéric Soulié est un romancier, auteur dramatique, critique et journaliste français né à Foix le 23 décembre 1800 et mort à Bièvres le 23 septembre 1847. Il est, avec Honoré de Balzac, Eugène Sue et Alexandre Dumas, l'un des quatre grands feuilletonistes de la monarchie de Juillet. Fécond, très populaire à l'époque, il est l'auteur des grands succès que furent Les Mémoires du Diable et, au théâtre, La Closerie des genêts. Il est presque oublié aujourd'hui.",
 "siecle": "19e",
 "wikidata": "Q2031275"
 },
@@ -1505,7 +1015,7 @@
 "lat": 48.859351,
 "long": 2.396929,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "Louis-Gabriel Suchet, duc d'Albufera, né le 2 mars 1770 à Lyon et mort le 3 janvier 1826 à Marseille, est un militaire français, élevé à la dignité de maréchal d'Empire par Napoléon en 1811.",
 "siecle": "19e",
 "wikidata": "Q316518"
 },
@@ -1515,19 +1025,9 @@
 "lat": 48.8614688,
 "long": 2.3925529,
 "categorie": "Politique",
-"description": "personnalité politique, avocat ou avocate, magistr",
+"description": "Raymond, comte de Sèze, ou plus communément Romain Desèze, il est d'abord avocat puis magistrat et homme politique français né le 26 septembre 1748 à Bordeaux et mort le 2 mai 1828 à Paris.",
 "siecle": "19e",
 "wikidata": "Q1357659"
-},
-{
-"tri": "Thiers",
-"nom": "Adolphe Thiers",
-"lat": 48.861087,
-"long": 2.392895,
-"categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journal",
-"siecle": "19e",
-"wikidata": "Q5738"
 },
 {
 "tri": "Thorez",
@@ -1535,7 +1035,7 @@
 "lat": 48.859943,
 "long": 2.39989,
 "categorie": "Politique",
-"description": "personnalité politique, mineur ou mineuse",
+"description": "Maurice Thorez, né le 28 avril 1900 à Noyelles-Godault (Pas-de-Calais) et mort le 11 juillet 1964 en mer Noire, est un homme politique français.",
 "siecle": "20e",
 "wikidata": "Q345408"
 },
@@ -1545,19 +1045,9 @@
 "lat": 48.861214,
 "long": 2.394891,
 "categorie": "Réalisateur",
-"description": "producteur ou productrice de cinéma, producteur dé",
+"description": "Daniel Toscan du Plantier, né le 7 avril 1941 à Chambéry et mort à Berlin le 11 février 2003 pendant le festival de cinéma de Berlin, est un producteur de cinéma français et directeur général de Gaumont de 1975 à 1985.",
 "siecle": "21e",
 "wikidata": "Q325453"
-},
-{
-"tri": "Trelliard",
-"nom": "Anne-François-Charles Trelliard",
-"lat": 48.8584651,
-"long": 2.3953018,
-"categorie": "Militaire",
-"description": "militaire",
-"siecle": "19e",
-"wikidata": "Q2850778"
 },
 {
 "tri": "Trintignant",
@@ -1565,19 +1055,9 @@
 "lat": 48.861186,
 "long": 2.394912,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"description": "Marie Trintignant, née le 21 janvier 1962 à Boulogne-Billancourt (Seine) et morte le 1er août 2003 à Neuilly-sur-Seine (Hauts-de-Seine), est une actrice de cinéma et comédienne de théâtre française.",
 "siecle": "21e",
 "wikidata": "Q235641"
-},
-{
-"tri": "Triqueti",
-"nom": "Henry de Triqueti",
-"lat": 48.861129,
-"long": 2.39532,
-"categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, artiste peintre",
-"siecle": "19e",
-"wikidata": null
 },
 {
 "tri": "Vaillant-Couturier",
@@ -1585,7 +1065,7 @@
 "lat": 48.860141,
 "long": 2.399869,
 "categorie": "Politique",
-"description": "personnalité politique, écrivain ou écrivaine, jou",
+"description": "Paul Couturier, connu sous le pseudonyme de Paul Vaillant-Couturier, né le 8 janvier 1892 à Paris et mort le 10 octobre 1937 dans la même ville, est un écrivain, journaliste et homme politique français. Il a participé à la fondation du Parti communiste français.",
 "siecle": "20e",
 "wikidata": "Q3372335"
 },
@@ -1595,19 +1075,9 @@
 "lat": 48.862287,
 "long": 2.390342,
 "categorie": "Journaliste",
-"description": "journaliste, écrivain ou écrivaine, romancier ou r",
+"description": "Jules Vallès, né Jules Vallez le 11 juin 1832 au Puy-en-Velay et mort le 14 février 1885 à Paris 5e, est un journaliste, écrivain et homme politique d'extrême gauche français.",
 "siecle": "19e",
 "wikidata": "Q551597"
-},
-{
-"tri": "Vanarsky",
-"nom": "Jack Vanarsky",
-"lat": 48.860107,
-"long": 2.393003,
-"categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, collagis",
-"siecle": "21e",
-"wikidata": "Q3157334"
 },
 {
 "tri": "Vania Vilers",
@@ -1615,7 +1085,7 @@
 "lat": 48.85994,
 "long": 2.39293,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"description": "Jean-Frédéric Winterhalter, dit Vania Vilers, né le 12 juin 1938 à Neuchâtel (Suisse) et mort le 22 février 2009 à Paris, est un acteur et réalisateur franco-suisse.",
 "siecle": "21e",
 "wikidata": null
 },
@@ -1625,19 +1095,9 @@
 "lat": 48.86367,
 "long": 2.396157,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, scénariste, dramatur",
+"description": "Louis Collin du Bocage, dit Louis Verneuil, est un auteur dramatique et scénariste français, également acteur, né le 14 mai 1893 à Paris et mort le 2 novembre 1952 dans la même ville. Il signe seul trente-huit pièces de théâtre et vingt-cinq autres en collaboration avec Georges Berr.",
 "siecle": "20e",
 "wikidata": "Q3098317"
-},
-{
-"tri": "Wallace",
-"nom": "Richard Wallace",
-"lat": 48.859167,
-"long": 2.3962,
-"categorie": "Entrepreneur",
-"description": "collectionneur ou collectionneuse d'œuvres d'art, ",
-"siecle": "19e",
-"wikidata": "Q2033868"
 },
 {
 "tri": "Wilde",
@@ -1645,7 +1105,7 @@
 "lat": 48.8618038,
 "long": 2.3979473,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, nouvelliste, journa",
+"description": "Oscar Wilde /ˈɒskə waɪld/, dont le nom complet est Oscar Fingal O'Flahertie Wills Wilde, né à Dublin le 16 octobre 1854 et mort à Paris le 30 novembre 1900, est un écrivain, romancier, dramaturge et poète irlandais.",
 "siecle": "20e",
 "wikidata": "Q30875"
 },
@@ -1655,19 +1115,9 @@
 "lat": 48.862146,
 "long": 2.396071,
 "categorie": "Acteur",
-"description": "clown, trompettiste, acteur ou actrice, saxophonis",
+"description": "Achille Zavatta, né le 6 mai 1915 à La Goulette (Tunisie) est mort le 16 novembre 1993 à Ouzouer-des-Champs (Loiret), est un artiste de cirque français, principalement clown dans le rôle de l'Auguste, mais pratiquant aussi l'acrobatie, le trapèze, les exercices équestres, le domptage et la musique.",
 "siecle": "20e",
 "wikidata": "Q340260"
-},
-{
-"tri": "Éluard",
-"nom": "Paul Éluard",
-"lat": 48.859986,
-"long": 2.399912,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, personnalité politique, poè",
-"siecle": "20e",
-"wikidata": "Q152176"
 },
 {
 "tri": "Asturias",
@@ -1675,8 +1125,558 @@
 "lat": 48.8597856,
 "long": 2.3928042,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, diplomat",
+"description": "Miguel Ángel Asturias, né le 19 octobre 1899 à Guatemala et mort le 9 juin 1974 à Madrid, est un poète, écrivain et diplomate guatémaltèque. Il est lauréat du prix Nobel de littérature en 1967, et président du jury du festival de Cannes en 1970.",
 "siecle": "20e",
 "wikidata": "Q75603"
+},
+{
+"tri": "Modigliani",
+"nom": "Amedeo Modigliani",
+"lat": 48.8598029,
+"long": 2.3985154,
+"categorie": "Peintre",
+"description": "Amedeo Clemente Modigliani, né le 12 juillet 1884 à Livourne (Italie) et mort le 24 janvier 1920 à Paris, est un peintre et sculpteur italien rattaché à l'École de Paris.",
+"siecle": "20e",
+"wikidata": "Q120993"
+},
+{
+"tri": "Monfort",
+"nom": "Silvia Monfort",
+"lat": 48.861242,
+"long": 2.39841,
+"categorie": "Acteur",
+"description": "Silvia Monfort, nom de scène de Simonne Marguerite Favre-Bertin, née le 7 juin 1923 à Paris et morte le 30 mars 1991 dans la même ville, est une comédienne et directrice de théâtre française. Fille du sculpteur Charles Favre-Bertin et épouse du moniteur sportif Pierre Gruneberg, elle a été une militante du théâtre populaire.",
+"siecle": "20e",
+"wikidata": "Q3320631"
+},
+{
+"tri": "Mouchotte",
+"nom": "René Mouchotte",
+"lat": 48.8631279,
+"long": 2.3912635,
+"categorie": "Militaire",
+"description": "René Mouchotte est un aviateur français de la Seconde Guerre mondiale, mort pour la France. C'est une figure de la France libre née le 21 août 1914 à Saint-Mandé (Seine) et qui disparait le 27 août 1943 au-dessus de la Manche. Officier des FAFL, il est apprécié tant de ses hommes que des Anglais pour sa grandeur d'âme et ses qualités de chef. Il est également le premier Français à commander un squadron de la Royal Air Force, le 65ème.",
+"siecle": "20e",
+"wikidata": "Q3426652"
+},
+{
+"tri": "Méliès",
+"nom": "Georges Méliès",
+"lat": 48.863331,
+"long": 2.390664,
+"categorie": "Réalisateur",
+"description": "Georges Méliès, né Marie Georges Jean Méliès le 8 décembre 1861 à Paris et mort le 21 janvier 1938 dans la même ville, est un réalisateur de films français et illusionniste. Ayant choisi la prestidigitation comme profession, il profite d’une donation de son père, industriel de la chaussure, pour devenir propriétaire et directeur en 1888 du théâtre Robert-Houdin, en sommeil depuis la mort du célèbre illusionniste.",
+"siecle": "20e",
+"wikidata": "Q152272"
+},
+{
+"tri": "Nerval",
+"nom": "Gérard de Nerval",
+"lat": 48.862739,
+"long": 2.393174,
+"categorie": "Ecrivain",
+"description": "Gérard Labrunie, dit Gérard de Nerval, est un écrivain et un poète français, né le 22 mai 1808 à Paris, où il est mort le 26 janvier 1855. Figure majeure du romantisme français, le « plus pur des écrivains romantiques de la France » selon Georges Gusdorf, il est essentiellement connu pour ses poèmes et ses nouvelles, notamment son ouvrage Les Filles du feu (1854), recueil de nouvelles qui comprend Sylvie et les sonnets Les Chimères, et sa nouvelle Aurélia publiée en 1855. Il a aussi publié un récit de voyage, le Voyage en Orient (1851).",
+"siecle": "19e",
+"wikidata": "Q191305"
+},
+{
+"tri": "Nohain",
+"nom": "Jean Nohain",
+"lat": 48.862089,
+"long": 2.39738,
+"categorie": "Ecrivain",
+"description": "Jean Nohain, dit « Jaboune », de son vrai nom Jean Marie Pierre Étienne Legrand, né le 16 février 1900 à Paris 9e et mort le 25 janvier 1981 à Paris 16e, est un animateur et parolier français qui fait partie des pionniers de la télévision française.",
+"siecle": "20e",
+"wikidata": "Q963719"
+},
+{
+"tri": "Oberkampf",
+"nom": "Christophe-Philippe Oberkampf",
+"lat": 48.859689,
+"long": 2.396071,
+"categorie": "Entrepreneur",
+"description": "Christophe-Philippe Oberkampf, né Christoph Philipp Oberkampf le 11 juin 1738 à Wiesenbach et mort le 4 octobre 1815 à Jouy-en-Josas, est un industriel français d’origine allemande.",
+"siecle": "19e",
+"wikidata": "Q74518"
+},
+{
+"tri": "Panhard",
+"nom": "René Panhard",
+"lat": 48.858475,
+"long": 2.395771,
+"categorie": "Entrepreneur",
+"description": "René Panhard, né Louis François René Panhard le 27 mai 1841 à Paris et mort le 16 juillet 1908 à La Bourboule (Puy-de-Dôme), est un ingénieur en mécanique français, cofondateur de l'industrie automobile Panhard en 1889.",
+"siecle": "20e",
+"wikidata": "Q266561"
+},
+{
+"tri": "Perrin",
+"nom": "Claude-Victor Perrin",
+"lat": 48.859627,
+"long": 2.394392,
+"categorie": "Politique",
+"description": "Claude-Victor Perrin, duc de Bellune (1808), né le 7 décembre 1764 à Lamarche et mort le 1er mars 1841 à Paris, est un général français de la Révolution et un maréchal d'Empire. Tambour dans l'artillerie en 1781, puis grenadier dans la Garde nationale, l'ascension de Victor sous la Révolution est rapide : il est général de brigade à l'âge de 29 ans et fait avec brio la campagne d'Italie, ce qui lui vaut d'être remarqué par Bonaparte. Il gagne ensuite son grade de général de division et obtient le commandement en chef de l'armée de Batavie sous le Consulat. Il est également ambassadeur au Danemark de 1804 à 1806.",
+"siecle": "19e",
+"wikidata": "Q372750"
+},
+{
+"tri": "Fresnel",
+"nom": "Augustin Fresnel",
+"lat": 48.8597319,
+"long": 2.3936651,
+"categorie": "Scientifique",
+"description": "Augustin Jean Fresnel, né le 10 mai 1788 à Broglie et mort le 14 juillet 1827 à Ville-d'Avray, est un ingénieur et physicien français dont les recherches en optique ont conduit à l'acceptation définitive de la théorie ondulatoire de la lumière en remplacement de la théorie balistique qui s'était imposée depuis Newton. En s'appuyant sur les concepts émis par Christian Huygens à la fin du XVIIe siècle, et en procédant à ses propres expériences, il retrouva indépendamment les observations faites quelques années plus tôt par Thomas Young sur les interférences et leur donna les fondements physiques et mathématiques qui emportèrent l'adhésion des physiciens de son époque.",
+"siecle": "19e",
+"wikidata": "Q187241"
+},
+{
+"tri": "Garnier-Pagès",
+"nom": "Louis-Antoine Garnier-Pagès",
+"lat": 48.859463,
+"long": 2.395062,
+"categorie": "Politique",
+"description": "Louis-Antoine Pagès dit Garnier-Pagès, né le 10 juillet 1803 à Marseille et mort le 31 octobre 1878 à Paris en France, est un homme politique français : membre du gouvernement provisoire de 1848, maire de Paris en 1848, et membre du gouvernement de la Défense nationale en 1870-1871.",
+"siecle": "19e",
+"wikidata": "Q601266"
+},
+{
+"tri": "Gobert",
+"nom": "Jacques Nicolas Gobert",
+"lat": 48.8588,
+"long": 2.39635,
+"categorie": "Militaire",
+"description": "Jacques-Nicolas Gobert, né le 22 mai 1760 à Basse-Terre en Guadeloupe et mort le 17 juillet 1808 à Guarromán, en Espagne, est un général français de la Révolution et de l’Empire.",
+"siecle": "19e",
+"wikidata": "Q3159659"
+},
+{
+"tri": "Gramme",
+"nom": "Zénobe Gramme",
+"lat": 48.860833,
+"long": 2.397895,
+"categorie": "Scientifique",
+"description": "Zénobe Gramme est l'inventeur belge de la \"dynamo Gramme\", un générateur électrique à courant continu, aussi appelé machine de Gramme.\nIl est né le 4 avril 1826 à Jehay-Bodegnée, près de Huy (Belgique), et mort le 20 janvier 1901 à Bois-Colombes (France)",
+"siecle": "20e",
+"wikidata": "Q247603"
+},
+{
+"tri": "Guesde",
+"nom": "Jules Guesde",
+"lat": 48.862541,
+"long": 2.395384,
+"categorie": "Politique",
+"description": "Jules Guesde, pseudonyme de Jules Bazile, né le 11 novembre 1845 à Paris et mort le 28 juillet 1922 à Saint-Mandé, est un homme politique leader socialiste français et fondateur du Parti ouvrier français (POF), premier parti ouvrier organisé de France.",
+"siecle": "20e",
+"wikidata": "Q379699"
+},
+{
+"tri": "Hernandez",
+"nom": "Téo Hernandez",
+"lat": 48.861059,
+"long": 2.395363,
+"categorie": "Réalisateur",
+"description": "Teo Hernandez est un réalisateur, photographe et écrivain mexicain, né le 23 décembre 1939 à Ciudad Hidalgo au Mexique et décédé le 22 août 1992 à Paris. De la fin des années 1960 à sa disparition en 1992, il réalise plus d’une centaine de films tournés en super 8 et est un membre important du cinéma expérimental.",
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "David",
+"nom": "Jacques-Louis David",
+"lat": 48.861355,
+"long": 2.392359,
+"categorie": "Peintre",
+"description": "Jacques-Louis David est un peintre et conventionnel français né le 30 août 1748 à Paris et mort le 29 décembre 1825 à Bruxelles. Il est considéré comme le chef de file du mouvement néo-classique, dont il représente le style pictural. Il opère une rupture avec le style galant et libertin de la peinture rococo du XVIIIe siècle représentée à l'époque par François Boucher et Carle Van Loo, et revendique l’héritage du classicisme de Nicolas Poussin et des idéaux esthétiques grecs et romains, en cherchant, selon sa propre formule, à « régénérer les arts en développant une peinture que les classiques grecs et romains auraient sans hésiter pu prendre pour la leur ».",
+"siecle": "19e",
+"wikidata": "Q83155"
+},
+{
+"tri": "Alamo",
+"nom": "Frank Alamo",
+"lat": 48.861065,
+"long": 2.39491,
+"categorie": "Chanteur",
+"description": "Frank Alamo, de son vrai nom Jean-François Raymond Grandin, né le 12 octobre 1941 dans le 15e arrondissement de Paris et mort le 11 octobre 2012 dans le 16e arrondissement de Paris, est un chanteur français qui connut le succès dans les années 1960.",
+"siecle": "21e",
+"wikidata": "Q112324100"
+},
+{
+"tri": "Piaf",
+"nom": "Édith Piaf",
+"lat": 48.8596833,
+"long": 2.3988939,
+"categorie": "Chanteur",
+"description": "Édith Piaf, de son vrai nom Édith Giovanna Gassion, née le 19 décembre 1915 à Paris et morte le 10 octobre 1963 à Grasse (Alpes-Maritimes), est une chanteuse, parolière, compositrice et actrice française. Surnommée « La Môme Piaf » à ses débuts, elle est à l'origine de plusieurs succès devenus des classiques du répertoire, comme La Vie en rose, Non, je ne regrette rien, Hymne à l'amour, Mon légionnaire, La Foule, Milord, Mon Dieu ou encore L'Accordéoniste.",
+"siecle": "20e",
+"wikidata": "Q1631"
+},
+{
+"tri": "Planchon",
+"nom": "Roger Planchon",
+"lat": 48.86076,
+"long": 2.3938,
+"categorie": "Réalisateur",
+"description": "Roger Planchon, né le 12 septembre 1931 à Saint-Chamond et mort d'une crise cardiaque à l'âge de 77 ans le 12 mai 2009 à Paris 9e, est un directeur de théâtre, metteur en scène, dramaturge, cinéaste et comédien français. Il est l'un des plus grands représentants du Théâtre national populaire, héritier de Jean Vilar, et un artisan fervent de la décentralisation théâtrale.",
+"siecle": "21e",
+"wikidata": "Q374912"
+},
+{
+"tri": "Poulenc",
+"nom": "Francis Poulenc",
+"lat": 48.858758,
+"long": 2.393088,
+"categorie": "Musicien",
+"description": "Francis Poulenc est un compositeur et pianiste français, né le 7 janvier 1899 à Paris où il est mort le 30 janvier 1963.",
+"siecle": "20e",
+"wikidata": "Q191408"
+},
+{
+"tri": "Proust",
+"nom": "Marcel Proust",
+"lat": 48.8630712,
+"long": 2.394975,
+"categorie": "Ecrivain",
+"description": "Marcel Proust, né le 10 juillet 1871 à Paris et mort le 18 novembre 1922 dans la même ville, est un écrivain français, dont l'œuvre principale est la suite romanesque intitulée À la recherche du temps perdu, publiée entre 1913 et 1927.",
+"siecle": "20e",
+"wikidata": "Q7199"
+},
+{
+"tri": "Romains",
+"nom": "Jules Romains",
+"lat": 48.860113,
+"long": 2.390428,
+"categorie": "Ecrivain",
+"description": "Jules Romains, nom de plume de Louis Farigoule, né le 26 août 1885 à Saint-Julien-Chapteuil (Haute-Loire) et mort le 14 août 1972 à Paris, est un écrivain, philosophe, poète et dramaturge français.",
+"siecle": "20e",
+"wikidata": "Q334983"
+},
+{
+"tri": "Salvador",
+"nom": "Henri Salvador",
+"lat": 48.859633,
+"long": 2.398839,
+"categorie": "Chanteur",
+"description": "Henri Salvador, né le 18 juillet 1917 à Cayenne (Guyane) et mort le 13 février 2008 à Paris 1er, est un auteur, compositeur, interprète et chanteur de charme, humoriste et musicien français.",
+"siecle": "21e",
+"wikidata": "Q318060"
+},
+{
+"tri": "Schœlcher",
+"nom": "Victor Schœlcher",
+"lat": 48.861412,
+"long": 2.393947,
+"categorie": "Politique",
+"description": "Victor Schœlcher est un journaliste et homme politique français, né à Paris le 22 juillet 1804 et mort à Houilles le 25 décembre 1893. Il est connu pour avoir agi en faveur de l'abolition définitive de l'esclavage en France, via le décret d'abolition, signé par le gouvernement provisoire de la Deuxième République le 27 avril 1848. Il est également élu député de la Martinique puis de la Guadeloupe.",
+"siecle": "19e",
+"wikidata": "Q120417"
+},
+{
+"tri": "Solo",
+"nom": "Mano Solo",
+"lat": 48.860452,
+"long": 2.392552,
+"categorie": "Chanteur",
+"description": "Emmanuel Cabut, dit Mano Solo, est un chanteur, guitariste, dessinateur et peintre français, né le 24 avril 1963 à Châlons-sur-Marne et mort, le 10 janvier 2010 à Paris dans le 18e arrondissement.",
+"siecle": "21e",
+"wikidata": "Q1335349"
+},
+{
+"tri": "Thiers",
+"nom": "Adolphe Thiers",
+"lat": 48.861087,
+"long": 2.392895,
+"categorie": "Politique",
+"description": "Adolphe Thiers, né le 15 avril 1797 à Marseille (Bouches-du-Rhône) et mort le 3 septembre 1877 à Saint-Germain-en-Laye (Seine-et-Oise), est un avocat, journaliste, historien et homme d'État français.",
+"siecle": "19e",
+"wikidata": "Q5738"
+},
+{
+"tri": "Hugo",
+"nom": "Joseph Léopold Sigisbert Hugo",
+"lat": 48.85983,
+"long": 2.395406,
+"categorie": "Militaire",
+"description": "Joseph Léopold Sigisbert Hugo, né le 15 novembre 1773 à Nancy et mort le 29 janvier 1828 dans l’ancien 10e arrondissement de Paris, est un officier français de la Révolution et de l’Empire, général, nommé comte par Joseph Bonaparte, également connu pour être le père de l'écrivain Victor Hugo.",
+"siecle": "19e",
+"wikidata": "Q2299673"
+},
+{
+"tri": "Ingres",
+"nom": "Jean-Auguste-Dominique Ingres",
+"lat": 48.861412,
+"long": 2.394333,
+"categorie": "Peintre",
+"description": "Jean-Auguste-Dominique Ingres, né le 29 août 1780 à Montauban et mort le 14 janvier 1867 à Paris, est un peintre français également excellent musicien — il fut second violon auprès de l'Orchestre de Toulouse — ce qui l'amena à se lier d'amitié avec les plus grands violonistes de son temps, Niccolo Paganini et Pierre Baillot.",
+"siecle": "19e",
+"wikidata": "Q23380"
+},
+{
+"tri": "Khorsand",
+"nom": "Philippe Khorsand",
+"lat": 48.8613527,
+"long": 2.3946884,
+"categorie": "Acteur",
+"description": "Philippe Teymour Khorsand est un acteur français né le 17 février 1948 à Paris et mort le 29 janvier 2008 dans la même ville.",
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "La Fontaine",
+"nom": "Jean de La Fontaine",
+"lat": 48.860565,
+"long": 2.395062,
+"categorie": "Ecrivain",
+"description": "Jean de La Fontaine, baptisé le 8 juillet 1621 en l'église Saint-Crépin-hors-les-murs à Château-Thierry et mort le 13 avril 1695 à Paris, est un homme de lettres du Grand siècle et l'un des principaux représentants du classicisme français. Outre ses Fables et ses Contes libertins, qui ont établi sa célébrité dès les années 1660, on lui doit divers poèmes, pièces de théâtre et livrets d'opéra qui confirment son ambition de moraliste.",
+"siecle": "17e",
+"wikidata": "Q49496"
+},
+{
+"tri": "Lazareff",
+"nom": "Pierre et Hélène Lazareff",
+"lat": 48.859365,
+"long": 2.391479,
+"categorie": "Journaliste",
+"description": "❌ Aucun article Wikipédia trouvé",
+"siecle": "e",
+"wikidata": null
+},
+{
+"tri": "Dabadie de Bernet",
+"nom": "Jean Melchior Dabadie de Bernet",
+"lat": 48.859051,
+"long": 2.397138,
+"categorie": "Politique",
+"description": "Jean Melchior d'Abadie, dit Dabadie de Bernet, né le 6 janvier 1748 à Castelnau-Magnoac et mort le 8 mars 1820 à Paris, est un officier du génie militaire, parlementaire sous la Révolution française et baron de l'Empire, fut directeur des fortifications.",
+"siecle": "19e",
+"wikidata": "Q1429885"
+},
+{
+"tri": "Daudet",
+"nom": "Alphonse Daudet",
+"lat": 48.860198,
+"long": 2.395277,
+"categorie": "Ecrivain",
+"description": "Alphonse Daudet, né le 13 mai 1840 à Nîmes et mort le 16 décembre 1897 à Paris, est un écrivain et auteur dramatique français notamment connu pour sa pièce de théâtre La Dernière Idole et son livre Lettres de mon moulin qui contient plusieurs histoires courtes connues, comme La Chèvre de monsieur Seguin.",
+"siecle": "19e",
+"wikidata": "Q228546"
+},
+{
+"tri": "Davout",
+"nom": "Louis Nicolas Davout",
+"lat": 48.8589314,
+"long": 2.3964384,
+"categorie": "Militaire",
+"description": "Louis Nicolas d’Avout puis Davout, duc d'Auerstaedt, prince d'Eckmühl, né le 10 mai 1770 à Annoux en Bourgogne et mort le 1er juin 1823 à Paris, est un général français de la Révolution et de l’Empire, élevé à la dignité de maréchal d'Empire par Napoléon en 1804.",
+"siecle": "19e",
+"wikidata": "Q158778"
+},
+{
+"tri": "Delacroix",
+"nom": "Eugène Delacroix",
+"lat": 48.862787,
+"long": 2.3936382,
+"categorie": "Peintre",
+"description": "Eugène Delacroix est un peintre français né le 26 avril 1798 à Charenton-Saint-Maurice et mort le 13 août 1863 à Paris.",
+"siecle": "19e",
+"wikidata": "Q33477"
+},
+{
+"tri": "Sieyès",
+"nom": "Emmanuel-Joseph Sieyès",
+"lat": 48.858532,
+"long": 2.395599,
+"categorie": "Politique",
+"description": "Emmanuel-Joseph Sieyès, souvent appelé l'« abbé Sieyès », né le 3 mai 1748 à Fréjus et mort le 20 juin 1836 à Paris, est un homme d'Église, homme politique et essayiste français, surtout connu pour ses écrits et son action pendant la Révolution française, faisant partie des prêtres favorables au processus révolutionnaire et même des régicides de 1793, mais devenant ensuite plus conservateur et promouvant l'accession au pouvoir de Napoléon Bonaparte en 1799.",
+"siecle": "19e",
+"wikidata": "Q294344"
+},
+{
+"tri": "Trelliard",
+"nom": "Anne-François-Charles Trelliard",
+"lat": 48.8584651,
+"long": 2.3953018,
+"categorie": "Militaire",
+"description": "Anne-François-Charles Trelliard est un général français de la Révolution et de l'Empire, né le 7 février 1764 à Parme en Italie et mort le 14 mai 1832 à Charonne près de Paris. Entré dans l'armée royale en tant que cadet gentilhomme en 1780, il se bat en Allemagne et en Hollande pendant les guerres révolutionnaires et accède au grade de général de brigade en 1799. Il dirige une brigade de cavalerie à Austerlitz lors de la campagne de 1805 et participe également aux batailles de Saalfeld, Iéna et Pultusk au cours de la campagne de Prusse et de Pologne (1806-1807).",
+"siecle": "19e",
+"wikidata": "Q2850778"
+},
+{
+"tri": "Triqueti",
+"nom": "Henry de Triqueti",
+"lat": 48.861129,
+"long": 2.39532,
+"categorie": "Sculpteur",
+"description": "Henry de Triqueti, né le 24 octobre 1803 à Conflans-sur-Loing (Loiret) et mort le 11 mai 1874 à Paris, est un sculpteur français.",
+"siecle": "19e",
+"wikidata": null
+},
+{
+"tri": "Bourdieu",
+"nom": "Pierre Bourdieu",
+"lat": 48.859703,
+"long": 2.395651,
+"categorie": "Ecrivain",
+"description": "Pierre Bourdieu, né le 1er août 1930 à Denguin (Pyrénées-Atlantiques) et mort le 23 janvier 2002 à Paris 12e, est un sociologue français.",
+"siecle": "21e",
+"wikidata": "Q156268"
+},
+{
+"tri": "Brosset",
+"nom": "Claude Brosset",
+"lat": 48.858196,
+"long": 2.395227,
+"categorie": "Acteur",
+"description": "Claude René Brosset est un acteur français, né le 24 décembre 1943 à Juvisy-sur-Orge et mort le 25 juin 2007 à Pontoise.",
+"siecle": "21e",
+"wikidata": "Q2977082"
+},
+{
+"tri": "Cachin",
+"nom": "Marcel Cachin",
+"lat": 48.8599157,
+"long": 2.3998601,
+"categorie": "Politique",
+"description": "Marcel Cachin, né le 20 septembre 1869 à Paimpol (Côtes-d'Armor) et mort le 12 février 1958 à Choisy-le-Roi (Seine), est un homme politique français.",
+"siecle": "20e",
+"wikidata": "Q658479"
+},
+{
+"tri": "Caron de Beaumarchais",
+"nom": "Pierre-Augustin Caron de Beaumarchais",
+"lat": 48.858842,
+"long": 2.396264,
+"categorie": "Musicien",
+"description": "Pierre-Augustin Caron de Beaumarchais, plus souvent désigné comme Beaumarchais, né le 24 janvier 1732 à Paris et mort le 29 floréal an VII à Paris 8e, est un écrivain, dramaturge, musicien et homme d'affaires français.",
+"siecle": "18e",
+"wikidata": "Q70326"
+},
+{
+"tri": "Chaptal",
+"nom": "Jean-Antoine Chaptal",
+"lat": 48.86192,
+"long": 2.39826,
+"categorie": "Scientifique",
+"description": "Jean-Antoine Chaptal, comte de Chanteloup est né le 5 juin 1756 à Nojaret et mort le 29 juillet 1832 à Paris, c'est un chimiste, médecin et homme politique français.",
+"siecle": "19e",
+"wikidata": "Q708011"
+},
+{
+"tri": "Clidat",
+"nom": "France Clidat",
+"lat": 48.859673,
+"long": 2.392798,
+"categorie": "Musicien",
+"description": "France Clidat, née le 22 novembre 1932 à Nantes et morte le 17 mai 2012 à Paris, est une pianiste française, reconnue, notamment, pour ses interprétations de Liszt.",
+"siecle": "21e",
+"wikidata": "Q112325264"
+},
+{
+"tri": "Constant",
+"nom": "Benjamin Constant",
+"lat": 48.859096,
+"long": 2.39547,
+"categorie": "Peintre",
+"description": "Benjamin Constant de Rebecque, né le 25 octobre 1767 à Lausanne et mort le 8 décembre 1830 à Paris, est un romancier, homme politique, et intellectuel (philosophe) français d'origine suisse vaudoise.",
+"siecle": "20e",
+"wikidata": "Q968357"
+},
+{
+"tri": "Cuvier",
+"nom": "Georges Cuvier",
+"lat": 48.8599553,
+"long": 2.3920732,
+"categorie": "Scientifique",
+"description": "Jean Léopold Nicolas Frédéric Cuvier, dit Georges Cuvier, né le 23 août 1769 à Montbéliard et mort le 13 mai 1832 à Paris, est un anatomiste français, promoteur de l'anatomie comparée et de la paléontologie au XIXe siècle.",
+"siecle": "19e",
+"wikidata": "Q171969"
+},
+{
+"tri": "Bashung",
+"nom": "Alain Bashung",
+"lat": 48.860254,
+"long": 2.39341,
+"categorie": "Chanteur",
+"description": "Alain Claude Baschung, dit Alain Bashung, né le 1er décembre 1947 à Paris et mort le 14 mars 2009 dans la même ville, est un auteur-compositeur-interprète et acteur français.",
+"siecle": "21e",
+"wikidata": "Q380045"
+},
+{
+"tri": "Faure",
+"nom": "Félix Faure",
+"lat": 48.860734,
+"long": 2.391651,
+"categorie": "Politique",
+"description": "Félix Faure, né le 30 janvier 1841 à Paris (Seine) et mort le 16 février 1899 dans la même ville, est un homme d'État français. Il est président de la République du 17 janvier 1895 à sa mort.",
+"siecle": "19e",
+"wikidata": "Q296076"
+},
+{
+"tri": "Ledru-Rollin",
+"nom": "Alexandre Ledru-Rollin",
+"lat": 48.860706,
+"long": 2.391565,
+"categorie": "Politique",
+"description": "Alexandre Auguste Ledru-Rollin, né le 2 février 1807 à Paris et mort le 31 décembre 1874 à Fontenay-aux-Roses, est un avocat et homme politique français.",
+"siecle": "19e",
+"wikidata": "Q1382222"
+},
+{
+"tri": "Lesseps",
+"nom": "Ferdinand de Lesseps",
+"lat": 48.8588033,
+"long": 2.3945025,
+"categorie": "Entrepreneur",
+"description": "Ferdinand de Lesseps dit le comte de Lesseps, né le 19 novembre 1805 à Versailles et mort le 7 décembre 1894 à La Chesnaye près de Guilly (Indre), est un diplomate et entrepreneur français principalement connu pour avoir dirigé la construction du canal de Suez, un exploit technique et économique majeur du XIXe siècle, et pour son implication dans le scandale de Panama.",
+"siecle": "19e",
+"wikidata": "Q209169"
+},
+{
+"tri": "Marceau",
+"nom": "Marcel Marceau",
+"lat": 48.860879,
+"long": 2.393314,
+"categorie": "Acteur",
+"description": "Marcel Marceau, dit le mime Marceau, nom de scène de Marcel Mangel, né le 22 mars 1923 à Strasbourg et mort le 22 septembre 2007 à Cahors, est un mime et acteur français. Il a connu une célébrité internationale avec son personnage silencieux de Bip, créé en 1947.",
+"siecle": "21e",
+"wikidata": "Q157191"
+},
+{
+"tri": "Merleau-Ponty",
+"nom": "Maurice Merleau-Ponty",
+"lat": 48.862287,
+"long": 2.393196,
+"categorie": "Ecrivain",
+"description": "Maurice Merleau-Ponty, né le 14 mars 1908 à Rochefort-sur-Mer, mort le 3 mai 1961 à Paris dans le 6e arrondissement, est un philosophe français. Il est le cousin du philosophe des sciences Jacques Merleau-Ponty.",
+"siecle": "20e",
+"wikidata": "Q212639"
+},
+{
+"tri": "Vanarsky",
+"nom": "Jack Vanarsky",
+"lat": 48.860107,
+"long": 2.393003,
+"categorie": "Peintre",
+"description": "Jack Vanarsky, né Jack Sergio Vapnasky le 18 avril 1936 à General Roca en Patagonie (Argentine) et mort le 15 février 2009 dans le 13e arrondissement de Paris, est un sculpteur et auteur de collages.",
+"siecle": "21e",
+"wikidata": "Q3157334"
+},
+{
+"tri": "Wallace",
+"nom": "Richard Wallace",
+"lat": 48.859167,
+"long": 2.3962,
+"categorie": "Entrepreneur",
+"description": "Richard Wallace peut désigner :Richard Wallace (1818-1890), collectionneur et philanthrope britannique ; d’où :\nle boulevard Richard-Wallace à Paris ;\nRichard Wallace (1894-1951), réalisateur américain ;\nRichard Wallace (en), journaliste, actuel[Quand ?] rédacteur en chef du Daily Mirror ;\nRichard Wallace, footballeur ;\nRichard Wallace, joueur de rugby à XV irlandais.\nRichard Wallace, informaticien, auteur de l'AIML.",
+"siecle": "19e",
+"wikidata": "Q2033868"
+},
+{
+"tri": "Éluard",
+"nom": "Paul Éluard",
+"lat": 48.859986,
+"long": 2.399912,
+"categorie": "Ecrivain",
+"description": "Paul Éluard, nom de plume d'Eugène Grindel, né à Saint-Denis (Seine) le 14 décembre 1895 et mort à Charenton-le-Pont le 18 novembre 1952 dans le même département, est un poète français.",
+"siecle": "20e",
+"wikidata": "Q152176"
 }
 ]
