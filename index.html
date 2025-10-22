@@ -59,20 +59,19 @@
 </div>
 
 <script>
-const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json"; // ⚠️ à remplacer
-const CACHE_KEY = "faceted_data_cache";
+const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
+const CACHE_KEY = "faceted_data_cache_v4";
 const CACHE_TTL = 1000 * 60 * 60 * 24; // 24h
-let data = [], fuse = null;
 
-// --- DOM Elements ---
+let data = [];
+let fuse = null;
+
 const resultsDiv = document.getElementById("results");
 const resultCount = document.getElementById("result-count");
 const categoryContainer = document.getElementById("category-checkboxes");
 const centurySelect = document.getElementById("filter-century");
 const searchInput = document.getElementById("search-text");
 const refreshBtn = document.getElementById("refresh-btn");
-const banner = document.getElementById("update-banner");
-const reloadBtn = document.getElementById("reload-btn");
 
 function renderResults(items) {
   resultsDiv.innerHTML = "";
@@ -81,17 +80,41 @@ function renderResults(items) {
     resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
     return;
   }
+
+  // Tri sur le champ "tri"
+  items.sort((a, b) => (a.tri ?? 0) - (b.tri ?? 0));
+
   for (const item of items) {
     resultsDiv.innerHTML += `
       <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
         <div class="flex justify-between items-center mb-1">
-          <h2 class="font-semibold text-lg">${item.nom}</h2>
-          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
+          <h2 class="font-semibold text-lg text-blue-700 cursor-pointer hover:underline" 
+              onclick="openInGoogleMaps(${item.lat}, ${item.long})">
+            ${item.nom}
+          </h2>
+          <div class="flex items-center gap-2">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
+            ${item.wikidata ? `
+              <button title="Voir sur Wikidata" onclick="openWikidata('${item.wikidata}')"
+                class="text-gray-500 hover:text-blue-600 transition">
+                ℹ️
+              </button>` : ""}
+          </div>
         </div>
         <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
         <p class="text-gray-700 mt-1">${item.description || ""}</p>
       </div>`;
   }
+}
+
+function openInGoogleMaps(lat, long) {
+  if (!lat || !long) return;
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+  window.open(url, "_blank");
+}
+
+function openWikidata(id) {
+  window.open(`https://www.wikidata.org/wiki/${id}`, "_blank");
 }
 
 function applyFilters() {
@@ -118,7 +141,7 @@ function setupFilters() {
   `).join("");
 
   const centuries = [...new Set(data.map(d => d.siecle))].filter(Boolean).sort();
-  centurySelect.innerHTML = '<option value="">Tous</option>' + 
+  centurySelect.innerHTML = '<option value="">Tous</option>' +
     centuries.map(c => `<option value="${c}">${c.toUpperCase()}</option>`).join("");
 
   searchInput.disabled = false;
@@ -153,12 +176,11 @@ async function loadData(forceRefresh = false) {
         return;
       }
     }
-
     const response = await fetch(DATA_URL, { cache: "no-store" });
     if (!response.ok) throw new Error("Erreur de chargement du fichier JSON.");
     const json = await response.json();
 
-    data = json;
+    data = json.sort((a, b) => (a.tri ?? 0) - (b.tri ?? 0));
     fuse = new Fuse(data, { keys: ["nom", "description", "categorie"], threshold: 0.4 });
     saveToCache(json);
     setupFilters();
@@ -173,32 +195,10 @@ refreshBtn.addEventListener("click", () => {
 });
 
 loadData();
-
-// --- Gestion du Service Worker + Notification ---
-if ('serviceWorker' in navigator) {
-  let newWorker;
-  navigator.serviceWorker.register('service-worker.js')
-    .then(reg => {
-      reg.addEventListener('updatefound', () => {
-        newWorker = reg.installing;
-        newWorker.addEventListener('statechange', () => {
-          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-            banner.classList.remove("hidden");
-          }
-        });
-      });
-    });
-
-  reloadBtn.addEventListener('click', () => {
-    newWorker.postMessage({ action: 'skipWaiting' });
-  });
-
-  navigator.serviceWorker.addEventListener('controllerchange', () => {
-    window.location.reload();
-  });
-}
 </script>
+
 
 </body>
 </html>
+
 
