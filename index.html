@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Recherche à facettes — PWA AutoSync</title>
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#1d4ed8">
+<title>Recherche à facettes — Père Lachaise</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#1d4ed8" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<!-- ✅ Bannière de mise à jour -->
-<div id="update-banner" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white py-2 px-6 rounded-xl shadow-lg z-50">
-  Nouvelle version disponible <button id="reload-btn" class="underline font-semibold ml-2">Recharger</button>
-</div>
-
 <div class="max-w-7xl mx-auto py-10 px-4">
-  <h1 class="text-3xl font-bold mb-8 text-center">🔍 Recherche à facettes — PWA avec synchro</h1>
+  <h1 class="text-3xl font-bold mb-8 text-center">🔍 Recherche à facettes — Père Lachaise</h1>
 
   <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8">
 
@@ -58,14 +53,26 @@
   </div>
 </div>
 
+<!-- === MODALE WIKIDATA === -->
+<div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-white w-[90%] md:w-[70%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+    <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
+      <h3 id="wikidata-title" class="font-semibold text-lg">Wikidata</h3>
+      <button id="wikidata-close" class="text-white text-2xl leading-none">&times;</button>
+    </div>
+    <iframe id="wikidata-frame" src="" class="flex-1 w-full border-0"></iframe>
+  </div>
+</div>
+
 <script>
-const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-const CACHE_KEY = "faceted_data_cache_v4";
+const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json"; // 🔗 ton fichier JSON
+const CACHE_KEY = "faceted_data_cache_v5";
 const CACHE_TTL = 1000 * 60 * 60 * 24; // 24h
 
 let data = [];
 let fuse = null;
 
+// === Sélecteurs DOM ===
 const resultsDiv = document.getElementById("results");
 const resultCount = document.getElementById("result-count");
 const categoryContainer = document.getElementById("category-checkboxes");
@@ -73,6 +80,7 @@ const centurySelect = document.getElementById("filter-century");
 const searchInput = document.getElementById("search-text");
 const refreshBtn = document.getElementById("refresh-btn");
 
+// === Fonction d'affichage ===
 function renderResults(items) {
   resultsDiv.innerHTML = "";
   resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
@@ -81,30 +89,28 @@ function renderResults(items) {
     return;
   }
 
-  // Tri sur le champ "tri"
+  // 🧩 Tri alphanumérique sur "tri"
   items.sort((a, b) => {
-  const ta = (a.tri || "").toString().toLowerCase();
-  const tb = (b.tri || "").toString().toLowerCase();
-  return ta.localeCompare(tb, 'fr', { numeric: true });
-});
-
+    const ta = (a.tri || "").toString().toLowerCase();
+    const tb = (b.tri || "").toString().toLowerCase();
+    return ta.localeCompare(tb, 'fr', { numeric: true });
+  });
 
   for (const item of items) {
     resultsDiv.innerHTML += `
       <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
         <div class="flex justify-between items-center mb-1">
           <h2 class="font-semibold text-lg text-blue-700 cursor-pointer hover:underline" 
-              onclick="openInGoogleMaps(${item.lat}, ${item.long})">
+              onclick="openInGoogleMaps('${item.lat}', '${item.long}')">
             ${item.nom}
           </h2>
           <div class="flex items-center gap-2">
             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
             ${item.wikidata ? `
               <button title="Voir sur Wikidata" onclick="openWikidata('${item.wikidata}', '${item.nom}')"
-  class="text-gray-500 hover:text-blue-600 transition">
-  ℹ️
-</button>
-` : ""}
+                class="text-gray-500 hover:text-blue-600 transition text-xl">
+                ℹ️
+              </button>` : ""}
           </div>
         </div>
         <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
@@ -113,16 +119,37 @@ function renderResults(items) {
   }
 }
 
+// === Navigation Google Maps ===
 function openInGoogleMaps(lat, long) {
   if (!lat || !long) return;
   const url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
   window.open(url, "_blank");
 }
 
-function openWikidata(id) {
-  window.open(`https://www.wikidata.org/wiki/${id}`, "_blank");
+// === Affichage modale Wikidata ===
+function openWikidata(id, name) {
+  const modal = document.getElementById("wikidata-modal");
+  const frame = document.getElementById("wikidata-frame");
+  const title = document.getElementById("wikidata-title");
+  title.textContent = name || "Wikidata";
+  frame.src = `https://www.wikidata.org/wiki/${id}`;
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
 }
+document.getElementById("wikidata-close").addEventListener("click", () => {
+  const modal = document.getElementById("wikidata-modal");
+  const frame = document.getElementById("wikidata-frame");
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  frame.src = "";
+});
+document.getElementById("wikidata-modal").addEventListener("click", (e) => {
+  if (e.target.id === "wikidata-modal") {
+    document.getElementById("wikidata-close").click();
+  }
+});
 
+// === Application des filtres ===
 function applyFilters() {
   const searchText = searchInput.value.trim().toLowerCase();
   const selectedCentury = centurySelect.value;
@@ -137,26 +164,7 @@ function applyFilters() {
   renderResults(filtered);
 }
 
-function openWikidata(id, name) {
-  const modal = document.getElementById("wikidata-modal");
-  const frame = document.getElementById("wikidata-frame");
-  const title = document.getElementById("wikidata-title");
-
-  title.textContent = name || "Wikidata";
-  frame.src = `https://www.wikidata.org/wiki/${id}`;
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-}
-
-document.getElementById("wikidata-close").addEventListener("click", () => {
-  const modal = document.getElementById("wikidata-modal");
-  const frame = document.getElementById("wikidata-frame");
-  modal.classList.add("hidden");
-  modal.classList.remove("flex");
-  frame.src = ""; // libère la ressource
-});
-  
-  
+// === Initialisation des filtres ===
 function setupFilters() {
   const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean);
   categoryContainer.innerHTML = categories.map(cat => `
@@ -180,10 +188,10 @@ function setupFilters() {
   applyFilters();
 }
 
+// === Gestion du cache local ===
 function saveToCache(json) {
   localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: json }));
 }
-
 function loadFromCache() {
   const record = localStorage.getItem(CACHE_KEY);
   if (!record) return null;
@@ -191,6 +199,7 @@ function loadFromCache() {
   return (Date.now() - parsed.timestamp < CACHE_TTL) ? parsed.data : null;
 }
 
+// === Chargement des données ===
 async function loadData(forceRefresh = false) {
   try {
     if (!forceRefresh) {
@@ -207,11 +216,10 @@ async function loadData(forceRefresh = false) {
     const json = await response.json();
 
     data = json.sort((a, b) => {
-  const ta = (a.tri || "").toString().toLowerCase();
-  const tb = (b.tri || "").toString().toLowerCase();
-  return ta.localeCompare(tb, 'fr', { numeric: true });
-});
-
+      const ta = (a.tri || "").toString().toLowerCase();
+      const tb = (b.tri || "").toString().toLowerCase();
+      return ta.localeCompare(tb, 'fr', { numeric: true });
+    });
     fuse = new Fuse(data, { keys: ["nom", "description", "categorie"], threshold: 0.4 });
     saveToCache(json);
     setupFilters();
@@ -227,22 +235,5 @@ refreshBtn.addEventListener("click", () => {
 
 loadData();
 </script>
-
-  <!-- === MODALE WIKIDATA === -->
-<div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white w-[90%] md:w-[70%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-    <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
-      <h3 id="wikidata-title" class="font-semibold text-lg">Wikidata</h3>
-      <button id="wikidata-close" class="text-white text-2xl leading-none">&times;</button>
-    </div>
-    <iframe id="wikidata-frame" src="" class="flex-1 w-full border-0"></iframe>
-  </div>
-</div>
-
-
 </body>
 </html>
-
-
-
-
