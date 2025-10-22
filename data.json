@@ -2,6 +2,7 @@
   { "nom": "Claude Monet", "categorie": "Artiste", "siecle": "19e", "description": "Peintre impressionniste français" },
   { "nom": "Marie Curie", "categorie": "Scientifique", "siecle": "20e", "description": "Physicienne et chimiste pionnière" },
   { "nom": "Charles de Gaulle", "categorie": "Politique", "siecle": "20e", "description": "Président de la République française" },
-  { "nom": "François Mauriac", "categorie": "Ecrivain", "siecle": "20e", "description": "Ecrivain" }
+  { "nom": "François Mauriac", "categorie": "Ecrivain", "siecle": "20e", "description": "Ecrivain Romancier" }
 
 ]
+
