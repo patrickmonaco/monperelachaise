@@ -174,12 +174,17 @@ function setupFilters() {
   const categories = [...new Set(data.map(item => item.categorie))].sort((a, b) =>
     a.localeCompare(b, 'fr', { sensitivity: 'base' })
   );
-  categoryContainer.innerHTML = categories.map(cat => `
-    <label class="flex items-center space-x-2 text-sm">
-      <input type="checkbox" value="${cat}" class="accent-blue-600">
-      <span>${cat}</span>
-    </label>
-  `).join("");
+  categoryContainer.innerHTML = `
+  <div class="grid grid-cols-2 gap-2 text-lg leading-snug">
+    ${categories.map(cat => `
+      <label class="flex items-center space-x-2 cursor-pointer">
+        <input type="checkbox" value="${cat}" checked class="w-4 h-4 accent-blue-600">
+        <span class="truncate">${cat}</span>
+      </label>
+    `).join('')}
+  </div>
+`;
+
 
   const centuries = [...new Set(data.map(d => d.siecle))].filter(Boolean).sort();
   centurySelect.innerHTML = '<option value="">Tous</option>' +
@@ -271,6 +276,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
