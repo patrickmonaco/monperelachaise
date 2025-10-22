@@ -1,24 +1,1682 @@
 [
-  {
-    "tri": "Apollinaire",
-    "nom": "Guillaume Apollinaire",
-    "categorie": "Écrivain",
-    "siecle": "20e",
-    "description": "Poète et critique d'art français",
-    "lat": 48.86102,
-    "long": 2.39351,
-    "wikidata": "Q307"
-  },
-  {
-    "tri": "Sarah Bernhardt",
-    "nom": "Sarah Bernhardt",
-    "categorie": "Actrice",
-    "siecle": "19e",
-    "description": "Célèbre tragédienne française",
-    "lat": 48.86132,
-    "long": 2.39380,
-    "wikidata": "Q23389"
-  }
+{
+"tri": "Alain",
+"nom": "Alain",
+"lat": 48.861016,
+"long": 2.399096,
+"categorie": "Ecrivain",
+"description": "philosophe, écrivain ou écrivaine, journaliste, en",
+"siecle": "20e",
+"wikidata": "Q275003"
+},
+{
+"tri": "Apollinaire",
+"nom": "Guillaume Apollinaire",
+"lat": 48.8626557,
+"long": 2.3947199,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, écrivain ou écrivaine, dramatur",
+"siecle": "20e",
+"wikidata": "Q133855"
+},
+{
+"tri": "Arago",
+"nom": "François Arago",
+"lat": 48.860536,
+"long": 2.391114,
+"categorie": "Scientifique",
+"description": "astronome, mathématicien ou mathématicienne, physi",
+"siecle": "19e",
+"wikidata": "Q154353"
+},
+{
+"tri": "Balzac",
+"nom": "Honoré de Balzac",
+"lat": 48.8627718,
+"long": 2.3931199,
+"categorie": "Ecrivain",
+"description": "romancier ou romancière, critique littéraire, écri",
+"siecle": "19e",
+"wikidata": "Q9711"
+},
+{
+"tri": "Bernhardt",
+"nom": "Sarah Bernhardt",
+"lat": 48.861327,
+"long": 2.395384,
+"categorie": "Acteur",
+"description": "acteur ou actrice de théâtre, acteur ou actrice de",
+"siecle": "20e",
+"wikidata": "Q4605"
+},
+{
+"tri": "Bienvenüe",
+"nom": "Fulgence Bienvenüe",
+"lat": 48.864009,
+"long": 2.394676,
+"categorie": "Ingénieur",
+"description": "ingénieur des ponts et chaussées, ingénieur civil,",
+"siecle": "20e",
+"wikidata": "Q964297"
+},
+{
+"tri": "Bizet",
+"nom": "Georges Bizet",
+"lat": 48.8623244,
+"long": 2.391787,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice de musique classique, ",
+"siecle": "19e",
+"wikidata": "Q56158"
+},
+{
+"tri": "Blanc",
+"nom": "Louis Blanc",
+"lat": 48.861779,
+"long": 2.391286,
+"categorie": "Politique",
+"description": "journaliste, personnalité politique, historien ou ",
+"siecle": "19e",
+"wikidata": "Q355112"
+},
+{
+"tri": "Blanqui",
+"nom": "Auguste Blanqui",
+"lat": 48.861214,
+"long": 2.396071,
+"categorie": "Politique",
+"description": "philosophe, personnalité politique, journaliste, c",
+"siecle": "19e",
+"wikidata": "Q309722"
+},
+{
+"tri": "Bourdieu",
+"nom": "Pierre Bourdieu",
+"lat": 48.859703,
+"long": 2.395651,
+"categorie": "Ecrivain",
+"description": "philosophe, sociologue, anthropologue, écrivain ou",
+"siecle": "21e",
+"wikidata": "Q156268"
+},
+{
+"tri": "Branly",
+"nom": "Édouard Branly",
+"lat": 48.860536,
+"long": 2.392423,
+"categorie": "Scientifique",
+"description": "physicien ou physicienne, médecin, professeur d'un",
+"siecle": "20e",
+"wikidata": "Q274251"
+},
+{
+"tri": "Brasseur",
+"nom": "Pierre Brasseur",
+"lat": 48.86072,
+"long": 2.389226,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "20e",
+"wikidata": "Q945890"
+},
+{
+"tri": "Brongniart",
+"nom": "Alexandre Brongniart",
+"lat": 48.860635,
+"long": 2.392809,
+"categorie": "Scientifique",
+"description": "botaniste, géologue, chimiste, minéralogiste, zool",
+"siecle": "19e",
+"wikidata": "Q442937"
+},
+{
+"tri": "Brosset",
+"nom": "Claude Brosset",
+"lat": 48.858196,
+"long": 2.395227,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "21e",
+"wikidata": "Q2977082"
+},
+{
+"tri": "Bécaud",
+"nom": "Gilbert Bécaud",
+"lat": 48.861141,
+"long": 2.394935,
+"categorie": "Chanteur",
+"description": "compositeur ou compositrice, pianiste, chanteur ou",
+"siecle": "21e",
+"wikidata": "Q160433"
+},
+{
+"tri": "Cachin",
+"nom": "Marcel Cachin",
+"lat": 48.8599157,
+"long": 2.3998601,
+"categorie": "Politique",
+"description": "personnalité politique, éditeur ou éditrice, profe",
+"siecle": "20e",
+"wikidata": "Q658479"
+},
+{
+"tri": "Caillebotte",
+"nom": "Gustave Caillebotte",
+"lat": 48.862414,
+"long": 2.392123,
+"categorie": "Peintre",
+"description": "artiste peintre, collectionneur ou collectionneuse",
+"siecle": "19e",
+"wikidata": "Q295144"
+},
+{
+"tri": "Cambacérès",
+"nom": "Jean-Jacques-Régis de Cambacérès",
+"lat": 48.859252,
+"long": 2.396457,
+"categorie": "Politique",
+"description": "juriste, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q290045"
+},
+{
+"tri": "Caron de Beaumarchais",
+"nom": "Pierre-Augustin Caron de Beaumarchais",
+"lat": 48.858842,
+"long": 2.396264,
+"categorie": "Musicien",
+"description": "musicien ou musicienne, poète ou poétesse, personn",
+"siecle": "18e",
+"wikidata": "Q70326"
+},
+{
+"tri": "Chabrol",
+"nom": "Claude Chabrol",
+"lat": 48.860558,
+"long": 2.392547,
+"categorie": "Réalisateur",
+"description": "acteur ou actrice de cinéma, scénariste de cinéma,",
+"siecle": "21e",
+"wikidata": "Q55375"
+},
+{
+"tri": "Champollion",
+"nom": "Jean-François Champollion",
+"lat": 48.8599858,
+"long": 2.3940879,
+"categorie": "Scientifique",
+"description": "égyptologue, professeur d'université, linguiste, a",
+"siecle": "19e",
+"wikidata": "Q260"
+},
+{
+"tri": "Chappe",
+"nom": "Claude Chappe",
+"lat": 48.859068,
+"long": 2.395148,
+"categorie": "Ingénieur",
+"description": "inventeur, ingénieur",
+"siecle": "19e",
+"wikidata": "Q361305"
+},
+{
+"tri": "Chaptal",
+"nom": "Jean-Antoine Chaptal",
+"lat": 48.86192,
+"long": 2.39826,
+"categorie": "Scientifique",
+"description": "chimiste, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q708011"
+},
+{
+"tri": "Chopin",
+"nom": "Frédéric Chopin",
+"lat": 48.8601213,
+"long": 2.392808,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, pianiste, professeur ",
+"siecle": "19e",
+"wikidata": "Q1268"
+},
+{
+"tri": "Chéreau",
+"nom": "Patrice Chéreau",
+"lat": 48.859112,
+"long": 2.394645,
+"categorie": "Acteur",
+"description": "acteur ou actrice, réalisateur ou réalisatrice de ",
+"siecle": "21e",
+"wikidata": "Q366057"
+},
+{
+"tri": "Clidat",
+"nom": "France Clidat",
+"lat": 48.859673,
+"long": 2.392798,
+"categorie": "Musicien",
+"description": "pianiste, professeur ou professeure de musique",
+"siecle": "21e",
+"wikidata": "Q112325264"
+},
+{
+"tri": "Colette",
+"nom": "Colette",
+"lat": 48.860579,
+"long": 2.390578,
+"categorie": "Acteur",
+"description": "romancier ou romancière, prête-plume, journaliste,",
+"siecle": "20e",
+"wikidata": "Q218679"
+},
+{
+"tri": "Comte",
+"nom": "Auguste Comte",
+"lat": 48.8597855,
+"long": 2.3942322,
+"categorie": "Scientifique",
+"description": "philosophe, sociologue, mathématicien ou mathémati",
+"siecle": "19e",
+"wikidata": "Q12718"
+},
+{
+"tri": "Constant",
+"nom": "Benjamin Constant",
+"lat": 48.859096,
+"long": 2.39547,
+"categorie": "Peintre",
+"description": "artiste peintre, biographe, graveur ou graveuse d'",
+"siecle": "20e",
+"wikidata": "Q968357"
+},
+{
+"tri": "Coquatrix",
+"nom": "Bruno Coquatrix",
+"lat": 48.859393,
+"long": 2.398152,
+"categorie": "Réalisateur",
+"description": "producteur de musique, personnalité du monde des a",
+"siecle": "20e",
+"wikidata": "Q2661519"
+},
+{
+"tri": "Couture",
+"nom": "Thomas Couture",
+"lat": 48.8607223,
+"long": 2.3916025,
+"categorie": "Peintre",
+"description": "artiste peintre, enseignant ou enseignante",
+"siecle": "19e",
+"wikidata": "Q326434"
+},
+{
+"tri": "Crozatier",
+"nom": "Charles Crozatier",
+"lat": 48.862357,
+"long": 2.39341,
+"categorie": "Sculpteur",
+"description": "sculpteur ou sculptrice, fondeur ou fondeuse, mécè",
+"siecle": "19e",
+"wikidata": "Q785956"
+},
+{
+"tri": "Cuvier",
+"nom": "Georges Cuvier",
+"lat": 48.8599553,
+"long": 2.3920732,
+"categorie": "Scientifique",
+"description": "géologue, paléontologue, personnalité politique, z",
+"siecle": "19e",
+"wikidata": "Q171969"
+},
+{
+"tri": "Barbusse",
+"nom": "Henri Barbusse",
+"lat": 48.860169,
+"long": 2.399848,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, journaliste, scénariste, bi",
+"siecle": "20e",
+"wikidata": "Q18404"
+},
+{
+"tri": "Barras",
+"nom": "Paul Barras",
+"lat": 48.859139,
+"long": 2.395985,
+"categorie": "Politique",
+"description": "personnalité politique, salonnier ou salonnière, j",
+"siecle": "19e",
+"wikidata": "Q333843"
+},
+{
+"tri": "Bashung",
+"nom": "Alain Bashung",
+"lat": 48.860254,
+"long": 2.39341,
+"categorie": "Chanteur",
+"description": "acteur ou actrice, auteur-compositeur-interprète o",
+"siecle": "21e",
+"wikidata": "Q380045"
+},
+{
+"tri": "Baudelocque",
+"nom": "Jean-Louis Baudelocque",
+"lat": 48.861482,
+"long": 2.394698,
+"categorie": "Scientifique",
+"description": "médecin, professeur d'université, gynécologue, obs",
+"siecle": "19e",
+"wikidata": "Q545477"
+},
+{
+"tri": "Bellini",
+"nom": "Vincenzo Bellini",
+"lat": 48.860438,
+"long": 2.393024,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice",
+"siecle": "19e",
+"wikidata": "Q170209"
+},
+{
+"tri": "Bernard",
+"nom": "Claude Bernard",
+"lat": 48.860635,
+"long": 2.393582,
+"categorie": "Scientifique",
+"description": "médecin écrivain, personnalité politique, psycholo",
+"siecle": "19e",
+"wikidata": "Q208230"
+},
+{
+"tri": "Duclos",
+"nom": "Jacques Duclos",
+"lat": 48.859887,
+"long": 2.399826,
+"categorie": "Politique",
+"description": "personnalité politique, syndicaliste, résistant ou",
+"siecle": "20e",
+"wikidata": "Q377790"
+},
+{
+"tri": "Duncan",
+"nom": "Isadora Duncan",
+"lat": 48.8624253,
+"long": 2.3954178,
+"categorie": "Acteur",
+"description": "danseur ou danseuse, chorégraphe, autobiographe, s",
+"siecle": "20e",
+"wikidata": "Q483512"
+},
+{
+"tri": "Fabien",
+"nom": "Colonel Fabien",
+"lat": 48.859703,
+"long": 2.399611,
+"categorie": "Militaire",
+"description": "résistant ou résistante",
+"siecle": "20e",
+"wikidata": "Q1110656"
+},
+{
+"tri": "Falguière",
+"nom": "Alexandre Falguière",
+"lat": 48.860875,
+"long": 2.392187,
+"categorie": "Sculpteur",
+"description": "sculpteur ou sculptrice, artiste peintre, artiste",
+"siecle": "20e",
+"wikidata": "Q2140000"
+},
+{
+"tri": "Faure",
+"nom": "Félix Faure",
+"lat": 48.860734,
+"long": 2.391651,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q296076"
+},
+{
+"tri": "Fourier",
+"nom": "Joseph Fourier",
+"lat": 48.8600462,
+"long": 2.3938832,
+"categorie": "Scientifique",
+"description": "mathématicien ou mathématicienne, physicien ou phy",
+"siecle": "19e",
+"wikidata": "Q8772"
+},
+{
+"tri": "Lebrun",
+"nom": "Charles-François Lebrun",
+"lat": 48.859181,
+"long": 2.39356,
+"categorie": "Politique",
+"description": "personnalité politique, linguiste, traducteur ou t",
+"siecle": "19e",
+"wikidata": "Q707712"
+},
+{
+"tri": "Ledru-Rollin",
+"nom": "Alexandre Ledru-Rollin",
+"lat": 48.860706,
+"long": 2.391565,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, journal",
+"siecle": "19e",
+"wikidata": "Q1382222"
+},
+{
+"tri": "Lesseps",
+"nom": "Ferdinand de Lesseps",
+"lat": 48.8588033,
+"long": 2.3945025,
+"categorie": "Entrepreneur",
+"description": "diplomate, entrepreneur ou entrepreneuse, écrivain",
+"siecle": "19e",
+"wikidata": "Q209169"
+},
+{
+"tri": "Lyotard",
+"nom": "Jean-François Lyotard",
+"lat": 48.858729,
+"long": 2.393517,
+"categorie": "Ecrivain",
+"description": "philosophe, philologue, écrivain ou écrivaine, lin",
+"siecle": "20e",
+"wikidata": "Q193257"
+},
+{
+"tri": "Manoir",
+"nom": "Yves du Manoir",
+"lat": 48.859718,
+"long": 2.394783,
+"categorie": "Sportif",
+"description": "joueur ou joueuse de rugby à XV, militaire",
+"siecle": "20e",
+"wikidata": "Q2602308"
+},
+{
+"tri": "Marceau",
+"nom": "Marcel Marceau",
+"lat": 48.860879,
+"long": 2.393314,
+"categorie": "Acteur",
+"description": "mime, acteur ou actrice, clown, artiste de cirque,",
+"siecle": "21e",
+"wikidata": "Q157191"
+},
+{
+"tri": "Marchais",
+"nom": "Georges Marchais",
+"lat": 48.859746,
+"long": 2.399676,
+"categorie": "Politique",
+"description": "personnalité politique, syndicaliste",
+"siecle": "20e",
+"wikidata": "Q182192"
+},
+{
+"tri": "Masséna",
+"nom": "André Masséna",
+"lat": 48.859012,
+"long": 2.396586,
+"categorie": "Militaire",
+"description": "personnalité politique, militaire",
+"siecle": "19e",
+"wikidata": "Q242609"
+},
+{
+"tri": "Merleau-Ponty",
+"nom": "Maurice Merleau-Ponty",
+"lat": 48.862287,
+"long": 2.393196,
+"categorie": "Ecrivain",
+"description": "philosophe, professeur, théoricien ou théoricienne",
+"siecle": "20e",
+"wikidata": "Q212639"
+},
+{
+"tri": "Michelet",
+"nom": "Jules Michelet",
+"lat": 48.862569,
+"long": 2.393045,
+"categorie": "Ecrivain",
+"description": "historien ou historienne, archiviste, écrivain ou ",
+"siecle": "19e",
+"wikidata": "Q310791"
+},
+{
+"tri": "Miolan-Carvalho",
+"nom": "Caroline Miolan-Carvalho",
+"lat": 48.8629618,
+"long": 2.3902204,
+"categorie": "Acteur",
+"description": "artiste lyrique",
+"siecle": "19e",
+"wikidata": "Q1630239"
+},
+{
+"tri": "Modigliani",
+"nom": "Amedeo Modigliani",
+"lat": 48.8598029,
+"long": 2.3985154,
+"categorie": "Peintre",
+"description": "artiste peintre, sculpteur ou sculptrice, dessinat",
+"siecle": "20e",
+"wikidata": "Q120993"
+},
+{
+"tri": "Molière",
+"nom": "Molière",
+"lat": 48.860536,
+"long": 2.395105,
+"categorie": "Ecrivain",
+"description": "dramaturge, acteur ou actrice de théâtre, poète ou",
+"siecle": "17e",
+"wikidata": "Q687"
+},
+{
+"tri": "Monfort",
+"nom": "Silvia Monfort",
+"lat": 48.861242,
+"long": 2.39841,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "20e",
+"wikidata": "Q3320631"
+},
+{
+"tri": "Monge",
+"nom": "Gaspard Monge",
+"lat": 48.860212,
+"long": 2.393603,
+"categorie": "Scientifique",
+"description": "mathématicien ou mathématicienne, personnalité pol",
+"siecle": "19e",
+"wikidata": "Q206832"
+},
+{
+"tri": "Morrison",
+"nom": "Jim Morrison",
+"lat": 48.8592676,
+"long": 2.393752,
+"categorie": "Chanteur",
+"description": "vocaliste, réalisateur ou réalisatrice, auteur-com",
+"siecle": "20e",
+"wikidata": "Q44301"
+},
+{
+"tri": "Mouchotte",
+"nom": "René Mouchotte",
+"lat": 48.8631279,
+"long": 2.3912635,
+"categorie": "Militaire",
+"description": "diariste, militaire, aviateur ou aviatrice",
+"siecle": "20e",
+"wikidata": "Q3426652"
+},
+{
+"tri": "Mouloudji",
+"nom": "Marcel Mouloudji",
+"lat": 48.861157,
+"long": 2.395277,
+"categorie": "Chanteur",
+"description": "acteur ou actrice de cinéma, chanteur ou chanteuse",
+"siecle": "20e",
+"wikidata": "Q993521"
+},
+{
+"tri": "Murat",
+"nom": "Joachim Murat",
+"lat": 48.859068,
+"long": 2.396672,
+"categorie": "Militaire",
+"description": "personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q151173"
+},
+{
+"tri": "Méliès",
+"nom": "Georges Méliès",
+"lat": 48.863331,
+"long": 2.390664,
+"categorie": "Réalisateur",
+"description": "acteur ou actrice, réalisateur ou réalisatrice de ",
+"siecle": "20e",
+"wikidata": "Q152272"
+},
+{
+"tri": "Nerval",
+"nom": "Gérard de Nerval",
+"lat": 48.862739,
+"long": 2.393174,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, dramaturge, romancier ou romanc",
+"siecle": "19e",
+"wikidata": "Q191305"
+},
+{
+"tri": "Noailles",
+"nom": "Anna de Noailles",
+"lat": 48.85904,
+"long": 2.395706,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, salonnier ou salonnière, po",
+"siecle": "20e",
+"wikidata": "Q6050"
+},
+{
+"tri": "Nohain",
+"nom": "Jean Nohain",
+"lat": 48.862089,
+"long": 2.39738,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, parolier ou parolière, aute",
+"siecle": "20e",
+"wikidata": "Q963719"
+},
+{
+"tri": "Noir",
+"nom": "Victor Noir",
+"lat": 48.860819,
+"long": 2.396543,
+"categorie": "Journaliste",
+"description": "journaliste",
+"siecle": "19e",
+"wikidata": "Q714788"
+},
+{
+"tri": "Oberkampf",
+"nom": "Christophe-Philippe Oberkampf",
+"lat": 48.859689,
+"long": 2.396071,
+"categorie": "Entrepreneur",
+"description": "personnalité du monde des affaires, personnalité p",
+"siecle": "19e",
+"wikidata": "Q74518"
+},
+{
+"tri": "Panhard",
+"nom": "René Panhard",
+"lat": 48.858475,
+"long": 2.395771,
+"categorie": "Entrepreneur",
+"description": "ingénieur, personnalité politique, pilote de cours",
+"siecle": "20e",
+"wikidata": "Q266561"
+},
+{
+"tri": "Perier",
+"nom": "Casimir Perier",
+"lat": 48.8600225,
+"long": 2.3936303,
+"categorie": "Entrepreneur",
+"description": "banquier, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q284683"
+},
+{
+"tri": "Perrin",
+"nom": "Claude-Victor Perrin",
+"lat": 48.859627,
+"long": 2.394392,
+"categorie": "Politique",
+"description": "personnalité politique, militaire",
+"siecle": "19e",
+"wikidata": "Q372750"
+},
+{
+"tri": "Petrucciani",
+"nom": "Michel Petrucciani",
+"lat": 48.860056,
+"long": 2.392874,
+"categorie": "Musicien",
+"description": "pianiste de jazz, compositeur ou compositrice, art",
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Foy",
+"nom": "Maximilien Sébastien Foy",
+"lat": 48.859096,
+"long": 2.395577,
+"categorie": "Politique",
+"description": "personnalité politique, officier",
+"siecle": "19e",
+"wikidata": "Q633498"
+},
+{
+"tri": "Fresnel",
+"nom": "Augustin Fresnel",
+"lat": 48.8597319,
+"long": 2.3936651,
+"categorie": "Scientifique",
+"description": "physicien ou physicienne, ingénieur civil, ingénie",
+"siecle": "19e",
+"wikidata": "Q187241"
+},
+{
+"tri": "Galli-Marié",
+"nom": "Célestine Galli-Marié",
+"lat": 48.8615073,
+"long": 2.3918887,
+"categorie": "Chanteur",
+"description": "artiste lyrique",
+"siecle": "20e",
+"wikidata": "Q2413117"
+},
+{
+"tri": "Garnier-Pagès",
+"nom": "Louis-Antoine Garnier-Pagès",
+"lat": 48.859463,
+"long": 2.395062,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q601266"
+},
+{
+"tri": "Girardot",
+"nom": "Annie Girardot",
+"lat": 48.862089,
+"long": 2.39356,
+"categorie": "Acteur",
+"description": "acteur ou actrice de théâtre, acteur ou actrice de",
+"siecle": "21e",
+"wikidata": "Q106443"
+},
+{
+"tri": "Gobert",
+"nom": "Jacques Nicolas Gobert",
+"lat": 48.8588,
+"long": 2.39635,
+"categorie": "Militaire",
+"description": "officier",
+"siecle": "19e",
+"wikidata": "Q3159659"
+},
+{
+"tri": "Gramme",
+"nom": "Zénobe Gramme",
+"lat": 48.860833,
+"long": 2.397895,
+"categorie": "Scientifique",
+"description": "physicien ou physicienne, inventeur",
+"siecle": "20e",
+"wikidata": "Q247603"
+},
+{
+"tri": "Grappelli",
+"nom": "Stéphane Grappelli",
+"lat": 48.862174,
+"long": 2.395663,
+"categorie": "Musicien",
+"description": "artiste de rue, compositeur ou compositrice, music",
+"siecle": "20e",
+"wikidata": "Q206244"
+},
+{
+"tri": "Greffulhe",
+"nom": "Jean-Henry-Louis Greffulhe",
+"lat": 48.860536,
+"long": 2.395406,
+"categorie": "Entrepreneur",
+"description": "banquier, personnalité politique",
+"siecle": "19e",
+"wikidata": null
+},
+{
+"tri": "Grouchy",
+"nom": "Emmanuel de Grouchy",
+"lat": 48.8611069,
+"long": 2.3916616,
+"categorie": "Militaire",
+"description": "personnalité politique, militaire, soldat",
+"siecle": "19e",
+"wikidata": "Q333821"
+},
+{
+"tri": "Guesde",
+"nom": "Jules Guesde",
+"lat": 48.862541,
+"long": 2.395384,
+"categorie": "Politique",
+"description": "personnalité politique, journaliste, écrivain ou é",
+"siecle": "20e",
+"wikidata": "Q379699"
+},
+{
+"tri": "Géricault",
+"nom": "Théodore Géricault",
+"lat": 48.86096,
+"long": 2.392831,
+"categorie": "Peintre",
+"description": "artiste peintre, artiste graphique, sculpteur ou s",
+"siecle": "19e",
+"wikidata": "Q184212"
+},
+{
+"tri": "Hahnemann",
+"nom": "Samuel Hahnemann",
+"lat": 48.860536,
+"long": 2.39429,
+"categorie": "Scientifique",
+"description": "médecin, homéopathe, pharmacologue, chimiste, phar",
+"siecle": "19e",
+"wikidata": "Q157056"
+},
+{
+"tri": "Hernandez",
+"nom": "Téo Hernandez",
+"lat": 48.861059,
+"long": 2.395363,
+"categorie": "Réalisateur",
+"description": "cinéaste",
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Hersent",
+"nom": "Louis Hersent",
+"lat": 48.858574,
+"long": 2.39484,
+"categorie": "Peintre",
+"description": "artiste peintre, graveur ou graveuse d'estampes",
+"siecle": "19e",
+"wikidata": "Q761853"
+},
+{
+"tri": "Hoff",
+"nom": "Ignace Hoff",
+"lat": 48.860889,
+"long": 2.39223,
+"categorie": "Militaire",
+"description": "soldat",
+"siecle": "20e",
+"wikidata": "Q3148168"
+},
+{
+"tri": "Holgado",
+"nom": "Ticky Holgado",
+"lat": 48.861666,
+"long": 2.394526,
+"categorie": "Acteur",
+"description": "secrétaire, acteur ou actrice de cinéma, acteur ou",
+"siecle": "21e",
+"wikidata": "Q2121322"
+},
+{
+"tri": "Hugo",
+"nom": "Joseph Léopold Sigisbert Hugo",
+"lat": 48.85983,
+"long": 2.395406,
+"categorie": "Militaire",
+"description": "officier, militaire",
+"siecle": "19e",
+"wikidata": "Q2299673"
+},
+{
+"tri": "Ingres",
+"nom": "Jean-Auguste-Dominique Ingres",
+"lat": 48.861412,
+"long": 2.394333,
+"categorie": "Peintre",
+"description": "artiste peintre, personnalité politique, violonist",
+"siecle": "19e",
+"wikidata": "Q23380"
+},
+{
+"tri": "Itasse",
+"nom": "Adolphe Itasse",
+"lat": 48.858459,
+"long": 2.395362,
+"categorie": "Sculpteur",
+"description": "sculpteur ou sculptrice",
+"siecle": "19e",
+"wikidata": "Q14660072"
+},
+{
+"tri": "Joffrin",
+"nom": "Jules Joffrin",
+"lat": 48.860226,
+"long": 2.39826,
+"categorie": "Politique",
+"description": "personnalité politique, communard",
+"siecle": "19e",
+"wikidata": "Q3188690"
+},
+{
+"tri": "Jouhaux",
+"nom": "Léon Jouhaux",
+"lat": 48.863049,
+"long": 2.397015,
+"categorie": "Politique",
+"description": "syndicaliste",
+"siecle": "20e",
+"wikidata": "Q155415"
+},
+{
+"tri": "Kellermann",
+"nom": "François Étienne Kellermann",
+"lat": 48.859774,
+"long": 2.394569,
+"categorie": "Politique",
+"description": "personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q138105"
+},
+{
+"tri": "Khorsand",
+"nom": "Philippe Khorsand",
+"lat": 48.8613527,
+"long": 2.3946884,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "Krasucki",
+"nom": "Henri Krasucki",
+"lat": 48.859417,
+"long": 2.399038,
+"categorie": "Politique",
+"description": "personnalité politique, syndicaliste, résistant ou",
+"siecle": "21e",
+"wikidata": "Q477747"
+},
+{
+"tri": "La Fontaine",
+"nom": "Jean de La Fontaine",
+"lat": 48.860565,
+"long": 2.395062,
+"categorie": "Ecrivain",
+"description": "fabuliste, poète ou poétesse, avocat ou avocate, a",
+"siecle": "17e",
+"wikidata": "Q49496"
+},
+{
+"tri": "Lachambeaudie",
+"nom": "Pierre Lachambeaudie",
+"lat": 48.862812,
+"long": 2.392937,
+"categorie": "Ecrivain",
+"description": "chansonnier, poète ou poétesse, écrivain ou écriva",
+"siecle": "19e",
+"wikidata": "Q1346280"
+},
+{
+"tri": "Lavallée",
+"nom": "Alphonse Lavallée",
+"lat": 48.860649,
+"long": 2.39532,
+"categorie": "Entrepreneur",
+"description": "personnalité du monde des affaires",
+"siecle": "19e",
+"wikidata": "Q1327266"
+},
+{
+"tri": "Lazareff",
+"nom": "Pierre et Hélène Lazareff",
+"lat": 48.859365,
+"long": 2.391479,
+"categorie": "Journaliste",
+"description": null,
+"siecle": "e",
+"wikidata": null
+},
+{
+"tri": "Dabadie de Bernet",
+"nom": "Jean Melchior Dabadie de Bernet",
+"lat": 48.859051,
+"long": 2.397138,
+"categorie": "Politique",
+"description": "personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q1429885"
+},
+{
+"tri": "Dac",
+"nom": "Pierre Dac",
+"lat": 48.862767,
+"long": 2.396243,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "20e",
+"wikidata": "Q165910"
+},
+{
+"tri": "Daladier",
+"nom": "Édouard Daladier",
+"lat": 48.863501,
+"long": 2.391264,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "20e",
+"wikidata": "Q213526"
+},
+{
+"tri": "Daudet",
+"nom": "Alphonse Daudet",
+"lat": 48.860198,
+"long": 2.395277,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, dramaturge, poète ou poétes",
+"siecle": "19e",
+"wikidata": "Q228546"
+},
+{
+"tri": "Daumier",
+"nom": "Sophie Daumier",
+"lat": 48.8611655,
+"long": 2.3949235,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "21e",
+"wikidata": "Q3490902"
+},
+{
+"tri": "Daumier",
+"nom": "Honoré Daumier",
+"lat": 48.860875,
+"long": 2.394698,
+"categorie": "Peintre",
+"description": "artiste peintre, dessinateur ou dessinatrice en bâ",
+"siecle": "19e",
+"wikidata": "Q187506"
+},
+{
+"tri": "Davout",
+"nom": "Louis Nicolas Davout",
+"lat": 48.8589314,
+"long": 2.3964384,
+"categorie": "Militaire",
+"description": "personnalité politique, officier, chef militaire, ",
+"siecle": "19e",
+"wikidata": "Q158778"
+},
+{
+"tri": "Del Duca",
+"nom": "Cino Del Duca",
+"lat": 48.861525,
+"long": 2.392509,
+"categorie": "Entrepreneur",
+"description": "entrepreneur ou entrepreneuse, éditeur ou éditrice",
+"siecle": "20e",
+"wikidata": "Q1069399"
+},
+{
+"tri": "Delacroix",
+"nom": "Eugène Delacroix",
+"lat": 48.862787,
+"long": 2.3936382,
+"categorie": "Peintre",
+"description": "artiste peintre, diariste, lithographe, photograph",
+"siecle": "19e",
+"wikidata": "Q33477"
+},
+{
+"tri": "Desproges",
+"nom": "Pierre Desproges",
+"lat": 48.860056,
+"long": 2.392809,
+"categorie": "Journaliste",
+"description": "humoriste, journaliste, animateur ou animatrice de",
+"siecle": "20e",
+"wikidata": "Q2196"
+},
+{
+"tri": "Brillat-Savarin",
+"nom": "Jean Anthelme Brillat-Savarin",
+"lat": 48.859774,
+"long": 2.395513,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, écrivai",
+"siecle": "19e",
+"wikidata": "Q313027"
+},
+{
+"tri": "Courteline",
+"nom": "Georges Courteline",
+"lat": 48.862329,
+"long": 2.397316,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, dramaturge, journaliste, ro",
+"siecle": "20e",
+"wikidata": "Q51107"
+},
+{
+"tri": "Musset",
+"nom": "Alfred de Musset",
+"lat": 48.86072,
+"long": 2.391114,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, poète ou poétesse, dramatur",
+"siecle": "19e",
+"wikidata": "Q179680"
+},
+{
+"tri": "Nadar",
+"nom": "Nadar",
+"lat": 48.858983,
+"long": 2.397037,
+"categorie": "Scientifique",
+"description": "photographe, aérostier, dessinateur ou dessinatric",
+"siecle": "20e",
+"wikidata": "Q40116"
+},
+{
+"tri": "Parmentier",
+"nom": "Antoine Parmentier",
+"lat": 48.860141,
+"long": 2.395492,
+"categorie": "Scientifique",
+"description": "botaniste, pharmacien ou pharmacienne, agronome, d",
+"siecle": "19e",
+"wikidata": "Q360312"
+},
+{
+"tri": "Popesco",
+"nom": "Elvire Popesco",
+"lat": 48.86319,
+"long": 2.395985,
+"categorie": "Réalisateur",
+"description": "metteur ou metteuse en scène, acteur ou actrice de",
+"siecle": "20e",
+"wikidata": "Q455878"
+},
+{
+"tri": "Sieyès",
+"nom": "Emmanuel-Joseph Sieyès",
+"lat": 48.858532,
+"long": 2.395599,
+"categorie": "Politique",
+"description": "personnalité politique, diplomate, sociologue, écr",
+"siecle": "19e",
+"wikidata": "Q294344"
+},
+{
+"tri": "Topart",
+"nom": "Jean Topart",
+"lat": 48.8615364,
+"long": 2.3918726,
+"categorie": "Acteur",
+"description": "acteur ou actrice, acteur ou actrice de doublage",
+"siecle": "21e",
+"wikidata": "Q2110802"
+},
+{
+"tri": "Vivant Denon",
+"nom": "Dominique Vivant Denon",
+"lat": 48.8601567,
+"long": 2.3927356,
+"categorie": "Ecrivain",
+"description": "historien ou historienne de l'art, égyptologue, di",
+"siecle": "19e",
+"wikidata": "Q468618"
+},
+{
+"tri": "Macdonald",
+"nom": "Étienne-Jacques-Joseph Macdonald",
+"lat": 48.8586237,
+"long": 2.396391,
+"categorie": "Politique",
+"description": "personnalité politique, diplomate, officier, milit",
+"siecle": "19e",
+"wikidata": "Q298784"
+},
+{
+"tri": "David",
+"nom": "Jacques-Louis David",
+"lat": 48.861355,
+"long": 2.392359,
+"categorie": "Peintre",
+"description": "artiste peintre, personnalité politique, dessinate",
+"siecle": "19e",
+"wikidata": "Q83155"
+},
+{
+"tri": "Raspail",
+"nom": "François-Vincent Raspail",
+"lat": 48.860141,
+"long": 2.393904,
+"categorie": "Scientifique",
+"description": "chimiste, biologiste, personnalité politique, bota",
+"siecle": "19e",
+"wikidata": "Q682230"
+},
+{
+"tri": "Cherubini",
+"nom": "Luigi Cherubini",
+"lat": 48.8601705,
+"long": 2.3927894,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, chef ou cheffe d'orch",
+"siecle": "19e",
+"wikidata": "Q20721"
+},
+{
+"tri": "Gaudin",
+"nom": "Martin Michel Charles Gaudin",
+"lat": 48.86048,
+"long": 2.394376,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q708596"
+},
+{
+"tri": "Alamo",
+"nom": "Frank Alamo",
+"lat": 48.861065,
+"long": 2.39491,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, acteur ou actrice de cinéma",
+"siecle": "21e",
+"wikidata": "Q112324100"
+},
+{
+"tri": "Corot",
+"nom": "Jean-Baptiste Camille Corot",
+"lat": 48.860903,
+"long": 2.394612,
+"categorie": "Peintre",
+"description": "artiste peintre, photographe, graveur ou graveuse ",
+"siecle": "19e",
+"wikidata": "Q148475"
+},
+{
+"tri": "Bernardin de Saint-Pierre",
+"nom": "Jacques-Henri Bernardin de Saint-Pierre",
+"lat": 48.860423,
+"long": 2.392917,
+"categorie": "Ecrivain",
+"description": "ingénieur géographe, romancier ou romancière, bota",
+"siecle": "19e",
+"wikidata": "Q361976"
+},
+{
+"tri": "Ernst",
+"nom": "Max Ernst",
+"lat": 48.8622181,
+"long": 2.3963152,
+"categorie": "Peintre",
+"description": "artiste peintre, sculpteur ou sculptrice, poète ou",
+"siecle": "20e",
+"wikidata": "Q154842"
+},
+{
+"tri": "Haussmann",
+"nom": "Georges Eugène Haussmann",
+"lat": 48.860748,
+"long": 2.391179,
+"categorie": "Politique",
+"description": "personnalité politique, haut fonctionnaire ou haut",
+"siecle": "19e",
+"wikidata": "Q191798"
+},
+{
+"tri": "Piaf",
+"nom": "Édith Piaf",
+"lat": 48.8596833,
+"long": 2.3988939,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, acteur ou actrice, artiste ",
+"siecle": "20e",
+"wikidata": "Q1631"
+},
+{
+"tri": "Pineau",
+"nom": "Christian Pineau",
+"lat": 48.859576,
+"long": 2.398882,
+"categorie": "Politique",
+"description": "personnalité politique, diplomate, syndicaliste, a",
+"siecle": "20e",
+"wikidata": "Q661825"
+},
+{
+"tri": "Pissarro",
+"nom": "Camille Pissarro",
+"lat": 48.8591071,
+"long": 2.3914902,
+"categorie": "Peintre",
+"description": "pastelliste, dessinateur ou dessinatrice en bâtime",
+"siecle": "20e",
+"wikidata": "Q134741"
+},
+{
+"tri": "Planchon",
+"nom": "Roger Planchon",
+"lat": 48.86076,
+"long": 2.3938,
+"categorie": "Réalisateur",
+"description": "scénariste, metteur ou metteuse en scène, acteur o",
+"siecle": "21e",
+"wikidata": "Q374912"
+},
+{
+"tri": "Pleyel",
+"nom": "Ignace Joseph Pleyel",
+"lat": 48.860508,
+"long": 2.393131,
+"categorie": "Entrepreneur",
+"description": "facteur ou factrice de pianos, éditeur musical, co",
+"siecle": "19e",
+"wikidata": "Q314019"
+},
+{
+"tri": "Poulenc",
+"nom": "Francis Poulenc",
+"lat": 48.858758,
+"long": 2.393088,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, pianiste, critique de",
+"siecle": "20e",
+"wikidata": "Q191408"
+},
+{
+"tri": "Proust",
+"nom": "Marcel Proust",
+"lat": 48.8630712,
+"long": 2.394975,
+"categorie": "Ecrivain",
+"description": "romancier ou romancière, essayiste, écrivain ou éc",
+"siecle": "20e",
+"wikidata": "Q7199"
+},
+{
+"tri": "Romains",
+"nom": "Jules Romains",
+"lat": 48.860113,
+"long": 2.390428,
+"categorie": "Ecrivain",
+"description": "dramaturge, écrivain ou écrivaine, poète ou poétes",
+"siecle": "20e",
+"wikidata": "Q334983"
+},
+{
+"tri": "Rossini",
+"nom": "Gioachino Rossini",
+"lat": 48.860706,
+"long": 2.39105,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice",
+"siecle": "19e",
+"wikidata": "Q9726"
+},
+{
+"tri": "Rothschild",
+"nom": "James de Rothschild",
+"lat": 48.859351,
+"long": 2.391286,
+"categorie": "Entrepreneur",
+"description": null,
+"siecle": "e",
+"wikidata": "Q922667"
+},
+{
+"tri": "Salvador",
+"nom": "Henri Salvador",
+"lat": 48.859633,
+"long": 2.398839,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, humoriste, compositeur ou c",
+"siecle": "21e",
+"wikidata": "Q318060"
+},
+{
+"tri": "Sans-Gêne",
+"nom": "Madame Sans-Gêne",
+"lat": 48.85904,
+"long": 2.396586,
+"categorie": "Acteur",
+"description": null,
+"siecle": "e",
+"wikidata": "Q3275319"
+},
+{
+"tri": "Say",
+"nom": "Horace Émile Say",
+"lat": 48.858578,
+"long": 2.396377,
+"categorie": "Scientifique",
+"description": "économiste",
+"siecle": "19e",
+"wikidata": "Q3140480"
+},
+{
+"tri": "Schœlcher",
+"nom": "Victor Schœlcher",
+"lat": 48.861412,
+"long": 2.393947,
+"categorie": "Politique",
+"description": "personnalité politique, écrivain ou écrivaine",
+"siecle": "19e",
+"wikidata": "Q120417"
+},
+{
+"tri": "Scribe",
+"nom": "Eugène Scribe",
+"lat": 48.859365,
+"long": 2.397187,
+"categorie": "Ecrivain",
+"description": "dramaturge, librettiste, écrivain ou écrivaine, co",
+"siecle": "19e",
+"wikidata": "Q319261"
+},
+{
+"tri": "Seurat",
+"nom": "Georges Seurat",
+"lat": 48.8623521,
+"long": 2.390531,
+"categorie": "Peintre",
+"description": "artiste peintre, dessinateur ou dessinatrice, dess",
+"siecle": "19e",
+"wikidata": "Q34013"
+},
+{
+"tri": "Solo",
+"nom": "Mano Solo",
+"lat": 48.860452,
+"long": 2.392552,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, auteur-compositeur-interprè",
+"siecle": "21e",
+"wikidata": "Q1335349"
+},
+{
+"tri": "Soulié",
+"nom": "Frédéric Soulié",
+"lat": 48.8628596,
+"long": 2.392869,
+"categorie": "Ecrivain",
+"description": "romancier ou romancière, journaliste, dramaturge, ",
+"siecle": "19e",
+"wikidata": "Q2031275"
+},
+{
+"tri": "Suchet",
+"nom": "Louis-Gabriel Suchet",
+"lat": 48.859351,
+"long": 2.396929,
+"categorie": "Militaire",
+"description": "personnalité politique, militaire",
+"siecle": "19e",
+"wikidata": "Q316518"
+},
+{
+"tri": "Sèze",
+"nom": "Raymond de Sèze",
+"lat": 48.8614688,
+"long": 2.3925529,
+"categorie": "Politique",
+"description": "personnalité politique, avocat ou avocate, magistr",
+"siecle": "19e",
+"wikidata": "Q1357659"
+},
+{
+"tri": "Thiers",
+"nom": "Adolphe Thiers",
+"lat": 48.861087,
+"long": 2.392895,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, journal",
+"siecle": "19e",
+"wikidata": "Q5738"
+},
+{
+"tri": "Thorez",
+"nom": "Maurice Thorez",
+"lat": 48.859943,
+"long": 2.39989,
+"categorie": "Politique",
+"description": "personnalité politique, mineur ou mineuse",
+"siecle": "20e",
+"wikidata": "Q345408"
+},
+{
+"tri": "Toscan du Plantier",
+"nom": "Daniel Toscan du Plantier",
+"lat": 48.861214,
+"long": 2.394891,
+"categorie": "Réalisateur",
+"description": "producteur ou productrice de cinéma, producteur dé",
+"siecle": "21e",
+"wikidata": "Q325453"
+},
+{
+"tri": "Trelliard",
+"nom": "Anne-François-Charles Trelliard",
+"lat": 48.8584651,
+"long": 2.3953018,
+"categorie": "Militaire",
+"description": "militaire",
+"siecle": "19e",
+"wikidata": "Q2850778"
+},
+{
+"tri": "Trintignant",
+"nom": "Marie Trintignant",
+"lat": 48.861186,
+"long": 2.394912,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "21e",
+"wikidata": "Q235641"
+},
+{
+"tri": "Triqueti",
+"nom": "Henry de Triqueti",
+"lat": 48.861129,
+"long": 2.39532,
+"categorie": "Sculpteur",
+"description": "sculpteur ou sculptrice, artiste peintre",
+"siecle": "19e",
+"wikidata": null
+},
+{
+"tri": "Vaillant-Couturier",
+"nom": "Paul Vaillant-Couturier",
+"lat": 48.860141,
+"long": 2.399869,
+"categorie": "Politique",
+"description": "personnalité politique, écrivain ou écrivaine, jou",
+"siecle": "20e",
+"wikidata": "Q3372335"
+},
+{
+"tri": "Vallès",
+"nom": "Jules Vallès",
+"lat": 48.862287,
+"long": 2.390342,
+"categorie": "Journaliste",
+"description": "journaliste, écrivain ou écrivaine, romancier ou r",
+"siecle": "19e",
+"wikidata": "Q551597"
+},
+{
+"tri": "Vanarsky",
+"nom": "Jack Vanarsky",
+"lat": 48.860107,
+"long": 2.393003,
+"categorie": "Peintre",
+"description": "artiste peintre, sculpteur ou sculptrice, collagis",
+"siecle": "21e",
+"wikidata": "Q3157334"
+},
+{
+"tri": "Vania Vilers",
+"nom": "Vania Vilers",
+"lat": 48.85994,
+"long": 2.39293,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de ",
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "Verneuil",
+"nom": "Louis Verneuil",
+"lat": 48.86367,
+"long": 2.396157,
+"categorie": "Acteur",
+"description": "acteur ou actrice de théâtre, scénariste, dramatur",
+"siecle": "20e",
+"wikidata": "Q3098317"
+},
+{
+"tri": "Wallace",
+"nom": "Richard Wallace",
+"lat": 48.859167,
+"long": 2.3962,
+"categorie": "Entrepreneur",
+"description": "collectionneur ou collectionneuse d'œuvres d'art, ",
+"siecle": "19e",
+"wikidata": "Q2033868"
+},
+{
+"tri": "Wilde",
+"nom": "Oscar Wilde",
+"lat": 48.8618038,
+"long": 2.3979473,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, dramaturge, nouvelliste, journa",
+"siecle": "20e",
+"wikidata": "Q30875"
+},
+{
+"tri": "Zavatta",
+"nom": "Achille Zavatta",
+"lat": 48.862146,
+"long": 2.396071,
+"categorie": "Acteur",
+"description": "clown, trompettiste, acteur ou actrice, saxophonis",
+"siecle": "20e",
+"wikidata": "Q340260"
+},
+{
+"tri": "Éluard",
+"nom": "Paul Éluard",
+"lat": 48.859986,
+"long": 2.399912,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, personnalité politique, poè",
+"siecle": "20e",
+"wikidata": "Q152176"
+},
+{
+"tri": "Asturias",
+"nom": "Miguel Ángel Asturias",
+"lat": 48.8597856,
+"long": 2.3928042,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, écrivain ou écrivaine, diplomat",
+"siecle": "20e",
+"wikidata": "Q75603"
+}
 ]
-
-
