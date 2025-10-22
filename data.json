@@ -1,6 +1,6 @@
 [
   {
-    "tri": 1,
+    "tri": "Apollinaire",
     "nom": "Guillaume Apollinaire",
     "categorie": "Écrivain",
     "siecle": "20e",
@@ -10,7 +10,7 @@
     "wikidata": "Q307"
   },
   {
-    "tri": 2,
+    "tri": "Sarah Bernhardt",
     "nom": "Sarah Bernhardt",
     "categorie": "Actrice",
     "siecle": "19e",
@@ -20,4 +20,5 @@
     "wikidata": "Q23389"
   }
 ]
+
 
