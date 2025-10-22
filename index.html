@@ -82,7 +82,12 @@ function renderResults(items) {
   }
 
   // Tri sur le champ "tri"
-  items.sort((a, b) => (a.tri ?? 0) - (b.tri ?? 0));
+  items.sort((a, b) => {
+  const ta = (a.tri || "").toString().toLowerCase();
+  const tb = (b.tri || "").toString().toLowerCase();
+  return ta.localeCompare(tb, 'fr', { numeric: true });
+});
+
 
   for (const item of items) {
     resultsDiv.innerHTML += `
@@ -201,7 +206,12 @@ async function loadData(forceRefresh = false) {
     if (!response.ok) throw new Error("Erreur de chargement du fichier JSON.");
     const json = await response.json();
 
-    data = json.sort((a, b) => (a.tri ?? 0) - (b.tri ?? 0));
+    data = json.sort((a, b) => {
+  const ta = (a.tri || "").toString().toLowerCase();
+  const tb = (b.tri || "").toString().toLowerCase();
+  return ta.localeCompare(tb, 'fr', { numeric: true });
+});
+
     fuse = new Fuse(data, { keys: ["nom", "description", "categorie"], threshold: 0.4 });
     saveToCache(json);
     setupFilters();
@@ -232,6 +242,7 @@ loadData();
 
 </body>
 </html>
+
 
 
 
