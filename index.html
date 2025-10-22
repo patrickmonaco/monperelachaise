@@ -178,7 +178,7 @@ function setupFilters() {
   <div class="grid grid-cols-2 gap-2 text-lg leading-snug">
     ${categories.map(cat => `
       <label class="flex items-center space-x-2 cursor-pointer">
-        <input type="checkbox" value="${cat}" checked class="w-4 h-4 accent-blue-600">
+        <input type="checkbox" value="${cat}" class="w-4 h-4 accent-blue-600">
         <span class="truncate">${cat}</span>
       </label>
     `).join('')}
@@ -276,6 +276,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
