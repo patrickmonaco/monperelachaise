@@ -2,10 +2,11 @@ const CACHE_NAME = "faceted-pwa-cache-v2";
 const ASSETS = [
   "./",
   "./index.html",
-  "./manifest.webmanifest",
-  "https://cdn.tailwindcss.com",
-  "https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"
+  "./manifest.webmanifest" 
 ];
+//
+//"https://cdn.tailwindcss.com",
+  //"https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"
 
 // Installation
 self.addEventListener("install", event => {
@@ -38,3 +39,4 @@ self.addEventListener("message", event => {
     self.skipWaiting();
   }
 });
+
