@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cimetière du Père Lachaise</title>
+<title>Cimetière du Père Lachaise - v0.1</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#1d4ed8" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -107,7 +107,7 @@ function renderResults(items) {
           <div class="flex items-center gap-2">
             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
             ${item.wikidata ? `
-              <button title="Voir sur Wikidata" onclick="openWikidata('${item.wikidata}', '${item.nom}')"
+              <button title="Voir sur Wikimedia" onclick="openWikiInfo('${item.wikidata}', '${item.nom}')"
                 class="text-gray-500 hover:text-blue-600 transition text-xl">
                 ℹ️
               </button>` : ""}
@@ -127,15 +127,19 @@ function openInGoogleMaps(lat, long) {
 }
 
 // === Affichage modale Wikidata ===
-function openWikidata(id, name) {
+async function openWikiInfo(qid, name) {
   const modal = document.getElementById("wikidata-modal");
   const frame = document.getElementById("wikidata-frame");
   const title = document.getElementById("wikidata-title");
-  title.textContent = name || "Wikidata";
-  frame.src = `https://www.wikidata.org/wiki/${id}`;
+
+  title.textContent = name || "Informations";
   modal.classList.remove("hidden");
   modal.classList.add("flex");
+
+  const wikipediaUrl = await getWikipediaFromWikidata(qid);
+  frame.src = wikipediaUrl || `https://www.wikidata.org/wiki/${qid}`;
 }
+
 document.getElementById("wikidata-close").addEventListener("click", () => {
   const modal = document.getElementById("wikidata-modal");
   const frame = document.getElementById("wikidata-frame");
@@ -201,7 +205,25 @@ function loadFromCache() {
   const parsed = JSON.parse(record);
   return (Date.now() - parsed.timestamp < CACHE_TTL) ? parsed.data : null;
 }
+// === Resolution adresse wikipedia ===
+async function getWikipediaFromWikidata(qid, lang = "fr") {
+  try {
+    const url = `https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Erreur Wikidata");
+    const data = await response.json();
+    const entity = data.entities[qid];
+    const sitelink = entity?.sitelinks?.[`${lang}wiki`]?.title;
+    if (!sitelink) return null;
+    return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(sitelink)}`;
+  } catch (e) {
+    console.error("Erreur Wikidata → Wikipedia:", e);
+    return null;
+  }
+}
 
+
+  
 // === Chargement des données ===
 async function loadData(forceRefresh = false) {
   try {
@@ -249,6 +271,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
