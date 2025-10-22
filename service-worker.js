@@ -15,7 +15,7 @@ self.addEventListener("install", event => {
   self.skipWaiting();
 });
 
-// Activation (supprimer anciens caches)
+// Activation (suppression des anciens caches)
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -25,14 +25,14 @@ self.addEventListener("activate", event => {
   self.clients.claim();
 });
 
-// Stratégie de fetch (offline fallback)
+// Récupération (cache-first)
 self.addEventListener("fetch", event => {
   event.respondWith(
     caches.match(event.request).then(resp => resp || fetch(event.request))
   );
 });
 
-// Support du message “skipWaiting”
+// Gestion du message "skipWaiting"
 self.addEventListener("message", event => {
   if (event.data && event.data.action === "skipWaiting") {
     self.skipWaiting();
