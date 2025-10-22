@@ -95,10 +95,11 @@ function renderResults(items) {
           <div class="flex items-center gap-2">
             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
             ${item.wikidata ? `
-              <button title="Voir sur Wikidata" onclick="openWikidata('${item.wikidata}')"
-                class="text-gray-500 hover:text-blue-600 transition">
-                ℹ️
-              </button>` : ""}
+              <button title="Voir sur Wikidata" onclick="openWikidata('${item.wikidata}', '${item.nom}')"
+  class="text-gray-500 hover:text-blue-600 transition">
+  ℹ️
+</button>
+` : ""}
           </div>
         </div>
         <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
@@ -131,6 +132,26 @@ function applyFilters() {
   renderResults(filtered);
 }
 
+function openWikidata(id, name) {
+  const modal = document.getElementById("wikidata-modal");
+  const frame = document.getElementById("wikidata-frame");
+  const title = document.getElementById("wikidata-title");
+
+  title.textContent = name || "Wikidata";
+  frame.src = `https://www.wikidata.org/wiki/${id}`;
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
+
+document.getElementById("wikidata-close").addEventListener("click", () => {
+  const modal = document.getElementById("wikidata-modal");
+  const frame = document.getElementById("wikidata-frame");
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  frame.src = ""; // libère la ressource
+});
+  
+  
 function setupFilters() {
   const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean);
   categoryContainer.innerHTML = categories.map(cat => `
@@ -197,8 +218,20 @@ refreshBtn.addEventListener("click", () => {
 loadData();
 </script>
 
+  <!-- === MODALE WIKIDATA === -->
+<div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-white w-[90%] md:w-[70%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+    <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
+      <h3 id="wikidata-title" class="font-semibold text-lg">Wikidata</h3>
+      <button id="wikidata-close" class="text-white text-2xl leading-none">&times;</button>
+    </div>
+    <iframe id="wikidata-frame" src="" class="flex-1 w-full border-0"></iframe>
+  </div>
+</div>
+
 
 </body>
 </html>
+
 
 
