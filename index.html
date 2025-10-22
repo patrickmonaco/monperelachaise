@@ -206,7 +206,7 @@ async function loadData(forceRefresh = false) {
       const cached = loadFromCache();
       if (cached) {
         data = cached;
-        fuse = new Fuse(data, { keys: ["nom", "description", "categorie"], threshold: 0.4 });
+        fuse = new Fuse(data, { keys: ["nom", "description", "categorie"], threshold: 0.15 });
         setupFilters();
         return;
       }
@@ -237,5 +237,6 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
