@@ -1,8 +1,23 @@
 [
-  { "nom": "Claude Monet", "categorie": "Artiste", "siecle": "19e", "description": "Peintre impressionniste français" },
-  { "nom": "Marie Curie", "categorie": "Scientifique", "siecle": "20e", "description": "Physicienne et chimiste pionnière" },
-  { "nom": "Charles de Gaulle", "categorie": "Politique", "siecle": "20e", "description": "Président de la République française" },
-  { "nom": "François Mauriac", "categorie": "Ecrivain", "siecle": "20e", "description": "Ecrivain Romancier" }
-
+  {
+    "tri": 1,
+    "nom": "Guillaume Apollinaire",
+    "categorie": "Écrivain",
+    "siecle": "20e",
+    "description": "Poète et critique d'art français",
+    "lat": 48.86102,
+    "long": 2.39351,
+    "wikidata": "Q307"
+  },
+  {
+    "tri": 2,
+    "nom": "Sarah Bernhardt",
+    "categorie": "Actrice",
+    "siecle": "19e",
+    "description": "Célèbre tragédienne française",
+    "lat": 48.86132,
+    "long": 2.39380,
+    "wikidata": "Q23389"
+  }
 ]
 
