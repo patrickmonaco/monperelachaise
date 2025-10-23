@@ -20,8 +20,12 @@
     <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
       <div>
         <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-        <input id="search-text" type="text" placeholder="Nom ou mot-clé..."
-               class="w-full mt-1 border border-gray-300 rounded-lg p-2" disabled />
+        <div class="relative">
+  <input id="searchInput" type="text" placeholder="Rechercher..." class="w-full p-2 pr-10 rounded border" />
+  <button id="micButton" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600">
+    🎤
+  </button>
+</div>
       </div>
 
       <div>
@@ -273,9 +277,46 @@ refreshBtn.addEventListener("click", () => {
 });
 
 loadData();
+
+const micButton = document.getElementById("micButton");
+const searchInput = document.getElementById("searchInput");
+
+if ("webkitSpeechRecognition" in window || "SpeechRecognition" in window) {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+  recognition.lang = "fr-FR";
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  micButton.addEventListener("click", () => {
+    try {
+      recognition.start();
+      micButton.textContent = "🎙️"; // animation légère pendant l’écoute
+    } catch (e) {
+      console.warn("Reconnaissance déjà active");
+    }
+  });
+
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    searchInput.value = transcript;
+    applyFilters(); // lance ta recherche automatiquement
+  };
+
+  recognition.onend = () => {
+    micButton.textContent = "🎤";
+  };
+} else {
+  console.warn("Reconnaissance vocale non supportée sur ce navigateur.");
+  micButton.style.display = "none"; // masque le micro si non supporté
+}
+
+
+  
 </script>
 </body>
 </html>
+
 
 
 
