@@ -35,7 +35,6 @@
 
       <div>
         <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-        <!-- 2 colonnes qui prennent bien la largeur (gap-x élargi) -->
         <div id="category-checkboxes" class="grid grid-cols-2 gap-x-6 gap-y-2 text-base text-gray-700 leading-snug">
           <p class="text-gray-400 text-sm">Chargement...</p>
         </div>
@@ -76,20 +75,22 @@
   </div>
 </div>
 
+<!-- BANDEAU NOUVELLE VERSION -->
+<div id="updateBanner" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg cursor-pointer z-50">
+  🔄 Nouvelle version disponible — cliquez pour recharger
+</div>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  // ---------- CONFIG ----------
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v8";
+  const CACHE_KEY = "faceted_data_cache_v9";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
 
-  // ---------- ÉTAT ----------
   let data = [];
   let fuse = null;
   let currentPosition = null;
   let sortMode = "alpha";
 
-  // ---------- DOM ----------
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
   const categoryContainer = document.getElementById("category-checkboxes");
@@ -99,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const sortSelect = document.getElementById("sortMode");
   const micButton = document.getElementById("micButton");
   const micStatus = document.getElementById("micStatus");
+  const updateBanner = document.getElementById("updateBanner");
 
-  // ---------- UTILS ----------
   function distance(lat1, lon1, lat2, lon2) {
     const R = 6371;
     const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -109,7 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
 
-  // ---------- RENDU ----------
+  function showLoading(msg) {
+    resultsDiv.innerHTML = `<p class="text-center text-blue-600 font-medium animate-pulse py-4">${msg}</p>`;
+  }
+
   function renderResults(items) {
     resultsDiv.innerHTML = "";
     resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
@@ -120,18 +124,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (sortMode === "distance" && currentPosition) {
       items.forEach(item => {
-        if (item.lat && item.long) {
-          item._distance = distance(
-            currentPosition.lat, currentPosition.lon,
-            parseFloat(item.lat), parseFloat(item.long)
-          );
-        } else {
-          item._distance = Infinity;
-        }
+        if (item.lat && item.long)
+          item._distance = distance(currentPosition.lat, currentPosition.lon, parseFloat(item.lat), parseFloat(item.long));
+        else item._distance = Infinity;
       });
-      items.sort((a,b) => a._distance - b._distance);
+      items.sort((a,b)=>a._distance-b._distance);
     } else {
-      items.sort((a,b) => (a.tri || "").localeCompare(b.tri || "", "fr", { numeric: true }));
+      items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
     }
 
     for (const item of items) {
@@ -144,14 +143,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="flex items-center gap-2">
               <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
-              ${item._distance && item._distance !== Infinity
-                ? `<span class="text-xs text-gray-500">${item._distance.toFixed(2)} km</span>`
-                : ""
-              }
-              ${item.wikidata ? `
-                <button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')"
-                        class="text-gray-500 hover:text-blue-600 transition text-xl" aria-label="Voir la fiche">ℹ️</button>
-              ` : ""}
+              ${item._distance && item._distance !== Infinity ? `<span class="text-xs text-gray-500">${item._distance.toFixed(2)} km</span>` : ""}
+              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl">ℹ️</button>` : ""}
             </div>
           </div>
           <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
@@ -160,212 +153,110 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // ---------- GOOGLE MAPS ----------
-  window.openInGoogleMaps = function(lat, long) {
-    if (!lat || !long) return;
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    const url = isMobile && /Android/i.test(navigator.userAgent)
-      ? `google.navigation:q=${lat},${long}&mode=w` // Android : démarre la navigation piéton
-      : `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`; // iOS/desktop : ouvre l’itinéraire
-    window.open(url, "_blank");
+  window.openInGoogleMaps = function(lat,long){
+    if(!lat||!long)return;
+    const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const url=isMobile&&/Android/i.test(navigator.userAgent)?
+      `google.navigation:q=${lat},${long}&mode=w`:
+      `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    window.open(url,"_blank");
   };
 
-  // ---------- WIKIPEDIA depuis Wikidata ----------
-  async function getWikipediaFromWikidata(qid, lang = "fr") {
-    try {
-      const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { cache: "no-store" });
-      if (!resp.ok) return null;
-      const data = await resp.json();
-      const entity = data.entities?.[qid];
-      const title = entity?.sitelinks?.[`${lang}wiki`]?.title || entity?.sitelinks?.["enwiki"]?.title;
-      if (!title) return null;
-      const wikiLang = title === entity?.sitelinks?.["enwiki"]?.title ? "en" : lang;
+  async function getWikipediaFromWikidata(qid, lang="fr"){
+    try{
+      const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
+      const json=await resp.json();
+      const entity=json.entities?.[qid];
+      const title=entity?.sitelinks?.[`${lang}wiki`]?.title||entity?.sitelinks?.["enwiki"]?.title;
+      if(!title)return null;
+      const wikiLang=title===entity?.sitelinks?.["enwiki"]?.title?"en":lang;
       return `https://${wikiLang}.wikipedia.org/wiki/${encodeURIComponent(title)}`;
-    } catch {
-      return null;
-    }
+    }catch{return null;}
   }
 
-  window.openWikiInfo = async function(qid, name) {
-    const modal = document.getElementById("wikidata-modal");
-    const frame = document.getElementById("wikidata-frame");
-    const title = document.getElementById("wikidata-title");
-    title.textContent = name || "Informations";
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-    frame.src = "";
-    const wikipediaUrl = await getWikipediaFromWikidata(qid);
-    frame.src = wikipediaUrl || `https://www.wikidata.org/wiki/${qid}`;
+  window.openWikiInfo=async(qid,name)=>{
+    const modal=document.getElementById("wikidata-modal");
+    const frame=document.getElementById("wikidata-frame");
+    const title=document.getElementById("wikidata-title");
+    title.textContent=name||"Informations";
+    modal.classList.remove("hidden");modal.classList.add("flex");
+    frame.src="";
+    const url=await getWikipediaFromWikidata(qid);
+    frame.src=url||`https://www.wikidata.org/wiki/${qid}`;
   };
 
-  document.getElementById("wikidata-close").addEventListener("click", () => {
-    const modal = document.getElementById("wikidata-modal");
-    const frame = document.getElementById("wikidata-frame");
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-    frame.src = "";
-  });
-  document.getElementById("wikidata-modal").addEventListener("click", (e) => {
-    if (e.target.id === "wikidata-modal") document.getElementById("wikidata-close").click();
-  });
+  document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");const f=document.getElementById("wikidata-frame");m.classList.add("hidden");m.classList.remove("flex");f.src="";};
+  document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
 
-  // ---------- FILTRES ----------
-  function applyFilters() {
-    const searchText = searchInput.value.trim().toLowerCase();
-    const selectedCentury = centurySelect.value;
-    const selectedCategories = [...categoryContainer.querySelectorAll("input[type=checkbox]:checked")].map(cb => cb.value);
-
-    let filtered = data;
-
-    if (searchText) {
-      // d’abord match direct dans le nom, sinon Fuse
-      let exact = data.filter(it => (it.nom || "").toLowerCase().includes(searchText));
-      if (!exact.length) exact = fuse.search(searchText).map(r => r.item);
-      filtered = exact;
+  function applyFilters(){
+    const txt=searchInput.value.trim().toLowerCase();
+    const century=centurySelect.value;
+    const cats=[...categoryContainer.querySelectorAll("input:checked")].map(c=>c.value);
+    let filtered=data;
+    if(txt){
+      let exact=data.filter(it=>(it.nom||"").toLowerCase().includes(txt));
+      if(!exact.length)exact=fuse.search(txt).map(r=>r.item);
+      filtered=exact;
     }
-
-    filtered = filtered.filter(item =>
-      (!selectedCentury || item.siecle === selectedCentury) &&
-      (!selectedCategories.length || selectedCategories.includes(item.categorie))
-    );
-
+    filtered=filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
     renderResults(filtered);
   }
 
-  function setupFilters() {
-    const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean)
-      .sort((a,b)=>a.localeCompare(b,"fr",{sensitivity:"base"}));
-    categoryContainer.innerHTML = categories.map(cat => `
-      <label class="flex items-center space-x-2 cursor-pointer">
-        <input type="checkbox" value="${cat}" class="w-4 h-4 accent-blue-600">
-        <span class="truncate">${cat}</span>
-      </label>
-    `).join("");
-
-    const centuries = [...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
-    centurySelect.innerHTML = '<option value="">Tous</option>' +
-      centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
-
-    searchInput.disabled = false;
-    centurySelect.disabled = false;
-
-    searchInput.addEventListener("input", applyFilters);
-    centurySelect.addEventListener("change", applyFilters);
-    categoryContainer.querySelectorAll("input[type=checkbox]").forEach(cb => cb.addEventListener("change", applyFilters));
-
+  function setupFilters(){
+    const cats=[...new Set(data.map(d=>d.categorie))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr",{sensitivity:"base"}));
+    categoryContainer.innerHTML=cats.map(c=>`<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`).join("");
+    const centuries=[...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
+    centurySelect.innerHTML='<option value="">Tous</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
+    searchInput.disabled=false;centurySelect.disabled=false;
+    searchInput.oninput=applyFilters;centurySelect.onchange=applyFilters;
+    categoryContainer.querySelectorAll("input").forEach(cb=>cb.onchange=applyFilters);
     applyFilters();
   }
 
-  // ---------- CACHE ----------
-  function saveToCache(json){
-    localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: json }));
-  }
-  function loadFromCache(){
-    const r = localStorage.getItem(CACHE_KEY);
-    if (!r) return null;
-    const p = JSON.parse(r);
-    return (Date.now() - p.timestamp < CACHE_TTL) ? p.data : null;
-  }
+  function saveToCache(j){localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:j}));}
+  function loadFromCache(){const r=localStorage.getItem(CACHE_KEY);if(!r)return null;const p=JSON.parse(r);return(Date.now()-p.timestamp<CACHE_TTL)?p.data:null;}
 
-  // ---------- CHARGEMENT ----------
-  async function loadData(force=false){
-    try{
-      if(!force){
-        const cached = loadFromCache();
-        if(cached){ data=cached; initFuse(); setupFilters(); return; }
-      }
-      resultsDiv.innerHTML = '<p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>';
-      const resp = await fetch(DATA_URL, { cache: "no-store" });
-      if(!resp.ok) throw new Error("Erreur de chargement");
-      const json = await resp.json();
-      data = json;
-      initFuse();
-      saveToCache(json);
-      setupFilters();
-    }catch(e){
-      resultsDiv.innerHTML = `<p class="text-center text-red-500">${e.message}</p>`;
-    }
-  }
+  async function loadData(force=false){try{const cached=!force&&loadFromCache();if(cached){data=cached;initFuse();setupFilters();return;}const resp=await fetch(DATA_URL,{cache:"no-store"});const j=await resp.json();data=j;initFuse();saveToCache(j);setupFilters();}catch(e){resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;}}
 
-  function initFuse(){
-    fuse = new Fuse(data, {
-      keys: [
-        { name: "nom", weight: 0.8 },
-        { name: "description", weight: 0.15 },
-        { name: "categorie", weight: 0.05 }
-      ],
-      threshold: 0.2,
-      distance: 50
-    });
-  }
+  function initFuse(){fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});}
 
-  // ---------- TRI PAR PROXIMITÉ ----------
-  const sortSelectEl = sortSelect;
-  sortSelectEl.addEventListener("change", () => {
-    sortMode = sortSelectEl.value;
-    if (sortMode === "distance") {
-      if (!navigator.geolocation) {
-        alert("Géolocalisation non supportée par ce navigateur.");
-        sortSelectEl.value = "alpha"; sortMode = "alpha"; applyFilters();
-        return;
-      }
-      navigator.geolocation.getCurrentPosition(
-        pos => { currentPosition = { lat: pos.coords.latitude, lon: pos.coords.longitude }; applyFilters(); },
-        () => { alert("Accès à la localisation refusé."); sortSelectEl.value = "alpha"; sortMode = "alpha"; applyFilters(); }
-      );
-    } else {
-      applyFilters();
-    }
-  });
+  sortSelect.onchange=()=>{
+    sortMode=sortSelect.value;
+    if(sortMode==="distance"){
+      if(!navigator.geolocation){alert("Géolocalisation non supportée");sortSelect.value="alpha";return;}
+      showLoading("🛰️ Calcul des distances en cours…");
+      navigator.geolocation.getCurrentPosition(pos=>{currentPosition={lat:pos.coords.latitude,lon:pos.coords.longitude};applyFilters();},()=>{alert("Accès localisation refusé");sortSelect.value="alpha";applyFilters();});
+    }else applyFilters();
+  };
 
-  // ---------- BOUTON REFRESH ----------
-  refreshBtn.addEventListener("click", () => {
-    localStorage.removeItem(CACHE_KEY);
-    loadData(true);
-  });
-
-  // ---------- MICRO (simple) ----------
-  (function setupSpeech(){
-    if (!micButton) return;
-    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SR) {
-      micButton.classList.add("opacity-40","cursor-not-allowed");
-      micButton.title = "Reconnaissance vocale non disponible";
-      return;
-    }
-    const r = new SR();
-    r.lang = "fr-FR";
-    r.continuous = false;
-    r.interimResults = true;
-
-    let listening = false, interim = "";
-    function start(){ if(listening) return; listening = true; micButton.classList.add("text-red-500"); micStatus.textContent = "Écoute en cours…"; try{ r.start(); }catch{} }
-    function stop(){ listening = false; micButton.classList.remove("text-red-500"); micStatus.textContent = ""; try{ r.stop(); }catch{} }
-
-    micButton.addEventListener("click", (e)=>{ e.preventDefault(); listening ? stop() : start(); });
-    micButton.addEventListener("mousedown", start);
-    micButton.addEventListener("mouseup", stop);
-    micButton.addEventListener("mouseleave", ()=>{ if(listening) stop(); });
-
-    r.onresult = (e) => {
-      interim = "";
-      for (let i=e.resultIndex; i<e.results.length; i++) {
-        const t = e.results[i][0].transcript;
-        if (e.results[i].isFinal) { searchInput.value = t; applyFilters(); }
-        else { interim += t; }
-      }
-      if (interim) searchInput.value = interim;
-    };
-    r.onend = stop; r.onerror = stop;
-  })();
-
-  // ---------- DÉMARRAGE ----------
+  refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
   loadData();
 
-  // ---------- SW ----------
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("service-worker.js").catch(()=>{});
+  // --- MICRO (simple) ---
+  (()=>{
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
+    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
+    let listen=false;
+    const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
+    const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
+    micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
+    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
+    r.onerror=stop;r.onend=stop;
+  })();
+
+  // --- SERVICE WORKER + BANNIÈRE ---
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("service-worker.js").then(reg=>{
+      reg.onupdatefound=()=>{
+        const newWorker=reg.installing;
+        newWorker.onstatechange=()=>{
+          if(newWorker.state==="installed"&&navigator.serviceWorker.controller){
+            updateBanner.classList.remove("hidden");
+            updateBanner.onclick=()=>{newWorker.postMessage({action:"skipWaiting"});location.reload();};
+          }
+        };
+      };
     });
   }
 });
