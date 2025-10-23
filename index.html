@@ -20,12 +20,8 @@
     <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
       <div>
         <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-        <div class="relative">
-  <input id="searchInput" type="text" placeholder="Rechercher..." class="w-full p-2 pr-10 rounded border" />
-  <button id="micButton" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600">
-    🎤
-  </button>
-</div>
+        <input id="search-text" type="text" placeholder="Nom ou mot-clé..."
+               class="w-full mt-1 border border-gray-300 rounded-lg p-2" disabled />
       </div>
 
       <div>
@@ -277,17 +273,9 @@ refreshBtn.addEventListener("click", () => {
 });
 
 loadData();
-
-
-
-
-  
 </script>
 </body>
 </html>
-
-
-
 
 
 
