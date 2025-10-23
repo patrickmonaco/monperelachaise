@@ -444,10 +444,40 @@
 "nom": "Victor Noir",
 "lat": 48.860819,
 "long": 2.396543,
-"categorie": "Journaliste",
+"categorie": "Ecrivain",
 "description": "Victor Noir, nom de plume d’Yvan Salmon, né le 27 juillet 1848 à Attigny (Vosges) et mort à Paris le 10 janvier 1870, est un journaliste ...",
 "siecle": "19e",
 "wikidata": "Q714788"
+},
+{
+"tri": "Ophüls",
+"nom": "Max Ophüls",
+"lat": 48.862569,
+"long": 2.395363,
+"categorie": "Réalisateur",
+"description": "Max Ophuls est un réalisateur, scénariste et metteur en scène franco-allemand, né le 6 mai 1902 à Sarrebruck, dans le quartier de ...",
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Oussekine",
+"nom": "Malik Oussekine",
+"lat": 48.858038,
+"long": 2.395556,
+"categorie": "Autres",
+"description": "L'affaire Malik Oussekine est une affaire de violence policière française ayant provoqué la mort de Malik Oussekine, dans la nuit du 5 au 6 ...",
+"siecle": "20e",
+"wikidata": "Q112335024"
+},
+{
+"tri": "Ozanian",
+"nom": "Andranik Ozanian",
+"lat": 48.86048,
+"long": 2.399418,
+"categorie": "Militaire",
+"description": "Andranik ou Antranig Toros Ozanian, ou Zoravar Antranik ou Antranig, est un militaire et héros national arménien né en 1865 et mort en 1927.",
+"siecle": "20e",
+"wikidata": "Q278864"
 },
 {
 "tri": "Perier",
@@ -490,6 +520,26 @@
 "wikidata": "Q2413117"
 },
 {
+"tri": "Gay-Lussac",
+"nom": "Louis Joseph Gay-Lussac",
+"lat": 48.860649,
+"long": 2.394655,
+"categorie": "Scientifique",
+"description": "Louis Joseph Gay-Lussac, né à Saint-Léonard-de-Noblat le 6 décembre 1778 et mort à Paris le 9 mai 1850, est un chimiste et physicien ...",
+"siecle": "19e",
+"wikidata": "Q153185"
+},
+{
+"tri": "Geoffroy Saint-Hilaire",
+"nom": "Étienne Geoffroy Saint-Hilaire",
+"lat": 48.85952,
+"long": 2.394998,
+"categorie": "Scientifique",
+"description": "Étienne Geoffroy Saint-Hilaire, né le 15 avril 1772 à Étampes et mort le 19 juin 1844 à Paris, est un naturaliste français.",
+"siecle": "19e",
+"wikidata": "Q192428"
+},
+{
 "tri": "Girardot",
 "nom": "Annie Girardot",
 "lat": 48.862089,
@@ -498,6 +548,16 @@
 "description": "Annie Girardot, née le 25 octobre 1931 à Paris 10e où elle est morte le 28 février 2011, est une actrice française.",
 "siecle": "21e",
 "wikidata": "Q106443"
+},
+{
+"tri": "Gouvion-Saint-Cyr",
+"nom": "Laurent de Gouvion-Saint-Cyr",
+"lat": 48.858555,
+"long": 2.39619,
+"categorie": "Militaire",
+"description": "Laurent Gouvion, marquis de Saint-Cyr, souvent dit Gouvion-Saint-Cyr, né le 13 avril 1764 à Toul et mort le 17 mars 1830 à Hyères, est un ...",
+"siecle": "19e",
+"wikidata": "Q347652"
 },
 {
 "tri": "Grappelli",
@@ -704,7 +764,7 @@
 "nom": "Pierre Desproges",
 "lat": 48.860056,
 "long": 2.392809,
-"categorie": "Journaliste",
+"categorie": "Ecrivain",
 "description": "Pierre Desproges, né le 9 mai 1939 à Pantin et mort le 18 avril 1988 à Neuilly-sur-Seine, est un humoriste français réputé pour son humour ...",
 "siecle": "20e",
 "wikidata": "Q2196"
@@ -718,6 +778,16 @@
 "description": "Jean Anthelme Brillat-Savarin, né le 1er avril 1755 à Belley et mort le 2 février 1826 à Paris est un avocat, magistrat, homme politique, ...",
 "siecle": "19e",
 "wikidata": "Q313027"
+},
+{
+"tri": "Chamans de Lavalette",
+"nom": "Antoine Marie Chamans de Lavalette",
+"lat": 48.8587457,
+"long": 2.3966952,
+"categorie": "Militaire",
+"description": "Antoine-Marie Chamans, comte de Lavalette, né le 14 octobre 1769 à Paris et mort le 15 février 1830 dans la même ville, est un officier et ...",
+"siecle": "19e",
+"wikidata": "Q43246365"
 },
 {
 "tri": "Courteline",
@@ -828,6 +898,16 @@
 "description": "Martin Michel Charles Gaudin, duc de Gaëte, né le 16 janvier 1756 à Saint-Denis près de Paris et mort le 5 novembre 1841 au château de ...",
 "siecle": "19e",
 "wikidata": "Q708596"
+},
+{
+"tri": "Visconti",
+"nom": "Louis Visconti",
+"lat": 48.860649,
+"long": 2.390878,
+"categorie": "Autres",
+"description": "Louis Tullius Joachim Visconti, né le 11 février 1791 à Rome et mort le 29 décembre 1853 à Paris, est un architecte français.",
+"siecle": "19e",
+"wikidata": "Q794916"
 },
 {
 "tri": "Corot",
@@ -1064,7 +1144,7 @@
 "nom": "Jules Vallès",
 "lat": 48.862287,
 "long": 2.390342,
-"categorie": "Journaliste",
+"categorie": "Ecrivain",
 "description": "Jules Vallès, né Jules Vallez le 11 juin 1832 au Puy-en-Velay et mort le 14 février 1885 à Paris 5e, est un journaliste, écrivain et homme ...",
 "siecle": "19e",
 "wikidata": "Q551597"
@@ -1098,6 +1178,16 @@
 "description": "Oscar Wilde /ˈɒskə waɪld/, dont le nom complet est Oscar Fingal O'Flahertie Wills Wilde, né à Dublin le 16 octobre 1854 et mort à Paris le ...",
 "siecle": "20e",
 "wikidata": "Q30875"
+},
+{
+"tri": "Yves Montand et Simone Signoret",
+"nom": "Yves Montand et Simone Signoret",
+"lat": 48.861892,
+"long": 2.395535,
+"categorie": "Acteur",
+"description": "❌ Aucun article Wikipédia trouvé",
+"siecle": "e",
+"wikidata": null
 },
 {
 "tri": "Zavatta",
@@ -1424,7 +1514,7 @@
 "nom": "Pierre et Hélène Lazareff",
 "lat": 48.859365,
 "long": 2.391479,
-"categorie": "Journaliste",
+"categorie": "Ecrivain",
 "description": "❌ Aucun article Wikipédia trouvé",
 "siecle": "e",
 "wikidata": null
