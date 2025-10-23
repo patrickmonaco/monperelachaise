@@ -134,7 +134,7 @@
 "nom": "Claude Chappe",
 "lat": 48.859068,
 "long": 2.395148,
-"categorie": "Ingénieur",
+"categorie": "Scientifique",
 "description": "Claude Chappe (né le 25 décembre 1763 à Brûlon et mort le 23 janvier 1805 à Paris, est un ingénieur français.",
 "siecle": "19e",
 "wikidata": "Q361305"
@@ -334,7 +334,7 @@
 "nom": "Yves du Manoir",
 "lat": 48.859718,
 "long": 2.394783,
-"categorie": "Sportif",
+"categorie": "Autres",
 "description": "Yves Le Pelley Dumanoir dit Yves du Manoir, né le 11 août 1904 à Vaucresson en Seine-et-Oise est un joueur international français de rugby ...",
 "siecle": "20e",
 "wikidata": "Q2602308"
@@ -884,7 +884,7 @@
 "nom": "Fulgence Bienvenüe",
 "lat": 48.864009,
 "long": 2.394676,
-"categorie": "Ingénieur",
+"categorie": "Scientifique",
 "description": "Fulgence Bienvenüe, né le 27 janvier 1852 à Uzel (Côtes-du-Nord) et mort le 3 août 1936 à Paris, est un ingénieur français qui a notamment ...",
 "siecle": "20e",
 "wikidata": "Q964297"
@@ -946,7 +946,7 @@
 "long": 2.391286,
 "categorie": "Entrepreneur",
 "description": "Le baron Jacob Mayer de Rothschild, dit James de Rothschild, né le 15 mai 1792 à Francfort-sur-le-Main (Saint-Empire) et mort le 15 ...",
-"siecle": "20e",
+"siecle": "e",
 "wikidata": "Q922667"
 },
 {
@@ -956,7 +956,7 @@
 "long": 2.396586,
 "categorie": "Acteur",
 "description": "Catherine Hubscher, née le 2 février 1753 à Altenbach et morte le 29 décembre 1835 à Paris, est une femme d'origine modeste ayant connu une ...",
-"siecle": "18e",
+"siecle": "e",
 "wikidata": "Q3275319"
 },
 {
@@ -1426,7 +1426,7 @@
 "long": 2.391479,
 "categorie": "Journaliste",
 "description": "❌ Aucun article Wikipédia trouvé",
-"siecle": "20e",
+"siecle": "e",
 "wikidata": null
 },
 {
@@ -1670,4 +1670,3 @@
 "wikidata": "Q152176"
 }
 ]
-
