@@ -12,10 +12,22 @@
 <body class="bg-gray-50 text-gray-800">
 
 <div class="max-w-7xl mx-auto py-10 px-4">
-  <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
-  <img src="icons/icone_pl.png" alt="Icône" class="w-10 h-10 inline-block">
+ <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+  <img src="icons/icon_pl.png" alt="Icône gauche" class="w-12 h-12 transition-transform duration-700 hover:rotate-12 hover:scale-110 animate-pulse-slow">
   Mon Père Lachaise
+  <img src="icons/icon_pl.png" alt="Icône droite" class="w-12 h-12 transition-transform duration-700 hover:-rotate-12 hover:scale-110 animate-pulse-slow">
 </h1>
+
+<style>
+/* Animation douce et lente au repos (mobile & desktop) */
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+.animate-pulse-slow {
+  animation: pulseSlow 6s ease-in-out infinite;
+}
+</style>
 
 
   <div class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
@@ -267,5 +279,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
 
