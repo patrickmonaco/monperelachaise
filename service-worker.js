@@ -1,15 +1,13 @@
 // === Service Worker Mon Père Lachaise ===
 // Version du cache (change ce numéro à chaque mise à jour)
-const CACHE_NAME = "pwa-cache-v10.4";
+const CACHE_NAME = "pwa-cache-v10.5";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icons/icone_pl_192.png",
   "./icons/icone_pl_512.png",
-  "./data.json",
-  "https://cdn.tailwindcss.com",
-  "https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"
+  "./data.json"
 ];
 
 // Installation : on met en cache les fichiers essentiels
@@ -56,6 +54,7 @@ self.addEventListener("message", event => {
     self.skipWaiting();
   }
 });
+
 
 
 
