@@ -5,8 +5,8 @@ const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./icons/icone_pl-192.png",
-  "./icons/icone_pl-512.png",
+  "./icons/icone_pl_192.png",
+  "./icons/icone_pl_512.png",
   "./data.json",
   "https://cdn.tailwindcss.com",
   "https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"
@@ -56,6 +56,7 @@ self.addEventListener("message", event => {
     self.skipWaiting();
   }
 });
+
 
 
 
