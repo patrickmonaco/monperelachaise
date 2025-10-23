@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Mon Père Lachaise — Recherche à facettes</title>
+<title>Mon Père Lachaise</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#1d4ed8" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -12,19 +12,16 @@
 <body class="bg-gray-50 text-gray-800">
 
 <div class="max-w-7xl mx-auto py-10 px-4">
-  <h1 class="text-3xl font-bold mb-8 text-center">🔍 Mon Père Lachaise — Recherche à facettes</h1>
+  <h1 class="text-3xl font-bold mb-8 text-center">🪦 Mon Père Lachaise</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
     <!-- FILTRES -->
     <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
       <div>
         <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
         <div class="relative mt-1">
-          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
-                 class="w-full border border-gray-300 rounded-lg p-2 pr-10" disabled />
-          <button id="micButton" title="Recherche vocale"
-                  class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl"
-                  aria-label="Micro">🎤</button>
+          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..." class="w-full border border-gray-300 rounded-lg p-2 pr-10" disabled />
+          <button id="micButton" title="Recherche vocale" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl" aria-label="Micro">🎤</button>
         </div>
         <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
       </div>
@@ -38,7 +35,8 @@
 
       <div>
         <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-        <div id="category-checkboxes" class="grid grid-cols-2 gap-2 text-base text-gray-700 leading-snug">
+        <!-- 2 colonnes qui prennent bien la largeur (gap-x élargi) -->
+        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-6 gap-y-2 text-base text-gray-700 leading-snug">
           <p class="text-gray-400 text-sm">Chargement...</p>
         </div>
       </div>
@@ -51,6 +49,15 @@
 
     <!-- RÉSULTATS -->
     <main>
+      <div class="flex justify-end mb-4">
+        <label class="flex items-center gap-2 text-sm text-gray-700 font-medium">
+          Tri :
+          <select id="sortMode" class="border border-gray-300 rounded p-1 text-sm">
+            <option value="alpha">Ordre alphabétique</option>
+            <option value="distance">Proximité 📍</option>
+          </select>
+        </label>
+      </div>
       <div id="results" class="space-y-4 text-gray-600">
         <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
       </div>
@@ -71,21 +78,36 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  // ---------- CONFIG ----------
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v6";
+  const CACHE_KEY = "faceted_data_cache_v8";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
 
+  // ---------- ÉTAT ----------
   let data = [];
   let fuse = null;
+  let currentPosition = null;
+  let sortMode = "alpha";
 
+  // ---------- DOM ----------
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
   const categoryContainer = document.getElementById("category-checkboxes");
   const centurySelect = document.getElementById("filter-century");
   const searchInput = document.getElementById("searchInput");
   const refreshBtn = document.getElementById("refresh-btn");
+  const sortSelect = document.getElementById("sortMode");
   const micButton = document.getElementById("micButton");
   const micStatus = document.getElementById("micStatus");
+
+  // ---------- UTILS ----------
+  function distance(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
 
   // ---------- RENDU ----------
   function renderResults(items) {
@@ -96,7 +118,21 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    items.sort((a, b) => (a.tri || "").localeCompare(b.tri || "", "fr", { numeric: true }));
+    if (sortMode === "distance" && currentPosition) {
+      items.forEach(item => {
+        if (item.lat && item.long) {
+          item._distance = distance(
+            currentPosition.lat, currentPosition.lon,
+            parseFloat(item.lat), parseFloat(item.long)
+          );
+        } else {
+          item._distance = Infinity;
+        }
+      });
+      items.sort((a,b) => a._distance - b._distance);
+    } else {
+      items.sort((a,b) => (a.tri || "").localeCompare(b.tri || "", "fr", { numeric: true }));
+    }
 
     for (const item of items) {
       resultsDiv.innerHTML += `
@@ -108,6 +144,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="flex items-center gap-2">
               <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
+              ${item._distance && item._distance !== Infinity
+                ? `<span class="text-xs text-gray-500">${item._distance.toFixed(2)} km</span>`
+                : ""
+              }
               ${item.wikidata ? `
                 <button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')"
                         class="text-gray-500 hover:text-blue-600 transition text-xl" aria-label="Voir la fiche">ℹ️</button>
@@ -125,16 +165,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!lat || !long) return;
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     const url = isMobile && /Android/i.test(navigator.userAgent)
-      ? `google.navigation:q=${lat},${long}&mode=w`
-      : `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+      ? `google.navigation:q=${lat},${long}&mode=w` // Android : démarre la navigation piéton
+      : `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`; // iOS/desktop : ouvre l’itinéraire
     window.open(url, "_blank");
   };
 
-  // ---------- WIKIPEDIA ----------
+  // ---------- WIKIPEDIA depuis Wikidata ----------
   async function getWikipediaFromWikidata(qid, lang = "fr") {
     try {
-      const response = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
-      const data = await response.json();
+      const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { cache: "no-store" });
+      if (!resp.ok) return null;
+      const data = await resp.json();
       const entity = data.entities?.[qid];
       const title = entity?.sitelinks?.[`${lang}wiki`]?.title || entity?.sitelinks?.["enwiki"]?.title;
       if (!title) return null;
@@ -150,19 +191,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const frame = document.getElementById("wikidata-frame");
     const title = document.getElementById("wikidata-title");
     title.textContent = name || "Informations";
-    modal.classList.replace("hidden", "flex");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
     frame.src = "";
     const wikipediaUrl = await getWikipediaFromWikidata(qid);
     frame.src = wikipediaUrl || `https://www.wikidata.org/wiki/${qid}`;
   };
 
-  document.getElementById("wikidata-close").onclick = () => {
+  document.getElementById("wikidata-close").addEventListener("click", () => {
     const modal = document.getElementById("wikidata-modal");
     const frame = document.getElementById("wikidata-frame");
     modal.classList.add("hidden");
     modal.classList.remove("flex");
     frame.src = "";
-  };
+  });
   document.getElementById("wikidata-modal").addEventListener("click", (e) => {
     if (e.target.id === "wikidata-modal") document.getElementById("wikidata-close").click();
   });
@@ -174,87 +216,158 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedCategories = [...categoryContainer.querySelectorAll("input[type=checkbox]:checked")].map(cb => cb.value);
 
     let filtered = data;
+
     if (searchText) {
+      // d’abord match direct dans le nom, sinon Fuse
       let exact = data.filter(it => (it.nom || "").toLowerCase().includes(searchText));
       if (!exact.length) exact = fuse.search(searchText).map(r => r.item);
       filtered = exact;
     }
+
     filtered = filtered.filter(item =>
       (!selectedCentury || item.siecle === selectedCentury) &&
       (!selectedCategories.length || selectedCategories.includes(item.categorie))
     );
+
     renderResults(filtered);
   }
 
   function setupFilters() {
     const categories = [...new Set(data.map(d => d.categorie))].filter(Boolean)
       .sort((a,b)=>a.localeCompare(b,"fr",{sensitivity:"base"}));
-    categoryContainer.innerHTML = `
-      <div class="grid grid-cols-2 gap-2 text-base leading-snug">
-        ${categories.map(cat=>`
-          <label class="flex items-center space-x-2 cursor-pointer">
-            <input type="checkbox" value="${cat}" class="w-4 h-4 accent-blue-600">
-            <span class="truncate">${cat}</span>
-          </label>`).join('')}
-      </div>`;
+    categoryContainer.innerHTML = categories.map(cat => `
+      <label class="flex items-center space-x-2 cursor-pointer">
+        <input type="checkbox" value="${cat}" class="w-4 h-4 accent-blue-600">
+        <span class="truncate">${cat}</span>
+      </label>
+    `).join("");
+
     const centuries = [...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
-    centurySelect.innerHTML = '<option value="">Tous</option>' + centuries.map(c=>`<option value="${c}">${c.toUpperCase()}</option>`).join("");
+    centurySelect.innerHTML = '<option value="">Tous</option>' +
+      centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
 
     searchInput.disabled = false;
     centurySelect.disabled = false;
 
-    searchInput.oninput = applyFilters;
-    centurySelect.onchange = applyFilters;
-    categoryContainer.querySelectorAll("input").forEach(cb=>cb.onchange = applyFilters);
+    searchInput.addEventListener("input", applyFilters);
+    centurySelect.addEventListener("change", applyFilters);
+    categoryContainer.querySelectorAll("input[type=checkbox]").forEach(cb => cb.addEventListener("change", applyFilters));
+
     applyFilters();
   }
 
   // ---------- CACHE ----------
-  function saveToCache(json){localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:json}));}
+  function saveToCache(json){
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: json }));
+  }
   function loadFromCache(){
-    const r=localStorage.getItem(CACHE_KEY);
-    if(!r) return null;
-    const p=JSON.parse(r);
-    return (Date.now()-p.timestamp<CACHE_TTL)?p.data:null;
+    const r = localStorage.getItem(CACHE_KEY);
+    if (!r) return null;
+    const p = JSON.parse(r);
+    return (Date.now() - p.timestamp < CACHE_TTL) ? p.data : null;
   }
 
   // ---------- CHARGEMENT ----------
   async function loadData(force=false){
     try{
       if(!force){
-        const cached=loadFromCache();
-        if(cached){data=cached;initFuse();setupFilters();return;}
+        const cached = loadFromCache();
+        if(cached){ data=cached; initFuse(); setupFilters(); return; }
       }
-      resultsDiv.innerHTML='<p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>';
-      const resp=await fetch(DATA_URL,{cache:"no-store"});
+      resultsDiv.innerHTML = '<p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>';
+      const resp = await fetch(DATA_URL, { cache: "no-store" });
       if(!resp.ok) throw new Error("Erreur de chargement");
-      const json=await resp.json();
-      data=json;initFuse();saveToCache(json);setupFilters();
-    }catch(e){resultsDiv.innerHTML=`<p class="text-center text-red-500">${e.message}</p>`;}
+      const json = await resp.json();
+      data = json;
+      initFuse();
+      saveToCache(json);
+      setupFilters();
+    }catch(e){
+      resultsDiv.innerHTML = `<p class="text-center text-red-500">${e.message}</p>`;
+    }
   }
+
   function initFuse(){
-    fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});
+    fuse = new Fuse(data, {
+      keys: [
+        { name: "nom", weight: 0.8 },
+        { name: "description", weight: 0.15 },
+        { name: "categorie", weight: 0.05 }
+      ],
+      threshold: 0.2,
+      distance: 50
+    });
   }
 
-  refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
+  // ---------- TRI PAR PROXIMITÉ ----------
+  const sortSelectEl = sortSelect;
+  sortSelectEl.addEventListener("change", () => {
+    sortMode = sortSelectEl.value;
+    if (sortMode === "distance") {
+      if (!navigator.geolocation) {
+        alert("Géolocalisation non supportée par ce navigateur.");
+        sortSelectEl.value = "alpha"; sortMode = "alpha"; applyFilters();
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        pos => { currentPosition = { lat: pos.coords.latitude, lon: pos.coords.longitude }; applyFilters(); },
+        () => { alert("Accès à la localisation refusé."); sortSelectEl.value = "alpha"; sortMode = "alpha"; applyFilters(); }
+      );
+    } else {
+      applyFilters();
+    }
+  });
 
-  // ---------- MICRO ----------
+  // ---------- BOUTON REFRESH ----------
+  refreshBtn.addEventListener("click", () => {
+    localStorage.removeItem(CACHE_KEY);
+    loadData(true);
+  });
+
+  // ---------- MICRO (simple) ----------
   (function setupSpeech(){
-    if(!micButton) return;
-    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-    if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");micButton.title="Reconnaissance vocale non disponible";return;}
-    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
-    let listening=false,interim="";
-    function start(){if(listening)return;listening=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute en cours…";try{r.start();}catch{}}
-    function stop(){listening=false;micButton.classList.remove("text-red-500");micStatus.textContent="";try{r.stop();}catch{}}
-    micButton.onclick=e=>{e.preventDefault();listening?stop():start();};
-    micButton.onmousedown=start;micButton.onmouseup=stop;micButton.onmouseleave=()=>{if(listening)stop();};
-    r.onresult=e=>{interim="";for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}else{interim+=t;}}if(interim)searchInput.value=interim;};
-    r.onend=stop;r.onerror=stop;
+    if (!micButton) return;
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SR) {
+      micButton.classList.add("opacity-40","cursor-not-allowed");
+      micButton.title = "Reconnaissance vocale non disponible";
+      return;
+    }
+    const r = new SR();
+    r.lang = "fr-FR";
+    r.continuous = false;
+    r.interimResults = true;
+
+    let listening = false, interim = "";
+    function start(){ if(listening) return; listening = true; micButton.classList.add("text-red-500"); micStatus.textContent = "Écoute en cours…"; try{ r.start(); }catch{} }
+    function stop(){ listening = false; micButton.classList.remove("text-red-500"); micStatus.textContent = ""; try{ r.stop(); }catch{} }
+
+    micButton.addEventListener("click", (e)=>{ e.preventDefault(); listening ? stop() : start(); });
+    micButton.addEventListener("mousedown", start);
+    micButton.addEventListener("mouseup", stop);
+    micButton.addEventListener("mouseleave", ()=>{ if(listening) stop(); });
+
+    r.onresult = (e) => {
+      interim = "";
+      for (let i=e.resultIndex; i<e.results.length; i++) {
+        const t = e.results[i][0].transcript;
+        if (e.results[i].isFinal) { searchInput.value = t; applyFilters(); }
+        else { interim += t; }
+      }
+      if (interim) searchInput.value = interim;
+    };
+    r.onend = stop; r.onerror = stop;
   })();
 
+  // ---------- DÉMARRAGE ----------
   loadData();
-  if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("service-worker.js").catch(()=>{}));
+
+  // ---------- SW ----------
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js").catch(()=>{});
+    });
+  }
 });
 </script>
 </body>
