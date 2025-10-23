@@ -181,13 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
     sortMode=sortSelect.value;
     if(sortMode==="distance"){
       if(!navigator.geolocation){alert("Géolocalisation non supportée");sortSelect.value="alpha";sortMode="alpha";return;}
-      if (confirm("Souhaitez-vous trier les tombes par distance à votre position ?")) {
-        navigator.geolocation.getCurrentPosition(pos=>{    
-          currentPosition={lat:pos.coords.latitude,lon:pos.coords.longitude};
-          applyFilters();
-        },()=>{alert("Accès à la localisation refusé");sortSelect.value="alpha";sortMode="alpha";applyFilters();});
-      }
-      
+      navigator.geolocation.getCurrentPosition(pos=>{
+        currentPosition={lat:pos.coords.latitude,lon:pos.coords.longitude};
+        applyFilters();
+      },()=>{alert("Accès à la localisation refusé");sortSelect.value="alpha";sortMode="alpha";applyFilters();});
     }else applyFilters();
   });
 
@@ -197,4 +194,3 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
-
