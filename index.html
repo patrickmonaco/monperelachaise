@@ -278,44 +278,14 @@ refreshBtn.addEventListener("click", () => {
 
 loadData();
 
-const micButton = document.getElementById("micButton");
-const searchInput = document.getElementById("searchInput");
 
-if ("webkitSpeechRecognition" in window || "SpeechRecognition" in window) {
-  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognition();
-  recognition.lang = "fr-FR";
-  recognition.continuous = false;
-  recognition.interimResults = false;
-
-  micButton.addEventListener("click", () => {
-    try {
-      recognition.start();
-      micButton.textContent = "🎙️"; // animation légère pendant l’écoute
-    } catch (e) {
-      console.warn("Reconnaissance déjà active");
-    }
-  });
-
-  recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    searchInput.value = transcript;
-    applyFilters(); // lance ta recherche automatiquement
-  };
-
-  recognition.onend = () => {
-    micButton.textContent = "🎤";
-  };
-} else {
-  console.warn("Reconnaissance vocale non supportée sur ce navigateur.");
-  micButton.style.display = "none"; // masque le micro si non supporté
-}
 
 
   
 </script>
 </body>
 </html>
+
 
 
 
