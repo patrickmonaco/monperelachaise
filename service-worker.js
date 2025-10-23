@@ -1,4 +1,4 @@
-const CACHE_NAME = "faceted-pwa-cache-v3.1";
+const CACHE_NAME = "faceted-pwa-cache-v3.2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -39,6 +39,7 @@ self.addEventListener("message", event => {
     self.skipWaiting();
   }
 });
+
 
 
 
