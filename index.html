@@ -65,24 +65,14 @@
     <!-- RÉSULTATS -->
     <main>
       <div class="flex justify-end mb-4">
-  <div class="flex items-center gap-4 text-sm text-gray-700 font-medium">
-    <span>Tri :</span>
-
-    <label class="flex items-center gap-1 cursor-pointer">
-      <input type="radio" name="sortMode" value="alpha" id="sortAlpha"
-        class="text-blue-600 accent-blue-600 focus:ring-blue-600"
-        checked>
-      <span>Ordre alphabétique</span>
-    </label>
-
-    <label class="flex items-center gap-1 cursor-pointer">
-      <input type="radio" name="sortMode" value="distance" id="sortDistance"
-        class="text-blue-600 accent-blue-600 focus:ring-blue-600">
-      <span>Proximité 📍</span>
-    </label>
-  </div>
-</div>
-
+        <label class="flex items-center gap-2 text-sm text-gray-700 font-medium">
+          Tri :
+          <select id="sortMode" class="border border-gray-300 rounded p-1 text-sm">
+            <option value="alpha">Ordre alphabétique</option>
+            <option value="distance">Proximité 📍</option>
+          </select>
+        </label>
+      </div>
       <div id="results" class="space-y-4 text-gray-600">
         <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
       </div>
@@ -289,8 +279,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
-
-
 
 
 
