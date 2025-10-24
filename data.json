@@ -1,5 +1,15 @@
 [
 {
+"tri": "Abélard et Héloïse",
+"nom": "Tombeau d'Abélard et Héloïse",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "❌ Aucun article Wikipédia trouvé",
+"siecle": "e",
+"wikidata": null
+},
+{
 "tri": "Arago",
 "nom": "François Arago",
 "lat": 48.860536,
@@ -240,6 +250,16 @@
 "wikidata": "Q545477"
 },
 {
+"tri": "Bazar de la Charité",
+"nom": "Monument au Bazar de la Charité",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "❌ Aucun article Wikipédia trouvé",
+"siecle": "e",
+"wikidata": null
+},
+{
 "tri": "Bellini",
 "nom": "Vincenzo Bellini",
 "lat": 48.860438,
@@ -258,6 +278,16 @@
 "description": "Claude Bernard, né le 12 juillet 1813 à Saint-Julien (Rhône) et mort le 10 février 1878 à Paris, est un médecin, physiologiste et ...",
 "siecle": "19e",
 "wikidata": "Q208230"
+},
+{
+"tri": "Dragon",
+"nom": "Tombe du Dragon",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "La tombe du Dragon est un monument funéraire remarquable du cimetière du Père-Lachaise érigé en l'honneur d'Antoine de Guillaume-Lagrange ...",
+"siecle": "e",
+"wikidata": null
 },
 {
 "tri": "Duclos",
@@ -418,6 +448,16 @@
 "description": "Marcel Mouloudji, dit Mouloudji, né le 16 septembre 1922 dans le 4e arrondissement de Paris et mort le 14 juin 1994 à Neuilly-sur-Seine, ...",
 "siecle": "20e",
 "wikidata": "Q993521"
+},
+{
+"tri": "Mur des Fédérés",
+"nom": "Mur des Fédérés",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "Le mur des Fédérés est une partie de l'enceinte du cimetière du Père-Lachaise, dans le 20e arrondissement de Paris, devant laquelle ...",
+"siecle": "e",
+"wikidata": null
 },
 {
 "tri": "Murat",
@@ -588,6 +628,16 @@
 "description": "Emmanuel de Grouchy, marquis de Grouchy, né le 23 octobre 1766 à Paris et mort le 29 mai 1847 à Saint-Étienne (Loire), est un général ...",
 "siecle": "19e",
 "wikidata": "Q333821"
+},
+{
+"tri": "Guët",
+"nom": "Monument funéraire de Georges Guët",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "Le monument funéraire de Georges Guët est un monument funéraire remarquable du cimetière du Père-Lachaise contenant la dépouille de Georges ...",
+"siecle": "e",
+"wikidata": null
 },
 {
 "tri": "Géricault",
@@ -1118,6 +1168,16 @@
 "description": "Daniel Toscan du Plantier, né le 7 avril 1941 à Chambéry et mort à Berlin le 11 février 2003 pendant le festival de cinéma de Berlin, est ...",
 "siecle": "21e",
 "wikidata": "Q325453"
+},
+{
+"tri": "Travailleurs municipaux",
+"nom": "Monument aux travailleurs municipaux",
+"lat": null,
+"long": null,
+"categorie": "Monument",
+"description": "❌ Aucun article Wikipédia trouvé",
+"siecle": "e",
+"wikidata": null
 },
 {
 "tri": "Trintignant",
@@ -1720,6 +1780,96 @@
 "wikidata": "Q212639"
 },
 {
+"tri": "Jolly",
+"nom": "Sylvie Joly",
+"lat": 48.860515,
+"long": 2.395298,
+"categorie": "Acteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q3050907"
+},
+{
+"tri": "Ogier",
+"nom": "Pascale Ogier",
+"lat": 48.8611,
+"long": 2.3931,
+"categorie": "Acteur",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q338906"
+},
+{
+"tri": "Pascal",
+"nom": "Christine Pascal",
+"lat": 48.86107,
+"long": 2.39289,
+"categorie": "Acteur",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q271159"
+},
+{
+"tri": "Roussel",
+"nom": "Raymond Roussel",
+"lat": 48.861556,
+"long": 2.392992,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q378941"
+},
+{
+"tri": "Chereau",
+"nom": "Patrice Chereau",
+"lat": null,
+"long": null,
+"categorie": "Réalisateur",
+"description": null,
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "Cristiani",
+"nom": "Hervé Cristiani",
+"lat": 48.86125,
+"long": 2.39174,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q3153782"
+},
+{
+"tri": "Callas",
+"nom": "Maria Callas",
+"lat": 48.8587,
+"long": 2.3961,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q15684"
+},
+{
+"tri": "Brazza",
+"nom": "Brazza",
+"lat": null,
+"long": null,
+"categorie": "Autres",
+"description": null,
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Legrand",
+"nom": "Michel Legrand",
+"lat": 48.86174,
+"long": 2.39224,
+"categorie": "Musicien",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q309046"
+},
+{
 "tri": "Alain",
 "nom": "Alain",
 "lat": 48.861016,
@@ -1730,6 +1880,96 @@
 "wikidata": "Q275003"
 },
 {
+"tri": "Delpech",
+"nom": "Michel Delpech",
+"lat": 48.862193,
+"long": 2.394046,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q309067"
+},
+{
+"tri": "Caillaux",
+"nom": "Joseph Caillaux",
+"lat": 48.86127,
+"long": 2.39425,
+"categorie": "Politique",
+"description": null,
+"siecle": "e",
+"wikidata": "Q34926"
+},
+{
+"tri": "Michel Blanc",
+"nom": "Michel Blanc",
+"lat": null,
+"long": null,
+"categorie": "Acteur",
+"description": null,
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "Perec",
+"nom": "Georges Perec",
+"lat": 48.86168,
+"long": 2.39203,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q309968"
+},
+{
+"tri": "Radiguet",
+"nom": "Raymond Radiguet",
+"lat": 48.86151,
+"long": 2.39218,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q313316"
+},
+{
+"tri": "Doris",
+"nom": "Pierre Doris",
+"lat": 48.86074,
+"long": 2.39556,
+"categorie": "Acteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q3165665"
+},
+{
+"tri": "Audin",
+"nom": "Maurice Audin",
+"lat": 48.86138,
+"long": 2.39212,
+"categorie": "Autres",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q304209"
+},
+{
+"tri": "Percy",
+"nom": "Pierre François Percy",
+"lat": 48.86087,
+"long": 2.39294,
+"categorie": "Militaire",
+"description": null,
+"siecle": "19e",
+"wikidata": "Q3394215"
+},
+{
+"tri": "Larrey",
+"nom": "Dominique Larrey",
+"lat": 48.86089,
+"long": 2.39295,
+"categorie": "Militaire",
+"description": null,
+"siecle": "19e",
+"wikidata": "Q123062"
+},
+{
 "tri": "Laforêt",
 "nom": "Marie Laforêt",
 "lat": 48.862263,
@@ -1738,6 +1978,116 @@
 "description": "Maïtena Douménach, dite Marie Laforêt, est une actrice, chanteuse et autrice-compositrice française naturalisée suisse, née le 5 octobre ...",
 "siecle": "21e",
 "wikidata": "Q239807"
+},
+{
+"tri": "Daladier",
+"nom": "Edouard Daladier",
+"lat": null,
+"long": null,
+"categorie": "Politique",
+"description": null,
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Brasseur",
+"nom": "Claude Brasseur",
+"lat": 48.86144,
+"long": 2.39188,
+"categorie": "Acteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q314480"
+},
+{
+"tri": "Patachou",
+"nom": "Henriette Lesser - Patachou",
+"lat": null,
+"long": null,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": null
+},
+{
+"tri": "Crespin",
+"nom": "Régine Crespin",
+"lat": 48.86159,
+"long": 2.39193,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q337745"
+},
+{
+"tri": "Savary",
+"nom": "Jérôme Savary",
+"lat": 48.86129,
+"long": 2.39169,
+"categorie": "Réalisateur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q312312"
+},
+{
+"tri": "Guattari",
+"nom": "Felix Guattari",
+"lat": null,
+"long": null,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "20e",
+"wikidata": null
+},
+{
+"tri": "Chelton",
+"nom": "Tsilla Chelton",
+"lat": 48.86149,
+"long": 2.39178,
+"categorie": "Acteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q310789"
+},
+{
+"tri": "Fabrega",
+"nom": "Christine Fabrega",
+"lat": null,
+"long": null,
+"categorie": "Acteur",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q2965925"
+},
+{
+"tri": "Stavisky",
+"nom": "Stavisky",
+"lat": null,
+"long": null,
+"categorie": "Autres",
+"description": null,
+"siecle": "20e",
+"wikidata": "Q245802"
+},
+{
+"tri": "Saint-Simon",
+"nom": "Comte de Saint-Simon",
+"lat": null,
+"long": null,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "19e",
+"wikidata": null
+},
+{
+"tri": "Kardec",
+"nom": "Allan Kardec",
+"lat": 48.86106,
+"long": 2.39197,
+"categorie": "Autres",
+"description": null,
+"siecle": "19e",
+"wikidata": "Q62378"
 },
 {
 "tri": "Vanarsky",
@@ -1768,5 +2118,35 @@
 "description": "Paul Éluard, nom de plume d'Eugène Grindel, né à Saint-Denis (Seine) le 14 décembre 1895 et mort à Charenton-le-Pont le 18 novembre 1952 ...",
 "siecle": "20e",
 "wikidata": "Q152176"
+},
+{
+"tri": "Higelin",
+"nom": "Jacques Higelin",
+"lat": 48.86122,
+"long": 2.39166,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q315383"
+},
+{
+"tri": "Moustaki",
+"nom": "Georges Moustaki",
+"lat": 48.86133,
+"long": 2.39173,
+"categorie": "Chanteur",
+"description": null,
+"siecle": "21e",
+"wikidata": "Q316748"
+},
+{
+"tri": "Dibango",
+"nom": "Manu Dibango",
+"lat": null,
+"long": null,
+"categorie": "Musicien",
+"description": null,
+"siecle": "21e",
+"wikidata": null
 }
 ]
