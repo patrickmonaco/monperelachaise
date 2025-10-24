@@ -178,18 +178,30 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open(url,"_blank");
   };
 
-  async function getWikipediaFromWikidata(qid, lang="fr"){
-    try{
-      const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
-      const json=await resp.json();
-      const entity=json.entities?.[qid];
-      const title=entity?.sitelinks?.[`${lang}wiki`]?.title||entity?.sitelinks?.["enwiki"]?.title;
-      if(!title)return null;
-      const wikiLang=title===entity?.sitelinks?.["enwiki"]?.title?"en":lang;
-      return `https://${wikiLang}.wikipedia.org/wiki/${encodeURIComponent(title)}`;
-    }catch{return null;}
-  }
+  async function getWikipediaFromWikidata(qid, lang = "fr") {
+  try {
+    const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
+    const json = await resp.json();
+    const entity = json.entities?.[qid];
 
+    // Vérifie explicitement la présence du sitelink français
+    const frLink = entity?.sitelinks?.[`${lang}wiki`];
+    const enLink = entity?.sitelinks?.["enwiki"];
+
+    // Si le lien français existe, on le prend. Sinon, on retombe sur l'anglais.
+    if (frLink && frLink.title) {
+      return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(frLink.title)}`;
+    } else if (enLink && enLink.title) {
+      return `https://en.wikipedia.org/wiki/${encodeURIComponent(enLink.title)}`;
+    } else {
+      return null; // aucun sitelink exploitable
+    }
+
+  } catch (err) {
+    console.error("Erreur Wikidata:", err);
+    return null;
+  }
+}
   window.openWikiInfo=async(qid,name)=>{
     const modal=document.getElementById("wikidata-modal");
     const frame=document.getElementById("wikidata-frame");
@@ -279,6 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
 
 
