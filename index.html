@@ -38,6 +38,15 @@
   transform: translate(10px, -10px);
   display: none;
 }
+/* Animation fade-in / fade-out pour l'image modale */
+#image-modal {
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
   
 @keyframes pulseSlow {
@@ -140,6 +149,12 @@
   🔄 Nouvelle version disponible — cliquez pour recharger
 </div>
 
+<!-- MODALE IMAGE -->
+<div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <img id="image-modal-content" src="" alt="Aperçu" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 scale-100 hover:scale-105" />
+</div>
+
+  
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
@@ -273,7 +288,11 @@ function updateConeRotation() {
   items.forEach(item => {
     if (item.lat && item.long) {
       const pic = item.pic
-        ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover fade-in" onload="this.classList.add('loaded')" />`
+        ? `<img src="${item.pic}" 
+     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+     onload="this.classList.add('loaded')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}')" 
+     alt="Portrait de ${item.nom}">`
         : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
 
       const popup = `
@@ -452,11 +471,28 @@ function updateConeRotation() {
     });
   }
 
+  // --- MODALE IMAGE AGRANDIE ---
+const imageModal = document.getElementById("image-modal");
+const imageModalContent = document.getElementById("image-modal-content");
+
+function openImageModal(url) {
+  imageModalContent.src = url;
+  imageModal.classList.remove("hidden");
+  imageModal.classList.add("flex");
+}
+
+imageModal.onclick = () => {
+  imageModal.classList.add("hidden");
+  imageModal.classList.remove("flex");
+  imageModalContent.src = "";
+};
+
   loadData();
 });
 </script>
 </body>
 </html>
+
 
 
 
