@@ -19,65 +19,82 @@
 </h1>
 
 <style>
-/* Animation douce et lente au repos (mobile & desktop) */
 @keyframes pulseSlow {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.05); opacity: 0.9; }
 }
-.animate-pulse-slow {
-  animation: pulseSlow 6s ease-in-out infinite;
+.animate-pulse-slow { animation: pulseSlow 6s ease-in-out infinite; }
+
+/* Réduction hauteur lignes et mise en avant du nom */
+.result-card {
+  padding: 0.5rem 0.9rem;
+  line-height: 1.2rem;
+}
+.result-card h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+.result-card p {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+.badge {
+  font-size: 0.7rem;
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.4rem;
+}
+.info-btn {
+  font-size: 1rem;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+.info-btn:hover {
+  color: #1d4ed8;
 }
 </style>
 
+<div class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
+  <!-- FILTRES -->
+  <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
+    <div>
+      <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
+      <div class="relative mt-1">
+        <input id="searchInput" type="text" placeholder="Nom ou mot-clé..." class="w-full border border-gray-300 rounded-lg p-2 pr-10" disabled />
+        <button id="micButton" title="Recherche vocale" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl" aria-label="Micro">🎤</button>
+      </div>
+      <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
+    </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
-    <!-- FILTRES -->
-    <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
-      <div>
-        <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-        <div class="relative mt-1">
-          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..." class="w-full border border-gray-300 rounded-lg p-2 pr-10" disabled />
-          <button id="micButton" title="Recherche vocale" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl" aria-label="Micro">🎤</button>
-        </div>
-        <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
-      </div>
+    <div>
+      <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
+      <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
+        <option value="">Tous</option>
+      </select>
+    </div>
 
-      <div>
-        <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
-        <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
-          <option value="">Tous</option>
-        </select>
+    <div>
+      <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
+      <div id="category-checkboxes" class="grid grid-cols-2 gap-x-6 gap-y-2 text-base text-gray-700 leading-snug">
+        <p class="text-gray-400 text-sm">Chargement...</p>
       </div>
+    </div>
 
-      <div>
-        <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-6 gap-y-2 text-base text-gray-700 leading-snug">
-          <p class="text-gray-400 text-sm">Chargement...</p>
-        </div>
-      </div>
+    <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+      <span id="result-count">0 résultat</span>
+      <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
+    </div>
+  </aside>
 
-      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
-        <span id="result-count">0 résultat</span>
-        <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
-      </div>
-    </aside>
-
-    <!-- RÉSULTATS -->
-    <main>
-      <div class="flex justify-end mb-4">
-        <label class="flex items-center gap-2 text-sm text-gray-700 font-medium">
-          Tri :
-          <select id="sortMode" class="border border-gray-300 rounded p-1 text-sm">
-            <option value="alpha">Ordre alphabétique</option>
-            <option value="distance">Proximité 📍</option>
-          </select>
-        </label>
-      </div>
-      <div id="results" class="space-y-4 text-gray-600">
-        <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
-      </div>
-    </main>
-  </div>
+  <!-- RÉSULTATS -->
+  <main>
+    <div id="results" class="space-y-2 text-gray-600">
+      <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+    </div>
+  </main>
+</div>
 </div>
 
 <!-- MODALE WIKI -->
@@ -91,7 +108,6 @@
   </div>
 </div>
 
-<!-- BANDEAU NOUVELLE VERSION -->
 <div id="updateBanner" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg cursor-pointer z-50">
   🔄 Nouvelle version disponible — cliquez pour recharger
 </div>
@@ -99,13 +115,11 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v9";
+  const CACHE_KEY = "faceted_data_cache_v10";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
 
   let data = [];
   let fuse = null;
-  let currentPosition = null;
-  let sortMode = "alpha";
 
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
@@ -113,22 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const centurySelect = document.getElementById("filter-century");
   const searchInput = document.getElementById("searchInput");
   const refreshBtn = document.getElementById("refresh-btn");
-  const sortSelect = document.getElementById("sortMode");
-  const micButton = document.getElementById("micButton");
-  const micStatus = document.getElementById("micStatus");
-  const updateBanner = document.getElementById("updateBanner");
-
-  function distance(lat1, lon1, lat2, lon2) {
-    const R = 6371;
-    const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  }
-
-  function showLoading(msg) {
-    resultsDiv.innerHTML = `<p class="text-center text-blue-600 font-medium animate-pulse py-4">${msg}</p>`;
-  }
 
   function renderResults(items) {
     resultsDiv.innerHTML = "";
@@ -138,33 +136,21 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (sortMode === "distance" && currentPosition) {
-      items.forEach(item => {
-        if (item.lat && item.long)
-          item._distance = distance(currentPosition.lat, currentPosition.lon, parseFloat(item.lat), parseFloat(item.long));
-        else item._distance = Infinity;
-      });
-      items.sort((a,b)=>a._distance-b._distance);
-    } else {
-      items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
-    }
+    items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
 
     for (const item of items) {
       resultsDiv.innerHTML += `
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <div class="result-card bg-white rounded-xl shadow-sm hover:shadow transition">
           <div class="flex justify-between items-center mb-1">
-            <h2 class="font-semibold text-lg text-blue-700 cursor-pointer hover:underline"
-                onclick="openInGoogleMaps('${item.lat}', '${item.long}')">
+            <h2 class="cursor-pointer hover:underline" onclick="openInGoogleMaps('${item.lat}', '${item.long}')">
               ${item.nom}
             </h2>
             <div class="flex items-center gap-2">
-              <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${item.siecle || "-"}</span>
-              ${item._distance && item._distance !== Infinity ? `<span class="text-xs text-gray-500">${item._distance.toFixed(2)} km</span>` : ""}
-              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl">ℹ️</button>` : ""}
+              <span class="badge">${item.siecle || "-"}</span>
+              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')" class="info-btn">ℹ️</button>` : ""}
             </div>
           </div>
-          <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
-          <p class="text-gray-700 mt-1">${item.description || ""}</p>
+          <p>${item.categorie || "—"}</p>
         </div>`;
     }
   }
@@ -179,29 +165,22 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   async function getWikipediaFromWikidata(qid, lang = "fr") {
-  try {
-    const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
-    const json = await resp.json();
-    const entity = json.entities?.[qid];
-
-    // Vérifie explicitement la présence du sitelink français
-    const frLink = entity?.sitelinks?.[`${lang}wiki`];
-    const enLink = entity?.sitelinks?.["enwiki"];
-
-    // Si le lien français existe, on le prend. Sinon, on retombe sur l'anglais.
-    if (frLink && frLink.title) {
-      return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(frLink.title)}`;
-    } else if (enLink && enLink.title) {
-      return `https://en.wikipedia.org/wiki/${encodeURIComponent(enLink.title)}`;
-    } else {
-      return null; // aucun sitelink exploitable
+    try {
+      const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
+      const json = await resp.json();
+      const entity = json.entities?.[qid];
+      const frLink = entity?.sitelinks?.[`${lang}wiki`];
+      const enLink = entity?.sitelinks?.["enwiki"];
+      if (frLink && frLink.title)
+        return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(frLink.title)}`;
+      else if (enLink && enLink.title)
+        return `https://en.wikipedia.org/wiki/${encodeURIComponent(enLink.title)}`;
+      else return null;
+    } catch {
+      return null;
     }
-
-  } catch (err) {
-    console.error("Erreur Wikidata:", err);
-    return null;
   }
-}
+
   window.openWikiInfo=async(qid,name)=>{
     const modal=document.getElementById("wikidata-modal");
     const frame=document.getElementById("wikidata-frame");
@@ -212,7 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const url=await getWikipediaFromWikidata(qid);
     frame.src=url||`https://www.wikidata.org/wiki/${qid}`;
   };
-
   document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");const f=document.getElementById("wikidata-frame");m.classList.add("hidden");m.classList.remove("flex");f.src="";};
   document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
 
@@ -248,50 +226,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function initFuse(){fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});}
 
-  sortSelect.onchange=()=>{
-    sortMode=sortSelect.value;
-    if(sortMode==="distance"){
-      if(!navigator.geolocation){alert("Géolocalisation non supportée");sortSelect.value="alpha";return;}
-      showLoading("🛰️ Calcul des distances en cours…");
-      navigator.geolocation.getCurrentPosition(pos=>{currentPosition={lat:pos.coords.latitude,lon:pos.coords.longitude};applyFilters();},()=>{alert("Accès localisation refusé");sortSelect.value="alpha";applyFilters();});
-    }else applyFilters();
-  };
-
   refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
   loadData();
-
-  // --- MICRO (simple) ---
-  (()=>{
-    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-    if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
-    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
-    let listen=false;
-    const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
-    const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
-    micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
-    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
-    r.onerror=stop;r.onend=stop;
-  })();
-
-  // --- SERVICE WORKER + BANNIÈRE ---
-  if("serviceWorker" in navigator){
-    navigator.serviceWorker.register("service-worker.js").then(reg=>{
-      reg.onupdatefound=()=>{
-        const newWorker=reg.installing;
-        newWorker.onstatechange=()=>{
-          if(newWorker.state==="installed"&&navigator.serviceWorker.controller){
-            updateBanner.classList.remove("hidden");
-            updateBanner.onclick=()=>{newWorker.postMessage({action:"skipWaiting"});location.reload();};
-          }
-        };
-      };
-    });
-  }
 });
 </script>
 </body>
 </html>
-
-
-
-
