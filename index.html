@@ -52,6 +52,16 @@
   line-height: 1.4;
 }
 
+/*   Ajout pour transition Lisye vers carte    */
+#results, #map {
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+.hidden {
+  opacity: 0 !important;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+  
 
   
 @keyframes pulseSlow {
@@ -189,21 +199,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const viewList = document.getElementById("view-list");
   const viewMap = document.getElementById("view-map");
 
-  // --- Navigation entre onglets
-  tabList.onclick = () => {
-    tabList.classList.add("tab-active");
-    tabMap.classList.remove("tab-active");
-    viewList.classList.remove("hidden");
-    viewMap.classList.add("hidden");
-  };
-  tabMap.onclick = () => {
-    tabMap.classList.add("tab-active");
-    tabList.classList.remove("tab-active");
-    viewList.classList.add("hidden");
-    viewMap.classList.remove("hidden");
-    if (!map) {initMap();map.on("zoomend", toggleLabels);}
+ // --- Navigation entre onglets
+tabList.onclick = () => {
+  tabList.classList.add("tab-active");
+  tabMap.classList.remove("tab-active");
 
-  };
+  // Animation fluide
+  viewList.classList.remove("hidden");
+  viewMap.classList.add("hidden");
+};
+
+tabMap.onclick = () => {
+  tabMap.classList.add("tab-active");
+  tabList.classList.remove("tab-active");
+
+  // Animation fluide
+  viewList.classList.add("hidden");
+  viewMap.classList.remove("hidden");
+
+  // Initialisation de la carte si nécessaire
+  if (!map) {
+    initMap();
+    map.on("zoomend", toggleLabels);
+  }
+};
+
 
 // Ajout affiche nom apres zoom
   function toggleLabels() {
@@ -518,6 +538,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
