@@ -475,20 +475,24 @@ function updateConeRotation() {
     });
   }
 
-  // --- MODALE IMAGE AGRANDIE ---
+  // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
 const imageModal = document.getElementById("image-modal");
 const imageModalContent = document.getElementById("image-modal-content");
+const imageModalCaption = document.getElementById("image-modal-caption");
 
-function openImageModal(url) {
+// ✅ Rendez la fonction globale pour l'usage onclick="openImageModal(...)" :
+window.openImageModal = function (url, captionText) {
   imageModalContent.src = url;
+  imageModalCaption.textContent = captionText || "";
   imageModal.classList.remove("hidden");
   imageModal.classList.add("flex");
-}
+};
 
 imageModal.onclick = () => {
   imageModal.classList.add("hidden");
   imageModal.classList.remove("flex");
   imageModalContent.src = "";
+  imageModalCaption.textContent = "";
 };
 
   loadData();
@@ -496,6 +500,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
