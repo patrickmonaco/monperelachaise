@@ -8,96 +8,85 @@
 <meta name="theme-color" content="#1d4ed8" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
-
-<div class="max-w-7xl mx-auto py-10 px-4">
- <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
-  <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 transition-transform duration-700 hover:rotate-12 hover:scale-110 animate-pulse-slow">
-  Mon Père Lachaise
-  <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 transition-transform duration-700 hover:-rotate-12 hover:scale-110 animate-pulse-slow">
-</h1>
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
 @keyframes pulseSlow {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.9; }
+  0%,100%{transform:scale(1);opacity:1;}
+  50%{transform:scale(1.05);opacity:0.9;}
 }
-.animate-pulse-slow { animation: pulseSlow 6s ease-in-out infinite; }
-
-/* Réduction hauteur lignes et mise en avant du nom */
-.result-card {
-  padding: 0.5rem 0.9rem;
-  line-height: 1.2rem;
-}
-.result-card h2 {
-  font-size: 1.35rem;
-  font-weight: 500;
-  color: #1d4ed8;
-}
-.result-card p {
-  font-size: 0.85rem;
-  color: #4b5563;
-}
-.badge {
-  font-size: 0.7rem;
-  background: #f3f4f6;
-  color: #6b7280;
-  padding: 0.15rem 0.4rem;
-  border-radius: 0.4rem;
-}
-.info-btn {
-  font-size: 1rem;
-  color: #6b7280;
-  transition: color 0.2s;
-}
-.info-btn:hover {
-  color: #1d4ed8;
-}
+.animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
+.tab-active{background-color:#2563eb;color:white;}
 </style>
+</head>
 
-<div class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
-  <!-- FILTRES -->
-  <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
-    <div>
-      <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-      <div class="relative mt-1">
-        <input id="searchInput" type="text" placeholder="Nom ou mot-clé..." class="w-full border border-gray-300 rounded-lg p-2 pr-10" disabled />
-        <button id="micButton" title="Recherche vocale" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl" aria-label="Micro">🎤</button>
+<body class="bg-gray-50 text-gray-800">
+<div class="max-w-7xl mx-auto py-10 px-4">
+  <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+    <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
+    Mon Père Lachaise
+    <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
+  </h1>
+
+  <!-- Onglets -->
+  <div class="flex justify-center mb-6">
+    <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">📜 Liste</button>
+    <button id="tab-map" class="px-4 py-2 border rounded-r-lg bg-white hover:bg-gray-100">🗺️ Carte</button>
+  </div>
+
+  <!-- Vue Liste -->
+  <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
+    <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
+      <div>
+        <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
+        <div class="relative mt-1">
+          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
+                 class="w-full border border-gray-300 rounded-lg p-2 pr-16" disabled />
+          <button id="clearButton"
+                  class="absolute right-9 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-500 text-xl hidden"
+                  title="Effacer">❌</button>
+          <button id="micButton"
+                  title="Recherche vocale"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl"
+                  aria-label="Micro">🎤</button>
+        </div>
+        <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
       </div>
-      <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
-    </div>
 
-    <div>
-      <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
-      <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
-        <option value="">Tous</option>
-      </select>
-    </div>
-
-    <div>
-      <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-      <div id="category-checkboxes" class="grid grid-cols-2 gap-x-6 gap-y-2 text-base text-gray-700 leading-snug">
-        <p class="text-gray-400 text-sm">Chargement...</p>
+      <div>
+        <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
+        <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
+          <option value="">Tous</option>
+        </select>
       </div>
-    </div>
 
-    <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
-      <span id="result-count">0 résultat</span>
-      <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
-    </div>
-  </aside>
+      <div>
+        <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
+        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
+          <p class="text-gray-400 text-sm">Chargement...</p>
+        </div>
+      </div>
 
-  <!-- RÉSULTATS -->
-  <main>
-    <div id="results" class="space-y-2 text-gray-600">
-      <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
-    </div>
-  </main>
+      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+        <span id="result-count">0 résultat</span>
+        <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
+      </div>
+    </aside>
+
+    <main>
+      <div id="results" class="space-y-2 text-gray-600">
+        <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Vue Carte -->
+  <div id="view-map" class="hidden h-[75vh] rounded-2xl overflow-hidden shadow">
+    <div id="map" class="w-full h-full"></div>
+  </div>
 </div>
-</div>
 
-<!-- MODALE WIKI -->
+<!-- Modale Wiki -->
 <div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
   <div class="bg-white w-[95%] md:w-[75%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
     <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
@@ -108,6 +97,7 @@
   </div>
 </div>
 
+<!-- Bannière MAJ -->
 <div id="updateBanner" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg cursor-pointer z-50">
   🔄 Nouvelle version disponible — cliquez pour recharger
 </div>
@@ -115,11 +105,9 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v10";
+  const CACHE_KEY = "faceted_data_cache_v11";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
-
-  let data = [];
-  let fuse = null;
+  let data = [], fuse = null, map = null, markers = [];
 
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
@@ -127,90 +115,130 @@ document.addEventListener("DOMContentLoaded", () => {
   const centurySelect = document.getElementById("filter-century");
   const searchInput = document.getElementById("searchInput");
   const refreshBtn = document.getElementById("refresh-btn");
+  const clearBtn = document.getElementById("clearButton");
+  const micButton = document.getElementById("micButton");
+  const micStatus = document.getElementById("micStatus");
+  const updateBanner = document.getElementById("updateBanner");
+  const tabList = document.getElementById("tab-list");
+  const tabMap = document.getElementById("tab-map");
+  const viewList = document.getElementById("view-list");
+  const viewMap = document.getElementById("view-map");
 
+  // --- Navigation entre onglets
+  tabList.onclick = () => {
+    tabList.classList.add("tab-active");
+    tabMap.classList.remove("tab-active");
+    viewList.classList.remove("hidden");
+    viewMap.classList.add("hidden");
+  };
+  tabMap.onclick = () => {
+    tabMap.classList.add("tab-active");
+    tabList.classList.remove("tab-active");
+    viewList.classList.add("hidden");
+    viewMap.classList.remove("hidden");
+    if (!map) initMap();
+  };
+
+  // --- Carte
+  function initMap() {
+    map = L.map("map").setView([48.8606, 2.3934], 16);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> contributors',
+      maxZoom: 19
+    }).addTo(map);
+    updateMapMarkers(data);
+  }
+
+  function updateMapMarkers(items) {
+    if (!map) return;
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+    items.forEach(item => {
+      if (item.lat && item.long) {
+        const pic = item.pic
+          ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover" />`
+          : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
+        const popup = `
+          <div class="flex items-center">
+            ${pic}
+            <div>
+              <b>${item.nom}</b><br>
+              <button onclick="openNavigation('${item.lat}','${item.long}')"
+                class="text-blue-600 underline mt-1">🚶 Naviguer</button>
+            </div>
+          </div>`;
+        const marker = L.marker([item.lat, item.long]).addTo(map).bindPopup(popup);
+        markers.push(marker);
+      }
+    });
+  }
+
+  // --- Navigation (iPhone / Android / Desktop)
+  window.openNavigation = function(lat,long){
+    if(!lat||!long) return;
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    let url = "";
+    if (/android/i.test(ua)) {
+      url = `google.navigation:q=${lat},${long}&mode=w`;
+    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      url = `maps://?daddr=${lat},${long}&dirflg=w`;
+    } else {
+      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    }
+    window.open(url, "_blank");
+  };
+
+  // --- Affichage liste
   function renderResults(items) {
     resultsDiv.innerHTML = "";
-    resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
+    resultCount.textContent = `${items.length} résultat${items.length>1?"s":""}`;
     if (!items.length) {
       resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
+      updateMapMarkers([]);
       return;
     }
-
     items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
-
     for (const item of items) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" alt="portrait" class="w-10 h-10 rounded-lg mr-3 object-cover">`
+        : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
       resultsDiv.innerHTML += `
-        <div class="result-card bg-white rounded-xl shadow-sm hover:shadow transition">
-          <div class="flex justify-between items-center mb-1">
-            <h2 class="cursor-pointer hover:underline" onclick="openInGoogleMaps('${item.lat}', '${item.long}')">
-              ${item.nom}
-            </h2>
-            <div class="flex items-center gap-2">
-              <span class="badge">${item.siecle || "-"}</span>
-              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}', '${item.nom.replace(/'/g,"&#39;")}')" class="info-btn">ℹ️</button>` : ""}
+        <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
+          ${pic}
+          <div class="flex-1">
+            <div class="flex justify-between items-center">
+              <h2 class="font-medium text-blue-700 text-lg cursor-pointer hover:underline"
+                  onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}</h2>
+              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}','${item.nom.replace(/'/g,"&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl">ℹ️</button>` : ""}
             </div>
+            <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
+            <p class="text-gray-700 text-sm mt-1 leading-tight">${item.description || ""}</p>
           </div>
-          <p>${item.categorie || "—"}</p>
         </div>`;
     }
+    updateMapMarkers(items);
   }
 
-  window.openInGoogleMaps = function(lat,long){
-    if(!lat||!long)return;
-    const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    const url=isMobile&&/Android/i.test(navigator.userAgent)?
-      `google.navigation:q=${lat},${long}&mode=w`:
-      `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
-    window.open(url,"_blank");
-  };
-
-  async function getWikipediaFromWikidata(qid, lang = "fr") {
-    try {
-      const resp = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
-      const json = await resp.json();
-      const entity = json.entities?.[qid];
-      const frLink = entity?.sitelinks?.[`${lang}wiki`];
-      const enLink = entity?.sitelinks?.["enwiki"];
-      if (frLink && frLink.title)
-        return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(frLink.title)}`;
-      else if (enLink && enLink.title)
-        return `https://en.wikipedia.org/wiki/${encodeURIComponent(enLink.title)}`;
-      else return null;
-    } catch {
-      return null;
+  // --- Filtres
+  function applyFilters() {
+    const txt = searchInput.value.trim().toLowerCase();
+    const century = centurySelect.value;
+    const cats = [...categoryContainer.querySelectorAll("input:checked")].map(c => c.value);
+    let filtered = data;
+    if (txt) {
+      let exact = data.filter(it => (it.nom||"").toLowerCase().includes(txt));
+      if (!exact.length) exact = fuse.search(txt).map(r=>r.item);
+      filtered = exact;
     }
-  }
-
-  window.openWikiInfo=async(qid,name)=>{
-    const modal=document.getElementById("wikidata-modal");
-    const frame=document.getElementById("wikidata-frame");
-    const title=document.getElementById("wikidata-title");
-    title.textContent=name||"Informations";
-    modal.classList.remove("hidden");modal.classList.add("flex");
-    frame.src="";
-    const url=await getWikipediaFromWikidata(qid);
-    frame.src=url||`https://www.wikidata.org/wiki/${qid}`;
-  };
-  document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");const f=document.getElementById("wikidata-frame");m.classList.add("hidden");m.classList.remove("flex");f.src="";};
-  document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
-
-  function applyFilters(){
-    const txt=searchInput.value.trim().toLowerCase();
-    const century=centurySelect.value;
-    const cats=[...categoryContainer.querySelectorAll("input:checked")].map(c=>c.value);
-    let filtered=data;
-    if(txt){
-      let exact=data.filter(it=>(it.nom||"").toLowerCase().includes(txt));
-      if(!exact.length)exact=fuse.search(txt).map(r=>r.item);
-      filtered=exact;
-    }
-    filtered=filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
+    filtered = filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
     renderResults(filtered);
   }
 
-  function setupFilters(){
-    const cats=[...new Set(data.map(d=>d.categorie))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr",{sensitivity:"base"}));
-    categoryContainer.innerHTML=cats.map(c=>`<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`).join("");
+  function setupFilters() {
+    const cats=[...new Set(data.map(d=>d.categorie))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr"));
+    categoryContainer.innerHTML=cats.map(c=>
+      `<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`
+    ).join("");
     const centuries=[...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
     centurySelect.innerHTML='<option value="">Tous</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
     searchInput.disabled=false;centurySelect.disabled=false;
@@ -219,18 +247,77 @@ document.addEventListener("DOMContentLoaded", () => {
     applyFilters();
   }
 
-  function saveToCache(j){localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:j}));}
-  function loadFromCache(){const r=localStorage.getItem(CACHE_KEY);if(!r)return null;const p=JSON.parse(r);return(Date.now()-p.timestamp<CACHE_TTL)?p.data:null;}
+  // --- Données
+  async function loadData(force=false){
+    try{
+      const cached=!force&&localStorage.getItem(CACHE_KEY);
+      if(cached){
+        const parsed=JSON.parse(cached);
+        if(Date.now()-parsed.timestamp<CACHE_TTL){data=parsed.data;initFuse();setupFilters();return;}
+      }
+      const resp=await fetch(DATA_URL,{cache:"no-store"});
+      const j=await resp.json();data=j;initFuse();setupFilters();
+      localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:j}));
+    }catch(e){
+      resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;
+    }
+  }
 
-  async function loadData(force=false){try{const cached=!force&&loadFromCache();if(cached){data=cached;initFuse();setupFilters();return;}const resp=await fetch(DATA_URL,{cache:"no-store"});const j=await resp.json();data=j;initFuse();saveToCache(j);setupFilters();}catch(e){resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;}}
+  function initFuse(){
+    fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});
+  }
 
-  function initFuse(){fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});}
+  // --- Bouton effacer
+  searchInput.addEventListener("input",()=>{clearBtn.classList.toggle("hidden",!searchInput.value.trim());});
+  clearBtn.onclick=()=>{searchInput.value="";clearBtn.classList.add("hidden");applyFilters();};
 
+  // --- Micro simple
+  (()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
+    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
+    let listen=false;const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
+    const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
+    micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
+    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
+    r.onerror=stop;r.onend=stop;})();
+
+  // --- Wiki
+  window.openWikiInfo=async(qid,name)=>{
+    const modal=document.getElementById("wikidata-modal");
+    const frame=document.getElementById("wikidata-frame");
+    const title=document.getElementById("wikidata-title");
+    title.textContent=name||"Informations";
+    modal.classList.remove("hidden");modal.classList.add("flex");
+    frame.src="";
+    try{
+      const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
+      const json=await resp.json();const entity=json.entities?.[qid];
+      const fr=entity?.sitelinks?.["frwiki"]?.title;const en=entity?.sitelinks?.["enwiki"]?.title;
+      frame.src=fr?`https://fr.wikipedia.org/wiki/${encodeURIComponent(fr)}`:en?`https://en.wikipedia.org/wiki/${encodeURIComponent(en)}`:`https://www.wikidata.org/wiki/${qid}`;
+    }catch{frame.src=`https://www.wikidata.org/wiki/${qid}`;}
+  };
+  document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
+  document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
+
+  // --- Refresh
   refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
+
+  // --- Service Worker
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("service-worker.js").then(reg=>{
+      reg.onupdatefound=()=>{
+        const newWorker=reg.installing;
+        newWorker.onstatechange=()=>{
+          if(newWorker.state==="installed"&&navigator.serviceWorker.controller){
+            updateBanner.classList.remove("hidden");
+            updateBanner.onclick=()=>{newWorker.postMessage({action:"skipWaiting"});location.reload();};
+          }
+        };
+      };
+    });
+  }
+
   loadData();
 });
 </script>
 </body>
 </html>
-
-
