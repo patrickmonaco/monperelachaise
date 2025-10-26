@@ -353,7 +353,11 @@ function updateConeRotation() {
     items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
     for (const item of items) {
       const pic = item.pic
-        ? `<img src="${item.pic}" alt="portrait" class="w-10 h-10 rounded-lg mr-3 object-cover fade-in" onload="this.classList.add('loaded')">`
+        ? `<img src="${item.pic}" 
+     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+     onload="this.classList.add('loaded')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}')" 
+     alt="Portrait de ${item.nom}">`
         : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
       resultsDiv.innerHTML += `
         <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
@@ -492,6 +496,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
