@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Ajout affiche nom apres zoom
   function toggleLabels() {
   const zoom = map.getZoom();
-  const showLabels = zoom >= 20;
+  const showLabels = zoom >= 18;
   document.querySelectorAll(".map-label span").forEach(el => {
     el.style.display = showLabels ? "block" : "none";
   });
@@ -457,6 +457,7 @@ function updateConeRotation() {
 </script>
 </body>
 </html>
+
 
 
 
