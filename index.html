@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if(Date.now()-parsed.timestamp<CACHE_TTL){data=parsed.data;initFuse();setupFilters();return;}
       }
       const resp=await fetch(DATA_URL,{cache:"no-store"});
-      const j=await resp.json();data=j;initFuse();setupFilters();
+      const j=await resp.json();data = Array.isArray(j) ? j : (j.data || []);initFuse();setupFilters();
       localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:j}));
     }catch(e){
       resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;
@@ -321,3 +321,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
