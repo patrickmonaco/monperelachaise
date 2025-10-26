@@ -38,15 +38,20 @@
   transform: translate(10px, -10px);
   display: none;
 }
-/* Animation fade-in / fade-out pour l'image modale */
+  
+/* --- MODALE IMAGE (avec légende et effet fade-in) --- */
 #image-modal {
   animation: fadeIn 0.25s ease-out;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+#image-modal-caption {
+  max-width: 90vw;
+  line-height: 1.4;
+}
+
 
   
 @keyframes pulseSlow {
@@ -149,10 +154,17 @@
   🔄 Nouvelle version disponible — cliquez pour recharger
 </div>
 
-<!-- MODALE IMAGE -->
-<div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
-  <img id="image-modal-content" src="" alt="Aperçu" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 scale-100 hover:scale-105" />
+<!-- MODALE IMAGE AVEC LÉGENDE -->
+<div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-4">
+  <div class="flex flex-col items-center">
+    <img id="image-modal-content" 
+         src="" 
+         alt="Aperçu" 
+         class="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 scale-100 hover:scale-105" />
+    <p id="image-modal-caption" class="text-white text-center mt-3 text-lg font-medium drop-shadow-lg"></p>
+  </div>
 </div>
+
 
   
 <script>
@@ -291,7 +303,7 @@ function updateConeRotation() {
         ? `<img src="${item.pic}" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
-     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
      alt="Portrait de ${item.nom}">`
         : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
 
@@ -356,7 +368,7 @@ function updateConeRotation() {
         ? `<img src="${item.pic}" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
-     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
      alt="Portrait de ${item.nom}">`
         : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
       resultsDiv.innerHTML += `
@@ -475,31 +487,40 @@ function updateConeRotation() {
     });
   }
 
-  // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
-const imageModal = document.getElementById("image-modal");
-const imageModalContent = document.getElementById("image-modal-content");
-const imageModalCaption = document.getElementById("image-modal-caption");
+ // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
+document.addEventListener("DOMContentLoaded", () => {
+  const imageModal = document.getElementById("image-modal");
+  const imageModalContent = document.getElementById("image-modal-content");
+  const imageModalCaption = document.getElementById("image-modal-caption");
 
-// ✅ Rendez la fonction globale pour l'usage onclick="openImageModal(...)" :
-window.openImageModal = function (url, captionText) {
-  imageModalContent.src = url;
-  imageModalCaption.textContent = captionText || "";
-  imageModal.classList.remove("hidden");
-  imageModal.classList.add("flex");
-};
+  // ✅ rendre la fonction accessible globalement (pour onclick)
+  window.openImageModal = function (url, captionText) {
+    if (!imageModal || !imageModalContent || !imageModalCaption) {
+      console.error("Modale image non trouvée dans le DOM.");
+      return;
+    }
+    imageModalContent.src = url;
+    imageModalCaption.textContent = captionText || "";
+    imageModal.classList.remove("hidden");
+    imageModal.classList.add("flex");
+  };
 
-imageModal.onclick = () => {
-  imageModal.classList.add("hidden");
-  imageModal.classList.remove("flex");
-  imageModalContent.src = "";
-  imageModalCaption.textContent = "";
-};
+  // ✅ fermeture de la modale au clic
+  imageModal.onclick = () => {
+    imageModal.classList.add("hidden");
+    imageModal.classList.remove("flex");
+    imageModalContent.src = "";
+    imageModalCaption.textContent = "";
+  };
+});
+
 
   loadData();
 });
 </script>
 </body>
 </html>
+
 
 
 
