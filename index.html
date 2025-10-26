@@ -240,28 +240,46 @@ function updateConeRotation() {
 // -- Fin Boussole
   
   function updateMapMarkers(items) {
-    if (!map) return;
-    markers.forEach(m => map.removeLayer(m));
-    markers = [];
-    items.forEach(item => {
-      if (item.lat && item.long) {
-        const pic = item.pic
-          ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover fade-in" onload="this.classList.add('loaded')" />`
-          : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
-        const popup = `
-          <div class="flex items-center">
-            ${pic}
-            <div>
-              <b>${item.nom}</b><br>
-              <button onclick="openNavigation('${item.lat}','${item.long}')"
-                class="text-blue-600 underline mt-1">🚶 Naviguer</button>
-            </div>
-          </div>`;
-        const marker = L.marker([item.lat, item.long]).addTo(map).bindPopup(popup);
-        markers.push(marker);
-      }
-    });
-  }
+  if (!map) return;
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  items.forEach(item => {
+    if (item.lat && item.long) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover fade-in" onload="this.classList.add('loaded')" />`
+        : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
+
+      const popup = `
+        <div class="flex items-center">
+          ${pic}
+          <div>
+            <b>${item.nom}</b><br>
+            <button onclick="openNavigation('${item.lat}','${item.long}')"
+              class="text-blue-600 underline mt-1">🚶 Naviguer</button>
+          </div>
+        </div>`;
+
+      // Création du marqueur
+      const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
+      markers.push(marker);
+
+      // Création du label (invisible au départ)
+      const label = L.divIcon({
+        className: "map-label",
+        html: `<span>${item.nom}</span>`,
+        iconSize: null
+      });
+      const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
+      labelMarker._isLabel = true;
+      labelMarker._nom = item.nom;
+      markers.push(labelMarker);
+    }
+  });
+
+  toggleLabels();
+}
+
 
   // --- Navigation (iPhone / Android / Desktop)
   window.openNavigation = function(lat,long){
@@ -413,4 +431,5 @@ function updateConeRotation() {
 </script>
 </body>
 </html>
+
 
