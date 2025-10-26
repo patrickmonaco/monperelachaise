@@ -488,37 +488,37 @@ function updateConeRotation() {
   }
 
    // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
-document.addEventListener("DOMContentLoaded", () => {
-  const imageModal = document.getElementById("image-modal");
-  const imageModalContent = document.getElementById("image-modal-content");
-  const imageModalCaption = document.getElementById("image-modal-caption");
+const imageModal = document.getElementById("image-modal");
+const imageModalContent = document.getElementById("image-modal-content");
+const imageModalCaption = document.getElementById("image-modal-caption");
 
-  // ✅ rendre la fonction accessible globalement (pour onclick)
-  window.openImageModal = function (url, captionText) {
-    if (!imageModal || !imageModalContent || !imageModalCaption) {
-      console.error("Modale image non trouvée dans le DOM.");
-      return;
-    }
-    imageModalContent.src = url;
-    imageModalCaption.textContent = captionText || "";
-    imageModal.classList.remove("hidden");
-    imageModal.classList.add("flex");
-  };
+// ✅ rendre la fonction accessible globalement (pour onclick)
+window.openImageModal = function (url, captionText) {
+  if (!imageModal || !imageModalContent || !imageModalCaption) {
+    console.error("Modale image non trouvée dans le DOM.");
+    return;
+  }
+  imageModalContent.src = url;
+  imageModalCaption.textContent = captionText || "";
+  imageModal.classList.remove("hidden");
+  imageModal.classList.add("flex");
+};
 
-  // ✅ fermeture de la modale au clic
-  imageModal.onclick = () => {
-    imageModal.classList.add("hidden");
-    imageModal.classList.remove("flex");
-    imageModalContent.src = "";
-    imageModalCaption.textContent = "";
-  };
-});
+// ✅ fermeture de la modale au clic
+imageModal.onclick = () => {
+  imageModal.classList.add("hidden");
+  imageModal.classList.remove("flex");
+  imageModalContent.src = "";
+  imageModalCaption.textContent = "";
+};
+
 
   loadData();
 });
 </script>
 </body>
 </html>
+
 
 
 
