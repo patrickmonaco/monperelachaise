@@ -26,6 +26,20 @@
   transition: transform 0.2s linear;
   filter: drop-shadow(0 0 2px rgba(37,99,235,0.6));
 } 
+.map-label span {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 13px;
+  color: #1e3a8a;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transform: translate(10px, -10px);
+  display: none;
+}
+
+  
 @keyframes pulseSlow {
   0%,100%{transform:scale(1);opacity:1;}
   50%{transform:scale(1.05);opacity:0.9;}
@@ -160,9 +174,21 @@ document.addEventListener("DOMContentLoaded", () => {
     tabList.classList.remove("tab-active");
     viewList.classList.add("hidden");
     viewMap.classList.remove("hidden");
-    if (!map) initMap();
+    if (!map) {initMap();map.on("zoomend", toggleLabels);}
+
   };
 
+// Ajout affiche nom apres zoom
+  function toggleLabels() {
+  const zoom = map.getZoom();
+  const showLabels = zoom >= 17;
+  document.querySelectorAll(".map-label span").forEach(el => {
+    el.style.display = showLabels ? "block" : "none";
+  });
+}
+
+
+  
   // --- Carte
   function initMap() {
     map = L.map("map").setView([48.8606, 2.3934], 16);
@@ -431,5 +457,6 @@ function updateConeRotation() {
 </script>
 </body>
 </html>
+
 
 
