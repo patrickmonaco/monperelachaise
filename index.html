@@ -12,6 +12,20 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
+  
+/* --- Cône directionnel style Google Maps --- */
+.user-cone .cone {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 18px solid rgba(37,99,235,0.9);
+  border-radius: 2px;
+  transform-origin: 50% 100%;
+  transition: transform 0.2s linear;
+  filter: drop-shadow(0 0 2px rgba(37,99,235,0.6));
+} 
 @keyframes pulseSlow {
   0%,100%{transform:scale(1);opacity:1;}
   50%{transform:scale(1.05);opacity:0.9;}
@@ -157,8 +171,74 @@ document.addEventListener("DOMContentLoaded", () => {
       maxZoom: 19
     }).addTo(map);
     updateMapMarkers(data);
+    // Ajouté pour Boussole
+    initUserPosition();
+
   }
 
+  // Ajout Boussole
+  let userMarker = null;
+let userCircle = null;
+let heading = 0;
+
+// Initialise le suivi GPS + orientation
+function initUserPosition() {
+  if (!navigator.geolocation) return;
+
+  // Suivi en temps réel de la position
+  navigator.geolocation.watchPosition(pos => {
+    const lat = pos.coords.latitude;
+    const lon = pos.coords.longitude;
+
+    // Création ou mise à jour du cône
+    if (!userMarker) {
+      const coneIcon = L.divIcon({
+        className: "user-cone",
+        html: `<div class="cone"></div>`,
+        iconSize: [40, 40],
+        iconAnchor: [20, 20]
+      });
+      userMarker = L.marker([lat, lon], { icon: coneIcon }).addTo(map);
+      userCircle = L.circle([lat, lon], {
+        radius: 15,
+        color: "#2563eb",
+        fillColor: "#3b82f6",
+        fillOpacity: 0.3
+      }).addTo(map);
+    } else {
+      userMarker.setLatLng([lat, lon]);
+      userCircle.setLatLng([lat, lon]);
+    }
+  }, err => {
+    console.warn("Géolocalisation refusée ou indisponible", err);
+  }, {
+    enableHighAccuracy: true,
+    maximumAge: 10000,
+    timeout: 10000
+  });
+
+  // Suivi orientation (boussole)
+  window.addEventListener("deviceorientationabsolute", e => {
+    if (e.alpha != null) {
+      heading = e.alpha;
+      updateConeRotation();
+    }
+  }, true);
+
+  window.addEventListener("deviceorientation", e => {
+    if (e.alpha != null) {
+      heading = e.alpha;
+      updateConeRotation();
+    }
+  }, true);
+}
+
+function updateConeRotation() {
+  const coneEl = document.querySelector(".user-cone .cone");
+  if (coneEl) coneEl.style.transform = `rotate(${heading}deg)`;
+}
+// -- Fin Boussole
+  
   function updateMapMarkers(items) {
     if (!map) return;
     markers.forEach(m => map.removeLayer(m));
@@ -333,3 +413,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
