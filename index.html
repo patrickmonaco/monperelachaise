@@ -10,6 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <style>
 @keyframes pulseSlow {
   0%,100%{transform:scale(1);opacity:1;}
@@ -17,6 +18,15 @@
 }
 .animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
 .tab-active{background-color:#2563eb;color:white;}
+
+/* --- effet fade-in pour les images --- */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-in.loaded {
+  opacity: 1;
+}
 </style>
 </head>
 
@@ -105,7 +115,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v11";
+  const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
   let data = [], fuse = null, map = null, markers = [];
 
@@ -156,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => {
       if (item.lat && item.long) {
         const pic = item.pic
-          ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover" />`
+          ? `<img src="${item.pic}" class="w-10 h-10 rounded-lg mr-2 object-cover fade-in" onload="this.classList.add('loaded')" />`
           : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
         const popup = `
           <div class="flex items-center">
@@ -200,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
     items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
     for (const item of items) {
       const pic = item.pic
-        ? `<img src="${item.pic}" alt="portrait" class="w-10 h-10 rounded-lg mr-3 object-cover">`
+        ? `<img src="${item.pic}" alt="portrait" class="w-10 h-10 rounded-lg mr-3 object-cover fade-in" onload="this.classList.add('loaded')">`
         : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
       resultsDiv.innerHTML += `
         <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
@@ -256,8 +266,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if(Date.now()-parsed.timestamp<CACHE_TTL){data=parsed.data;initFuse();setupFilters();return;}
       }
       const resp=await fetch(DATA_URL,{cache:"no-store"});
-      const j=await resp.json();data = Array.isArray(j) ? j : (j.data || []);initFuse();setupFilters();
-      localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:j}));
+      const j=await resp.json();
+      data = Array.isArray(j) ? j : (j.data || []); // ✅ correctif ajouté
+      initFuse();setupFilters();
+      localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:data}));
     }catch(e){
       resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;
     }
@@ -321,4 +333,3 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
-
