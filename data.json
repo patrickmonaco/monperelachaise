@@ -1,368 +1,5 @@
 [
 {
-"tri": "Bellini",
-"nom": "Vincenzo Bellini",
-"lat": 48.860438,
-"long": 2.393024,
-"categorie": "Musicien",
-"description": "compositeur ou compositrice",
-"siecle": "19e",
-"wikidata": "Q170209",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lucchini-Bellini.jpg"
-},
-{
-"tri": "Bernard",
-"nom": "Claude Bernard",
-"lat": 48.860635,
-"long": 2.393582,
-"categorie": "Scientifique",
-"description": "médecin écrivain, personnalité politique, psychologue, professeur, physiologiste, médecin, épistémologue",
-"siecle": "19e",
-"wikidata": "Q208230",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Claude_Bernard_5.jpg/600px-Claude_Bernard_5.jpg"
-},
-{
-"tri": "Bernardin de Saint-Pierre",
-"nom": "Jacques-Henri Bernardin de Saint-Pierre",
-"lat": 48.860423,
-"long": 2.392917,
-"categorie": "Ecrivain",
-"description": "ingénieur géographe, romancier ou romancière, botaniste, écrivain ou écrivaine",
-"siecle": "19e",
-"wikidata": "Q361976",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg/960px-Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg"
-},
-{
-"tri": "Dragon",
-"nom": "Tombe du Dragon",
-"lat": 48.85924758348845,
-"long": 2.395818626644382,
-"categorie": "Monument",
-"description": null,
-"siecle": "e",
-"wikidata": "Q3531119",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
-},
-{
-"tri": "Duclos",
-"nom": "Jacques Duclos",
-"lat": 48.859887,
-"long": 2.399826,
-"categorie": "Politique",
-"description": "personnalité politique, syndicaliste, résistant ou résistante",
-"siecle": "20e",
-"wikidata": "Q377790",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jacques_Duclos_en_1959.JPG"
-},
-{
-"tri": "Duncan",
-"nom": "Isadora Duncan",
-"lat": 48.8624253,
-"long": 2.3954178,
-"categorie": "Acteur",
-"description": "danseur ou danseuse, chorégraphe, autobiographe, scénariste, danseur ou danseuse classique, écrivain ou écrivaine",
-"siecle": "20e",
-"wikidata": "Q483512",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Isadora_Duncan_portrait_cropped.jpg/600px-Isadora_Duncan_portrait_cropped.jpg"
-},
-{
-"tri": "Ernst",
-"nom": "Max Ernst",
-"lat": 48.8622181,
-"long": 2.3963152,
-"categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, poète ou poétesse, artiste graphique, lithographe, collagiste, designer ou designeuse, créateur ...",
-"siecle": "20e",
-"wikidata": "Q154842",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/960px-Max_Ernst_1968.jpg"
-},
-{
-"tri": "Fabien",
-"nom": "Colonel Fabien",
-"lat": 48.859703,
-"long": 2.399611,
-"categorie": "Militaire",
-"description": "résistant ou résistante",
-"siecle": "20e",
-"wikidata": "Q1110656",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/GEORGES_Pierre_La_Defense_1945.jpg/500px-GEORGES_Pierre_La_Defense_1945.jpg"
-},
-{
-"tri": "Falguière",
-"nom": "Alexandre Falguière",
-"lat": 48.860875,
-"long": 2.392187,
-"categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, artiste peintre, artiste",
-"siecle": "20e",
-"wikidata": "Q2140000",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alexandre_Falgui%C3%A8re_%28_%C3%A0_Rome%29.jpg"
-},
-{
-"tri": "Faure",
-"nom": "Félix Faure",
-"lat": 48.860734,
-"long": 2.391651,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q296076",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/President_F%C3%A9lix_Faure_%28cropped%29.jpg/600px-President_F%C3%A9lix_Faure_%28cropped%29.jpg"
-},
-{
-"tri": "Fourier",
-"nom": "Joseph Fourier",
-"lat": 48.8600462,
-"long": 2.3938832,
-"categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, physicien ou physicienne, historien ou historienne, archéologue, professeur d'université, haut ...",
-"siecle": "19e",
-"wikidata": "Q8772",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fourier2.jpg/960px-Fourier2.jpg"
-},
-{
-"tri": "Lebrun",
-"nom": "Charles-François Lebrun",
-"lat": 48.859181,
-"long": 2.39356,
-"categorie": "Politique",
-"description": "personnalité politique, linguiste, traducteur ou traductrice, juriste, financier",
-"siecle": "19e",
-"wikidata": "Q707712",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg/960px-Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg"
-},
-{
-"tri": "Ledru-Rollin",
-"nom": "Alexandre Ledru-Rollin",
-"lat": 48.860706,
-"long": 2.391565,
-"categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journaliste",
-"siecle": "19e",
-"wikidata": "Q1382222",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ledru-Rollin.jpg/960px-Ledru-Rollin.jpg"
-},
-{
-"tri": "Lesseps",
-"nom": "Ferdinand de Lesseps",
-"lat": 48.8588033,
-"long": 2.3945025,
-"categorie": "Entrepreneur",
-"description": "diplomate, entrepreneur ou entrepreneuse, écrivain ou écrivaine",
-"siecle": "19e",
-"wikidata": "Q209169",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg/960px-Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg"
-},
-{
-"tri": "Lyotard",
-"nom": "Jean-François Lyotard",
-"lat": 48.858729,
-"long": 2.393517,
-"categorie": "Ecrivain",
-"description": "philosophe, philologue, écrivain ou écrivaine, linguiste, épistémologue, sociologue, théoricien ou théoricienne de la littérature, ...",
-"siecle": "20e",
-"wikidata": "Q193257",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jean-Francois_Lyotard_cropped.jpg/600px-Jean-Francois_Lyotard_cropped.jpg"
-},
-{
-"tri": "Macdonald",
-"nom": "Étienne-Jacques-Joseph Macdonald",
-"lat": 48.8586237,
-"long": 2.396391,
-"categorie": "Politique",
-"description": "personnalité politique, diplomate, officier, militaire",
-"siecle": "19e",
-"wikidata": "Q298784",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MacDonald_par_Antoine_Jean_Gros.jpg/960px-MacDonald_par_Antoine_Jean_Gros.jpg"
-},
-{
-"tri": "Manoir",
-"nom": "Yves du Manoir",
-"lat": 48.859718,
-"long": 2.394783,
-"categorie": "Autres",
-"description": "joueur ou joueuse de rugby à XV, militaire",
-"siecle": "20e",
-"wikidata": "Q2602308",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Yves_du_Manoir_1925_%28cropped%29.jpg/960px-Yves_du_Manoir_1925_%28cropped%29.jpg"
-},
-{
-"tri": "Marceau",
-"nom": "Marcel Marceau",
-"lat": 48.860879,
-"long": 2.393314,
-"categorie": "Acteur",
-"description": "mime, acteur ou actrice, clown, artiste de cirque, résistant ou résistante, artiste peintre, lithographe, acteur ou actrice de cinéma, ...",
-"siecle": "21e",
-"wikidata": "Q157191",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marcel_Marceau_-_1971.jpg/600px-Marcel_Marceau_-_1971.jpg"
-},
-{
-"tri": "Marchais",
-"nom": "Georges Marchais",
-"lat": 48.859746,
-"long": 2.399676,
-"categorie": "Politique",
-"description": "personnalité politique, syndicaliste",
-"siecle": "20e",
-"wikidata": "Q182192",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Georges_Marchais.JPG/960px-Georges_Marchais.JPG"
-},
-{
-"tri": "Masséna",
-"nom": "André Masséna",
-"lat": 48.859012,
-"long": 2.396586,
-"categorie": "Militaire",
-"description": "personnalité politique, militaire",
-"siecle": "19e",
-"wikidata": "Q242609",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg/600px-Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg"
-},
-{
-"tri": "Merleau-Ponty",
-"nom": "Maurice Merleau-Ponty",
-"lat": 48.862287,
-"long": 2.393196,
-"categorie": "Ecrivain",
-"description": "philosophe, professeur, théoricien ou théoricienne de l'art, philosophe de l'esthétique",
-"siecle": "20e",
-"wikidata": "Q212639",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maurice_Merleau-Ponty.jpg"
-},
-{
-"tri": "Michelet",
-"nom": "Jules Michelet",
-"lat": 48.862569,
-"long": 2.393045,
-"categorie": "Ecrivain",
-"description": "historien ou historienne, archiviste, écrivain ou écrivaine, diariste, professeur, traducteur ou traductrice, philosophe",
-"siecle": "19e",
-"wikidata": "Q310791",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jules_Michelet_par_Thomas_Couture.jpg/960px-Jules_Michelet_par_Thomas_Couture.jpg"
-},
-{
-"tri": "Miolan-Carvalho",
-"nom": "Caroline Miolan-Carvalho",
-"lat": 48.8629618,
-"long": 2.3902204,
-"categorie": "Acteur",
-"description": "artiste lyrique",
-"siecle": "19e",
-"wikidata": "Q1630239",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg/960px-Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg"
-},
-{
-"tri": "Modigliani",
-"nom": "Amedeo Modigliani",
-"lat": 48.8598029,
-"long": 2.3985154,
-"categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, dessinateur ou dessinatrice",
-"siecle": "20e",
-"wikidata": "Q120993",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Amedeo_Modigliani_1918_restored.jpg/600px-Amedeo_Modigliani_1918_restored.jpg"
-},
-{
-"tri": "Molière",
-"nom": "Molière",
-"lat": 48.860536,
-"long": 2.395105,
-"categorie": "Ecrivain",
-"description": "dramaturge, acteur ou actrice de théâtre, poète ou poétesse, satiriste, metteur ou metteuse en scène, dramaturge, écrivain ou écrivaine, ...",
-"siecle": "17e",
-"wikidata": "Q687",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/960px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg"
-},
-{
-"tri": "Monfort",
-"nom": "Silvia Monfort",
-"lat": 48.861242,
-"long": 2.39841,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine",
-"siecle": "20e",
-"wikidata": "Q3320631",
-"pic": "https://www.chartres-tourisme.com/sites/chartres-tourisme/files/styles/gallery_lightbox/public/content/images/1539874776-909480332.jpg?itok=vz5NqoDz"
-},
-{
-"tri": "Monge",
-"nom": "Gaspard Monge",
-"lat": 48.860212,
-"long": 2.393603,
-"categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, personnalité politique, physicien ou physicienne, professeur d'université, ingénieur, chimiste, chargé de ...",
-"siecle": "19e",
-"wikidata": "Q206832",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg"
-},
-{
-"tri": "Morrison",
-"nom": "Jim Morrison",
-"lat": 48.8592676,
-"long": 2.393752,
-"categorie": "Chanteur",
-"description": "vocaliste, réalisateur ou réalisatrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, parolier ou parolière, ...",
-"siecle": "20e",
-"wikidata": "Q44301",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Morrison_1969.JPG/600px-Jim_Morrison_1969.JPG"
-},
-{
-"tri": "Mouchotte",
-"nom": "René Mouchotte",
-"lat": 48.8631279,
-"long": 2.3912635,
-"categorie": "Militaire",
-"description": "diariste, militaire, aviateur ou aviatrice",
-"siecle": "20e",
-"wikidata": "Q3426652",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg"
-},
-{
-"tri": "Mouloudji",
-"nom": "Marcel Mouloudji",
-"lat": 48.861157,
-"long": 2.395277,
-"categorie": "Chanteur",
-"description": "acteur ou actrice de cinéma, chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste ...",
-"siecle": "20e",
-"wikidata": "Q993521",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Mouloudji-1954-StudioHarcourt.png"
-},
-{
-"tri": "Mur des Fédérés",
-"nom": "Mur des Fédérés",
-"lat": 48.85991726499622,
-"long": 2.399704908898131,
-"categorie": "Monument",
-"description": null,
-"siecle": "e",
-"wikidata": "Q22924034",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/5/57/Plaque_f%C3%A9d%C3%A9r%C3%A9s.JPG"
-},
-{
-"tri": "Murat",
-"nom": "Joachim Murat",
-"lat": 48.859068,
-"long": 2.396672,
-"categorie": "Militaire",
-"description": "personnalité politique, officier, militaire",
-"siecle": "19e",
-"wikidata": "Q151173",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Murat2.jpg/600px-Murat2.jpg"
-},
-{
-"tri": "Musset",
-"nom": "Alfred de Musset",
-"lat": 48.86072,
-"long": 2.391114,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, poète ou poétesse, dramaturge, romancier ou romancière, bibliothécaire, problémiste",
-"siecle": "19e",
-"wikidata": "Q179680",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Alfred_de_musset.jpg"
-},
-{
 "tri": "Abélard et Héloïse",
 "nom": "Tombeau d'Abélard et Héloïse",
 "lat": 48.859258794451314,
@@ -372,39 +9,6 @@
 "siecle": "e",
 "wikidata": null,
 "pic": null
-},
-{
-"tri": "Alain",
-"nom": "Alain",
-"lat": 48.861016,
-"long": 2.399096,
-"categorie": "Ecrivain",
-"description": "philosophe, écrivain ou écrivaine, journaliste, enseignant ou enseignante",
-"siecle": "20e",
-"wikidata": "Q275003",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg"
-},
-{
-"tri": "Alamo",
-"nom": "Frank Alamo",
-"lat": 48.861065,
-"long": 2.39491,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice de cinéma, industriel ou industrielle",
-"siecle": "21e",
-"wikidata": "Q112324100",
-"pic": "https://i.ytimg.com/vi/Po-Njvz1U_M/hqdefault.jpg"
-},
-{
-"tri": "Apollinaire",
-"nom": "Guillaume Apollinaire",
-"lat": 48.8626557,
-"long": 2.3947199,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, dramaturge, critique d'art, diariste, censeur, conteur ou conteuse, épistolier ou épistolière, ...",
-"siecle": "20e",
-"wikidata": "Q133855",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guillaume_Apollinaire_1914.jpg"
 },
 {
 "tri": "Arago",
@@ -418,28 +22,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg/600px-Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg"
 },
 {
-"tri": "Asturias",
-"nom": "Miguel Ángel Asturias",
-"lat": 48.8597856,
-"long": 2.3928042,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, diplomate, journaliste, personnalité politique, juriste-poète",
-"siecle": "20e",
-"wikidata": "Q75603",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Miguel_Angel_Asturias.jpg/960px-Miguel_Angel_Asturias.jpg"
-},
-{
-"tri": "Balzac",
-"nom": "Honoré de Balzac",
-"lat": 48.8627718,
-"long": 2.3931199,
-"categorie": "Ecrivain",
-"description": "romancier ou romancière, critique littéraire, écrivain ou écrivaine, prosateur ou prosatrice, journaliste, critique d'art, essayiste, ...",
-"siecle": "19e",
-"wikidata": "Q9711",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Honor%C3%A9_de_Balzac_%281842%29_detail.jpg"
-},
-{
 "tri": "Bernhardt",
 "nom": "Sarah Bernhardt",
 "lat": 48.861266823552896,
@@ -449,17 +31,6 @@
 "siecle": "20e",
 "wikidata": "Q4605",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/SarahBernhardt1880.jpg"
-},
-{
-"tri": "Bienvenüe",
-"nom": "Fulgence Bienvenüe",
-"lat": 48.864009,
-"long": 2.394676,
-"categorie": "Scientifique",
-"description": "ingénieur des ponts et chaussées, ingénieur civil, ingénieur, architecte",
-"siecle": "20e",
-"wikidata": "Q964297",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bienvenue.jpg/960px-Bienvenue.jpg"
 },
 {
 "tri": "Bizet",
@@ -473,17 +44,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Georges_bizet.jpg/960px-Georges_bizet.jpg"
 },
 {
-"tri": "Blanc",
-"nom": "Louis Blanc",
-"lat": 48.861779,
-"long": 2.391286,
-"categorie": "Politique",
-"description": "journaliste, personnalité politique, historien ou historienne, écrivain ou écrivaine, rédacteur ou rédactrice en chef",
-"siecle": "19e",
-"wikidata": "Q355112",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Louis_Blanc_by_Carjat_1848.jpg/960px-Louis_Blanc_by_Carjat_1848.jpg"
-},
-{
 "tri": "Blanqui",
 "nom": "Auguste Blanqui",
 "lat": 48.861214,
@@ -493,17 +53,6 @@
 "siecle": "19e",
 "wikidata": "Q309722",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Louis_Auguste_Blanqui.JPG/960px-Louis_Auguste_Blanqui.JPG"
-},
-{
-"tri": "Bourdieu",
-"nom": "Pierre Bourdieu",
-"lat": 48.859703,
-"long": 2.395651,
-"categorie": "Ecrivain",
-"description": "philosophe, sociologue, anthropologue, écrivain ou écrivaine, photographe, traducteur ou traductrice, chercheur ou chercheuse",
-"siecle": "21e",
-"wikidata": "Q156268",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Pierre_Bourdieu_%281%29.jpg/960px-Pierre_Bourdieu_%281%29.jpg"
 },
 {
 "tri": "Branly",
@@ -528,17 +77,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/e/e0/PIerreBrasseur-Italie-1960.png"
 },
 {
-"tri": "Brillat-Savarin",
-"nom": "Jean Anthelme Brillat-Savarin",
-"lat": 48.859774,
-"long": 2.395513,
-"categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, écrivain ou écrivaine, juge, juriste, musicien ou musicienne",
-"siecle": "19e",
-"wikidata": "Q313027",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/17/Le_Vachez_Collection_-_Jean_Anthelme_Brillat-Savarin_%281755-1826%29.jpg"
-},
-{
 "tri": "Brongniart",
 "nom": "Alexandre Brongniart",
 "lat": 48.860635,
@@ -550,17 +88,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/a/a6/AlexBrongniart.jpg"
 },
 {
-"tri": "Brosset",
-"nom": "Claude Brosset",
-"lat": 48.858196,
-"long": 2.395227,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, acteur ou actrice de doublage",
-"siecle": "21e",
-"wikidata": "Q2977082",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Claude_Brosset_en_1989.jpg/960px-Claude_Brosset_en_1989.jpg"
-},
-{
 "tri": "Bécaud",
 "nom": "Gilbert Bécaud",
 "lat": 48.861141,
@@ -570,17 +97,6 @@
 "siecle": "21e",
 "wikidata": "Q160433",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Becaud-Rome-1958.png"
-},
-{
-"tri": "Cachin",
-"nom": "Marcel Cachin",
-"lat": 48.8599157,
-"long": 2.3998601,
-"categorie": "Politique",
-"description": "personnalité politique, éditeur ou éditrice, professeur d'université",
-"siecle": "20e",
-"wikidata": "Q658479",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marcel_Cachin_b_Meurisse_1918.jpg/960px-Marcel_Cachin_b_Meurisse_1918.jpg"
 },
 {
 "tri": "Caillebotte",
@@ -605,39 +121,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Maurin_-_Cambaceres.png/600px-Maurin_-_Cambaceres.png"
 },
 {
-"tri": "Caron de Beaumarchais",
-"nom": "Pierre-Augustin Caron de Beaumarchais",
-"lat": 48.858842,
-"long": 2.396264,
-"categorie": "Musicien",
-"description": "musicien ou musicienne, poète ou poétesse, personnalité du monde des affaires, éditeur ou éditrice, dramaturge, diplomate, financier, ...",
-"siecle": "18e",
-"wikidata": "Q70326",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg"
-},
-{
-"tri": "Chabrol",
-"nom": "Claude Chabrol",
-"lat": 48.860558,
-"long": 2.392547,
-"categorie": "Réalisateur",
-"description": "acteur ou actrice de cinéma, scénariste de cinéma, critique de cinéma, réalisateur ou réalisatrice, producteur ou productrice artistique",
-"siecle": "21e",
-"wikidata": "Q55375",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/65/Chabrol-italie-1985.png"
-},
-{
-"tri": "Chamans de Lavalette",
-"nom": "Antoine Marie Chamans de Lavalette",
-"lat": 48.8587457,
-"long": 2.3966952,
-"categorie": "Militaire",
-"description": "personnalité politique, diplomate, militaire",
-"siecle": "19e",
-"wikidata": "Q43246365",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg"
-},
-{
 "tri": "Champollion",
 "nom": "Jean-François Champollion",
 "lat": 48.8599858,
@@ -658,28 +141,6 @@
 "siecle": "19e",
 "wikidata": "Q361305",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG/960px-AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG"
-},
-{
-"tri": "Chaptal",
-"nom": "Jean-Antoine Chaptal",
-"lat": 48.86192,
-"long": 2.39826,
-"categorie": "Scientifique",
-"description": "chimiste, personnalité politique",
-"siecle": "19e",
-"wikidata": "Q708011",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg/600px-Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg"
-},
-{
-"tri": "Cherubini",
-"nom": "Luigi Cherubini",
-"lat": 48.8601705,
-"long": 2.3927894,
-"categorie": "Musicien",
-"description": "compositeur ou compositrice, chef ou cheffe d'orchestre ou de chœur, musicologue, professeur ou professeure de musique, théoricien ou ...",
-"siecle": "19e",
-"wikidata": "Q20721",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg"
 },
 {
 "tri": "Chopin",
@@ -715,28 +176,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colette_-_photo.jpg/960px-Colette_-_photo.jpg"
 },
 {
-"tri": "Comte",
-"nom": "Auguste Comte",
-"lat": 48.8597855,
-"long": 2.3942322,
-"categorie": "Scientifique",
-"description": "philosophe, sociologue, mathématicien ou mathématicienne, écrivain ou écrivaine, répétiteur ou répétitrice",
-"siecle": "19e",
-"wikidata": "Q12718",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg/960px-Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg"
-},
-{
-"tri": "Constant",
-"nom": "Benjamin Constant",
-"lat": 48.859096,
-"long": 2.39547,
-"categorie": "Peintre",
-"description": "artiste peintre, biographe, graveur ou graveuse d'estampes",
-"siecle": "20e",
-"wikidata": "Q968357",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg/600px-Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg"
-},
-{
 "tri": "Coquatrix",
 "nom": "Bruno Coquatrix",
 "lat": 48.859393,
@@ -746,28 +185,6 @@
 "siecle": "20e",
 "wikidata": "Q2661519",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Identite-Coquatrix-1940-Sacem.png/960px-Identite-Coquatrix-1940-Sacem.png"
-},
-{
-"tri": "Corot",
-"nom": "Jean-Baptiste Camille Corot",
-"lat": 48.860903,
-"long": 2.394612,
-"categorie": "Peintre",
-"description": "artiste peintre, photographe, graveur ou graveuse d'estampes, dessinateur ou dessinatrice, dessinateur ou dessinatrice en bâtiment, artiste ...",
-"siecle": "19e",
-"wikidata": "Q148475",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jean-Baptiste_Camille_Corot_-_autoportrait.jpg/960px-Jean-Baptiste_Camille_Corot_-_autoportrait.jpg"
-},
-{
-"tri": "Courteline",
-"nom": "Georges Courteline",
-"lat": 48.862329,
-"long": 2.397316,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, journaliste, romancier ou romancière, poète ou poétesse",
-"siecle": "20e",
-"wikidata": "Q51107",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/960px-Georges_Courteline_1921.jpg"
 },
 {
 "tri": "Couture",
@@ -792,17 +209,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Charles_Crozatier.jpg"
 },
 {
-"tri": "Cuvier",
-"nom": "Georges Cuvier",
-"lat": 48.8599553,
-"long": 2.3920732,
-"categorie": "Scientifique",
-"description": "géologue, paléontologue, personnalité politique, zoologiste, ornithologue, professeur d'université, professeur, biologiste, malacologiste, ...",
-"siecle": "19e",
-"wikidata": "Q171969",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Georges_Cuvier_3.jpg/960px-Georges_Cuvier_3.jpg"
-},
-{
 "tri": "Barbusse",
 "nom": "Henri Barbusse",
 "lat": 48.860169,
@@ -823,17 +229,6 @@
 "siecle": "19e",
 "wikidata": "Q333843",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Paul_Barras.jpg/960px-Paul_Barras.jpg"
-},
-{
-"tri": "Bashung",
-"nom": "Alain Bashung",
-"lat": 48.860254,
-"long": 2.39341,
-"categorie": "Chanteur",
-"description": "acteur ou actrice, auteur-compositeur-interprète ou autrice-compositrice-interprète",
-"siecle": "21e",
-"wikidata": "Q380045",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/5/54/BASHUNG_Alain-24x30-2007b.jpg"
 },
 {
 "tri": "Baudelocque",
@@ -858,103 +253,213 @@
 "pic": null
 },
 {
-"tri": "Vivant Denon",
-"nom": "Dominique Vivant Denon",
-"lat": 48.8601567,
-"long": 2.3927356,
-"categorie": "Ecrivain",
-"description": "historien ou historienne de l'art, égyptologue, diplomate, chroniqueur de voyage, dessinateur ou dessinatrice, archéologue, artiste ...",
+"tri": "Bellini",
+"nom": "Vincenzo Bellini",
+"lat": 48.860438,
+"long": 2.393024,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice",
 "siecle": "19e",
-"wikidata": "Q468618",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg/960px-Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg"
+"wikidata": "Q170209",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lucchini-Bellini.jpg"
 },
 {
-"tri": "Wallace",
-"nom": "Richard Wallace",
-"lat": 48.859167,
-"long": 2.3962,
-"categorie": "Entrepreneur",
-"description": "Collectionneur",
+"tri": "Bernard",
+"nom": "Claude Bernard",
+"lat": 48.860635,
+"long": 2.393582,
+"categorie": "Scientifique",
+"description": "médecin écrivain, personnalité politique, psychologue, professeur, physiologiste, médecin, épistémologue",
 "siecle": "19e",
-"wikidata": "Q2033868",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/83/Sir_Richard_Wallace.jpg"
+"wikidata": "Q208230",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Claude_Bernard_5.jpg/600px-Claude_Bernard_5.jpg"
 },
 {
-"tri": "Wilde",
-"nom": "Oscar Wilde",
-"lat": 48.8618038,
-"long": 2.3979473,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, nouvelliste, journaliste, auteur ou autrice de littérature pour la jeunesse, romancier ou romancière, ...",
-"siecle": "20e",
-"wikidata": "Q30875",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg/960px-Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg"
-},
-{
-"tri": "Yves Montand et Simone Signoret",
-"nom": "Yves Montand et Simone Signoret",
-"lat": 48.861892,
-"long": 2.395535,
-"categorie": "Acteur",
+"tri": "Dragon",
+"nom": "Tombe du Dragon",
+"lat": 48.85924758348845,
+"long": 2.395818626644382,
+"categorie": "Monument",
 "description": null,
 "siecle": "e",
-"wikidata": "Q106057",
-"pic": null
+"wikidata": "Q3531119",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
 },
 {
-"tri": "Zavatta",
-"nom": "Achille Zavatta",
-"lat": 48.862146,
-"long": 2.396071,
+"tri": "Duclos",
+"nom": "Jacques Duclos",
+"lat": 48.859887,
+"long": 2.399826,
+"categorie": "Politique",
+"description": "personnalité politique, syndicaliste, résistant ou résistante",
+"siecle": "20e",
+"wikidata": "Q377790",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jacques_Duclos_en_1959.JPG"
+},
+{
+"tri": "Duncan",
+"nom": "Isadora Duncan",
+"lat": 48.8624253,
+"long": 2.3954178,
 "categorie": "Acteur",
-"description": "clown, trompettiste, acteur ou actrice, saxophoniste, artiste de cirque, mime, forain ou foraine",
+"description": "danseur ou danseuse, chorégraphe, autobiographe, scénariste, danseur ou danseuse classique, écrivain ou écrivaine",
 "siecle": "20e",
-"wikidata": "Q340260",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg/960px-Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg"
+"wikidata": "Q483512",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Isadora_Duncan_portrait_cropped.jpg/600px-Isadora_Duncan_portrait_cropped.jpg"
 },
 {
-"tri": "Éluard",
-"nom": "Paul Éluard",
-"lat": 48.859986,
-"long": 2.399912,
+"tri": "Fabien",
+"nom": "Colonel Fabien",
+"lat": 48.859703,
+"long": 2.399611,
+"categorie": "Militaire",
+"description": "résistant ou résistante",
+"siecle": "20e",
+"wikidata": "Q1110656",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/GEORGES_Pierre_La_Defense_1945.jpg/500px-GEORGES_Pierre_La_Defense_1945.jpg"
+},
+{
+"tri": "Falguière",
+"nom": "Alexandre Falguière",
+"lat": 48.860875,
+"long": 2.392187,
+"categorie": "Sculpteur",
+"description": "sculpteur ou sculptrice, artiste peintre, artiste",
+"siecle": "20e",
+"wikidata": "Q2140000",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alexandre_Falgui%C3%A8re_%28_%C3%A0_Rome%29.jpg"
+},
+{
+"tri": "Lyotard",
+"nom": "Jean-François Lyotard",
+"lat": 48.858729,
+"long": 2.393517,
 "categorie": "Ecrivain",
-"description": "Poète",
+"description": "philosophe, philologue, écrivain ou écrivaine, linguiste, épistémologue, sociologue, théoricien ou théoricienne de la littérature, ...",
 "siecle": "20e",
-"wikidata": "Q152176",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg"
+"wikidata": "Q193257",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jean-Francois_Lyotard_cropped.jpg/600px-Jean-Francois_Lyotard_cropped.jpg"
 },
 {
-"tri": "Méliès",
-"nom": "Georges Méliès",
-"lat": 48.863331,
-"long": 2.390664,
-"categorie": "Réalisateur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, animateur ou animatrice, monteur ou monteuse, scénariste, prestidigitateur ou ...",
+"tri": "Manoir",
+"nom": "Yves du Manoir",
+"lat": 48.859718,
+"long": 2.394783,
+"categorie": "Autres",
+"description": "joueur ou joueuse de rugby à XV, militaire",
 "siecle": "20e",
-"wikidata": "Q152272",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/960px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png"
+"wikidata": "Q2602308",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Yves_du_Manoir_1925_%28cropped%29.jpg/960px-Yves_du_Manoir_1925_%28cropped%29.jpg"
 },
 {
-"tri": "Nadar",
-"nom": "Nadar",
-"lat": 48.858983,
-"long": 2.397037,
-"categorie": "Scientifique",
-"description": "photographe, aérostier, dessinateur ou dessinatrice humoristique, caricaturiste, écrivain ou écrivaine, journaliste",
+"tri": "Marchais",
+"nom": "Georges Marchais",
+"lat": 48.859746,
+"long": 2.399676,
+"categorie": "Politique",
+"description": "personnalité politique, syndicaliste",
 "siecle": "20e",
-"wikidata": "Q40116",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg/960px-Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg"
+"wikidata": "Q182192",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Georges_Marchais.JPG/960px-Georges_Marchais.JPG"
 },
 {
-"tri": "Nerval",
-"nom": "Gérard de Nerval",
-"lat": 48.862739,
-"long": 2.393174,
-"categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, romancier ou romancière, nouvelliste, écrivain ou écrivaine, traducteur ou traductrice, librettiste",
+"tri": "Masséna",
+"nom": "André Masséna",
+"lat": 48.859012,
+"long": 2.396586,
+"categorie": "Militaire",
+"description": "personnalité politique, militaire",
 "siecle": "19e",
-"wikidata": "Q191305",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/960px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg"
+"wikidata": "Q242609",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg/600px-Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg"
+},
+{
+"tri": "Michelet",
+"nom": "Jules Michelet",
+"lat": 48.862569,
+"long": 2.393045,
+"categorie": "Ecrivain",
+"description": "historien ou historienne, archiviste, écrivain ou écrivaine, diariste, professeur, traducteur ou traductrice, philosophe",
+"siecle": "19e",
+"wikidata": "Q310791",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jules_Michelet_par_Thomas_Couture.jpg/960px-Jules_Michelet_par_Thomas_Couture.jpg"
+},
+{
+"tri": "Miolan-Carvalho",
+"nom": "Caroline Miolan-Carvalho",
+"lat": 48.8629618,
+"long": 2.3902204,
+"categorie": "Acteur",
+"description": "artiste lyrique",
+"siecle": "19e",
+"wikidata": "Q1630239",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg/960px-Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg"
+},
+{
+"tri": "Molière",
+"nom": "Molière",
+"lat": 48.860536,
+"long": 2.395105,
+"categorie": "Ecrivain",
+"description": "dramaturge, acteur ou actrice de théâtre, poète ou poétesse, satiriste, metteur ou metteuse en scène, dramaturge, écrivain ou écrivaine, ...",
+"siecle": "17e",
+"wikidata": "Q687",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/960px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg"
+},
+{
+"tri": "Morrison",
+"nom": "Jim Morrison",
+"lat": 48.8592676,
+"long": 2.393752,
+"categorie": "Chanteur",
+"description": "vocaliste, réalisateur ou réalisatrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, parolier ou parolière, ...",
+"siecle": "20e",
+"wikidata": "Q44301",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Morrison_1969.JPG/600px-Jim_Morrison_1969.JPG"
+},
+{
+"tri": "Mouloudji",
+"nom": "Marcel Mouloudji",
+"lat": 48.861157,
+"long": 2.395277,
+"categorie": "Chanteur",
+"description": "acteur ou actrice de cinéma, chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste ...",
+"siecle": "20e",
+"wikidata": "Q993521",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Mouloudji-1954-StudioHarcourt.png"
+},
+{
+"tri": "Mur des Fédérés",
+"nom": "Mur des Fédérés",
+"lat": 48.85991726499622,
+"long": 2.399704908898131,
+"categorie": "Monument",
+"description": null,
+"siecle": "e",
+"wikidata": "Q22924034",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/5/57/Plaque_f%C3%A9d%C3%A9r%C3%A9s.JPG"
+},
+{
+"tri": "Murat",
+"nom": "Joachim Murat",
+"lat": 48.859068,
+"long": 2.396672,
+"categorie": "Militaire",
+"description": "personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q151173",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Murat2.jpg/600px-Murat2.jpg"
+},
+{
+"tri": "Fourier",
+"nom": "Joseph Fourier",
+"lat": 48.8600462,
+"long": 2.3938832,
+"categorie": "Scientifique",
+"description": "mathématicien ou mathématicienne, physicien ou physicienne, historien ou historienne, archéologue, professeur d'université, haut ...",
+"siecle": "19e",
+"wikidata": "Q8772",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fourier2.jpg/960px-Fourier2.jpg"
 },
 {
 "tri": "Noailles",
@@ -968,17 +473,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Noailles_b_Meurisse_1922.jpg/960px-Noailles_b_Meurisse_1922.jpg"
 },
 {
-"tri": "Nohain",
-"nom": "Jean Nohain",
-"lat": 48.862089,
-"long": 2.39738,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, parolier ou parolière, auteur-compositeur ou autrice-compositrice, auteur ou autrice de littérature pour la ...",
-"siecle": "20e",
-"wikidata": "Q963719",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Jean_Nohain.png"
-},
-{
 "tri": "Noir",
 "nom": "Victor Noir",
 "lat": 48.860819,
@@ -988,17 +482,6 @@
 "siecle": "19e",
 "wikidata": "Q714788",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Victor_Noir_par_Appert.jpg/600px-Victor_Noir_par_Appert.jpg"
-},
-{
-"tri": "Oberkampf",
-"nom": "Christophe-Philippe Oberkampf",
-"lat": 48.859689,
-"long": 2.396071,
-"categorie": "Entrepreneur",
-"description": "personnalité du monde des affaires, personnalité politique",
-"siecle": "19e",
-"wikidata": "Q74518",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/d/de/Christophe-Philippe_Oberkampf_%281738-1815%29.jpg"
 },
 {
 "tri": "Ophüls",
@@ -1034,28 +517,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/1/19/AndranikOzanian.jpg"
 },
 {
-"tri": "Panhard",
-"nom": "René Panhard",
-"lat": 48.858475,
-"long": 2.395771,
-"categorie": "Entrepreneur",
-"description": "ingénieur, personnalité politique, pilote de course automobile, personnalité du monde des affaires",
-"siecle": "20e",
-"wikidata": "Q266561",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WP-Rene_Panhard.jpg"
-},
-{
-"tri": "Parmentier",
-"nom": "Antoine Parmentier",
-"lat": 48.860141,
-"long": 2.395492,
-"categorie": "Scientifique",
-"description": "botaniste, pharmacien ou pharmacienne, agronome, diététicien ou diététicienne, censeur royal, inspecteur général des armées",
-"siecle": "19e",
-"wikidata": "Q360312",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg/960px-Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg"
-},
-{
 "tri": "Perier",
 "nom": "Casimir Perier",
 "lat": 48.8600225,
@@ -1065,17 +526,6 @@
 "siecle": "19e",
 "wikidata": "Q284683",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Perier%2C_Casimir.jpg/600px-Perier%2C_Casimir.jpg"
-},
-{
-"tri": "Perrin",
-"nom": "Claude-Victor Perrin",
-"lat": 48.859627,
-"long": 2.394392,
-"categorie": "Politique",
-"description": "personnalité politique, militaire",
-"siecle": "19e",
-"wikidata": "Q372750",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Claude-Victor_Perrin.jpg/600px-Claude-Victor_Perrin.jpg"
 },
 {
 "tri": "Petrucciani",
@@ -1089,28 +539,6 @@
 "pic": null
 },
 {
-"tri": "Foy",
-"nom": "Maximilien Sébastien Foy",
-"lat": 48.859096,
-"long": 2.395577,
-"categorie": "Politique",
-"description": "personnalité politique, officier",
-"siecle": "19e",
-"wikidata": "Q633498",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg/960px-Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg"
-},
-{
-"tri": "Fresnel",
-"nom": "Augustin Fresnel",
-"lat": 48.8597319,
-"long": 2.3936651,
-"categorie": "Scientifique",
-"description": "physicien ou physicienne, ingénieur civil, ingénieur",
-"siecle": "19e",
-"wikidata": "Q187241",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg/960px-Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg"
-},
-{
 "tri": "Galli-Marié",
 "nom": "Célestine Galli-Marié",
 "lat": 48.8615073,
@@ -1120,28 +548,6 @@
 "siecle": "20e",
 "wikidata": "Q2413117",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg/960px-Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg"
-},
-{
-"tri": "Garnier-Pagès",
-"nom": "Louis-Antoine Garnier-Pagès",
-"lat": 48.859463,
-"long": 2.395062,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q601266",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg/960px-Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg"
-},
-{
-"tri": "Gaudin",
-"nom": "Martin Michel Charles Gaudin",
-"lat": 48.86048,
-"long": 2.394376,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q708596",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg/960px-Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg"
 },
 {
 "tri": "Gay-Lussac",
@@ -1177,17 +583,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Annie_Girardot_C%C3%A9sars.jpg"
 },
 {
-"tri": "Gobert",
-"nom": "Jacques Nicolas Gobert",
-"lat": 48.8588,
-"long": 2.39635,
-"categorie": "Militaire",
-"description": "officier",
-"siecle": "19e",
-"wikidata": "Q3159659",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg/960px-Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg"
-},
-{
 "tri": "Gouvion-Saint-Cyr",
 "nom": "Laurent de Gouvion-Saint-Cyr",
 "lat": 48.858555,
@@ -1197,17 +592,6 @@
 "siecle": "19e",
 "wikidata": "Q347652",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Laurent_de_Gouvion-Saint-Cyr.jpg/960px-Laurent_de_Gouvion-Saint-Cyr.jpg"
-},
-{
-"tri": "Gramme",
-"nom": "Zénobe Gramme",
-"lat": 48.860833,
-"long": 2.397895,
-"categorie": "Scientifique",
-"description": "physicien ou physicienne, inventeur",
-"siecle": "20e",
-"wikidata": "Q247603",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/88/Z%C3%A9nobe_Gramme_1893.jpg"
 },
 {
 "tri": "Grappelli",
@@ -1243,17 +627,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/4/45/EMMANUEL_DE_GROUCHY%281766-1847%29.jpg"
 },
 {
-"tri": "Guesde",
-"nom": "Jules Guesde",
-"lat": 48.862541,
-"long": 2.395384,
-"categorie": "Politique",
-"description": "personnalité politique, journaliste, écrivain ou écrivaine",
-"siecle": "20e",
-"wikidata": "Q379699",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jules_Guesde.jpg"
-},
-{
 "tri": "Guët",
 "nom": "Monument funéraire de Georges Guët",
 "lat": 48.85961233161604,
@@ -1287,17 +660,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samuel_Hahnemann_1841.jpg"
 },
 {
-"tri": "Haussmann",
-"nom": "Georges Eugène Haussmann",
-"lat": 48.860748,
-"long": 2.391179,
-"categorie": "Politique",
-"description": "personnalité politique, haut fonctionnaire ou haute fonctionnaire, architecte, urbaniste",
-"siecle": "19e",
-"wikidata": "Q191798",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg/960px-Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg"
-},
-{
 "tri": "Hersent",
 "nom": "Louis Hersent",
 "lat": 48.858574,
@@ -1329,28 +691,6 @@
 "siecle": "21e",
 "wikidata": "Q2121322",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/3/31/Toulouse-Ticky-Holgado-15Fi12113.png"
-},
-{
-"tri": "Hugo",
-"nom": "Joseph Léopold Sigisbert Hugo",
-"lat": 48.85983,
-"long": 2.395406,
-"categorie": "Militaire",
-"description": "officier, militaire",
-"siecle": "19e",
-"wikidata": "Q2299673",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg/960px-G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg"
-},
-{
-"tri": "Ingres",
-"nom": "Jean-Auguste-Dominique Ingres",
-"lat": 48.861412,
-"long": 2.394333,
-"categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, violoniste, dessinateur ou dessinatrice, graveur ou graveuse d'estampes, artiste graphique, ...",
-"siecle": "19e",
-"wikidata": "Q23380",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ingres%2C_Self-portrait.jpg/960px-Ingres%2C_Self-portrait.jpg"
 },
 {
 "tri": "Itasse",
@@ -1397,17 +737,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/0/00/G%C3%A9n%C3%A9ral_Fran%C3%A7ois_%C3%89tienne_Kellermann.jpg"
 },
 {
-"tri": "Khorsand",
-"nom": "Philippe Khorsand",
-"lat": 48.8613527,
-"long": 2.3946884,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre",
-"siecle": "21e",
-"wikidata": "Q2087624",
-"pic": null
-},
-{
 "tri": "Krasucki",
 "nom": "Henri Krasucki",
 "lat": 48.859417,
@@ -1417,28 +746,6 @@
 "siecle": "21e",
 "wikidata": "Q477747",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Henri_Krasucki_1983.jpg/600px-Henri_Krasucki_1983.jpg"
-},
-{
-"tri": "La Fontaine",
-"nom": "Jean de La Fontaine",
-"lat": 48.860565,
-"long": 2.395062,
-"categorie": "Ecrivain",
-"description": "fabuliste, poète ou poétesse, avocat ou avocate, auteur ou autrice de littérature pour la jeunesse, moraliste, écrivain ou écrivaine, ...",
-"siecle": "17e",
-"wikidata": "Q49496",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg/960px-Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg"
-},
-{
-"tri": "Lachambeaudie",
-"nom": "Pierre Lachambeaudie",
-"lat": 48.862812,
-"long": 2.392937,
-"categorie": "Ecrivain",
-"description": "chansonnier, poète ou poétesse, écrivain ou écrivaine, goguettier, enseignant ou enseignante",
-"siecle": "19e",
-"wikidata": "Q1346280",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg/960px-Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg"
 },
 {
 "tri": "Lavallée",
@@ -1452,39 +759,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png/600px-Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png"
 },
 {
-"tri": "Lazareff",
-"nom": "Pierre et Hélène Lazareff",
-"lat": 48.859365,
-"long": 2.391479,
-"categorie": "Ecrivain",
-"description": null,
-"siecle": "e",
-"wikidata": "Q1235630",
-"pic": null
-},
-{
-"tri": "Dabadie de Bernet",
-"nom": "Jean Melchior Dabadie de Bernet",
-"lat": 48.859051,
-"long": 2.397138,
-"categorie": "Politique",
-"description": "personnalité politique, officier, militaire",
-"siecle": "19e",
-"wikidata": "Q1429885",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean-Melchior_Dabadie_de_Bernet.jpg/600px-Jean-Melchior_Dabadie_de_Bernet.jpg"
-},
-{
-"tri": "Dac",
-"nom": "Pierre Dac",
-"lat": 48.862767,
-"long": 2.396243,
-"categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine, humoriste, chansonnier, résistant ou résistante",
-"siecle": "20e",
-"wikidata": "Q165910",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dac-1947-Colorise.png"
-},
-{
 "tri": "Daladier",
 "nom": "Édouard Daladier",
 "lat": 48.863538262706115,
@@ -1494,17 +768,6 @@
 "siecle": "20e",
 "wikidata": "Q213526",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C3%89douard_Daladier.jpg/960px-%C3%89douard_Daladier.jpg"
-},
-{
-"tri": "Daudet",
-"nom": "Alphonse Daudet",
-"lat": 48.860198,
-"long": 2.395277,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, poète ou poétesse, romancier ou romancière, autobiographe, scénariste, prosateur ou prosatrice, ...",
-"siecle": "19e",
-"wikidata": "Q228546",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Alphonse_Daudet_2.jpg/600px-Alphonse_Daudet_2.jpg"
 },
 {
 "tri": "Daumier",
@@ -1529,28 +792,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Honore_Daumier-Nadar.jpg/960px-Honore_Daumier-Nadar.jpg"
 },
 {
-"tri": "David",
-"nom": "Jacques-Louis David",
-"lat": 48.861355,
-"long": 2.392359,
-"categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, dessinateur ou dessinatrice en bâtiment",
-"siecle": "19e",
-"wikidata": "Q83155",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/960px-David_Self_Portrait.jpg"
-},
-{
-"tri": "Davout",
-"nom": "Louis Nicolas Davout",
-"lat": 48.8589314,
-"long": 2.3964384,
-"categorie": "Militaire",
-"description": "personnalité politique, officier, chef militaire, maréchal",
-"siecle": "19e",
-"wikidata": "Q158778",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Louis_nicolas_davout.jpg/960px-Louis_nicolas_davout.jpg"
-},
-{
 "tri": "Del Duca",
 "nom": "Cino Del Duca",
 "lat": 48.861525,
@@ -1560,17 +801,6 @@
 "siecle": "20e",
 "wikidata": "Q1069399",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cino_del_duca.jpg/960px-Cino_del_duca.jpg"
-},
-{
-"tri": "Delacroix",
-"nom": "Eugène Delacroix",
-"lat": 48.862787,
-"long": 2.3936382,
-"categorie": "Peintre",
-"description": "artiste peintre, diariste, lithographe, photographe, dessinateur ou dessinatrice, peintre muraliste, dessinateur ou dessinatrice en ...",
-"siecle": "19e",
-"wikidata": "Q33477",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg/960px-Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg"
 },
 {
 "tri": "Desproges",
@@ -1584,15 +814,191 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pierre_Desproges17.jpg/960px-Pierre_Desproges17.jpg"
 },
 {
-"tri": "Piaf",
-"nom": "Édith Piaf",
-"lat": 48.8596833,
-"long": 2.3988939,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice, artiste d'enregistrement, chansonnier, artiste de rue, auteur-compositeur ou autrice-compositrice",
+"tri": "Brillat-Savarin",
+"nom": "Jean Anthelme Brillat-Savarin",
+"lat": 48.859774,
+"long": 2.395513,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, écrivain ou écrivaine, juge, juriste, musicien ou musicienne",
+"siecle": "19e",
+"wikidata": "Q313027",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/17/Le_Vachez_Collection_-_Jean_Anthelme_Brillat-Savarin_%281755-1826%29.jpg"
+},
+{
+"tri": "Chamans de Lavalette",
+"nom": "Antoine Marie Chamans de Lavalette",
+"lat": 48.8587457,
+"long": 2.3966952,
+"categorie": "Militaire",
+"description": "personnalité politique, diplomate, militaire",
+"siecle": "19e",
+"wikidata": "Q43246365",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg"
+},
+{
+"tri": "Courteline",
+"nom": "Georges Courteline",
+"lat": 48.862329,
+"long": 2.397316,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, dramaturge, journaliste, romancier ou romancière, poète ou poétesse",
 "siecle": "20e",
-"wikidata": "Q1631",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Piaf_Harcourt_1946_2.jpg"
+"wikidata": "Q51107",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/960px-Georges_Courteline_1921.jpg"
+},
+{
+"tri": "Musset",
+"nom": "Alfred de Musset",
+"lat": 48.86072,
+"long": 2.391114,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, poète ou poétesse, dramaturge, romancier ou romancière, bibliothécaire, problémiste",
+"siecle": "19e",
+"wikidata": "Q179680",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Alfred_de_musset.jpg"
+},
+{
+"tri": "Nadar",
+"nom": "Nadar",
+"lat": 48.858983,
+"long": 2.397037,
+"categorie": "Scientifique",
+"description": "photographe, aérostier, dessinateur ou dessinatrice humoristique, caricaturiste, écrivain ou écrivaine, journaliste",
+"siecle": "20e",
+"wikidata": "Q40116",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg/960px-Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg"
+},
+{
+"tri": "Popesco",
+"nom": "Elvire Popesco",
+"lat": 48.86319,
+"long": 2.395985,
+"categorie": "Réalisateur",
+"description": "metteur ou metteuse en scène, acteur ou actrice de théâtre, acteur ou actrice de cinéma",
+"siecle": "20e",
+"wikidata": "Q455878",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elvira-Popescu-2.jpg"
+},
+{
+"tri": "Topart",
+"nom": "Jean Topart",
+"lat": 48.8615364,
+"long": 2.3918726,
+"categorie": "Acteur",
+"description": "acteur ou actrice, acteur ou actrice de doublage",
+"siecle": "21e",
+"wikidata": "Q2110802",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jean_Topart.jpg/600px-Jean_Topart.jpg"
+},
+{
+"tri": "Vivant Denon",
+"nom": "Dominique Vivant Denon",
+"lat": 48.8601567,
+"long": 2.3927356,
+"categorie": "Ecrivain",
+"description": "historien ou historienne de l'art, égyptologue, diplomate, chroniqueur de voyage, dessinateur ou dessinatrice, archéologue, artiste ...",
+"siecle": "19e",
+"wikidata": "Q468618",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg/960px-Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg"
+},
+{
+"tri": "Macdonald",
+"nom": "Étienne-Jacques-Joseph Macdonald",
+"lat": 48.8586237,
+"long": 2.396391,
+"categorie": "Politique",
+"description": "personnalité politique, diplomate, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q298784",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MacDonald_par_Antoine_Jean_Gros.jpg/960px-MacDonald_par_Antoine_Jean_Gros.jpg"
+},
+{
+"tri": "Raspail",
+"nom": "François-Vincent Raspail",
+"lat": 48.860141,
+"long": 2.393904,
+"categorie": "Scientifique",
+"description": "chimiste, biologiste, personnalité politique, botaniste, physiologiste",
+"siecle": "19e",
+"wikidata": "Q682230",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg"
+},
+{
+"tri": "Gaudin",
+"nom": "Martin Michel Charles Gaudin",
+"lat": 48.86048,
+"long": 2.394376,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q708596",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg/960px-Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg"
+},
+{
+"tri": "Corot",
+"nom": "Jean-Baptiste Camille Corot",
+"lat": 48.860903,
+"long": 2.394612,
+"categorie": "Peintre",
+"description": "artiste peintre, photographe, graveur ou graveuse d'estampes, dessinateur ou dessinatrice, dessinateur ou dessinatrice en bâtiment, artiste ...",
+"siecle": "19e",
+"wikidata": "Q148475",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jean-Baptiste_Camille_Corot_-_autoportrait.jpg/960px-Jean-Baptiste_Camille_Corot_-_autoportrait.jpg"
+},
+{
+"tri": "Bernardin de Saint-Pierre",
+"nom": "Jacques-Henri Bernardin de Saint-Pierre",
+"lat": 48.860423,
+"long": 2.392917,
+"categorie": "Ecrivain",
+"description": "ingénieur géographe, romancier ou romancière, botaniste, écrivain ou écrivaine",
+"siecle": "19e",
+"wikidata": "Q361976",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg/960px-Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg"
+},
+{
+"tri": "Haussmann",
+"nom": "Georges Eugène Haussmann",
+"lat": 48.860748,
+"long": 2.391179,
+"categorie": "Politique",
+"description": "personnalité politique, haut fonctionnaire ou haute fonctionnaire, architecte, urbaniste",
+"siecle": "19e",
+"wikidata": "Q191798",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg/960px-Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg"
+},
+{
+"tri": "Apollinaire",
+"nom": "Guillaume Apollinaire",
+"lat": 48.8626557,
+"long": 2.3947199,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, écrivain ou écrivaine, dramaturge, critique d'art, diariste, censeur, conteur ou conteuse, épistolier ou épistolière, ...",
+"siecle": "20e",
+"wikidata": "Q133855",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guillaume_Apollinaire_1914.jpg"
+},
+{
+"tri": "Bienvenüe",
+"nom": "Fulgence Bienvenüe",
+"lat": 48.864009,
+"long": 2.394676,
+"categorie": "Scientifique",
+"description": "ingénieur des ponts et chaussées, ingénieur civil, ingénieur, architecte",
+"siecle": "20e",
+"wikidata": "Q964297",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bienvenue.jpg/960px-Bienvenue.jpg"
+},
+{
+"tri": "Blanc",
+"nom": "Louis Blanc",
+"lat": 48.861779,
+"long": 2.391286,
+"categorie": "Politique",
+"description": "journaliste, personnalité politique, historien ou historienne, écrivain ou écrivaine, rédacteur ou rédactrice en chef",
+"siecle": "19e",
+"wikidata": "Q355112",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Louis_Blanc_by_Carjat_1848.jpg/960px-Louis_Blanc_by_Carjat_1848.jpg"
 },
 {
 "tri": "Pineau",
@@ -1617,17 +1023,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pissarro-portrait-c1900.jpg/960px-Pissarro-portrait-c1900.jpg"
 },
 {
-"tri": "Planchon",
-"nom": "Roger Planchon",
-"lat": 48.86076,
-"long": 2.3938,
-"categorie": "Réalisateur",
-"description": "scénariste, metteur ou metteuse en scène, acteur ou actrice, réalisateur ou réalisatrice de cinéma, dramaturge, auteur, réalisateur ou ...",
-"siecle": "21e",
-"wikidata": "Q374912",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg/960px-Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg"
-},
-{
 "tri": "Pleyel",
 "nom": "Ignace Joseph Pleyel",
 "lat": 48.860508,
@@ -1637,61 +1032,6 @@
 "siecle": "19e",
 "wikidata": "Q314019",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Pleyel_after_Hardy.jpg/960px-Pleyel_after_Hardy.jpg"
-},
-{
-"tri": "Popesco",
-"nom": "Elvire Popesco",
-"lat": 48.86319,
-"long": 2.395985,
-"categorie": "Réalisateur",
-"description": "metteur ou metteuse en scène, acteur ou actrice de théâtre, acteur ou actrice de cinéma",
-"siecle": "20e",
-"wikidata": "Q455878",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elvira-Popescu-2.jpg"
-},
-{
-"tri": "Poulenc",
-"nom": "Francis Poulenc",
-"lat": 48.858758,
-"long": 2.393088,
-"categorie": "Musicien",
-"description": "compositeur ou compositrice, pianiste, critique de musique",
-"siecle": "20e",
-"wikidata": "Q191408",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francis_Poulenc_and_Wanda_Landowska_%28cropped%29.jpg"
-},
-{
-"tri": "Proust",
-"nom": "Marcel Proust",
-"lat": 48.8630712,
-"long": 2.394975,
-"categorie": "Ecrivain",
-"description": "romancier ou romancière, essayiste, écrivain ou écrivaine, critique littéraire, poète ou poétesse, prosateur ou prosatrice",
-"siecle": "20e",
-"wikidata": "Q7199",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Marcel_Proust_1895.jpg/960px-Marcel_Proust_1895.jpg"
-},
-{
-"tri": "Raspail",
-"nom": "François-Vincent Raspail",
-"lat": 48.860141,
-"long": 2.393904,
-"categorie": "Scientifique",
-"description": "chimiste, biologiste, personnalité politique, botaniste, physiologiste",
-"siecle": "19e",
-"wikidata": "Q682230",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg"
-},
-{
-"tri": "Romains",
-"nom": "Jules Romains",
-"lat": 48.860113,
-"long": 2.390428,
-"categorie": "Ecrivain",
-"description": "dramaturge, écrivain ou écrivaine, poète ou poétesse",
-"siecle": "20e",
-"wikidata": "Q334983",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jules_Romains-crop.jpg"
 },
 {
 "tri": "Rossini",
@@ -1716,17 +1056,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png/600px-James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png"
 },
 {
-"tri": "Salvador",
-"nom": "Henri Salvador",
-"lat": 48.859633,
-"long": 2.398839,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, humoriste, compositeur ou compositrice, animateur ou animatrice de télévision, guitariste de jazz, artiste ...",
-"siecle": "21e",
-"wikidata": "Q318060",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/3/36/Salvador_Harcourt_1946_2.jpg"
-},
-{
 "tri": "Sans-Gêne",
 "nom": "Madame Sans-Gêne",
 "lat": 48.85904,
@@ -1749,28 +1078,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Horace_Say2.jpg"
 },
 {
-"tri": "Schœlcher",
-"nom": "Victor Schœlcher",
-"lat": 48.861412,
-"long": 2.393947,
-"categorie": "Politique",
-"description": "personnalité politique, écrivain ou écrivaine",
-"siecle": "19e",
-"wikidata": "Q120417",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg/960px-Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg"
-},
-{
-"tri": "Scribe",
-"nom": "Eugène Scribe",
-"lat": 48.859365,
-"long": 2.397187,
-"categorie": "Ecrivain",
-"description": "dramaturge, librettiste, écrivain ou écrivaine, compositeur ou compositrice, romancier ou romancière",
-"siecle": "19e",
-"wikidata": "Q319261",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eug%C3%A8ne_Scribe_par_Nadar.png/960px-Eug%C3%A8ne_Scribe_par_Nadar.png"
-},
-{
 "tri": "Seurat",
 "nom": "Georges Seurat",
 "lat": 48.8623521,
@@ -1780,28 +1087,6 @@
 "siecle": "19e",
 "wikidata": "Q34013",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Georges_Seurat_1888_%28cropped%29.jpg/960px-Georges_Seurat_1888_%28cropped%29.jpg"
-},
-{
-"tri": "Sieyès",
-"nom": "Emmanuel-Joseph Sieyès",
-"lat": 48.858532,
-"long": 2.395599,
-"categorie": "Politique",
-"description": "personnalité politique, diplomate, sociologue, écrivain ou écrivaine, théoricien ou théoricienne politique, auteur ou autrice de ...",
-"siecle": "19e",
-"wikidata": "Q294344",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg/960px-Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg"
-},
-{
-"tri": "Solo",
-"nom": "Mano Solo",
-"lat": 48.860452,
-"long": 2.392552,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste peintre, guitariste, écrivain ou ...",
-"siecle": "21e",
-"wikidata": "Q1335349",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mano_Solo_2007-04a.jpg/960px-Mano_Solo_2007-04a.jpg"
 },
 {
 "tri": "Soulié",
@@ -1837,17 +1122,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Raymond-de-Seze.jpg/600px-Raymond-de-Seze.jpg"
 },
 {
-"tri": "Thiers",
-"nom": "Adolphe Thiers",
-"lat": 48.861087,
-"long": 2.392895,
-"categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journaliste, historien ou historienne, écrivain ou écrivaine",
-"siecle": "19e",
-"wikidata": "Q5738",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Adolphe_Thiers_par_Nadar.jpg/960px-Adolphe_Thiers_par_Nadar.jpg"
-},
-{
 "tri": "Thorez",
 "nom": "Maurice Thorez",
 "lat": 48.859943,
@@ -1859,17 +1133,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg/960px-Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg"
 },
 {
-"tri": "Topart",
-"nom": "Jean Topart",
-"lat": 48.8615364,
-"long": 2.3918726,
-"categorie": "Acteur",
-"description": "acteur ou actrice, acteur ou actrice de doublage",
-"siecle": "21e",
-"wikidata": "Q2110802",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jean_Topart.jpg/600px-Jean_Topart.jpg"
-},
-{
 "tri": "Toscan du Plantier",
 "nom": "Daniel Toscan du Plantier",
 "lat": 48.861214,
@@ -1879,17 +1142,6 @@
 "siecle": "21e",
 "wikidata": "Q325453",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/f/fe/DTDP-1982-Venise.png"
-},
-{
-"tri": "Trelliard",
-"nom": "Anne-François-Charles Trelliard",
-"lat": 48.8584651,
-"long": 2.3953018,
-"categorie": "Militaire",
-"description": "militaire",
-"siecle": "19e",
-"wikidata": "Q2850778",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/93/GralTreillard_%281%29.jpg"
 },
 {
 "tri": "Trintignant",
@@ -1936,6 +1188,303 @@
 "pic": null
 },
 {
+"tri": "Wilde",
+"nom": "Oscar Wilde",
+"lat": 48.8618038,
+"long": 2.3979473,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, dramaturge, nouvelliste, journaliste, auteur ou autrice de littérature pour la jeunesse, romancier ou romancière, ...",
+"siecle": "20e",
+"wikidata": "Q30875",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg/960px-Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg"
+},
+{
+"tri": "Yves Montand et Simone Signoret",
+"nom": "Yves Montand et Simone Signoret",
+"lat": 48.861892,
+"long": 2.395535,
+"categorie": "Acteur",
+"description": null,
+"siecle": "e",
+"wikidata": "Q106057",
+"pic": null
+},
+{
+"tri": "Zavatta",
+"nom": "Achille Zavatta",
+"lat": 48.862146,
+"long": 2.396071,
+"categorie": "Acteur",
+"description": "clown, trompettiste, acteur ou actrice, saxophoniste, artiste de cirque, mime, forain ou foraine",
+"siecle": "20e",
+"wikidata": "Q340260",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg/960px-Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg"
+},
+{
+"tri": "Asturias",
+"nom": "Miguel Ángel Asturias",
+"lat": 48.8597856,
+"long": 2.3928042,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, écrivain ou écrivaine, diplomate, journaliste, personnalité politique, juriste-poète",
+"siecle": "20e",
+"wikidata": "Q75603",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Miguel_Angel_Asturias.jpg/960px-Miguel_Angel_Asturias.jpg"
+},
+{
+"tri": "Modigliani",
+"nom": "Amedeo Modigliani",
+"lat": 48.8598029,
+"long": 2.3985154,
+"categorie": "Peintre",
+"description": "artiste peintre, sculpteur ou sculptrice, dessinateur ou dessinatrice",
+"siecle": "20e",
+"wikidata": "Q120993",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Amedeo_Modigliani_1918_restored.jpg/600px-Amedeo_Modigliani_1918_restored.jpg"
+},
+{
+"tri": "Monfort",
+"nom": "Silvia Monfort",
+"lat": 48.861242,
+"long": 2.39841,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine",
+"siecle": "20e",
+"wikidata": "Q3320631",
+"pic": "https://www.chartres-tourisme.com/sites/chartres-tourisme/files/styles/gallery_lightbox/public/content/images/1539874776-909480332.jpg?itok=vz5NqoDz"
+},
+{
+"tri": "Mouchotte",
+"nom": "René Mouchotte",
+"lat": 48.8631279,
+"long": 2.3912635,
+"categorie": "Militaire",
+"description": "diariste, militaire, aviateur ou aviatrice",
+"siecle": "20e",
+"wikidata": "Q3426652",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg"
+},
+{
+"tri": "Méliès",
+"nom": "Georges Méliès",
+"lat": 48.863331,
+"long": 2.390664,
+"categorie": "Réalisateur",
+"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, animateur ou animatrice, monteur ou monteuse, scénariste, prestidigitateur ou ...",
+"siecle": "20e",
+"wikidata": "Q152272",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/960px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png"
+},
+{
+"tri": "Nerval",
+"nom": "Gérard de Nerval",
+"lat": 48.862739,
+"long": 2.393174,
+"categorie": "Ecrivain",
+"description": "poète ou poétesse, dramaturge, romancier ou romancière, nouvelliste, écrivain ou écrivaine, traducteur ou traductrice, librettiste",
+"siecle": "19e",
+"wikidata": "Q191305",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/960px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg"
+},
+{
+"tri": "Oberkampf",
+"nom": "Christophe-Philippe Oberkampf",
+"lat": 48.859689,
+"long": 2.396071,
+"categorie": "Entrepreneur",
+"description": "personnalité du monde des affaires, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q74518",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/d/de/Christophe-Philippe_Oberkampf_%281738-1815%29.jpg"
+},
+{
+"tri": "Panhard",
+"nom": "René Panhard",
+"lat": 48.858475,
+"long": 2.395771,
+"categorie": "Entrepreneur",
+"description": "ingénieur, personnalité politique, pilote de course automobile, personnalité du monde des affaires",
+"siecle": "20e",
+"wikidata": "Q266561",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WP-Rene_Panhard.jpg"
+},
+{
+"tri": "Perrin",
+"nom": "Claude-Victor Perrin",
+"lat": 48.859627,
+"long": 2.394392,
+"categorie": "Politique",
+"description": "personnalité politique, militaire",
+"siecle": "19e",
+"wikidata": "Q372750",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Claude-Victor_Perrin.jpg/600px-Claude-Victor_Perrin.jpg"
+},
+{
+"tri": "Fresnel",
+"nom": "Augustin Fresnel",
+"lat": 48.8597319,
+"long": 2.3936651,
+"categorie": "Scientifique",
+"description": "physicien ou physicienne, ingénieur civil, ingénieur",
+"siecle": "19e",
+"wikidata": "Q187241",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg/960px-Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg"
+},
+{
+"tri": "Garnier-Pagès",
+"nom": "Louis-Antoine Garnier-Pagès",
+"lat": 48.859463,
+"long": 2.395062,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q601266",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg/960px-Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg"
+},
+{
+"tri": "Gobert",
+"nom": "Jacques Nicolas Gobert",
+"lat": 48.8588,
+"long": 2.39635,
+"categorie": "Militaire",
+"description": "officier",
+"siecle": "19e",
+"wikidata": "Q3159659",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg/960px-Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg"
+},
+{
+"tri": "Gramme",
+"nom": "Zénobe Gramme",
+"lat": 48.860833,
+"long": 2.397895,
+"categorie": "Scientifique",
+"description": "physicien ou physicienne, inventeur",
+"siecle": "20e",
+"wikidata": "Q247603",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/88/Z%C3%A9nobe_Gramme_1893.jpg"
+},
+{
+"tri": "Guesde",
+"nom": "Jules Guesde",
+"lat": 48.862541,
+"long": 2.395384,
+"categorie": "Politique",
+"description": "personnalité politique, journaliste, écrivain ou écrivaine",
+"siecle": "20e",
+"wikidata": "Q379699",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jules_Guesde.jpg"
+},
+{
+"tri": "David",
+"nom": "Jacques-Louis David",
+"lat": 48.861355,
+"long": 2.392359,
+"categorie": "Peintre",
+"description": "artiste peintre, personnalité politique, dessinateur ou dessinatrice en bâtiment",
+"siecle": "19e",
+"wikidata": "Q83155",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/960px-David_Self_Portrait.jpg"
+},
+{
+"tri": "Alamo",
+"nom": "Frank Alamo",
+"lat": 48.861065,
+"long": 2.39491,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, acteur ou actrice de cinéma, industriel ou industrielle",
+"siecle": "21e",
+"wikidata": "Q112324100",
+"pic": "https://i.ytimg.com/vi/Po-Njvz1U_M/hqdefault.jpg"
+},
+{
+"tri": "Piaf",
+"nom": "Édith Piaf",
+"lat": 48.8596833,
+"long": 2.3988939,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, acteur ou actrice, artiste d'enregistrement, chansonnier, artiste de rue, auteur-compositeur ou autrice-compositrice",
+"siecle": "20e",
+"wikidata": "Q1631",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Piaf_Harcourt_1946_2.jpg"
+},
+{
+"tri": "Planchon",
+"nom": "Roger Planchon",
+"lat": 48.86076,
+"long": 2.3938,
+"categorie": "Réalisateur",
+"description": "scénariste, metteur ou metteuse en scène, acteur ou actrice, réalisateur ou réalisatrice de cinéma, dramaturge, auteur, réalisateur ou ...",
+"siecle": "21e",
+"wikidata": "Q374912",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg/960px-Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg"
+},
+{
+"tri": "Poulenc",
+"nom": "Francis Poulenc",
+"lat": 48.858758,
+"long": 2.393088,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, pianiste, critique de musique",
+"siecle": "20e",
+"wikidata": "Q191408",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francis_Poulenc_and_Wanda_Landowska_%28cropped%29.jpg"
+},
+{
+"tri": "Proust",
+"nom": "Marcel Proust",
+"lat": 48.8630712,
+"long": 2.394975,
+"categorie": "Ecrivain",
+"description": "romancier ou romancière, essayiste, écrivain ou écrivaine, critique littéraire, poète ou poétesse, prosateur ou prosatrice",
+"siecle": "20e",
+"wikidata": "Q7199",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Marcel_Proust_1895.jpg/960px-Marcel_Proust_1895.jpg"
+},
+{
+"tri": "Romains",
+"nom": "Jules Romains",
+"lat": 48.860113,
+"long": 2.390428,
+"categorie": "Ecrivain",
+"description": "dramaturge, écrivain ou écrivaine, poète ou poétesse",
+"siecle": "20e",
+"wikidata": "Q334983",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jules_Romains-crop.jpg"
+},
+{
+"tri": "Salvador",
+"nom": "Henri Salvador",
+"lat": 48.859633,
+"long": 2.398839,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, humoriste, compositeur ou compositrice, animateur ou animatrice de télévision, guitariste de jazz, artiste ...",
+"siecle": "21e",
+"wikidata": "Q318060",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/3/36/Salvador_Harcourt_1946_2.jpg"
+},
+{
+"tri": "Schœlcher",
+"nom": "Victor Schœlcher",
+"lat": 48.861412,
+"long": 2.393947,
+"categorie": "Politique",
+"description": "personnalité politique, écrivain ou écrivaine",
+"siecle": "19e",
+"wikidata": "Q120417",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg/960px-Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg"
+},
+{
+"tri": "Thiers",
+"nom": "Adolphe Thiers",
+"lat": 48.861087,
+"long": 2.392895,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, journaliste, historien ou historienne, écrivain ou écrivaine",
+"siecle": "19e",
+"wikidata": "Q5738",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Adolphe_Thiers_par_Nadar.jpg/960px-Adolphe_Thiers_par_Nadar.jpg"
+},
+{
 "tri": "Verneuil",
 "nom": "Louis Verneuil",
 "lat": 48.86367,
@@ -1947,6 +1496,666 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg/960px-Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg"
 },
 {
+"tri": "Hugo",
+"nom": "Joseph Léopold Sigisbert Hugo",
+"lat": 48.85983,
+"long": 2.395406,
+"categorie": "Militaire",
+"description": "officier, militaire",
+"siecle": "19e",
+"wikidata": "Q2299673",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg/960px-G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg"
+},
+{
+"tri": "Ingres",
+"nom": "Jean-Auguste-Dominique Ingres",
+"lat": 48.861412,
+"long": 2.394333,
+"categorie": "Peintre",
+"description": "artiste peintre, personnalité politique, violoniste, dessinateur ou dessinatrice, graveur ou graveuse d'estampes, artiste graphique, ...",
+"siecle": "19e",
+"wikidata": "Q23380",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ingres%2C_Self-portrait.jpg/960px-Ingres%2C_Self-portrait.jpg"
+},
+{
+"tri": "Khorsand",
+"nom": "Philippe Khorsand",
+"lat": 48.8613527,
+"long": 2.3946884,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"siecle": "21e",
+"wikidata": "Q2087624",
+"pic": null
+},
+{
+"tri": "La Fontaine",
+"nom": "Jean de La Fontaine",
+"lat": 48.860565,
+"long": 2.395062,
+"categorie": "Ecrivain",
+"description": "fabuliste, poète ou poétesse, avocat ou avocate, auteur ou autrice de littérature pour la jeunesse, moraliste, écrivain ou écrivaine, ...",
+"siecle": "17e",
+"wikidata": "Q49496",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg/960px-Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg"
+},
+{
+"tri": "Lazareff",
+"nom": "Pierre et Hélène Lazareff",
+"lat": 48.859365,
+"long": 2.391479,
+"categorie": "Ecrivain",
+"description": null,
+"siecle": "e",
+"wikidata": "Q1235630",
+"pic": null
+},
+{
+"tri": "Dabadie de Bernet",
+"nom": "Jean Melchior Dabadie de Bernet",
+"lat": 48.859051,
+"long": 2.397138,
+"categorie": "Politique",
+"description": "personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q1429885",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean-Melchior_Dabadie_de_Bernet.jpg/600px-Jean-Melchior_Dabadie_de_Bernet.jpg"
+},
+{
+"tri": "Daudet",
+"nom": "Alphonse Daudet",
+"lat": 48.860198,
+"long": 2.395277,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, dramaturge, poète ou poétesse, romancier ou romancière, autobiographe, scénariste, prosateur ou prosatrice, ...",
+"siecle": "19e",
+"wikidata": "Q228546",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Alphonse_Daudet_2.jpg/600px-Alphonse_Daudet_2.jpg"
+},
+{
+"tri": "Davout",
+"nom": "Louis Nicolas Davout",
+"lat": 48.8589314,
+"long": 2.3964384,
+"categorie": "Militaire",
+"description": "personnalité politique, officier, chef militaire, maréchal",
+"siecle": "19e",
+"wikidata": "Q158778",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Louis_nicolas_davout.jpg/960px-Louis_nicolas_davout.jpg"
+},
+{
+"tri": "Delacroix",
+"nom": "Eugène Delacroix",
+"lat": 48.862787,
+"long": 2.3936382,
+"categorie": "Peintre",
+"description": "artiste peintre, diariste, lithographe, photographe, dessinateur ou dessinatrice, peintre muraliste, dessinateur ou dessinatrice en ...",
+"siecle": "19e",
+"wikidata": "Q33477",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg/960px-Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg"
+},
+{
+"tri": "Sieyès",
+"nom": "Emmanuel-Joseph Sieyès",
+"lat": 48.858532,
+"long": 2.395599,
+"categorie": "Politique",
+"description": "personnalité politique, diplomate, sociologue, écrivain ou écrivaine, théoricien ou théoricienne politique, auteur ou autrice de ...",
+"siecle": "19e",
+"wikidata": "Q294344",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg/960px-Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg"
+},
+{
+"tri": "Trelliard",
+"nom": "Anne-François-Charles Trelliard",
+"lat": 48.8584651,
+"long": 2.3953018,
+"categorie": "Militaire",
+"description": "militaire",
+"siecle": "19e",
+"wikidata": "Q2850778",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/9/93/GralTreillard_%281%29.jpg"
+},
+{
+"tri": "Bourdieu",
+"nom": "Pierre Bourdieu",
+"lat": 48.859703,
+"long": 2.395651,
+"categorie": "Ecrivain",
+"description": "philosophe, sociologue, anthropologue, écrivain ou écrivaine, photographe, traducteur ou traductrice, chercheur ou chercheuse",
+"siecle": "21e",
+"wikidata": "Q156268",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Pierre_Bourdieu_%281%29.jpg/960px-Pierre_Bourdieu_%281%29.jpg"
+},
+{
+"tri": "Brosset",
+"nom": "Claude Brosset",
+"lat": 48.858196,
+"long": 2.395227,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, acteur ou actrice de doublage",
+"siecle": "21e",
+"wikidata": "Q2977082",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Claude_Brosset_en_1989.jpg/960px-Claude_Brosset_en_1989.jpg"
+},
+{
+"tri": "Cachin",
+"nom": "Marcel Cachin",
+"lat": 48.8599157,
+"long": 2.3998601,
+"categorie": "Politique",
+"description": "personnalité politique, éditeur ou éditrice, professeur d'université",
+"siecle": "20e",
+"wikidata": "Q658479",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marcel_Cachin_b_Meurisse_1918.jpg/960px-Marcel_Cachin_b_Meurisse_1918.jpg"
+},
+{
+"tri": "Caron de Beaumarchais",
+"nom": "Pierre-Augustin Caron de Beaumarchais",
+"lat": 48.858842,
+"long": 2.396264,
+"categorie": "Musicien",
+"description": "musicien ou musicienne, poète ou poétesse, personnalité du monde des affaires, éditeur ou éditrice, dramaturge, diplomate, financier, ...",
+"siecle": "18e",
+"wikidata": "Q70326",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg"
+},
+{
+"tri": "Chaptal",
+"nom": "Jean-Antoine Chaptal",
+"lat": 48.86192,
+"long": 2.39826,
+"categorie": "Scientifique",
+"description": "chimiste, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q708011",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg/600px-Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg"
+},
+{
+"tri": "Constant",
+"nom": "Benjamin Constant",
+"lat": 48.859096,
+"long": 2.39547,
+"categorie": "Peintre",
+"description": "artiste peintre, biographe, graveur ou graveuse d'estampes",
+"siecle": "20e",
+"wikidata": "Q968357",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg/600px-Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg"
+},
+{
+"tri": "Cuvier",
+"nom": "Georges Cuvier",
+"lat": 48.8599553,
+"long": 2.3920732,
+"categorie": "Scientifique",
+"description": "géologue, paléontologue, personnalité politique, zoologiste, ornithologue, professeur d'université, professeur, biologiste, malacologiste, ...",
+"siecle": "19e",
+"wikidata": "Q171969",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Georges_Cuvier_3.jpg/960px-Georges_Cuvier_3.jpg"
+},
+{
+"tri": "Faure",
+"nom": "Félix Faure",
+"lat": 48.860734,
+"long": 2.391651,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "19e",
+"wikidata": "Q296076",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/President_F%C3%A9lix_Faure_%28cropped%29.jpg/600px-President_F%C3%A9lix_Faure_%28cropped%29.jpg"
+},
+{
+"tri": "Ledru-Rollin",
+"nom": "Alexandre Ledru-Rollin",
+"lat": 48.860706,
+"long": 2.391565,
+"categorie": "Politique",
+"description": "avocat ou avocate, personnalité politique, journaliste",
+"siecle": "19e",
+"wikidata": "Q1382222",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ledru-Rollin.jpg/960px-Ledru-Rollin.jpg"
+},
+{
+"tri": "Lesseps",
+"nom": "Ferdinand de Lesseps",
+"lat": 48.8588033,
+"long": 2.3945025,
+"categorie": "Entrepreneur",
+"description": "diplomate, entrepreneur ou entrepreneuse, écrivain ou écrivaine",
+"siecle": "19e",
+"wikidata": "Q209169",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg/960px-Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg"
+},
+{
+"tri": "Marceau",
+"nom": "Marcel Marceau",
+"lat": 48.860879,
+"long": 2.393314,
+"categorie": "Acteur",
+"description": "mime, acteur ou actrice, clown, artiste de cirque, résistant ou résistante, artiste peintre, lithographe, acteur ou actrice de cinéma, ...",
+"siecle": "21e",
+"wikidata": "Q157191",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marcel_Marceau_-_1971.jpg/600px-Marcel_Marceau_-_1971.jpg"
+},
+{
+"tri": "Merleau-Ponty",
+"nom": "Maurice Merleau-Ponty",
+"lat": 48.862287,
+"long": 2.393196,
+"categorie": "Ecrivain",
+"description": "philosophe, professeur, théoricien ou théoricienne de l'art, philosophe de l'esthétique",
+"siecle": "20e",
+"wikidata": "Q212639",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maurice_Merleau-Ponty.jpg"
+},
+{
+"tri": "Scribe",
+"nom": "Eugène Scribe",
+"lat": 48.859365,
+"long": 2.397187,
+"categorie": "Ecrivain",
+"description": "dramaturge, librettiste, écrivain ou écrivaine, compositeur ou compositrice, romancier ou romancière",
+"siecle": "19e",
+"wikidata": "Q319261",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eug%C3%A8ne_Scribe_par_Nadar.png/960px-Eug%C3%A8ne_Scribe_par_Nadar.png"
+},
+{
+"tri": "Jolly",
+"nom": "Sylvie Joly",
+"lat": 48.86053348548295,
+"long": 2.3952934089497635,
+"categorie": "Acteur",
+"description": "acteur ou actrice, humoriste, avocat ou avocate, acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"siecle": "21e",
+"wikidata": "Q3507343",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/09/SylvieJoly-StudioHarcourt-1988.png"
+},
+{
+"tri": "Ogier",
+"nom": "Pascale Ogier",
+"lat": 48.86178531605534,
+"long": 2.393403671980956,
+"categorie": "Acteur",
+"description": "acteur ou actrice, scénariste, acteur ou actrice de cinéma, costumier ou costumière",
+"siecle": "20e",
+"wikidata": "Q446055",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Pascale_Ogier_%28cropped%29.jpg/500px-Pascale_Ogier_%28cropped%29.jpg"
+},
+{
+"tri": "Pascal",
+"nom": "Christine Pascal",
+"lat": 48.85974384960216,
+"long": 2.391625857627751,
+"categorie": "Acteur",
+"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, scénariste, acteur ou actrice de cinéma, réalisateur ou réalisatrice",
+"siecle": "20e",
+"wikidata": "Q451637",
+"pic": "https://geneacdn.net/bundles/geneanetgeneastar/images/celebrites/200px/pascalchris.jpg"
+},
+{
+"tri": "Roussel",
+"nom": "Raymond Roussel",
+"lat": 48.86198026385854,
+"long": 2.3984502454768672,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, pianiste, poète ou poétesse, dramaturge, joueur ou joueuse d'échecs, musicien ou musicienne",
+"siecle": "20e",
+"wikidata": "Q462662",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Roussel_19ans.JPG/600px-Roussel_19ans.JPG"
+},
+{
+"tri": "Cristiani",
+"nom": "Hervé Cristiani",
+"lat": 48.85939243981312,
+"long": 2.3939027346403896,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, compositeur ou compositrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste ...",
+"siecle": "21e",
+"wikidata": "Q3134460",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG/500px-Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG"
+},
+{
+"tri": "Callas",
+"nom": "Maria Callas",
+"lat": 48.86260878415607,
+"long": 2.3959194332140235,
+"categorie": "Chanteur",
+"description": "cantatrice grecque (1923-1977)",
+"siecle": "20e",
+"wikidata": "Q128297",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Maria_Callas_1958.jpg/960px-Maria_Callas_1958.jpg"
+},
+{
+"tri": "Brazza",
+"nom": "Brazza",
+"lat": 48.85871517483853,
+"long": 2.3967051534718364,
+"categorie": "Autres",
+"description": "explorateur ou exploratrice, colon, collectionneur ou collectionneuse de plantes",
+"siecle": "20e",
+"wikidata": "Q319834",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/18/Pierre_Savorgnan_de_Brazza_by_Paul_Nadar.jpg"
+},
+{
+"tri": "Legrand",
+"nom": "Michel Legrand",
+"lat": 48.86196596242055,
+"long": 2.3955547628821834,
+"categorie": "Musicien",
+"description": "chef ou cheffe d'orchestre ou de chœur, compositeur ou compositrice, acteur ou actrice, chanteur ou chanteuse, pianiste, arrangeur musical, ...",
+"siecle": "21e",
+"wikidata": "Q313281",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michel_Legrand_Cabourg_2015.jpg"
+},
+{
+"tri": "Balzac",
+"nom": "Honoré de Balzac",
+"lat": 48.8627718,
+"long": 2.3931199,
+"categorie": "Ecrivain",
+"description": "romancier ou romancière, critique littéraire, écrivain ou écrivaine, prosateur ou prosatrice, journaliste, critique d'art, essayiste, ...",
+"siecle": "19e",
+"wikidata": "Q9711",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Honor%C3%A9_de_Balzac_%281842%29_detail.jpg"
+},
+{
+"tri": "Chabrol",
+"nom": "Claude Chabrol",
+"lat": 48.860558,
+"long": 2.392547,
+"categorie": "Réalisateur",
+"description": "acteur ou actrice de cinéma, scénariste de cinéma, critique de cinéma, réalisateur ou réalisatrice, producteur ou productrice artistique",
+"siecle": "21e",
+"wikidata": "Q55375",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/65/Chabrol-italie-1985.png"
+},
+{
+"tri": "Comte",
+"nom": "Auguste Comte",
+"lat": 48.8597855,
+"long": 2.3942322,
+"categorie": "Scientifique",
+"description": "philosophe, sociologue, mathématicien ou mathématicienne, écrivain ou écrivaine, répétiteur ou répétitrice",
+"siecle": "19e",
+"wikidata": "Q12718",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg/960px-Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg"
+},
+{
+"tri": "Lebrun",
+"nom": "Charles-François Lebrun",
+"lat": 48.859181,
+"long": 2.39356,
+"categorie": "Politique",
+"description": "personnalité politique, linguiste, traducteur ou traductrice, juriste, financier",
+"siecle": "19e",
+"wikidata": "Q707712",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg/960px-Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg"
+},
+{
+"tri": "Monge",
+"nom": "Gaspard Monge",
+"lat": 48.860212,
+"long": 2.393603,
+"categorie": "Scientifique",
+"description": "mathématicien ou mathématicienne, personnalité politique, physicien ou physicienne, professeur d'université, ingénieur, chimiste, chargé de ...",
+"siecle": "19e",
+"wikidata": "Q206832",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg"
+},
+{
+"tri": "Alain",
+"nom": "Alain",
+"lat": 48.861016,
+"long": 2.399096,
+"categorie": "Ecrivain",
+"description": "philosophe, écrivain ou écrivaine, journaliste, enseignant ou enseignante",
+"siecle": "20e",
+"wikidata": "Q275003",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg"
+},
+{
+"tri": "Delpech",
+"nom": "Michel Delpech",
+"lat": 48.862215703714625,
+"long": 2.3939962973258826,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, acteur ou actrice de cinéma, compositeur de ...",
+"siecle": "21e",
+"wikidata": "Q972386",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Delpech-1970-Italie-colorise.jpg"
+},
+{
+"tri": "Caillaux",
+"nom": "Joseph Caillaux",
+"lat": 48.86253995905876,
+"long": 2.392534709757924,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "20e",
+"wikidata": "Q450463",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg/500px-%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg"
+},
+{
+"tri": "Michel Blanc",
+"nom": "Michel Blanc",
+"lat": 48.862319811839875,
+"long": 2.3934069379310206,
+"categorie": "Acteur",
+"description": "scénariste, acteur ou actrice, acteur ou actrice de cinéma, acteur ou actrice de télévision, réalisateur ou réalisatrice, réalisateur ou ...",
+"siecle": "21e",
+"wikidata": "Q1398256",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/2/27/Michel_Blanc_2009.jpg"
+},
+{
+"tri": "Perec",
+"nom": "Georges Perec",
+"lat": 48.86252251721545,
+"long": 2.3961831147077786,
+"categorie": "Ecrivain",
+"description": "réalisateur ou réalisatrice de cinéma, poète ou poétesse, romancier ou romancière, essayiste, critique littéraire, verbicruciste, ...",
+"siecle": "20e",
+"wikidata": "Q157303",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/76/Myart_georges-perec_1978.jpg"
+},
+{
+"tri": "Radiguet",
+"nom": "Raymond Radiguet",
+"lat": 48.86206038208127,
+"long": 2.3917068370405796,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, journaliste, poète ou poétesse, romancier ou romancière",
+"siecle": "21e",
+"wikidata": "Q333615",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/3/32/Raymond_Radiguet.jpg"
+},
+{
+"tri": "Doris",
+"nom": "Pierre Doris",
+"lat": 48.86199688398224,
+"long": 2.391093939722256,
+"categorie": "Acteur",
+"description": "chansonnier, acteur ou actrice, acteur ou actrice de télévision",
+"siecle": "21e",
+"wikidata": "Q2015052",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/PierreDoris-1939-Harcourt.png/500px-PierreDoris-1939-Harcourt.png"
+},
+{
+"tri": "Audin",
+"nom": "Maurice Audin",
+"lat": 48.86350929025466,
+"long": 2.397271805297125,
+"categorie": "Autres",
+"description": "mathématicien ou mathématicienne, militant ou militante politique",
+"siecle": "20e",
+"wikidata": "Q3182348",
+"pic": "https://img.lemde.fr/2018/09/13/0/0/2853/2400/1112/0/75/0/150f046_d2_-rKzFq2i91rF1AHH_U1N0.jpg"
+},
+{
+"tri": "Percy",
+"nom": "Pierre François Percy",
+"lat": 48.86039536280218,
+"long": 2.393959567069695,
+"categorie": "Militaire",
+"description": "médecin, personnalité politique",
+"siecle": "19e",
+"wikidata": "Q1270800",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pierre-Fran%C3%A7ois_Percy.jpg/600px-Pierre-Fran%C3%A7ois_Percy.jpg"
+},
+{
+"tri": "Larrey",
+"nom": "Dominique Larrey",
+"lat": 48.85890573526013,
+"long": 2.3965813456640856,
+"categorie": "Militaire",
+"description": "médecin militaire, chirurgien ou chirurgienne",
+"siecle": "19e",
+"wikidata": "Q468413",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg/560px-Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg"
+},
+{
+"tri": "Foy",
+"nom": "Maximilien Sébastien Foy",
+"lat": 48.859096,
+"long": 2.395577,
+"categorie": "Politique",
+"description": "personnalité politique, officier",
+"siecle": "19e",
+"wikidata": "Q633498",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg/960px-Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg"
+},
+{
+"tri": "Dac",
+"nom": "Pierre Dac",
+"lat": 48.862767,
+"long": 2.396243,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine, humoriste, chansonnier, résistant ou résistante",
+"siecle": "20e",
+"wikidata": "Q165910",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dac-1947-Colorise.png"
+},
+{
+"tri": "Laforêt",
+"nom": "Marie Laforêt",
+"lat": 48.862263,
+"long": 2.393461,
+"categorie": "Chanteur",
+"description": "Chanteuse",
+"siecle": "21e",
+"wikidata": "Q239807",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lafor%C3%AAt2_%28cropped%29.jpg/960px-Lafor%C3%AAt2_%28cropped%29.jpg"
+},
+{
+"tri": "Daladier",
+"nom": "Edouard Daladier",
+"lat": 48.863581159176285,
+"long": 2.3912589878808572,
+"categorie": "Politique",
+"description": "personnalité politique",
+"siecle": "20e",
+"wikidata": "Q213526",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/00/%C3%89douard_Daladier_-_photo_H._Manuel.jpg"
+},
+{
+"tri": "Brasseur",
+"nom": "Claude Brasseur",
+"lat": 48.860853361815224,
+"long": 2.389257963298601,
+"categorie": "Acteur",
+"description": "pilote de course automobile, acteur ou actrice de théâtre, acteur ou actrice de cinéma, bobeur ou bobeuse, acteur ou actrice de télévision, ...",
+"siecle": "21e",
+"wikidata": "Q106544",
+"pic": "https://fr.wikipedia.org/wiki/Claude_Brasseur#/media/Fichier:ClaudeBrasseur-1965-StudioHarcourt.png"
+},
+{
+"tri": "Lachambeaudie",
+"nom": "Pierre Lachambeaudie",
+"lat": 48.862812,
+"long": 2.392937,
+"categorie": "Ecrivain",
+"description": "chansonnier, poète ou poétesse, écrivain ou écrivaine, goguettier, enseignant ou enseignante",
+"siecle": "19e",
+"wikidata": "Q1346280",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg/960px-Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg"
+},
+{
+"tri": "Parmentier",
+"nom": "Antoine Parmentier",
+"lat": 48.860141,
+"long": 2.395492,
+"categorie": "Scientifique",
+"description": "botaniste, pharmacien ou pharmacienne, agronome, diététicien ou diététicienne, censeur royal, inspecteur général des armées",
+"siecle": "19e",
+"wikidata": "Q360312",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg/960px-Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg"
+},
+{
+"tri": "Cherubini",
+"nom": "Luigi Cherubini",
+"lat": 48.8601705,
+"long": 2.3927894,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, chef ou cheffe d'orchestre ou de chœur, musicologue, professeur ou professeure de musique, théoricien ou ...",
+"siecle": "19e",
+"wikidata": "Q20721",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg"
+},
+{
+"tri": "Ernst",
+"nom": "Max Ernst",
+"lat": 48.8622181,
+"long": 2.3963152,
+"categorie": "Peintre",
+"description": "artiste peintre, sculpteur ou sculptrice, poète ou poétesse, artiste graphique, lithographe, collagiste, designer ou designeuse, créateur ...",
+"siecle": "20e",
+"wikidata": "Q154842",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/960px-Max_Ernst_1968.jpg"
+},
+{
+"tri": "Patachou",
+"nom": "Henriette Lesser - Patachou",
+"lat": 48.86001001374767,
+"long": 2.3895146491990533,
+"categorie": "Chanteur",
+"description": "chanteuse et actrice française",
+"siecle": "21e",
+"wikidata": "Q290345",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Patachou_%281961%29.jpg/960px-Patachou_%281961%29.jpg"
+},
+{
+"tri": "Crespin",
+"nom": "Régine Crespin",
+"lat": 48.86253661708963,
+"long": 2.3957061057191065,
+"categorie": "Chanteur",
+"description": "artiste lyrique, autobiographe",
+"siecle": "21e",
+"wikidata": "Q290464",
+"pic": "https://medicitv.imgix.net/artist/regine-crespin.jpg?ixlib=vue-2.9.1&auto=format&q=85&width=248&height=248&fit=crop&crop=faces%2Ccenter&mask=ellipse"
+},
+{
+"tri": "Savary",
+"nom": "Jérôme Savary",
+"lat": 48.86253661708963,
+"long": 2.3957061057191065,
+"categorie": "Réalisateur",
+"description": "acteur ou actrice, metteur ou metteuse en scène, dramaturge, réalisateur ou réalisatrice de cinéma, trompettiste, scénariste, réalisateur ...",
+"siecle": "21e",
+"wikidata": "Q1367105",
+"pic": null
+},
+{
+"tri": "Guattari",
+"nom": "Felix Guattari",
+"lat": 48.86068938258388,
+"long": 2.395635679260878,
+"categorie": "Ecrivain",
+"description": "psychiatre, philosophe, psychanalyste, psychologue, marxiste",
+"siecle": "20e",
+"wikidata": "Q352465",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%83%95%E3%82%A7%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%AC%E3%82%BF%E3%83%AA.jpg"
+},
+{
 "tri": "Visconti",
 "nom": "Louis Visconti",
 "lat": 48.860649,
@@ -1956,5 +2165,115 @@
 "siecle": "19e",
 "wikidata": "Q794916",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg/960px-Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg"
+},
+{
+"tri": "Nohain",
+"nom": "Jean Nohain",
+"lat": 48.862089,
+"long": 2.39738,
+"categorie": "Ecrivain",
+"description": "écrivain ou écrivaine, parolier ou parolière, auteur-compositeur ou autrice-compositrice, auteur ou autrice de littérature pour la ...",
+"siecle": "20e",
+"wikidata": "Q963719",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Jean_Nohain.png"
+},
+{
+"tri": "Solo",
+"nom": "Mano Solo",
+"lat": 48.860452,
+"long": 2.392552,
+"categorie": "Chanteur",
+"description": "chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste peintre, guitariste, écrivain ou ...",
+"siecle": "21e",
+"wikidata": "Q1335349",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mano_Solo_2007-04a.jpg/960px-Mano_Solo_2007-04a.jpg"
+},
+{
+"tri": "Bashung",
+"nom": "Alain Bashung",
+"lat": 48.860254,
+"long": 2.39341,
+"categorie": "Chanteur",
+"description": "acteur ou actrice, auteur-compositeur-interprète ou autrice-compositrice-interprète",
+"siecle": "21e",
+"wikidata": "Q380045",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/5/54/BASHUNG_Alain-24x30-2007b.jpg"
+},
+{
+"tri": "Fabrega",
+"nom": "Christine Fabrega",
+"lat": 48.85885648791956,
+"long": 2.3976887503624686,
+"categorie": "Acteur",
+"description": "acteur ou actrice de cinéma, animateur ou animatrice de télévision, acteur ou actrice de télévision, acteur ou actrice de théâtre, ...",
+"siecle": "20e",
+"wikidata": "Q2965925",
+"pic": "https://medias.unifrance.org/medias/100/136/165988/format_page/christine-fabrega.jpg"
+},
+{
+"tri": "Kardec",
+"nom": "Allan Kardec",
+"lat": 48.862360552430935,
+"long": 2.3943464318705647,
+"categorie": "Autres",
+"description": "traducteur ou traductrice, philosophe, écrivain ou écrivaine, directeur ou directrice d'école",
+"siecle": "19e",
+"wikidata": "Q240643",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Photo_Kardec.jpg/500px-Photo_Kardec.jpg"
+},
+{
+"tri": "Wallace",
+"nom": "Richard Wallace",
+"lat": 48.859167,
+"long": 2.3962,
+"categorie": "Entrepreneur",
+"description": "Collectionneur",
+"siecle": "19e",
+"wikidata": "Q2033868",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/83/Sir_Richard_Wallace.jpg"
+},
+{
+"tri": "Éluard",
+"nom": "Paul Éluard",
+"lat": 48.859986,
+"long": 2.399912,
+"categorie": "Ecrivain",
+"description": "Poète",
+"siecle": "20e",
+"wikidata": "Q152176",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg"
+},
+{
+"tri": "Higelin",
+"nom": "Jacques Higelin",
+"lat": 48.86036996724876,
+"long": 2.393625433499502,
+"categorie": "Chanteur",
+"description": "acteur ou actrice, chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, acteur ou actrice de cinéma, ...",
+"siecle": "21e",
+"wikidata": "Q1339711",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jacques_Higelin_2007_%28cropped%29.jpg/600px-Jacques_Higelin_2007_%28cropped%29.jpg"
+},
+{
+"tri": "Moustaki",
+"nom": "Georges Moustaki",
+"lat": 48.860134541010254,
+"long": 2.397308940872024,
+"categorie": "Chanteur",
+"description": "compositeur ou compositrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, chanteur ou chanteuse, artiste peintre, ...",
+"siecle": "21e",
+"wikidata": "Q293985",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Georges_Moustaki.jpg/500px-Georges_Moustaki.jpg"
+},
+{
+"tri": "Dibango",
+"nom": "Manu Dibango",
+"lat": 48.86229959600919,
+"long": 2.3953664988568137,
+"categorie": "Musicien",
+"description": "compositeur ou compositrice, saxophoniste, chanteur ou chanteuse, artiste d'enregistrement, musicien ou musicienne",
+"siecle": "21e",
+"wikidata": "Q445829",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LesEscales2019ManuDibango_03_%28cropped%29.jpg/500px-LesEscales2019ManuDibango_03_%28cropped%29.jpg"
 }
 ]
