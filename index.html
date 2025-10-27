@@ -293,21 +293,31 @@ function initUserPosition() {
   });
 
   // Orientation via capteurs
-  function handleOrientation(event) {
-    let angle = 0;
-    if (event.webkitCompassHeading != null) {
-      // iPhone / Safari
-      angle = event.webkitCompassHeading;
-    } else if (event.absolute && event.alpha != null) {
-      // Android
-      angle = 360 - event.alpha;
-    }
+  let heading = 0;
+  let smoothedHeading = 0;
+  const SMOOTHING_FACTOR = 0.15; // entre 0.1 et 0.3 selon la stabilité souhaitée
 
-    if (isFinite(angle)) {
-      heading = angle;
-      updateConeRotation();
-    }
+function handleOrientation(event) {
+  let angle = 0;
+
+  if (event.webkitCompassHeading != null) {
+    // iPhone (valeur directe)
+    angle = event.webkitCompassHeading;
+  } else if (event.absolute && event.alpha != null) {
+    // Android : inversion de l’axe pour correspondre à la direction réelle
+    angle = 360 - event.alpha;
   }
+
+  if (isFinite(angle)) {
+    // Filtrage : moyenne pondérée entre ancienne et nouvelle valeur
+    smoothedHeading =
+      smoothedHeading * (1 - SMOOTHING_FACTOR) + angle * SMOOTHING_FACTOR;
+
+    heading = smoothedHeading;
+    updateConeRotation();
+  }
+}
+
 
   window.addEventListener("deviceorientationabsolute", handleOrientation, true);
   window.addEventListener("deviceorientation", handleOrientation, true);
@@ -546,6 +556,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
