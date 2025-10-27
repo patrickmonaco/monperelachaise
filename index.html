@@ -38,7 +38,9 @@
   transform: translate(10px, -10px);
   display: none;
 }
-  
+.user-cone .cone {
+  transition: transform 0.15s ease-out;
+}  
 /* --- MODALE IMAGE (avec légende et effet fade-in) --- */
 #image-modal {
   animation: fadeIn 0.25s ease-out;
@@ -251,20 +253,19 @@ tabMap.onclick = () => {
   }
 
   // Ajout Boussole
-  let userMarker = null;
+  // --- Position utilisateur avec orientation dynamique ---
+let userMarker = null;
 let userCircle = null;
 let heading = 0;
 
-// Initialise le suivi GPS + orientation
 function initUserPosition() {
   if (!navigator.geolocation) return;
 
-  // Suivi en temps réel de la position
+  // Suivi GPS
   navigator.geolocation.watchPosition(pos => {
     const lat = pos.coords.latitude;
     const lon = pos.coords.longitude;
 
-    // Création ou mise à jour du cône
     if (!userMarker) {
       const coneIcon = L.divIcon({
         className: "user-cone",
@@ -291,26 +292,32 @@ function initUserPosition() {
     timeout: 10000
   });
 
-  // Suivi orientation (boussole)
-  window.addEventListener("deviceorientationabsolute", e => {
-    if (e.alpha != null) {
-      heading = e.alpha;
-      updateConeRotation();
+  // Orientation via capteurs
+  function handleOrientation(event) {
+    let angle = 0;
+    if (event.webkitCompassHeading != null) {
+      // iPhone / Safari
+      angle = event.webkitCompassHeading;
+    } else if (event.absolute && event.alpha != null) {
+      // Android
+      angle = 360 - event.alpha;
     }
-  }, true);
 
-  window.addEventListener("deviceorientation", e => {
-    if (e.alpha != null) {
-      heading = e.alpha;
+    if (isFinite(angle)) {
+      heading = angle;
       updateConeRotation();
     }
-  }, true);
+  }
+
+  window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+  window.addEventListener("deviceorientation", handleOrientation, true);
 }
 
 function updateConeRotation() {
   const coneEl = document.querySelector(".user-cone .cone");
   if (coneEl) coneEl.style.transform = `rotate(${heading}deg)`;
 }
+
 // -- Fin Boussole
   
   function updateMapMarkers(items) {
@@ -539,6 +546,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
