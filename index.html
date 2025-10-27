@@ -321,7 +321,7 @@ function updateConeRotation() {
   items.forEach(item => {
     if (item.lat && item.long) {
       const pic = item.pic
-        ? `<img src="${item.pic}" 
+        ? `<img src="${item.pic}" loading="lazy" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
      onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
@@ -386,7 +386,7 @@ function updateConeRotation() {
     items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
     for (const item of items) {
       const pic = item.pic
-        ? `<img src="${item.pic}" 
+        ? `<img src="${item.pic}" loading="lazy" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
      onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
@@ -539,6 +539,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
