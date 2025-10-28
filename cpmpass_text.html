@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Boussole Orientation</title>
+<style>
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#compass {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #1e3a8a;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#arrow {
+  position: absolute;
+  top: 10px;
+  left: 56px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 50px solid red;
+  transform-origin: 50% 90%;
+  transition: transform 0.1s linear;
+}
+#angle {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #1e3a8a;
+}
+button {
+  margin-top: 20px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+</style>
+</head>
+<body>
+
+<div id="compass">
+  <div id="arrow"></div>
+</div>
+<div id="angle">--°</div>
+<button id="startBtn">Activer la boussole</button>
+
+<script>
+function startCompass() {
+  const arrow = document.getElementById("arrow");
+  const angleText = document.getElementById("angle");
+
+  if (window.DeviceOrientationEvent) {
+    if (typeof DeviceOrientationEvent.requestPermission === "function") {
+      // iOS demande une permission
+      DeviceOrientationEvent.requestPermission()
+        .then((res) => {
+          if (res === "granted") attachListener();
+          else alert("Permission refusée pour l’orientation.");
+        })
+        .catch(console.error);
+    } else {
+      attachListener();
+    }
+  } else {
+    alert("Votre appareil ne prend pas en charge l’orientation.");
+  }
+
+  function attachListener() {
+    window.addEventListener("deviceorientation", (e) => {
+      if (e.alpha == null) return;
+      const heading = 360 - e.alpha;
+      arrow.style.transform = `rotate(${heading}deg)`;
+      angleText.textContent = `${Math.round(heading)}°`;
+    });
+  }
+}
+
+document.getElementById("startBtn").onclick = startCompass;
+</script>
+</body>
+</html>
