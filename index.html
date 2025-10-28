@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<!-- Boussole (stefanocudini) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stefanocudini/leaflet-compass@1.5.1/src/leaflet-compass.css" />
-<script src="https://cdn.jsdelivr.net/gh/stefanocudini/leaflet-compass@1.5.1/src/leaflet-compass.min.js"></script>
-
+<!-- Plugin de boussole (compass-heading, version moderne et fonctionnelle) -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet-compass-heading@1.0.3/dist/leaflet-compass-heading.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-compass-heading@1.0.3/dist/leaflet-compass-heading.css">
+  
+  
 <!-- Géolocalisation -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
 <script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
@@ -58,7 +59,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.25
+    Mon Père Lachaise 0.33
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -207,13 +208,13 @@ document.addEventListener("DOMContentLoaded", () => {
       maxZoom: 19
     }).addTo(map);
 
-    // Boussole (stefanocudini)
-    const compass = new L.Control.Compass({
+    // Boussole moderne (leaflet-compass-heading)
+    L.control.compassHeading({
+      position: 'topright',
+      title: 'Orientation',
       autoActive: true,
-      showDigit: true,
-      position: 'topright'
-    });
-    map.addControl(compass);
+      textCompass: 'N'
+    }).addTo(map);
 
     // Bouton de géolocalisation
     L.control.locate({
