@@ -231,12 +231,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }).addTo(map);
 
     // Boussole (Leaflet Compass)
-    const compass = new L.Control.Compass({
+    L.control.compass({
       autoActive: true,
       showDigit: true,
       position: 'topright'
-    });
-    map.addControl(compass);
+    }).addTo(map);
+
 
     // Bouton de géolocalisation
     L.control.locate({
@@ -474,3 +474,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
