@@ -1,511 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Mon Père Lachaise</title>
-<link rel="manifest" href="manifest.webmanifest" />
-<meta name="theme-color" content="#1d4ed8" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  
-<!-- Géolocalisation -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
-<script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Père Lachaise</title>
 
-<style>
-.map-label span {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  padding: 2px 6px;
-  font-size: 13px;
-  color: #1e3a8a;
-  white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  transform: translate(10px, -10px);
-  display: none;
-}
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#1d4ed8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
- /* --- Boussole d’orientation (personnalisée) --- */
-.leaflet-control-orientation {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 6px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1000;
-  width: 50px;
-  height: 60px;
-  user-select: none;
-}
-#compass-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-#compass-arrow {
-  position: absolute;
-  top: 10px;
-  left: 17px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 25px solid red;
-  transform-origin: 50% 100%;
-  transition: transform 0.1s linear;
-}
-#compass-deg {
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 11px;
-  color: #1e3a8a;
-}
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+  <!-- Géolocalisation -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css"
+  />
+  <script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
 
+  <style>
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+    }
 
-/* MODALE IMAGE (avec légende et effet fade-in) */
-#image-modal { animation: fadeIn 0.25s ease-out; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-#image-modal-caption { max-width: 90vw; line-height: 1.4; }
-
-/* Transitions douces entre la liste et la carte */
-#viewList, #viewMap { transition: opacity 0.4s ease, transform 0.3s ease; }
-.hidden { opacity: 0 !important; transform: translateY(10px); pointer-events: none; }
-
-@keyframes pulseSlow { 0%,100%{transform:scale(1);opacity:1;} 50%{transform:scale(1.05);opacity:0.9;} }
-.animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
-.tab-active{background-color:#2563eb;color:white;}
-
-/* effet fade-in pour les images */
-.fade-in { opacity: 0; transition: opacity 0.6s ease-in-out; }
-.fade-in.loaded { opacity: 1; }
-</style>
+    /* Flèche bleue d’orientation */
+    .orientation-arrow {
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 28px solid #1d4ed8;
+      transform-origin: 50% 100%;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-<div class="max-w-7xl mx-auto py-10 px-4">
-  <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
-    <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.38
-    <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
-  </h1>
+  <div class="max-w-7xl mx-auto py-10 px-4">
+    <h1
+      class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3"
+    >
+      <img
+        src="icons/icone_pl.png"
+        alt="Icône gauche"
+        class="w-12 h-12 animate-pulse-slow"
+      />
+      Mon Père Lachaise .39
+      <img
+        src="icons/icone_pl.png"
+        alt="Icône droite"
+        class="w-12 h-12 animate-pulse-slow"
+      />
+    </h1>
 
-  <!-- Onglets -->
-  <div class="flex justify-center mb-6">
-    <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
-    <button id="tab-map" class="px-3 py-1 rounded-lg text-sm font-medium text-gray-700 bg-gray-200 hover:bg-gray-300">Carte</button>
-  </div>
-
-  <!-- Vue Liste -->
-  <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
-    <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
-      <div>
-        <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-        <div class="relative mt-1">
-          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
-                 class="w-full border border-gray-300 rounded-lg p-2 pr-16" disabled />
-          <button id="clearButton"
-                  class="absolute right-9 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-500 text-xl hidden"
-                  title="Effacer">❌</button>
-          <button id="micButton"
-                  title="Recherche vocale"
-                  class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl"
-                  aria-label="Micro">🎤</button>
-        </div>
-        <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
-      </div>
-
-      <div>
-        <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
-        <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
-          <option value="">Tous</option>
-        </select>
-      </div>
-
-      <div>
-        <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
-          <p class="text-gray-400 text-sm">Chargement...</p>
-        </div>
-      </div>
-
-      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
-        <span id="result-count">0 résultat</span>
-        <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
-      </div>
-    </aside>
-
-    <main>
-      <div id="results" class="space-y-2 text-gray-600">
-        <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
-      </div>
-    </main>
-  </div>
-
-  <!-- Vue Carte -->
-  <div id="view-map" class="hidden h-[75vh] rounded-2xl overflow-hidden shadow">
-    <div id="map" class="w-full h-full"></div>
-  </div>
-</div>
-
-<!-- Modale Wiki -->
-<div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white w-[95%] md:w-[75%] lg:w-[60%] h=[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-    <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
-      <h3 id="wikidata-title" class="font-semibold text-lg">Informations</h3>
-      <button id="wikidata-close" class="text-white text-2xl leading-none" aria-label="Fermer">×</button>
+    <div class="flex justify-center mb-6">
+      <button
+        id="tab-list"
+        class="px-4 py-2 border rounded-l-lg tab-active"
+      >
+        Liste
+      </button>
+      <button
+        id="tab-map"
+        class="px-4 py-2 border rounded-r-lg bg-gray-200 hover:bg-gray-300"
+      >
+        Carte
+      </button>
     </div>
-    <iframe id="wikidata-frame" src="" class="flex-1 w-full border-0" referrerpolicy="no-referrer"></iframe>
-  </div>
-</div>
 
-<!-- Bannière MAJ -->
-<div id="updateBanner" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg cursor-pointer z-50">
-  🔄 Nouvelle version disponible — cliquez pour recharger
-</div>
-
-<!-- MODALE IMAGE AVEC LÉGENDE -->
-<div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-4">
-  <div class="flex flex-col items-center">
-    <img id="image-modal-content" 
-         src="" 
-         alt="Aperçu" 
-         class="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 scale-100 hover:scale-105" />
-    <p id="image-modal-caption" class="text-white text-center mt-3 text-lg font-medium drop-shadow-lg"></p>
-  </div>
-</div>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
-  const CACHE_KEY = "faceted_data_cache_v12";
-  const CACHE_TTL = 1000 * 60 * 60 * 24;
-  let data = [], fuse = null, map = null, markers = [];
-
-  const resultsDiv = document.getElementById("results");
-  const resultCount = document.getElementById("result-count");
-  const categoryContainer = document.getElementById("category-checkboxes");
-  const centurySelect = document.getElementById("filter-century");
-  const searchInput = document.getElementById("searchInput");
-  const refreshBtn = document.getElementById("refresh-btn");
-  const clearBtn = document.getElementById("clearButton");
-  const micButton = document.getElementById("micButton");
-  const micStatus = document.getElementById("micStatus");
-  const updateBanner = document.getElementById("updateBanner");
-  const tabList = document.getElementById("tab-list");
-  const tabMap = document.getElementById("tab-map");
-  const viewList = document.getElementById("view-list");
-  const viewMap = document.getElementById("view-map");
-
-  // --- Navigation entre onglets ---
-  tabList.onclick = () => {
-    tabList.classList.add("tab-active");
-    tabMap.classList.remove("tab-active");
-    viewList.classList.remove("hidden");
-    viewMap.classList.add("hidden");
-  };
-
-  tabMap.onclick = () => {
-    tabMap.classList.add("tab-active");
-    tabList.classList.remove("tab-active");
-    viewList.classList.add("hidden");
-    viewMap.classList.remove("hidden");
-    if (!map) {
-      initMap();
-      map.on("zoomend", toggleLabels);
-    }
-  };
-
-  // Affichage des libellés selon le zoom
-  function toggleLabels() {
-    const zoom = map.getZoom();
-    const showLabels = zoom >= 18;
-    document.querySelectorAll(".map-label span").forEach(el => {
-      el.style.display = showLabels ? "block" : "none";
-    });
-  }
-
-  // --- Carte (boussole + géoloc) ---
-  function initMap() {
-  map = L.map("map").setView([48.8606, 2.3934], 16);
-
-  // Fond de carte
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-    maxZoom: 19
-  }).addTo(map);
-
-  // --- Boussole directionnelle réelle ---
-const compassControl = L.control({ position: "topright" });
-compassControl.onAdd = function () {
-  const div = L.DomUtil.create("div", "leaflet-control-orientation");
-  div.innerHTML = `
-    <div id="compass-wrapper">
-      <div id="compass-arrow"></div>
-      <div id="compass-deg">--°</div>
-    </div>`;
-  return div;
-};
-compassControl.addTo(map);
-
-// Active la détection d'orientation
-if (window.DeviceOrientationEvent) {
-  if (typeof DeviceOrientationEvent.requestPermission === "function") {
-    DeviceOrientationEvent.requestPermission()
-      .then(res => { if (res === "granted") startCompass(); })
-      .catch(err => console.warn("Permission refusée:", err));
-  } else {
-    startCompass();
-  }
-}
-
-function startCompass() {
-  window.addEventListener("deviceorientation", (e) => {
-    if (e.alpha == null) return;
-    const heading = 360 - e.alpha;
-    const arrow = document.getElementById("compass-arrow");
-    const degText = document.getElementById("compass-deg");
-    if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
-    if (degText) degText.textContent = `${Math.round(heading)}°`;
-  });
-}
-
-
-  // Bouton de géolocalisation
-  L.control.locate({
-    position: 'topleft',
-    strings: { title: "Me localiser" },
-    flyTo: true,
-    keepCurrentZoomLevel: false
-  }).addTo(map);
-
-  updateMapMarkers(data);
-}
-
-
-
-  // --- Marqueurs & labels ---
-  function updateMapMarkers(items) {
-    if (!map) return;
-    markers.forEach(m => map.removeLayer(m));
-    markers = [];
-
-    items.forEach(item => {
-      if (item.lat && item.long) {
-        const pic = item.pic
-          ? `<img src="${item.pic}" loading="lazy" 
-     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
-     onload="this.classList.add('loaded')" 
-     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
-     alt="Portrait de ${item.nom}">`
-          : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
-
-        const popup = `
-        <div class="flex items-center">
-          ${pic}
-          <div>
-            <b>${item.nom}</b><br>
-            <button onclick="openNavigation('${item.lat}','${item.long}')"
-              class="text-blue-600 underline mt-1">🚶 Naviguer</button>
+    <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
+      <aside
+        class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6"
+      >
+        <div>
+          <label class="font-semibold text-sm text-gray-600"
+            >Recherche texte</label
+          >
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Nom ou mot-clé..."
+            class="w-full border border-gray-300 rounded-lg p-2 mt-1"
+            disabled
+          />
+        </div>
+        <div>
+          <label class="font-semibold text-sm text-gray-600 block mb-1"
+            >Siècle</label
+          >
+          <select
+            id="filter-century"
+            class="w-full border border-gray-300 rounded-lg p-2"
+            disabled
+          >
+            <option value="">Tous</option>
+          </select>
+        </div>
+        <div>
+          <span class="font-semibold text-sm text-gray-600 block mb-2"
+            >Catégories</span
+          >
+          <div
+            id="category-checkboxes"
+            class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug"
+          >
+            <p class="text-gray-400 text-sm">Chargement...</p>
           </div>
-        </div>`;
+        </div>
+        <div
+          class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center"
+        >
+          <span id="result-count">0 résultat</span>
+          <button
+            id="refresh-btn"
+            class="text-blue-600 hover:underline text-xs"
+          >
+            🔄 Actualiser
+          </button>
+        </div>
+      </aside>
 
-        const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
-        markers.push(marker);
+      <main>
+        <div id="results" class="space-y-2 text-gray-600">
+          <p class="text-center text-gray-400 animate-pulse">
+            ⏳ Chargement...
+          </p>
+        </div>
+      </main>
+    </div>
 
-        const label = L.divIcon({
-          className: "map-label",
-          html: `<span>${item.nom}</span>`,
-          iconSize: null
-        });
-        const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
-        labelMarker._isLabel = true;
-        labelMarker._nom = item.nom;
-        markers.push(labelMarker);
-      }
-    });
+    <div
+      id="view-map"
+      class="hidden h-[75vh] rounded-2xl overflow-hidden shadow"
+    >
+      <div id="map" class="w-full h-full"></div>
+    </div>
+  </div>
 
-    toggleLabels();
-  }
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const DATA_URL =
+        "https://patrickmonaco.github.io/monperelachaise/data.json";
+      let data = [],
+        map = null,
+        markers = [],
+        arrowMarker = null,
+        currentHeading = 0,
+        userLatLng = null;
 
-  // --- Navigation (iPhone / Android / Desktop)
-  window.openNavigation = function(lat,long){
-    if(!lat||!long) return;
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    let url = "";
-    if (/android/i.test(ua)) {
-      url = `google.navigation:q=${lat},${long}&mode=w`;
-    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-      url = `maps://?daddr=${lat},${long}&dirflg=w`;
-    } else {
-      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
-    }
-    window.open(url, "_blank");
-  };
+      const tabList = document.getElementById("tab-list");
+      const tabMap = document.getElementById("tab-map");
+      const viewList = document.getElementById("view-list");
+      const viewMap = document.getElementById("view-map");
+      const resultsDiv = document.getElementById("results");
+      const resultCount = document.getElementById("result-count");
+      const searchInput = document.getElementById("searchInput");
+      const centurySelect = document.getElementById("filter-century");
+      const categoryContainer = document.getElementById("category-checkboxes");
 
-  // --- Affichage liste ---
-  function renderResults(items) {
-    resultsDiv.innerHTML = "";
-    resultCount.textContent = `${items.length} résultat${items.length>1?"s":""}`;
-    if (!items.length) {
-      resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
-      updateMapMarkers([]);
-      return;
-    }
-    items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
-    for (const item of items) {
-      const pic = item.pic
-        ? `<img src="${item.pic}" loading="lazy" 
-     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
-     onload="this.classList.add('loaded')" 
-     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
-     alt="Portrait de ${item.nom}">`
-        : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
-      resultsDiv.innerHTML += `
-        <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
-          ${pic}
-          <div class="flex-1">
-            <div class="flex justify-between items-center">
-              <h2 class="font-medium text-blue-700 text-lg cursor-pointer hover:underline"
-                  onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}</h2>
-              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}','${item.nom.replace(/'/g,"&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl">ℹ️</button>` : ""}
-            </div>
-            <p class="text-sm text-gray-500">${item.categorie || "—"}</p>
-            <p class="text-gray-700 text-sm mt-1 leading-tight">${item.description || ""}</p>
-          </div>
-        </div>`;
-    }
-    updateMapMarkers(items);
-  }
-
-  // --- Filtres ---
-  function applyFilters() {
-    const txt = searchInput.value.trim().toLowerCase();
-    const century = centurySelect.value;
-    const cats = [...categoryContainer.querySelectorAll("input:checked")].map(c => c.value);
-    let filtered = data;
-    if (txt) {
-      let exact = data.filter(it => (it.nom||"").toLowerCase().includes(txt));
-      if (!exact.length) exact = fuse.search(txt).map(r=>r.item);
-      filtered = exact;
-    }
-    filtered = filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
-    renderResults(filtered);
-  }
-
-  function setupFilters() {
-    const cats=[...new Set(data.map(d=>d.categorie))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr"));
-    categoryContainer.innerHTML=cats.map(c=>
-      `<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`
-    ).join("");
-    const centuries=[...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
-    centurySelect.innerHTML='<option value="">Tous</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
-    searchInput.disabled=false;centurySelect.disabled=false;
-    searchInput.oninput=applyFilters;centurySelect.onchange=applyFilters;
-    categoryContainer.querySelectorAll("input").forEach(cb=>cb.onchange=applyFilters);
-    applyFilters();
-  }
-
-  // --- Données ---
-  async function loadData(force=false){
-    try{
-      const cached=!force&&localStorage.getItem(CACHE_KEY);
-      if(cached){
-        const parsed=JSON.parse(cached);
-        if(Date.now()-parsed.timestamp<CACHE_TTL){data=parsed.data;initFuse();setupFilters();return;}
-      }
-      const resp=await fetch(DATA_URL,{cache:"no-store"});
-      const j=await resp.json();
-      data = Array.isArray(j) ? j : (j.data || []); // tolère { data: [...] }
-      initFuse();setupFilters();
-      localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:data}));
-    }catch(e){
-      resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;
-    }
-  }
-
-  function initFuse(){
-    fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});
-  }
-
-  // --- Bouton effacer ---
-  searchInput.addEventListener("input",()=>{clearBtn.classList.toggle("hidden",!searchInput.value.trim());});
-  clearBtn.onclick=()=>{searchInput.value="";clearBtn.classList.add("hidden");applyFilters();};
-
-  // --- Micro simple ---
-  (()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
-    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
-    let listen=false;const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
-    const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
-    micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
-    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
-    r.onerror=stop;r.onend=stop;})();
-
-  // --- Wiki ---
-  window.openWikiInfo=async(qid,name)=>{
-    const modal=document.getElementById("wikidata-modal");
-    const frame=document.getElementById("wikidata-frame");
-    const title=document.getElementById("wikidata-title");
-    title.textContent=name||"Informations";
-    modal.classList.remove("hidden");modal.classList.add("flex");
-    frame.src="";
-    try{
-      const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
-      const json=await resp.json();const entity=json.entities?.[qid];
-      const fr=entity?.sitelinks?.["frwiki"]?.title;const en=entity?.sitelinks?.["enwiki"]?.title;
-      frame.src=fr?`https://fr.wikipedia.org/wiki/${encodeURIComponent(fr)}`:en?`https://en.wikipedia.org/wiki/${encodeURIComponent(en)}`:`https://www.wikidata.org/wiki/${qid}`;
-    }catch{frame.src=`https://www.wikidata.org/wiki/${qid}`;}
-  };
-  document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
-  document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
-
-  // --- Refresh ---
-  refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
-
-  // --- Service Worker ---
-  if("serviceWorker" in navigator){
-    navigator.serviceWorker.register("service-worker.js").then(reg=>{
-      reg.onupdatefound=()=>{
-        const newWorker=reg.installing;
-        newWorker.onstatechange=()=>{
-          if(newWorker.state==="installed"&&navigator.serviceWorker.controller){
-            updateBanner.classList.remove("hidden");
-            updateBanner.onclick=()=>{newWorker.postMessage({action:"skipWaiting"});location.reload();};
-          }
-        };
+      tabList.onclick = () => {
+        tabList.classList.add("tab-active");
+        tabMap.classList.remove("tab-active");
+        viewList.classList.remove("hidden");
+        viewMap.classList.add("hidden");
       };
+
+      tabMap.onclick = () => {
+        tabMap.classList.add("tab-active");
+        tabList.classList.remove("tab-active");
+        viewList.classList.add("hidden");
+        viewMap.classList.remove("hidden");
+        if (!map) initMap();
+      };
+
+      // --- Initialisation de la carte ---
+      function initMap() {
+        map = L.map("map").setView([48.8606, 2.3934], 16);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+          maxZoom: 19,
+        }).addTo(map);
+
+        // --- Flèche bleue d’orientation (permanente) ---
+        const arrowIcon = L.divIcon({
+          className: "",
+          html: '<div class="orientation-arrow" id="orientation-arrow"></div>',
+          iconSize: [32, 64],
+          iconAnchor: [16, 48], // légèrement décalée
+        });
+        arrowMarker = L.marker([48.8606, 2.3934], { icon: arrowIcon }).addTo(map);
+
+        // --- Géolocalisation standard ---
+        const lc = L.control
+          .locate({
+            position: "topleft",
+            flyTo: true,
+            strings: { title: "Me localiser" },
+            onLocationFound: function (e) {
+              userLatLng = e.latlng;
+              arrowMarker.setLatLng(userLatLng);
+            },
+          })
+          .addTo(map);
+
+        lc.start(); // démarre automatiquement la géolocalisation
+
+        // --- Orientation du smartphone ---
+        if (window.DeviceOrientationEvent) {
+          if (typeof DeviceOrientationEvent.requestPermission === "function") {
+            DeviceOrientationEvent.requestPermission()
+              .then((res) => {
+                if (res === "granted") listenOrientation();
+              })
+              .catch(console.warn);
+          } else {
+            listenOrientation();
+          }
+        }
+
+        function listenOrientation() {
+          window.addEventListener(
+            "deviceorientation",
+            (e) => {
+              if (e.alpha == null) return;
+              currentHeading = 360 - e.alpha;
+              const arrow = document.getElementById("orientation-arrow");
+              if (arrow) arrow.style.transform = `rotate(${currentHeading}deg)`;
+            },
+            true
+          );
+        }
+      }
+
+      // --- Chargement des données ---
+      async function loadData() {
+        try {
+          const resp = await fetch(DATA_URL);
+          data = await resp.json();
+          renderResults(data);
+        } catch (err) {
+          resultsDiv.innerHTML = `<p class="text-red-500">${err}</p>`;
+        }
+      }
+
+      function renderResults(items) {
+        resultCount.textContent = `${items.length} résultat${
+          items.length > 1 ? "s" : ""
+        }`;
+        resultsDiv.innerHTML = items
+          .map(
+            (item) => `
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <b>${item.nom}</b><br>
+            <span class="text-sm text-gray-500">${item.categorie || ""}</span>
+          </div>`
+          )
+          .join("");
+      }
+
+      loadData();
     });
-  }
-
-  // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
-  const imageModal = document.getElementById("image-modal");
-  const imageModalContent = document.getElementById("image-modal-content");
-  const imageModalCaption = document.getElementById("image-modal-caption");
-
-  window.openImageModal = function (url, captionText) {
-    if (!imageModal || !imageModalContent || !imageModalCaption) return;
-    imageModalContent.src = url;
-    imageModalCaption.textContent = captionText || "";
-    imageModal.classList.remove("hidden");
-    imageModal.classList.add("flex");
-  };
-
-  imageModal.onclick = () => {
-    imageModal.classList.add("hidden");
-    imageModal.classList.remove("flex");
-    imageModalContent.src = "";
-    imageModalCaption.textContent = "";
-  };
-
-  // --- Lancer ---
-  loadData();
-});
-</script>
+  </script>
 </body>
 </html>
