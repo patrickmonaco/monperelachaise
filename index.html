@@ -293,9 +293,9 @@ function initUserPosition() {
   });
 
   // Orientation via capteurs
-  let heading = 0;
+  
   let smoothedHeading = 0;
-  const SMOOTHING_FACTOR = 0.25; // entre 0.1 et 0.3 selon la stabilité souhaitée
+  const SMOOTHING_FACTOR = 0.15; // entre 0.1 et 0.3 selon la stabilité souhaitée
 
 function handleOrientation(event) {
   let angle = 0;
@@ -556,6 +556,7 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
+
 
 
 
