@@ -114,7 +114,7 @@ function safeInitMap() {
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.44
+    Mon Père Lachaise 0.38
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -204,7 +204,7 @@ function safeInitMap() {
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
