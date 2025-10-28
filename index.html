@@ -103,7 +103,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.38
+    Mon Père Lachaise 0.40
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -243,47 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- Carte (boussole + géoloc) ---
-  function initMap()
-    // --- Flèche bleue d’orientation (permanente) ---
-    const arrowIcon = L.divIcon({
-      className: "",
-      html: '<div class="orientation-arrow" id="orientation-arrow"></div>',
-      iconSize: [32, 64],
-      iconAnchor: [16, 48], // légèrement décalée
-    });
-    const arrowMarker = L.marker([48.8606, 2.3934], { icon: arrowIcon }).addTo(map);
-
-    // --- Orientation du smartphone ---
-    if (window.DeviceOrientationEvent) {
-      if (typeof DeviceOrientationEvent.requestPermission === "function") {
-        DeviceOrientationEvent.requestPermission()
-          .then((res) => {
-            if (res === "granted") listenOrientation();
-          })
-          .catch(console.warn);
-      } else {
-        listenOrientation();
-      }
-    }
-
-    function listenOrientation() {
-      window.addEventListener(
-        "deviceorientation",
-        (e) => {
-          if (e.alpha == null) return;
-          const heading = 360 - e.alpha;
-          const arrow = document.getElementById("orientation-arrow");
-          if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
-        },
-        true
-      );
-    }
-
-    // --- Synchronisation position GPS ---
-    map.on('locationfound', (e) => {
-      arrowMarker.setLatLng(e.latlng);
-    });
- {
+  function initMap() {
   map = L.map("map").setView([48.8606, 2.3934], 16);
 
   // Fond de carte
