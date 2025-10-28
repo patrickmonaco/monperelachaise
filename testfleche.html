@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carte – Flèche d’orientation</title>
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Géolocalisation -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
+<script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
+
+<style>
+html, body { margin:0; padding:0; height:100%; }
+#map { width:100%; height:100%; }
+
+.orientation-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 14px solid #1d4ed8;
+  transform-origin: 50% 100%;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<script>
+let map, userMarker, arrowEl, userLatLng = null, currentHeading = 0;
+
+function initMap() {
+  map = L.map('map').setView([48.8606, 2.3934], 16);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // --- Flèche d’orientation personnalisée ---
+  const arrowDiv = L.divIcon({
+    className: '',
+    html: '<div class="orientation-arrow" id="orientation-arrow"></div>',
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
+  });
+  arrowEl = document.createElement('div');
+  
+  // --- Localisation (plugin locatecontrol) ---
+  const lc = L.control.locate({
+    position: 'topleft',
+    flyTo: true,
+    strings: { title: "Me localiser" },
+    onLocationError: function() {},
+    onLocationFound: function(e) {
+      userLatLng = e.latlng;
+      if (!userMarker) {
+        userMarker = L.marker(userLatLng, { icon: arrowDiv }).addTo(map);
+      } else {
+        userMarker.setLatLng(userLatLng);
+      }
+    }
+  }).addTo(map);
+  
+  lc.start(); // démarre la géoloc automatiquement
+
+  // --- Orientation du smartphone ---
+  if (window.DeviceOrientationEvent) {
+    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission().then(res => {
+        if (res === 'granted') listenOrientation();
+      }).catch(console.warn);
+    } else {
+      listenOrientation();
+    }
+  }
+
+  function listenOrientation() {
+    window.addEventListener('deviceorientation', (e) => {
+      if (e.alpha == null) return;
+      currentHeading = 360 - e.alpha;
+      const arrow = document.getElementById('orientation-arrow');
+      if (arrow) arrow.style.transform = `rotate(${currentHeading}deg)`;
+    });
+  }
+}
+
+initMap();
+</script>
+</body>
+</html>
