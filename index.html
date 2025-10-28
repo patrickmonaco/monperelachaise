@@ -30,29 +30,41 @@
   transform: translate(10px, -10px);
   display: none;
 }
-  
-.leaflet-control-compass {
-  position: relative;
-  z-index: 1000;
-  font-size: 20px;
-  background: rgba(255,255,255,0.95);
-  color: #1d4ed8;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.2);
+
+  .leaflet-control-orientation {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 6px;
+  text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
   user-select: none;
 }
 
-#compass-angle {
-  font-size: 11px;
+#compass-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+#compass-arrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid red;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  transform-origin: 50% 100%;
+  transition: transform 0.1s linear;
+}
+
+#compass-deg {
+  font-size: 10px;
   color: #1e3a8a;
-  margin-top: 2px;
+  margin-top: 44px;
 }
 
 
@@ -79,7 +91,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.36
+    Mon Père Lachaise 0.37
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -222,28 +234,47 @@ document.addEventListener("DOMContentLoaded", () => {
   function initMap() {
   map = L.map("map").setView([48.8606, 2.3934], 16);
 
-  // Fond OpenStreetMap standard
+  // Fond de carte
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
     maxZoom: 19
   }).addTo(map);
 
-  // --- Boussole simple et fiable ---
+  // --- Boussole d’orientation (mobile) ---
   const compassControl = L.control({ position: "topright" });
   compassControl.onAdd = function() {
-    const div = L.DomUtil.create("div", "leaflet-control-compass bg-white/80 backdrop-blur-sm p-2 rounded-lg shadow text-center");
-    div.innerHTML = "🧭<br><span id='compass-angle' style='font-size:12px;'>N</span>";
+    const div = L.DomUtil.create("div", "leaflet-control-orientation");
+    div.innerHTML = `
+      <div id="compass-wrapper">
+        <img id="compass-arrow" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Red_triangle.svg" />
+        <div id="compass-deg">--°</div>
+      </div>`;
     return div;
   };
   compassControl.addTo(map);
 
-  // Optionnel : rotation selon capteur mobile
+  // --- Écoute de l’orientation du smartphone ---
   if (window.DeviceOrientationEvent) {
-    window.addEventListener("deviceorientationabsolute", (e) => {
-      if (e.alpha != null) {
-        const angle = Math.round(e.alpha);
-        document.getElementById("compass-angle").textContent = angle + "°";
-      }
+    // Certains navigateurs exigent une permission explicite
+    if (typeof DeviceOrientationEvent.requestPermission === "function") {
+      DeviceOrientationEvent.requestPermission().then(response => {
+        if (response === "granted") enableCompass();
+      }).catch(console.warn);
+    } else {
+      enableCompass();
+    }
+  } else {
+    console.warn("DeviceOrientationEvent non pris en charge.");
+  }
+
+  function enableCompass() {
+    window.addEventListener("deviceorientation", (e) => {
+      if (e.alpha == null) return;
+      const heading = 360 - e.alpha; // orientation dans le sens de la boussole
+      const arrow = document.getElementById("compass-arrow");
+      const degText = document.getElementById("compass-deg");
+      if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
+      if (degText) degText.textContent = `${Math.round(heading)}°`;
     }, true);
   }
 
@@ -257,6 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateMapMarkers(data);
 }
+
 
 
   // --- Marqueurs & labels ---
