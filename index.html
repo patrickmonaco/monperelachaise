@@ -6,7 +6,18 @@
 <title>Mon Père Lachaise</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#1d4ed8" />
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com">
+// Attente que Leaflet soit chargé avant d'initialiser la carte
+function safeInitMap() {
+  if (typeof L === "undefined") {
+    console.warn("Leaflet pas encore chargé, nouvel essai...");
+    setTimeout(safeInitMap, 200);
+    return;
+  }
+  if (!map) initMap();
+}
+
+\1
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   
 <!-- Géolocalisation -->
@@ -103,7 +114,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.38
+    Mon Père Lachaise 0.42
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
