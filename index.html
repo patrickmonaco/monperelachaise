@@ -8,10 +8,6 @@
 <meta name="theme-color" content="#1d4ed8" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-
-<!-- Leaflet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
 <!-- Géolocalisation -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
@@ -31,41 +27,46 @@
   display: none;
 }
 
-  .leaflet-control-orientation {
+ /* --- Boussole d’orientation (personnalisée) --- */
+.leaflet-control-orientation {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 6px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   z-index: 1000;
+  width: 50px;
+  height: 60px;
   user-select: none;
 }
-
 #compass-wrapper {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
 }
-
 #compass-arrow {
+  position: absolute;
+  top: 10px;
+  left: 17px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 16px solid red;
-  position: absolute;
-  top: 12px;
-  left: 12px;
+  border-bottom: 25px solid red;
   transform-origin: 50% 100%;
   transition: transform 0.1s linear;
 }
-
 #compass-deg {
-  font-size: 10px;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
   color: #1e3a8a;
-  margin-top: 44px;
 }
+
 
 
 /* MODALE IMAGE (avec légende et effet fade-in) */
@@ -91,7 +92,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.37
+    Mon Père Lachaise 0.38
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -240,43 +241,41 @@ document.addEventListener("DOMContentLoaded", () => {
     maxZoom: 19
   }).addTo(map);
 
-  // --- Boussole d’orientation (mobile) ---
-  const compassControl = L.control({ position: "topright" });
-  compassControl.onAdd = function() {
-    const div = L.DomUtil.create("div", "leaflet-control-orientation");
-    div.innerHTML = `
-      <div id="compass-wrapper">
-        <img id="compass-arrow" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Red_triangle.svg" />
-        <div id="compass-deg">--°</div>
-      </div>`;
-    return div;
-  };
-  compassControl.addTo(map);
+  // --- Boussole directionnelle réelle ---
+const compassControl = L.control({ position: "topright" });
+compassControl.onAdd = function () {
+  const div = L.DomUtil.create("div", "leaflet-control-orientation");
+  div.innerHTML = `
+    <div id="compass-wrapper">
+      <div id="compass-arrow"></div>
+      <div id="compass-deg">--°</div>
+    </div>`;
+  return div;
+};
+compassControl.addTo(map);
 
-  // --- Écoute de l’orientation du smartphone ---
-  if (window.DeviceOrientationEvent) {
-    // Certains navigateurs exigent une permission explicite
-    if (typeof DeviceOrientationEvent.requestPermission === "function") {
-      DeviceOrientationEvent.requestPermission().then(response => {
-        if (response === "granted") enableCompass();
-      }).catch(console.warn);
-    } else {
-      enableCompass();
-    }
+// Active la détection d'orientation
+if (window.DeviceOrientationEvent) {
+  if (typeof DeviceOrientationEvent.requestPermission === "function") {
+    DeviceOrientationEvent.requestPermission()
+      .then(res => { if (res === "granted") startCompass(); })
+      .catch(err => console.warn("Permission refusée:", err));
   } else {
-    console.warn("DeviceOrientationEvent non pris en charge.");
+    startCompass();
   }
+}
 
-  function enableCompass() {
-    window.addEventListener("deviceorientation", (e) => {
-      if (e.alpha == null) return;
-      const heading = 360 - e.alpha; // orientation dans le sens de la boussole
-      const arrow = document.getElementById("compass-arrow");
-      const degText = document.getElementById("compass-deg");
-      if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
-      if (degText) degText.textContent = `${Math.round(heading)}°`;
-    }, true);
-  }
+function startCompass() {
+  window.addEventListener("deviceorientation", (e) => {
+    if (e.alpha == null) return;
+    const heading = 360 - e.alpha;
+    const arrow = document.getElementById("compass-arrow");
+    const degText = document.getElementById("compass-deg");
+    if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
+    if (degText) degText.textContent = `${Math.round(heading)}°`;
+  });
+}
+
 
   // Bouton de géolocalisation
   L.control.locate({
