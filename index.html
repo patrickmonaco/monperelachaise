@@ -12,11 +12,6 @@
 <!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<!-- Plugin de boussole (compass-heading, version moderne et fonctionnelle) -->
-<script src="https://cdn.jsdelivr.net/npm/leaflet-compass-heading@1.0.3/dist/leaflet-compass-heading.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-compass-heading@1.0.3/dist/leaflet-compass-heading.css">
-  
   
 <!-- Géolocalisation -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
@@ -34,6 +29,14 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   transform: translate(10px, -10px);
   display: none;
+}
+  
+.leaflet-control-compass {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 16px;
 }
 
 /* MODALE IMAGE (avec légende et effet fade-in) */
@@ -59,7 +62,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.33
+    Mon Père Lachaise 0.34
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -200,32 +203,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Carte (boussole + géoloc) ---
   function initMap() {
-    map = L.map("map").setView([48.8606, 2.3934], 16);
+  map = L.map("map").setView([48.8606, 2.3934], 16);
 
-    // Fond OSM standard
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-      maxZoom: 19
-    }).addTo(map);
+  // Fond OpenStreetMap standard
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
 
-    // Boussole moderne (leaflet-compass-heading)
-    L.control.compassHeading({
-      position: 'topright',
-      title: 'Orientation',
-      autoActive: true,
-      textCompass: 'N'
-    }).addTo(map);
+  // --- Boussole simple et fiable ---
+  const compassControl = L.control({ position: "topright" });
+  compassControl.onAdd = function() {
+    const div = L.DomUtil.create("div", "leaflet-control-compass bg-white/80 backdrop-blur-sm p-2 rounded-lg shadow text-center");
+    div.innerHTML = "🧭<br><span id='compass-angle' style='font-size:12px;'>N</span>";
+    return div;
+  };
+  compassControl.addTo(map);
 
-    // Bouton de géolocalisation
-    L.control.locate({
-      position: 'topleft',
-      strings: { title: "Me localiser" },
-      flyTo: true,
-      keepCurrentZoomLevel: false
-    }).addTo(map);
-
-    updateMapMarkers(data);
+  // Optionnel : rotation selon capteur mobile
+  if (window.DeviceOrientationEvent) {
+    window.addEventListener("deviceorientationabsolute", (e) => {
+      if (e.alpha != null) {
+        const angle = Math.round(e.alpha);
+        document.getElementById("compass-angle").textContent = angle + "°";
+      }
+    }, true);
   }
+
+  // Bouton de géolocalisation
+  L.control.locate({
+    position: 'topleft',
+    strings: { title: "Me localiser" },
+    flyTo: true,
+    keepCurrentZoomLevel: false
+  }).addTo(map);
+
+  updateMapMarkers(data);
+}
+
 
   // --- Marqueurs & labels ---
   function updateMapMarkers(items) {
