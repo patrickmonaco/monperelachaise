@@ -2,8 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Carte – Flèche d’orientation</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Mon Père Lachaise</title>
+
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#1d4ed8" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
 <!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -14,81 +19,171 @@
 <script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
 
 <style>
-html, body { margin:0; padding:0; height:100%; }
-#map { width:100%; height:100%; }
+body { background:#f8fafc; color:#1e293b; }
 
+/* Flèche bleue d’orientation */
 .orientation-arrow {
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 14px solid #1d4ed8;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 28px solid #1d4ed8;
   transform-origin: 50% 100%;
 }
 </style>
 </head>
-<body>
-<div id="map"></div>
+
+<body class="bg-gray-50 text-gray-800">
+<div class="max-w-7xl mx-auto py-10 px-4">
+  <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+    <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
+    Mon Père Lachaise
+    <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
+  </h1>
+
+  <div class="flex justify-center mb-6">
+    <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
+    <button id="tab-map" class="px-4 py-2 border rounded-r-lg bg-gray-200 hover:bg-gray-300">Carte</button>
+  </div>
+
+  <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
+    <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
+      <div>
+        <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
+        <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
+               class="w-full border border-gray-300 rounded-lg p-2 mt-1" disabled />
+      </div>
+      <div>
+        <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
+        <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
+          <option value="">Tous</option>
+        </select>
+      </div>
+      <div>
+        <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
+        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
+          <p class="text-gray-400 text-sm">Chargement...</p>
+        </div>
+      </div>
+      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+        <span id="result-count">0 résultat</span>
+        <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
+      </div>
+    </aside>
+
+    <main>
+      <div id="results" class="space-y-2 text-gray-600">
+        <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+      </div>
+    </main>
+  </div>
+
+  <div id="view-map" class="hidden h-[75vh] rounded-2xl overflow-hidden shadow">
+    <div id="map" class="w-full h-full"></div>
+  </div>
+</div>
 
 <script>
-let map, userMarker, arrowEl, userLatLng = null, currentHeading = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
+  let data = [], map = null, markers = [], arrowMarker = null, currentHeading = 0, userLatLng = null;
 
-function initMap() {
-  map = L.map('map').setView([48.8606, 2.3934], 16);
+  const tabList = document.getElementById("tab-list");
+  const tabMap = document.getElementById("tab-map");
+  const viewList = document.getElementById("view-list");
+  const viewMap = document.getElementById("view-map");
+  const resultsDiv = document.getElementById("results");
+  const resultCount = document.getElementById("result-count");
+  const searchInput = document.getElementById("searchInput");
+  const centurySelect = document.getElementById("filter-century");
+  const categoryContainer = document.getElementById("category-checkboxes");
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-  }).addTo(map);
+  tabList.onclick = () => {
+    tabList.classList.add("tab-active");
+    tabMap.classList.remove("tab-active");
+    viewList.classList.remove("hidden");
+    viewMap.classList.add("hidden");
+  };
 
-  // --- Flèche d’orientation personnalisée ---
-  const arrowDiv = L.divIcon({
-    className: '',
-    html: '<div class="orientation-arrow" id="orientation-arrow"></div>',
-    iconSize: [20, 20],
-    iconAnchor: [10, 10]
-  });
-  arrowEl = document.createElement('div');
-  
-  // --- Localisation (plugin locatecontrol) ---
-  const lc = L.control.locate({
-    position: 'topleft',
-    flyTo: true,
-    strings: { title: "Me localiser" },
-    onLocationError: function() {},
-    onLocationFound: function(e) {
-      userLatLng = e.latlng;
-      if (!userMarker) {
-        userMarker = L.marker(userLatLng, { icon: arrowDiv }).addTo(map);
+  tabMap.onclick = () => {
+    tabMap.classList.add("tab-active");
+    tabList.classList.remove("tab-active");
+    viewList.classList.add("hidden");
+    viewMap.classList.remove("hidden");
+    if (!map) initMap();
+  };
+
+  function initMap() {
+    map = L.map("map").setView([48.8606, 2.3934], 16);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    // --- Flèche bleue d’orientation permanente ---
+    const arrowIcon = L.divIcon({
+      className: '',
+      html: '<div class="orientation-arrow" id="orientation-arrow"></div>',
+      iconSize: [28, 56],
+      iconAnchor: [14, 28]
+    });
+    arrowMarker = L.marker([48.8606, 2.3934], { icon: arrowIcon }).addTo(map);
+
+    // --- Géolocalisation ---
+    const lc = L.control.locate({
+      position: 'topleft',
+      flyTo: true,
+      strings: { title: "Me localiser" },
+      onLocationFound: function(e) {
+        userLatLng = e.latlng;
+        arrowMarker.setLatLng(userLatLng);
+      }
+    }).addTo(map);
+    lc.start();
+
+    // --- Orientation du smartphone ---
+    if (window.DeviceOrientationEvent) {
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        DeviceOrientationEvent.requestPermission().then(res => {
+          if (res === 'granted') listenOrientation();
+        }).catch(console.warn);
       } else {
-        userMarker.setLatLng(userLatLng);
+        listenOrientation();
       }
     }
-  }).addTo(map);
-  
-  lc.start(); // démarre la géoloc automatiquement
 
-  // --- Orientation du smartphone ---
-  if (window.DeviceOrientationEvent) {
-    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-      DeviceOrientationEvent.requestPermission().then(res => {
-        if (res === 'granted') listenOrientation();
-      }).catch(console.warn);
-    } else {
-      listenOrientation();
+    function listenOrientation() {
+      window.addEventListener('deviceorientation', (e) => {
+        if (e.alpha == null) return;
+        currentHeading = 360 - e.alpha;
+        const arrow = document.getElementById('orientation-arrow');
+        if (arrow) arrow.style.transform = `rotate(${currentHeading}deg)`;
+      });
     }
   }
 
-  function listenOrientation() {
-    window.addEventListener('deviceorientation', (e) => {
-      if (e.alpha == null) return;
-      currentHeading = 360 - e.alpha;
-      const arrow = document.getElementById('orientation-arrow');
-      if (arrow) arrow.style.transform = `rotate(${currentHeading}deg)`;
-    });
+  // --- Chargement données simplifié ---
+  async function loadData() {
+    try {
+      const resp = await fetch(DATA_URL);
+      data = await resp.json();
+      renderResults(data);
+    } catch (err) {
+      resultsDiv.innerHTML = `<p class="text-red-500">${err}</p>`;
+    }
   }
-}
 
-initMap();
+  function renderResults(items) {
+    resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
+    resultsDiv.innerHTML = items.map(item => `
+      <div class="bg-white p-3 rounded-lg shadow-sm">
+        <b>${item.nom}</b><br>
+        <span class="text-sm text-gray-500">${item.categorie || ""}</span>
+      </div>`).join("");
+  }
+
+  loadData();
+});
 </script>
 </body>
 </html>
