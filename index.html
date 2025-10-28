@@ -6,25 +6,26 @@
 <title>Mon Père Lachaise</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#1d4ed8" />
-<script src="https://cdn.tailwindcss.com">
-// Attente que Leaflet soit chargé avant d'initialiser la carte
-function safeInitMap() {
-  if (typeof L === "undefined") {
-    console.warn("Leaflet pas encore chargé, nouvel essai...");
-    setTimeout(safeInitMap, 200);
-    return;
-  }
-  if (!map) initMap();
-}
-
-
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2" defer></script>
-  
-<!-- Géolocalisation -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
-<script src="https://unpkg.com/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js" defer></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
+  
+/* --- Cône directionnel style Google Maps --- */
+.user-cone .cone {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 18px solid rgba(37,99,235,0.9);
+  border-radius: 2px;
+  transform-origin: 50% 100%;
+  transition: transform 0.2s linear;
+  filter: drop-shadow(0 0 2px rgba(37,99,235,0.6));
+} 
 .map-label span {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -37,65 +38,50 @@ function safeInitMap() {
   transform: translate(10px, -10px);
   display: none;
 }
-
- /* --- Boussole d’orientation (personnalisée) --- */
-.leaflet-control-orientation {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 6px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1000;
-  width: 50px;
-  height: 60px;
-  user-select: none;
+.user-cone .cone {
+  transition: transform 0.15s ease-out;
+}  
+/* --- MODALE IMAGE (avec légende et effet fade-in) --- */
+#image-modal {
+  animation: fadeIn 0.25s ease-out;
 }
-#compass-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-#compass-arrow {
-  position: absolute;
-  top: 10px;
-  left: 17px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 25px solid red;
-  transform-origin: 50% 100%;
-  transition: transform 0.1s linear;
+#image-modal-caption {
+  max-width: 90vw;
+  line-height: 1.4;
 }
-#compass-deg {
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 11px;
-  color: #1e3a8a;
-}
-
-
-
-/* MODALE IMAGE (avec légende et effet fade-in) */
-#image-modal { animation: fadeIn 0.25s ease-out; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-#image-modal-caption { max-width: 90vw; line-height: 1.4; }
 
 /* Transitions douces entre la liste et la carte */
-#viewList, #viewMap { transition: opacity 0.4s ease, transform 0.3s ease; }
-.hidden { opacity: 0 !important; transform: translateY(10px); pointer-events: none; }
+#viewList, #viewMap {
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
 
-@keyframes pulseSlow { 0%,100%{transform:scale(1);opacity:1;} 50%{transform:scale(1.05);opacity:0.9;} }
+.hidden {
+  opacity: 0 !important;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+  
+
+  
+@keyframes pulseSlow {
+  0%,100%{transform:scale(1);opacity:1;}
+  50%{transform:scale(1.05);opacity:0.9;}
+}
 .animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
 .tab-active{background-color:#2563eb;color:white;}
 
-/* effet fade-in pour les images */
-.fade-in { opacity: 0; transition: opacity 0.6s ease-in-out; }
-.fade-in.loaded { opacity: 1; }
+/* --- effet fade-in pour les images --- */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-in.loaded {
+  opacity: 1;
+}
 
 /* Flèche bleue d’orientation */
 .orientation-arrow {
@@ -105,6 +91,7 @@ function safeInitMap() {
   border-right: 12px solid transparent;
   border-bottom: 28px solid #1d4ed8;
   transform-origin: 50% 100%;
+  position: absolute;
 }
 
 </style>
@@ -114,7 +101,7 @@ function safeInitMap() {
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.38
+    Mon Père Lachaise 0.25
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -178,7 +165,7 @@ function safeInitMap() {
 
 <!-- Modale Wiki -->
 <div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white w-[95%] md:w-[75%] lg:w-[60%] h=[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+  <div class="bg-white w-[95%] md:w-[75%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
     <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
       <h3 id="wikidata-title" class="font-semibold text-lg">Informations</h3>
       <button id="wikidata-close" class="text-white text-2xl leading-none" aria-label="Fermer">×</button>
@@ -203,8 +190,10 @@ function safeInitMap() {
   </div>
 </div>
 
+
+  
 <script>
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
@@ -225,110 +214,150 @@ window.addEventListener("load", () => {
   const viewList = document.getElementById("view-list");
   const viewMap = document.getElementById("view-map");
 
-  // --- Navigation entre onglets ---
-  tabList.onclick = () => {
-    tabList.classList.add("tab-active");
-    tabMap.classList.remove("tab-active");
-    viewList.classList.remove("hidden");
-    viewMap.classList.add("hidden");
-  };
+ // --- Navigation entre onglets
+tabList.onclick = () => {
+  tabList.classList.add("tab-active");
+  tabMap.classList.remove("tab-active");
 
-  tabMap.onclick = () => {
-    tabMap.classList.add("tab-active");
-    tabList.classList.remove("tab-active");
-    viewList.classList.add("hidden");
-    viewMap.classList.remove("hidden");
-    if (!map) {
-      initMap();
-      map.on("zoomend", toggleLabels);
-    }
-  };
-
-  // Affichage des libellés selon le zoom
-  function toggleLabels() {
-    const zoom = map.getZoom();
-    const showLabels = zoom >= 18;
-    document.querySelectorAll(".map-label span").forEach(el => {
-      el.style.display = showLabels ? "block" : "none";
-    });
-  }
-
-  // --- Carte (boussole + géoloc) ---
-  function initMap() {
-  map = L.map("map").setView([48.8606, 2.3934], 16);
-
-  // Fond de carte
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-    maxZoom: 19
-  }).addTo(map);
-
-  // --- Boussole directionnelle réelle ---
-const compassControl = L.control({ position: "topright" });
-compassControl.onAdd = function () {
-  const div = L.DomUtil.create("div", "leaflet-control-orientation");
-  div.innerHTML = `
-    <div id="compass-wrapper">
-      <div id="compass-arrow"></div>
-      <div id="compass-deg">--°</div>
-    </div>`;
-  return div;
+  // Animation fluide
+  viewList.classList.remove("hidden");
+  viewMap.classList.add("hidden");
 };
-compassControl.addTo(map);
 
-// Active la détection d'orientation
-if (window.DeviceOrientationEvent) {
-  if (typeof DeviceOrientationEvent.requestPermission === "function") {
-    DeviceOrientationEvent.requestPermission()
-      .then(res => { if (res === "granted") startCompass(); })
-      .catch(err => console.warn("Permission refusée:", err));
-  } else {
-    startCompass();
+tabMap.onclick = () => {
+  tabMap.classList.add("tab-active");
+  tabList.classList.remove("tab-active");
+
+  // Animation fluide
+  viewList.classList.add("hidden");
+  viewMap.classList.remove("hidden");
+
+  // Initialisation de la carte si nécessaire
+  if (!map) {
+    initMap();
+    map.on("zoomend", toggleLabels);
   }
-}
+};
 
-function startCompass() {
-  window.addEventListener("deviceorientation", (e) => {
-    if (e.alpha == null) return;
-    const heading = 360 - e.alpha;
-    const arrow = document.getElementById("compass-arrow");
-    const degText = document.getElementById("compass-deg");
-    if (arrow) arrow.style.transform = `rotate(${heading}deg)`;
-    if (degText) degText.textContent = `${Math.round(heading)}°`;
+
+// Ajout affiche nom apres zoom
+  function toggleLabels() {
+  const zoom = map.getZoom();
+  const showLabels = zoom >= 18;
+  document.querySelectorAll(".map-label span").forEach(el => {
+    el.style.display = showLabels ? "block" : "none";
   });
 }
 
 
-  // Bouton de géolocalisation
-  L.control.locate({
-    position: 'topleft',
-    strings: { title: "Me localiser" },
-    flyTo: true,
-    keepCurrentZoomLevel: false
-  }).addTo(map);
+  
+  // --- Carte
+  function initMap() {
+    map = L.map("map").setView([48.8606, 2.3934], 16);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> contributors',
+      maxZoom: 19
+    }).addTo(map);
+    updateMapMarkers(data);
+    // Ajouté pour Boussole
+    initUserPosition();
 
-  updateMapMarkers(data);
+  }
+
+  // Ajout Boussole
+  // --- Position utilisateur avec orientation dynamique ---
+let userMarker = null;
+let userCircle = null;
+let heading = 0;
+
+function initUserPosition() {
+  if (!navigator.geolocation) return;
+
+  // Suivi GPS
+  navigator.geolocation.watchPosition(pos => {
+    const lat = pos.coords.latitude;
+    const lon = pos.coords.longitude;
+
+    if (!userMarker) {
+      const coneIcon = L.divIcon({
+        className: "user-cone",
+        html: `<div class="cone"></div>`,
+        iconSize: [40, 40],
+        iconAnchor: [20, 20]
+      });
+      userMarker = L.marker([lat, lon], { icon: coneIcon }).addTo(map);
+      userCircle = L.circle([lat, lon], {
+        radius: 15,
+        color: "#2563eb",
+        fillColor: "#3b82f6",
+        fillOpacity: 0.3
+      }).addTo(map);
+    } else {
+      userMarker.setLatLng([lat, lon]);
+      userCircle.setLatLng([lat, lon]);
+    }
+  }, err => {
+    console.warn("Géolocalisation refusée ou indisponible", err);
+  }, {
+    enableHighAccuracy: true,
+    maximumAge: 10000,
+    timeout: 10000
+  });
+
+  // Orientation via capteurs
+  
+  let smoothedHeading = 0;
+  const SMOOTHING_FACTOR = 0.15; // entre 0.1 et 0.3 selon la stabilité souhaitée
+
+function handleOrientation(event) {
+  let angle = 0;
+
+  if (event.webkitCompassHeading != null) {
+    // iPhone (valeur directe)
+    angle = event.webkitCompassHeading;
+  } else if (event.absolute && event.alpha != null) {
+    // Android : inversion de l’axe pour correspondre à la direction réelle
+    angle = 360 - event.alpha;
+  }
+
+  if (isFinite(angle)) {
+    // Filtrage : moyenne pondérée entre ancienne et nouvelle valeur
+    smoothedHeading =
+      smoothedHeading * (1 - SMOOTHING_FACTOR) + angle * SMOOTHING_FACTOR;
+
+    heading = smoothedHeading;
+    updateConeRotation();
+  }
 }
 
 
+  window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+  window.addEventListener("deviceorientation", handleOrientation, true);
+}
 
-  // --- Marqueurs & labels ---
+function updateConeRotation() {
+  const coneEl = document.querySelector(".user-cone .cone");
+  if (coneEl) coneEl.style.transform = `rotate(${heading}deg)`;
+}
+
+// -- Fin Boussole
+  
   function updateMapMarkers(items) {
-    if (!map) return;
-    markers.forEach(m => map.removeLayer(m));
-    markers = [];
+  if (!map) return;
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
 
-    items.forEach(item => {
-      if (item.lat && item.long) {
-        const pic = item.pic
-          ? `<img src="${item.pic}" loading="lazy" 
+  items.forEach(item => {
+    if (item.lat && item.long) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" loading="lazy" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
      onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
      alt="Portrait de ${item.nom}">`
-          : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
+        : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
 
-        const popup = `
+      const popup = `
         <div class="flex items-center">
           ${pic}
           <div>
@@ -338,23 +367,26 @@ function startCompass() {
           </div>
         </div>`;
 
-        const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
-        markers.push(marker);
+      // Création du marqueur
+      const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
+      markers.push(marker);
 
-        const label = L.divIcon({
-          className: "map-label",
-          html: `<span>${item.nom}</span>`,
-          iconSize: null
-        });
-        const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
-        labelMarker._isLabel = true;
-        labelMarker._nom = item.nom;
-        markers.push(labelMarker);
-      }
-    });
+      // Création du label (invisible au départ)
+      const label = L.divIcon({
+        className: "map-label",
+        html: `<span>${item.nom}</span>`,
+        iconSize: null
+      });
+      const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
+      labelMarker._isLabel = true;
+      labelMarker._nom = item.nom;
+      markers.push(labelMarker);
+    }
+  });
 
-    toggleLabels();
-  }
+  toggleLabels();
+}
+
 
   // --- Navigation (iPhone / Android / Desktop)
   window.openNavigation = function(lat,long){
@@ -371,7 +403,7 @@ function startCompass() {
     window.open(url, "_blank");
   };
 
-  // --- Affichage liste ---
+  // --- Affichage liste
   function renderResults(items) {
     resultsDiv.innerHTML = "";
     resultCount.textContent = `${items.length} résultat${items.length>1?"s":""}`;
@@ -406,7 +438,7 @@ function startCompass() {
     updateMapMarkers(items);
   }
 
-  // --- Filtres ---
+  // --- Filtres
   function applyFilters() {
     const txt = searchInput.value.trim().toLowerCase();
     const century = centurySelect.value;
@@ -434,7 +466,7 @@ function startCompass() {
     applyFilters();
   }
 
-  // --- Données ---
+  // --- Données
   async function loadData(force=false){
     try{
       const cached=!force&&localStorage.getItem(CACHE_KEY);
@@ -444,7 +476,7 @@ function startCompass() {
       }
       const resp=await fetch(DATA_URL,{cache:"no-store"});
       const j=await resp.json();
-      data = Array.isArray(j) ? j : (j.data || []); // tolère { data: [...] }
+      data = Array.isArray(j) ? j : (j.data || []); // ✅ correctif ajouté
       initFuse();setupFilters();
       localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:data}));
     }catch(e){
@@ -456,11 +488,11 @@ function startCompass() {
     fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});
   }
 
-  // --- Bouton effacer ---
+  // --- Bouton effacer
   searchInput.addEventListener("input",()=>{clearBtn.classList.toggle("hidden",!searchInput.value.trim());});
   clearBtn.onclick=()=>{searchInput.value="";clearBtn.classList.add("hidden");applyFilters();};
 
-  // --- Micro simple ---
+  // --- Micro simple
   (()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
     const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
     let listen=false;const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
@@ -469,7 +501,7 @@ function startCompass() {
     r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
     r.onerror=stop;r.onend=stop;})();
 
-  // --- Wiki ---
+  // --- Wiki
   window.openWikiInfo=async(qid,name)=>{
     const modal=document.getElementById("wikidata-modal");
     const frame=document.getElementById("wikidata-frame");
@@ -487,10 +519,10 @@ function startCompass() {
   document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
   document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
 
-  // --- Refresh ---
+  // --- Refresh
   refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
 
-  // --- Service Worker ---
+  // --- Service Worker
   if("serviceWorker" in navigator){
     navigator.serviceWorker.register("service-worker.js").then(reg=>{
       reg.onupdatefound=()=>{
@@ -505,29 +537,56 @@ function startCompass() {
     });
   }
 
-  // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
-  const imageModal = document.getElementById("image-modal");
-  const imageModalContent = document.getElementById("image-modal-content");
-  const imageModalCaption = document.getElementById("image-modal-caption");
+   // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
+const imageModal = document.getElementById("image-modal");
+const imageModalContent = document.getElementById("image-modal-content");
+const imageModalCaption = document.getElementById("image-modal-caption");
 
-  window.openImageModal = function (url, captionText) {
-    if (!imageModal || !imageModalContent || !imageModalCaption) return;
-    imageModalContent.src = url;
-    imageModalCaption.textContent = captionText || "";
-    imageModal.classList.remove("hidden");
-    imageModal.classList.add("flex");
-  };
+// ✅ rendre la fonction accessible globalement (pour onclick)
+window.openImageModal = function (url, captionText) {
+  if (!imageModal || !imageModalContent || !imageModalCaption) {
+    console.error("Modale image non trouvée dans le DOM.");
+    return;
+  }
+  imageModalContent.src = url;
+  imageModalCaption.textContent = captionText || "";
+  imageModal.classList.remove("hidden");
+  imageModal.classList.add("flex");
+};
 
-  imageModal.onclick = () => {
-    imageModal.classList.add("hidden");
-    imageModal.classList.remove("flex");
-    imageModalContent.src = "";
-    imageModalCaption.textContent = "";
-  };
+// ✅ fermeture de la modale au clic
+imageModal.onclick = () => {
+  imageModal.classList.add("hidden");
+  imageModal.classList.remove("flex");
+  imageModalContent.src = "";
+  imageModalCaption.textContent = "";
+};
 
-  // --- Lancer ---
+
   loadData();
 });
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
