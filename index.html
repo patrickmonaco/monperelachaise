@@ -13,34 +13,6 @@
 
 <style>
   
-/* --- Cône directionnel style Google Maps --- */
-.user-cone .cone {
-  position: relative;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 18px solid rgba(37,99,235,0.9);
-  border-radius: 2px;
-  transform-origin: 50% 100%;
-  transition: transform 0.2s linear;
-  filter: drop-shadow(0 0 2px rgba(37,99,235,0.6));
-} 
-.map-label span {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  padding: 2px 6px;
-  font-size: 13px;
-  color: #1e3a8a;
-  white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  transform: translate(10px, -10px);
-  display: none;
-}
-.user-cone .cone {
-  transition: transform 0.15s ease-out;
-}  
 /* --- MODALE IMAGE (avec légende et effet fade-in) --- */
 #image-modal {
   animation: fadeIn 0.25s ease-out;
@@ -106,7 +78,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.26
+    Mon Père Lachaise 0.27
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -269,81 +241,22 @@ tabMap.onclick = () => {
 
   }
 
+
+    
   // Ajout Boussole
-  // --- Position utilisateur avec orientation dynamique ---
-let userMarker = null;
-let userCircle = null;
-let heading = 0;
-
-function initUserPosition() {
-  if (!navigator.geolocation) return;
-
-  // Suivi GPS
-  navigator.geolocation.watchPosition(pos => {
-    const lat = pos.coords.latitude;
-    const lon = pos.coords.longitude;
-
-    if (!userMarker) {
-      const coneIcon = L.divIcon({
-        className: "user-cone",
-        html: `<div class="cone"></div>`,
-        iconSize: [40, 40],
-        iconAnchor: [20, 20]
-      });
-      userMarker = L.marker([lat, lon], { icon: coneIcon }).addTo(map);
-      userCircle = L.circle([lat, lon], {
-        radius: 15,
-        color: "#2563eb",
-        fillColor: "#3b82f6",
-        fillOpacity: 0.3
-      }).addTo(map);
-    } else {
-      userMarker.setLatLng([lat, lon]);
-      userCircle.setLatLng([lat, lon]);
+ new L.Control.SimpleLocate({
+    position: "topleft",
+    className: "button-locate",
+    afterClick: (result) => {
+        // Do something after the button is clicked.
+    },
+    afterMarkerAdd: () => {
+        // Do something after the marker (displaying the device's location and orientation) is added.
+    },
+    afterDeviceMove: (event) => {
+        // Do something after the device moves.
     }
-  }, err => {
-    console.warn("Géolocalisation refusée ou indisponible", err);
-  }, {
-    enableHighAccuracy: true,
-    maximumAge: 10000,
-    timeout: 10000
-  });
-
-  // Orientation via capteurs
-  
-  let smoothedHeading = 0;
-  const SMOOTHING_FACTOR = 0.15; // entre 0.1 et 0.3 selon la stabilité souhaitée
-
-function handleOrientation(event) {
-  let angle = 0;
-
-  if (event.webkitCompassHeading != null) {
-    // iPhone (valeur directe)
-    angle = event.webkitCompassHeading;
-  } else if (event.absolute && event.alpha != null) {
-    // Android : inversion de l’axe pour correspondre à la direction réelle
-    angle = 360 - event.alpha;
-  }
-
-  if (isFinite(angle)) {
-    // Filtrage : moyenne pondérée entre ancienne et nouvelle valeur
-    smoothedHeading =
-      smoothedHeading * (1 - SMOOTHING_FACTOR) + angle * SMOOTHING_FACTOR;
-
-    heading = smoothedHeading;
-    updateConeRotation();
-  }
-}
-
-
-  window.addEventListener("deviceorientationabsolute", handleOrientation, true);
-  window.addEventListener("deviceorientation", handleOrientation, true);
-}
-
-function updateConeRotation() {
-  const coneEl = document.querySelector(".user-cone .cone");
-  if (coneEl) coneEl.style.transform = `rotate(${heading}deg)`;
-}
+}).addTo(map);
 
 // -- Fin Boussole
   
