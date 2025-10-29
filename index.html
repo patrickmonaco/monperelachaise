@@ -302,6 +302,10 @@ const control = new L.Control.SimpleLocate({
   
   function updateMapMarkers(items) {
   if (!map) return;
+
+   // 🚫 Désactive les events pour éviter les redraws pendant la mise à jour
+    map.off('move');
+    
   markers.forEach(m => map.removeLayer(m));
   markers = [];
 
@@ -340,6 +344,10 @@ const control = new L.Control.SimpleLocate({
       labelMarker._nom = item.nom;
       markers.push(labelMarker);
     }
+
+    // ✅ Réactive les events une fois la mise à jour terminée
+    map.on('move', updateMarkers);
+    
   });
 
   toggleLabels();
