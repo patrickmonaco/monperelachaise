@@ -72,7 +72,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.37
+    Mon Père Lachaise 0.40
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -347,19 +347,37 @@ const control = new L.Control.SimpleLocate({
 
 
   // --- Navigation (iPhone / Android / Desktop)
-  window.openNavigation = function(lat,long){
-    if(!lat||!long) return;
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    let url = "";
-    if (/android/i.test(ua)) {
-      url = `google.navigation:q=${lat},${long}&mode=w`;
-    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-      url = `maps://?daddr=${lat},${long}&dirflg=w`;
-    } else {
-      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+ window.openNavigation = function(lat,long){
+  if(!lat||!long) return;
+
+  // 🔹 Change la couleur du point correspondant
+  markers.forEach(m => {
+    if (m.getLatLng && !m._isLabel) {
+      const pos = m.getLatLng();
+      if (Math.abs(pos.lat - lat) < 0.0001 && Math.abs(pos.lng - long) < 0.0001) {
+        m.setIcon(L.icon({
+          iconUrl: 'https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png', // point bleu foncé
+          iconSize: [32, 32],
+          iconAnchor: [16, 32],
+          popupAnchor: [0, -32]
+        }));
+      }
     }
-    window.open(url, "_blank");
-  };
+  });
+
+  // 🔹 Navigation Google Maps (inchangée)
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  let url = "";
+  if (/android/i.test(ua)) {
+    url = `google.navigation:q=${lat},${long}&mode=w`;
+  } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    url = `maps://?daddr=${lat},${long}&dirflg=w`;
+  } else {
+    url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+  }
+  window.open(url, "_blank");
+};
+
 
   // --- Affichage liste
   function renderResults(items) {
