@@ -487,14 +487,14 @@ markerMap.forEach((marker, name) => {
     title.textContent=name||"Informations";
     modal.classList.remove("hidden");modal.classList.add("flex");
     frame.src="";
-    /*
+    
     try{
       const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
       const json=await resp.json();const entity=json.entities?.[qid];
       const fr=entity?.sitelinks?.["frwiki"]?.title;const en=entity?.sitelinks?.["enwiki"]?.title;
       frame.src=fr?`https://fr.wikipedia.org/wiki/${encodeURIComponent(fr)}`:en?`https://en.wikipedia.org/wiki/${encodeURIComponent(en)}`:`https://www.wikidata.org/wiki/${qid}`;
     }catch{frame.src=`https://www.wikidata.org/wiki/${qid}`;}
-    */
+    
   };
   document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
   document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
