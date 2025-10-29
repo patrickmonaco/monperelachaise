@@ -72,7 +72,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.41
+    Mon Père Lachaise 0.42
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -115,7 +115,25 @@
   </button>
 
   <!-- Contenu de l’accordéon -->
-  <div id="accordion-content" class="p-4 space-y-4">
+  <div class="border border-gray-300 rounded-xl overflow-hidden">
+  <!-- En-tête de l’accordéon -->
+  <button 
+    id="accordion-toggle"
+    class="w-full flex justify-between items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-sm"
+    onclick="
+      const content = document.getElementById('accordion-content');
+      const icon = document.getElementById('accordion-icon');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    ">
+    <span>Filtres</span>
+    <svg id="accordion-icon" class="w-4 h-4 transform rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <!-- Contenu de l’accordéon (fermé par défaut) -->
+  <div id="accordion-content" class="hidden p-4 space-y-4">
     <!-- Champ Siècle -->
     <div>
       <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
@@ -124,15 +142,10 @@
       </select>
     </div>
 
-    <!-- Champ Catégories -->
-    <div>
-      <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-      <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
-        <p class="text-gray-400 text-sm">Chargement...</p>
-      </div>
-    </div>
+    <!-- ...autres filtres ici... -->
   </div>
 </div>
+
 
 <!-- (Optionnel) petit script pour faire tourner la flèche -->
 <script>
