@@ -1,6 +1,6 @@
 // === Service Worker Mon Père Lachaise ===
 // Version du cache (change ce numéro à chaque mise à jour)
-const CACHE_NAME = "pwa-cache-v10.50";
+const CACHE_NAME = "pwa-cache-v10.51";
 const ASSETS = [
   "./",
   "./index.html",
@@ -54,6 +54,7 @@ self.addEventListener("message", event => {
     self.skipWaiting();
   }
 });
+
 
 
 
