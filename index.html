@@ -240,24 +240,25 @@ tabMap.onclick = () => {
     updateMapMarkers(data);
 
   }
-    
-  // Ajout Boussole
-   new L.Control.SimpleLocate({
-      position: "topleft",
-      className: "button-locate",
-      afterClick: (result) => {
-          // Do something after the button is clicked.
-      },
-      afterMarkerAdd: () => {
-          // Do something after the marker (displaying the device's location and orientation) is added.
-      },
-      afterDeviceMove: (event) => {
-          // Do something after the device moves.
-      }
-  }).addTo(map);
 
-// -- Fin Boussole
-  
+  /*
+      // Ajout Boussole
+       new L.Control.SimpleLocate({
+          position: "topleft",
+          className: "button-locate",
+          afterClick: (result) => {
+              // Do something after the button is clicked.
+          },
+          afterMarkerAdd: () => {
+              // Do something after the marker (displaying the device's location and orientation) is added.
+          },
+          afterDeviceMove: (event) => {
+              // Do something after the device moves.
+          }
+      }).addTo(map);
+    
+    // -- Fin Boussole
+  */
   function updateMapMarkers(items) {
   if (!map) return;
   markers.forEach(m => map.removeLayer(m));
