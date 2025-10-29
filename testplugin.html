@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <!-- <script src="src/leaflet-simple-locate.js"></script> -->
     <script src="dist/leaflet-simple-locate.min.js"></script>
     <link rel="stylesheet" href="dist/demo.css" />
 
@@ -49,9 +48,9 @@
         window.addEventListener("resize", set_viewport);
 
         const map = new L.Map("map", {
-            center: [25.0487037, 121.5143449],
-            zoom: 13,
-            zoomControl: false,
+            center: [48.861740419377476, 2.3933979105477303],
+            zoom: 15,
+            zoomControl: true,
         });
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
