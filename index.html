@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+  <!-- Leaflet Simple Locate plugin -->
+<script src="dist/leaflet-simple-locate.min.js"></script>
+<link rel="stylesheet" href="demo.css" />
+  
 <style>
   
 /* --- MODALE IMAGE (avec légende et effet fade-in) --- */
@@ -68,9 +72,7 @@
 
 </style>
 
-<!-- Leaflet Simple Locate plugin -->
-  <script src="dist/leaflet-simple-locate.min.js"></script>
-  <link rel="stylesheet" href="demo.css" />
+
 
 </head>
 
@@ -78,7 +80,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.30
+    Mon Père Lachaise 0.31
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -236,27 +238,23 @@ tabMap.onclick = () => {
       maxZoom: 19
     }).addTo(map);
     updateMapMarkers(data);
-    // Ajouté pour Boussole
-    initUserPosition();
 
   }
-
-
     
   // Ajout Boussole
- new L.Control.SimpleLocate({
-    position: "topleft",
-    className: "button-locate",
-    afterClick: (result) => {
-        // Do something after the button is clicked.
-    },
-    afterMarkerAdd: () => {
-        // Do something after the marker (displaying the device's location and orientation) is added.
-    },
-    afterDeviceMove: (event) => {
-        // Do something after the device moves.
-    }
-}).addTo(map);
+   new L.Control.SimpleLocate({
+      position: "topleft",
+      className: "button-locate",
+      afterClick: (result) => {
+          // Do something after the button is clicked.
+      },
+      afterMarkerAdd: () => {
+          // Do something after the marker (displaying the device's location and orientation) is added.
+      },
+      afterDeviceMove: (event) => {
+          // Do something after the device moves.
+      }
+  }).addTo(map);
 
 // -- Fin Boussole
   
