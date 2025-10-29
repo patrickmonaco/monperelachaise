@@ -65,7 +65,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.36
+    Mon Père Lachaise 0.37
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -94,19 +94,49 @@
         <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
       </div>
 
-      <div>
-        <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
-        <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
-          <option value="">Tous</option>
-        </select>
-      </div>
+      <!-- Conteneur global -->
+<div class="border border-gray-300 rounded-xl overflow-hidden">
+  <!-- En-tête de l’accordéon -->
+  <button 
+    id="accordion-toggle"
+    class="w-full flex justify-between items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-sm"
+    onclick="document.getElementById('accordion-content').classList.toggle('hidden');">
+    <span>Filtres</span>
+    <svg id="accordion-icon" class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
 
-      <div>
-        <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
-        <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
-          <p class="text-gray-400 text-sm">Chargement...</p>
-        </div>
+  <!-- Contenu de l’accordéon -->
+  <div id="accordion-content" class="p-4 space-y-4">
+    <!-- Champ Siècle -->
+    <div>
+      <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
+      <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
+        <option value="">Tous</option>
+      </select>
+    </div>
+
+    <!-- Champ Catégories -->
+    <div>
+      <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
+      <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
+        <p class="text-gray-400 text-sm">Chargement...</p>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Message toujours visible -->
+<p class="text-gray-400 text-sm mt-2">Chargement...</p>
+
+<!-- (Optionnel) petit script pour faire tourner la flèche -->
+<script>
+  document.getElementById("accordion-toggle").addEventListener("click", () => {
+    document.getElementById("accordion-icon").classList.toggle("rotate-180");
+  });
+</script>
+
 
       <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
         <span id="result-count">0 résultat</span>
