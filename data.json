@@ -5,10 +5,10 @@
 "lat": 48.859258794451314,
 "long": 2.3919201734243423,
 "categorie": "Monument",
-"description": null,
+"description": "Divers",
 "siecle": "e",
-"wikidata": null,
-"pic": null
+"wikidata": "Q3323370",
+"pic": "https://fr.vikidia.org/wiki/H%C3%A9lo%C3%AFse_et_Ab%C3%A9lard#/media/Fichier:Abelard_and_Heloise.jpeg"
 },
 {
 "tri": "Arago",
@@ -167,8 +167,8 @@
 {
 "tri": "Colette",
 "nom": "Colette",
-"lat": 48.860579,
-"long": 2.390578,
+"lat": 48.860703501124966,
+"long": 2.3906911644439046,
 "categorie": "Acteur",
 "description": "romancier ou romancière, prête-plume, journaliste, librettiste, scénariste, nouvelliste, dramaturge, prosateur ou prosatrice, acteur ou ...",
 "siecle": "20e",
@@ -1586,8 +1586,8 @@
 {
 "tri": "Delacroix",
 "nom": "Eugène Delacroix",
-"lat": 48.862787,
-"long": 2.3936382,
+"lat": 48.862763666467465,
+"long": 2.393266993307617,
 "categorie": "Peintre",
 "description": "artiste peintre, diariste, lithographe, photographe, dessinateur ou dessinatrice, peintre muraliste, dessinateur ou dessinatrice en ...",
 "siecle": "19e",
@@ -2046,17 +2046,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lafor%C3%AAt2_%28cropped%29.jpg/960px-Lafor%C3%AAt2_%28cropped%29.jpg"
 },
 {
-"tri": "Daladier",
-"nom": "Edouard Daladier",
-"lat": 48.863581159176285,
-"long": 2.3912589878808572,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "20e",
-"wikidata": "Q213526",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/0/00/%C3%89douard_Daladier_-_photo_H._Manuel.jpg"
-},
-{
 "tri": "Brasseur",
 "nom": "Claude Brasseur",
 "lat": 48.860853361815224,
@@ -2070,8 +2059,8 @@
 {
 "tri": "Lachambeaudie",
 "nom": "Pierre Lachambeaudie",
-"lat": 48.862812,
-"long": 2.392937,
+"lat": 48.86291386597095,
+"long": 2.3930149221792107,
 "categorie": "Ecrivain",
 "description": "chansonnier, poète ou poétesse, écrivain ou écrivaine, goguettier, enseignant ou enseignante",
 "siecle": "19e",
@@ -2200,6 +2189,17 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/5/54/BASHUNG_Alain-24x30-2007b.jpg"
 },
 {
+"tri": null,
+"nom": "Alain Decaux",
+"lat": 48.860918932231954,
+"long": 2.392184374275871,
+"categorie": "Ecrivain",
+"description": "Ecrivain journaliste historien",
+"siecle": "21e",
+"wikidata": "Q1235728",
+"pic": null
+},
+{
 "tri": "Fabrega",
 "nom": "Christine Fabrega",
 "lat": 48.85885648791956,
@@ -2220,6 +2220,39 @@
 "siecle": "19e",
 "wikidata": "Q240643",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Photo_Kardec.jpg/500px-Photo_Kardec.jpg"
+},
+{
+"tri": null,
+"nom": "Fred Dewilde",
+"lat": 48.86172834285385,
+"long": 2.3942670931743946,
+"categorie": "Peintre",
+"description": "Dessinateur BD",
+"siecle": "21e",
+"wikidata": "Q112512072",
+"pic": null
+},
+{
+"tri": null,
+"nom": "Jules Berry",
+"lat": 48.86403739162246,
+"long": 2.3941514669972324,
+"categorie": "Acteur",
+"description": "Acteur",
+"siecle": "e",
+"wikidata": "Q553331",
+"pic": null
+},
+{
+"tri": null,
+"nom": "Yves Coppens",
+"lat": 48.86200616682173,
+"long": 2.3934478209991186,
+"categorie": "Scientifique",
+"description": "Paléoanthropologue",
+"siecle": "21e",
+"wikidata": "Q1382212",
+"pic": null
 },
 {
 "tri": "Wallace",
