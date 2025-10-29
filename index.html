@@ -193,9 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
-  // optimisation
-   let markerMap = new Map(); // associe id -> marker principal
-    
   let data = [], fuse = null, map = null, markers = [];
 
   const resultsDiv = document.getElementById("results");
@@ -309,14 +306,22 @@ const control = new L.Control.SimpleLocate({
    // 🚫 Désactive les events pour éviter les redraws pendant la mise à jour
    // map.off('move');
     
-  // optimisation
-      
-      // ⚡️ Si c’est le premier affichage, on crée les marqueurs
-if (markerMap.size === 0) {
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
   items.forEach(item => {
     if (item.lat && item.long) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" loading="lazy" 
+     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+     onload="this.classList.add('loaded')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
+     alt="Portrait de ${item.nom}">`
+        : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
+
       const popup = `
         <div class="flex items-center">
+          ${pic}
           <div>
             <b>${item.nom}</b><br>
             <button onclick="openNavigation('${item.lat}','${item.long}')"
@@ -324,23 +329,26 @@ if (markerMap.size === 0) {
           </div>
         </div>`;
 
+      // Création du marqueur
       const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
-      markerMap.set(item.nom, marker);
+      markers.push(marker);
+
+      // Création du label (invisible au départ)
+      const label = L.divIcon({
+        className: "map-label",
+        html: `<span>${item.nom}</span>`,
+        iconSize: null
+      });
+      const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
+      labelMarker._isLabel = true;
+      labelMarker._nom = item.nom;
+      markers.push(labelMarker);
     }
+
+    // ✅ Réactive les events une fois la mise à jour terminée
+    //map.on('move', updateMarkers);
+    
   });
-  markers = [...markerMap.values()];
-}
-
-// ⚙️ Ensuite, on affiche/masque les markers selon le filtre
-const visibleNames = new Set(items.map(i => i.nom));
-markerMap.forEach((marker, name) => {
-  if (visibleNames.has(name)) {
-    if (!map.hasLayer(marker)) marker.addTo(map);
-  } else {
-    if (map.hasLayer(marker)) map.removeLayer(marker);
-  }
-});
-
 
   toggleLabels();
 }
@@ -385,11 +393,10 @@ markerMap.forEach((marker, name) => {
     resultsDiv.innerHTML = "";
     resultCount.textContent = `${items.length} résultat${items.length>1?"s":""}`;
     if (!items.length) {
-  resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
-  updateMapMarkers([]); // tu peux même commenter cette ligne pour tester la perf
-  return;
-}
-
+      resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
+      updateMapMarkers([]);
+      return;
+    }
     items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
     for (const item of items) {
       const pic = item.pic
@@ -487,14 +494,12 @@ markerMap.forEach((marker, name) => {
     title.textContent=name||"Informations";
     modal.classList.remove("hidden");modal.classList.add("flex");
     frame.src="";
-    
     try{
       const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
       const json=await resp.json();const entity=json.entities?.[qid];
       const fr=entity?.sitelinks?.["frwiki"]?.title;const en=entity?.sitelinks?.["enwiki"]?.title;
       frame.src=fr?`https://fr.wikipedia.org/wiki/${encodeURIComponent(fr)}`:en?`https://en.wikipedia.org/wiki/${encodeURIComponent(en)}`:`https://www.wikidata.org/wiki/${qid}`;
     }catch{frame.src=`https://www.wikidata.org/wiki/${qid}`;}
-    
   };
   document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
   document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
@@ -548,4 +553,3 @@ imageModal.onclick = () => {
 </script>
 </body>
 </html>
-
