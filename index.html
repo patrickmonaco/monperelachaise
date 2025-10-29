@@ -41,8 +41,6 @@
   pointer-events: none;
 }
   
-
-  
 @keyframes pulseSlow {
   0%,100%{transform:scale(1);opacity:1;}
   50%{transform:scale(1.05);opacity:0.9;}
@@ -59,20 +57,7 @@
   opacity: 1;
 }
 
-/* Flèche bleue d’orientation */
-.orientation-arrow {
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 28px solid #1d4ed8;
-  transform-origin: 50% 100%;
-  position: absolute;
-}
-
 </style>
-
-
 
 </head>
 
@@ -80,7 +65,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.32
+    Mon Père Lachaise 0.35
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -168,8 +153,6 @@
     <p id="image-modal-caption" class="text-white text-center mt-3 text-lg font-medium drop-shadow-lg"></p>
   </div>
 </div>
-
-
   
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -241,24 +224,46 @@ tabMap.onclick = () => {
 
   }
 
-  /*
       // Ajout Boussole
-       new L.Control.SimpleLocate({
-          position: "topleft",
-          className: "button-locate",
-          afterClick: (result) => {
-              // Do something after the button is clicked.
-          },
-          afterMarkerAdd: () => {
-              // Do something after the marker (displaying the device's location and orientation) is added.
-          },
-          afterDeviceMove: (event) => {
-              // Do something after the device moves.
-          }
-      }).addTo(map);
-    
+const control = new L.Control.SimpleLocate({
+            position: "topleft",
+            className: "button-locate",
+            afterClick: (result) => {
+                console.log("afterClick", result);
+                if (!result.geolocation) console.log("Geolocation Error");
+                if (!result.orientation) console.log("Orientation Error");
+            },
+            afterMarkerAdd: () => {
+                console.log("afterMarkerAdded");
+                const elem = document.getElementById("leaflet-simple-locate-icon-spot");
+                if (elem) {
+                    elem.addEventListener("click", (event) => {
+                        const latlng = control.getLatLng();
+                        const latlng_str = `geolocation: [${Math.round(latlng.lat * 100000) / 100000}, ${Math.round(latlng.lng * 100000) / 100000}]`;
+
+                        const accuracy = control.getAccuracy();
+                        const accuracy_str = `accuracy: ${Math.round(accuracy)} meter`;
+
+                        const angle = control.getAngle();
+                        const angle_str = `orientation: ${Math.round(angle)} degree`;
+
+                        L.popup()
+                            .setLatLng(latlng)
+                            .setContent(`<p style="margin: 0.25rem 0 0.25rem 0">${latlng_str}</p><p style="margin: 0.25rem 0 0.25rem 0">${accuracy_str}</p><p style="margin: 0.25rem 0 0.25rem 0">${angle_str}</p>`)
+                            .openOn(map);
+
+                        event.stopPropagation();
+                        event.preventDefault();
+                    });
+                }
+            },
+            // afterDeviceMove: (event) => {
+            //     console.log(event);
+            // }
+        }).addTo(map);
+  
     // -- Fin Boussole
-  */
+  
   function updateMapMarkers(items) {
   if (!map) return;
   markers.forEach(m => map.removeLayer(m));
