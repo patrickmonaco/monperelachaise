@@ -72,7 +72,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.41
+    Mon Père Lachaise 0.40
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -389,54 +389,39 @@ const control = new L.Control.SimpleLocate({
 
 
   // --- Affichage liste
- function renderResults(items) {
-  console.time("renderResults");
-
-  const resultsDiv = document.getElementById("results");
-  const countDiv = document.getElementById("result-count");
-  countDiv.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
-
-  // ⚡️ Utilisation d’un DocumentFragment pour éviter les reflows
-  const frag = document.createDocumentFragment();
-
-  if (!items.length) {
-    resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
-    updateMapMarkers([]); // vide la carte
-    console.timeEnd("renderResults");
-    return;
-  }
-
-  for (const item of items) {
-    const card = document.createElement("div");
-    card.className =
-      "bg-white rounded-xl shadow-sm flex items-center gap-3 hover:bg-gray-50 transition cursor-pointer p-3";
-    card.innerHTML = `
-      <div class="flex-1 min-w-0">
-        <h3 class="font-semibold text-gray-800 truncate">${item.nom}</h3>
-        <p class="text-gray-600 text-sm truncate">${item.profession || ""}</p>
-      </div>
-      <button 
-        class="text-blue-600 text-sm underline shrink-0"
-        onclick="openNavigation('${item.lat}', '${item.long}', '${item.nom}')">
-        Naviguer
-      </button>
-    `;
-    frag.appendChild(card);
-  }
-
-  // Remplace le contenu d’un coup
-  resultsDiv.innerHTML = "";
-  resultsDiv.appendChild(frag);
-
-  // ⚙️ N’actualise les marqueurs que si la carte est visible
-  const viewMap = document.getElementById("map-container");
-  if (!viewMap.classList.contains("hidden")) {
+  function renderResults(items) {
+    resultsDiv.innerHTML = "";
+    resultCount.textContent = `${items.length} résultat${items.length>1?"s":""}`;
+    if (!items.length) {
+      resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
+      updateMapMarkers([]);
+      return;
+    }
+    items.sort((a,b)=>(a.tri||"").localeCompare(b.tri||"","fr",{numeric:true}));
+    for (const item of items) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" loading="lazy" 
+     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+     onload="this.classList.add('loaded')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
+     alt="Portrait de ${item.nom}">`
+        : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
+      resultsDiv.innerHTML += `
+        <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
+          ${pic}
+          <div class="flex-1">
+            <div class="flex justify-between items-center">
+              <h2 class="font-medium text-blue-700 text-lg cursor-pointer hover:underline"
+                  onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}</h2>
+              ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}','${item.nom.replace(/'/g,"&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl">ℹ️</button>` : ""}
+            </div>
+            <!-- <p class="text-sm text-gray-500">${item.categorie || "—"}</p> -->
+            <p class="text-gray-700 text-sm mt-1 leading-tight">${item.description || ""}</p>
+          </div>
+        </div>`;
+    }
     updateMapMarkers(items);
   }
-
-  console.timeEnd("renderResults");
-}
-
 
   // --- Filtres
   function applyFilters() {
