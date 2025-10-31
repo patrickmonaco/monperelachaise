@@ -72,7 +72,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.40
+    Mon Père Lachaise 0.42
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -261,43 +261,74 @@ tabMap.onclick = () => {
 
       // Ajout Boussole
   function addBoussole() {
-const control = new L.Control.SimpleLocate({
-            position: "topleft",
-            className: "button-locate",
-            afterClick: (result) => {
-                console.log("afterClick", result);
-                if (!result.geolocation) console.log("Geolocation Error");
-                if (!result.orientation) console.log("Orientation Error");
-            },
-            afterMarkerAdd: () => {
-                console.log("afterMarkerAdded");
-                const elem = document.getElementById("leaflet-simple-locate-icon-spot");
-                if (elem) {
-                    elem.addEventListener("click", (event) => {
-                        const latlng = control.getLatLng();
-                        const latlng_str = `geolocation: [${Math.round(latlng.lat * 100000) / 100000}, ${Math.round(latlng.lng * 100000) / 100000}]`;
+  try {
+    if (typeof L === "undefined" || !L.Control || !L.Control.SimpleLocate) {
+      console.warn("⚠️ Plugin Leaflet SimpleLocate non disponible.");
+      return;
+    }
+    if (typeof map === "undefined") {
+      console.warn("⚠️ Carte Leaflet non initialisée.");
+      return;
+    }
 
-                        const accuracy = control.getAccuracy();
-                        const accuracy_str = `accuracy: ${Math.round(accuracy)} meter`;
+    const control = new L.Control.SimpleLocate({
+      position: "topleft",
+      className: "button-locate",
+      afterClick: (result) => {
+        try {
+          console.log("afterClick", result);
+          if (!result.geolocation) console.log("Geolocation Error");
+          if (!result.orientation) console.log("Orientation Error");
+        } catch (err) {
+          console.error("Erreur dans afterClick:", err);
+        }
+      },
+      afterMarkerAdd: () => {
+        try {
+          console.log("afterMarkerAdded");
+          const elem = document.getElementById("leaflet-simple-locate-icon-spot");
+          if (elem) {
+            elem.addEventListener("click", (event) => {
+              try {
+                if (!control || !map) return;
+                const latlng = control.getLatLng?.();
+                const accuracy = control.getAccuracy?.();
+                const angle = control.getAngle?.();
 
-                        const angle = control.getAngle();
-                        const angle_str = `orientation: ${Math.round(angle)} degree`;
+                if (!latlng) return;
 
-                        L.popup()
-                            .setLatLng(latlng)
-                            .setContent(`<p style="margin: 0.25rem 0 0.25rem 0">${latlng_str}</p><p style="margin: 0.25rem 0 0.25rem 0">${accuracy_str}</p><p style="margin: 0.25rem 0 0.25rem 0">${angle_str}</p>`)
-                            .openOn(map);
+                const latlng_str = `geolocation: [${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}]`;
+                const accuracy_str = accuracy ? `accuracy: ${Math.round(accuracy)} m` : "";
+                const angle_str = angle ? `orientation: ${Math.round(angle)}°` : "";
 
-                        event.stopPropagation();
-                        event.preventDefault();
-                    });
-                }
-            },
-            // afterDeviceMove: (event) => {
-            //     console.log(event);
-            // }
-        }).addTo(map);
+                L.popup()
+                  .setLatLng(latlng)
+                  .setContent(
+                    `<p style="margin:0.25rem 0">${latlng_str}</p>
+                     <p style="margin:0.25rem 0">${accuracy_str}</p>
+                     <p style="margin:0.25rem 0">${angle_str}</p>`
+                  )
+                  .openOn(map);
+
+                event.stopPropagation();
+                event.preventDefault();
+              } catch (err) {
+                console.error("Erreur dans le gestionnaire de clic:", err);
+              }
+            });
+          }
+        } catch (err) {
+          console.error("Erreur dans afterMarkerAdd:", err);
+        }
+      },
+    }).addTo(map);
+
+    console.log("✅ Boussole ajoutée avec succès !");
+  } catch (err) {
+    console.error("💥 Erreur lors de l’ajout de la boussole:", err);
   }
+}
+
     // -- Fin Boussole
   
   function updateMapMarkers(items) {
