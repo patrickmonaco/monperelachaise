@@ -79,7 +79,7 @@
 <div class="max-w-7xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
     <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">
-    Mon Père Lachaise 0.43
+    Mon Père Lachaise 0.44
     <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
   </h1>
 
@@ -184,13 +184,39 @@
   🔄 Nouvelle version disponible — cliquez pour recharger
 </div>
 
-<!-- MODALE IMAGE AVEC LÉGENDE -->
+
+<!-- MODALE IMAGE AVEC LÉGENDE ET NAVIGATION -->
 <div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-4">
-  <div class="flex flex-col items-center">
+  <div class="relative flex flex-col items-center">
+    <!-- Bouton Précédent -->
+    <button id="prev-image-btn" 
+            onclick="previousImage()" 
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm transition hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    
+    <!-- Image -->
     <img id="image-modal-content" 
          src="" 
          alt="Aperçu" 
-         class="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 scale-100 hover:scale-105" />
+         class="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 select-none" />
+    
+    <!-- Bouton Suivant -->
+    <button id="next-image-btn" 
+            onclick="nextImage()" 
+            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm transition hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+    
+    <!-- Indicateur de position -->
+    <div id="image-indicator" class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm hidden">
+      1 / 2
+    </div>
+    
     <p id="image-modal-caption" class="text-white text-center mt-3 text-lg font-medium drop-shadow-lg"></p>
   </div>
 </div>
@@ -445,7 +471,7 @@ tabMap.onclick = () => {
       ? `<img src="${item.pic}" loading="lazy" 
          class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
          onload="this.classList.add('loaded')" 
-         onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
+         onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}','${item.pic_tombe_url.replace(/'/g, "\\'")}' ,'${item.nom.replace(/'/g, "\\'")}')" 
          alt="Portrait de ${item.nom}">`
       : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
     
@@ -574,16 +600,107 @@ const imageModalContent = document.getElementById("image-modal-content");
 const imageModalCaption = document.getElementById("image-modal-caption");
 
 // ✅ rendre la fonction accessible globalement (pour onclick)
-window.openImageModal = function (url, captionText) {
+
+let currentImageIndex = 0;
+let imageUrls = [];
+let touchStartX = 0;
+let touchEndX = 0;
+
+window.openImageModal = function (url1, url2, captionText) {
   if (!imageModal || !imageModalContent || !imageModalCaption) {
     console.error("Modale image non trouvée dans le DOM.");
     return;
   }
-  imageModalContent.src = url;
+  
+  // Stocker les URLs (filtrer les valeurs vides/nulles)
+  imageUrls = [url1, url2].filter(url => url);
+  currentImageIndex = 0;
+  
+  // Afficher la première image
+  showImage(currentImageIndex);
   imageModalCaption.textContent = captionText || "";
+  
   imageModal.classList.remove("hidden");
   imageModal.classList.add("flex");
+  
+  // Afficher/masquer les indicateurs selon le nombre d'images
+  updateNavigationButtons();
 };
+
+function showImage(index) {
+  if (index >= 0 && index < imageUrls.length) {
+    currentImageIndex = index;
+    imageModalContent.src = imageUrls[index];
+    updateImageIndicator();
+  }
+}
+
+function nextImage() {
+  if (currentImageIndex < imageUrls.length - 1) {
+    showImage(currentImageIndex + 1);
+  }
+}
+
+function previousImage() {
+  if (currentImageIndex > 0) {
+    showImage(currentImageIndex - 1);
+  }
+}
+
+function updateNavigationButtons() {
+  const prevBtn = document.getElementById('prev-image-btn');
+  const nextBtn = document.getElementById('next-image-btn');
+  const indicator = document.getElementById('image-indicator');
+  
+  if (imageUrls.length > 1) {
+    prevBtn?.classList.remove('hidden');
+    nextBtn?.classList.remove('hidden');
+    indicator?.classList.remove('hidden');
+  } else {
+    prevBtn?.classList.add('hidden');
+    nextBtn?.classList.add('hidden');
+    indicator?.classList.add('hidden');
+  }
+}
+
+function updateImageIndicator() {
+  const indicator = document.getElementById('image-indicator');
+  if (indicator && imageUrls.length > 1) {
+    indicator.textContent = `${currentImageIndex + 1} / ${imageUrls.length}`;
+  }
+}
+
+// Gestion du swipe tactile
+imageModalContent?.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+imageModalContent?.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeThreshold = 50; // Distance minimale pour détecter un swipe
+  
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swipe vers la gauche -> image suivante
+    nextImage();
+  }
+  
+  if (touchEndX > touchStartX + swipeThreshold) {
+    // Swipe vers la droite -> image précédente
+    previousImage();
+  }
+}
+
+// Navigation au clavier (flèches gauche/droite)
+document.addEventListener('keydown', (e) => {
+  if (!imageModal.classList.contains('hidden')) {
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') previousImage();
+  }
+});
 
 // ✅ fermeture de la modale au clic
 imageModal.onclick = () => {
