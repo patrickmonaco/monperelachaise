@@ -6,7 +6,7 @@
 "long": 2.3919201734243423,
 "categorie": "Monument",
 "description": "Divers",
-"siecle": "e",
+"siecle": "12e",
 "wikidata": "Q3323370",
 "pic": "https://fr.vikidia.org/wiki/H%C3%A9lo%C3%AFse_et_Ab%C3%A9lard#/media/Fichier:Abelard_and_Heloise.jpeg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Abélard_15.jpg"
@@ -276,18 +276,6 @@
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_20_-_Bernard_01.jpg"
 },
 {
-"tri": "Dragon",
-"nom": "Tombe du Dragon",
-"lat": 48.85924758348845,
-"long": 2.395818626644382,
-"categorie": "Monument",
-"description": null,
-"siecle": "e",
-"wikidata": "Q3531119",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
-},
-{
 "tri": "Duclos",
 "nom": "Jacques Duclos",
 "lat": 48.859887,
@@ -369,7 +357,7 @@
 "siecle": "20e",
 "wikidata": "Q182192",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Georges_Marchais.JPG/960px-Georges_Marchais.JPG",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Georges_Marchais.JPG"
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Tombe_de_Georges_Marchais_-_P%C3%A8re_Lachaise_-_2.JPG"
 },
 {
 "tri": "Masséna",
@@ -500,7 +488,7 @@
 "description": "Réalisateur de cinéma, scénariste, acteur de théâtre, metteuruse en scène, réalisateur",
 "siecle": "20e",
 "wikidata": "Q55410",
-"pic": null,
+"pic": "https://upload.wikimedia.org/wikipedia/en/d/d2/MaxOph%C3%BCls.jpg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Max_Ophüls_-_commemorative_plaque.JPG"
 },
 {
@@ -1317,7 +1305,7 @@
 "siecle": "19e",
 "wikidata": "Q74518",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/d/de/Christophe-Philippe_Oberkampf_%281738-1815%29.jpg",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christophe-Philippe_Oberkampf_(1738-1815).jpg"
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tombe_de_Christophe-Philippe_Oberkampf_-_P%C3%A8re_Lachaise.JPG"
 },
 {
 "tri": "Panhard",
@@ -1833,7 +1821,7 @@
 "siecle": "19e",
 "wikidata": "Q3275319",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Madame_Sans-G%C3%AAne.jpg/960px-Madame_Sans-G%C3%AAne.jpg",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madame_Sans-Gene_(SAYRE_14792).jpg"
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Tombelefebvre.JPG"
 },
 {
 "tri": "Roussel",
@@ -1906,6 +1894,18 @@
 "wikidata": null,
 "pic": null,
 "pic_tombe_url": null
+},
+{
+"tri": "Dragon",
+"nom": "Tombe du Dragon",
+"lat": 48.85924758348845,
+"long": 2.395818626644382,
+"categorie": "Monument",
+"description": "érigé en l'honneur d'Antoine de Guillaume-Lagrange",
+"siecle": "19e",
+"wikidata": "Q3531119",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
 },
 {
 "tri": "Cristiani",
@@ -1989,7 +1989,7 @@
 "siecle": "19e",
 "wikidata": "Q12718",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg/960px-Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yehoshua_Ellis.jpg"
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/File:P%C3%A8re-Lachaise_-_Division_17_-_Comte_01.jpg"
 },
 {
 "tri": "Lebrun",
@@ -2013,7 +2013,7 @@
 "siecle": "19e",
 "wikidata": "Q206832",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg",
-"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaspard_monge_litho_delpech.jpg"
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Tombeau_de_Gaspard_Monge_%281746%E2%80%931818%29_1.jpg"
 },
 {
 "tri": "Alain",
@@ -2544,4 +2544,3 @@
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcel_Proust_(Père_Lachaise).jpg"
 }
 ]
-
