@@ -41,7 +41,14 @@
 #viewList, #viewMap {
   transition: opacity 0.4s ease, transform 0.3s ease;
 }
+/* pour le switch Liste/Carte   */
 
+  .tab-active {
+  background-color: #3b82f6; /* ou bg-blue-500 en Tailwind */
+  color: white;
+  border-color: #3b82f6;
+}
+  
 .hidden {
   opacity: 0 !important;
   transform: translateY(10px);
@@ -77,10 +84,10 @@
   </h1>
 
   <!-- Onglets -->
-  <div class="flex justify-center mb-6">
-    <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
-    <button id="tab-map" class="px-3 py-1 rounded-lg text-sm font-medium text-gray-700 bg-gray-200 hover:bg-gray-300">Carte</button>
-  </div>
+<div class="flex justify-center mb-6">
+  <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
+  <button id="tab-map" class="px-4 py-2 border rounded-r-lg text-gray-700 bg-gray-200 hover:bg-gray-300">Carte</button>
+</div>
 
   <!-- Vue Liste -->
   <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
