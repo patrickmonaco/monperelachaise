@@ -8,7 +8,8 @@
 "description": "Divers",
 "siecle": "e",
 "wikidata": "Q3323370",
-"pic": "https://fr.vikidia.org/wiki/H%C3%A9lo%C3%AFse_et_Ab%C3%A9lard#/media/Fichier:Abelard_and_Heloise.jpeg"
+"pic": "https://fr.vikidia.org/wiki/H%C3%A9lo%C3%AFse_et_Ab%C3%A9lard#/media/Fichier:Abelard_and_Heloise.jpeg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Abélard_15.jpg"
 },
 {
 "tri": "Arago",
@@ -16,10 +17,11 @@
 "lat": 48.860536,
 "long": 2.391114,
 "categorie": "Scientifique",
-"description": "astronome, mathématicien ou mathématicienne, physicien ou physicienne, personnalité politique, professeur d'université, biographe, écrivain ...",
+"description": "Astronome, mathématicien, physicien, personnalité politique, professeur d'université, biographe, écrivain",
 "siecle": "19e",
 "wikidata": "Q154353",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg/600px-Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg/600px-Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_4_-_Arago_01.jpg"
 },
 {
 "tri": "Bernhardt",
@@ -27,10 +29,11 @@
 "lat": 48.861266823552896,
 "long": 2.395318004701567,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, acteur ou actrice de cinéma, danseur ou danseuse, écrivain ou écrivaine, acteur ou actrice, artiste peintre, ...",
+"description": "Actrice de théâtre, actrice de cinéma, danseuse, écrivaine, actrice, artiste peintre, sculptrice",
 "siecle": "20e",
 "wikidata": "Q4605",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/SarahBernhardt1880.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/SarahBernhardt1880.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarah_Bernhardt_grave.jpg"
 },
 {
 "tri": "Bizet",
@@ -38,10 +41,11 @@
 "lat": 48.8623244,
 "long": 2.391787,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice de musique classique, chef ou cheffe d'orchestre ou de chœur, pianiste, compositeur ou compositrice",
+"description": "Compositeur de musique classique, chef ou cheffe d'orchestre ou de chœur, pianiste, compositeur",
 "siecle": "19e",
 "wikidata": "Q56158",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Georges_bizet.jpg/960px-Georges_bizet.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Georges_bizet.jpg/960px-Georges_bizet.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_68_-_tombe_Bizet_01.jpg"
 },
 {
 "tri": "Blanqui",
@@ -49,21 +53,11 @@
 "lat": 48.861214,
 "long": 2.396071,
 "categorie": "Politique",
-"description": "philosophe, personnalité politique, journaliste, communard",
+"description": "Philosophe, personnalité politique, journaliste, communard",
 "siecle": "19e",
 "wikidata": "Q309722",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Louis_Auguste_Blanqui.JPG/960px-Louis_Auguste_Blanqui.JPG"
-},
-{
-"tri": "Branly",
-"nom": "Édouard Branly",
-"lat": 48.860536,
-"long": 2.392423,
-"categorie": "Scientifique",
-"description": "physicien ou physicienne, médecin, professeur d'université",
-"siecle": "20e",
-"wikidata": "Q274251",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%89douard_Branly_1.jpg/960px-%C3%89douard_Branly_1.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Louis_Auguste_Blanqui.JPG/960px-Louis_Auguste_Blanqui.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_92_-_Blanqui_02.jpg"
 },
 {
 "tri": "Brasseur",
@@ -71,10 +65,11 @@
 "lat": 48.86072,
 "long": 2.389226,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, scénariste",
+"description": "Acteur de cinéma, acteur de théâtre, scénariste",
 "siecle": "20e",
 "wikidata": "Q945890",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e0/PIerreBrasseur-Italie-1960.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e0/PIerreBrasseur-Italie-1960.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Pierre_Brasseur_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Brongniart",
@@ -82,10 +77,11 @@
 "lat": 48.860635,
 "long": 2.392809,
 "categorie": "Scientifique",
-"description": "botaniste, géologue, chimiste, minéralogiste, zoologiste, professeur d'université, paléontologue, herpétologue, historien ou historienne ...",
+"description": "Botaniste, géologue, chimiste, minéralogiste, zoologiste, professeur d'université, paléontologue, herpétologue, historien des sciences, ...",
 "siecle": "19e",
 "wikidata": "Q442937",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a6/AlexBrongniart.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a6/AlexBrongniart.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brongniart_alexandre_grave_vertical.jpg"
 },
 {
 "tri": "Bécaud",
@@ -93,10 +89,11 @@
 "lat": 48.861141,
 "long": 2.394935,
 "categorie": "Chanteur",
-"description": "compositeur ou compositrice, pianiste, chanteur ou chanteuse, acteur ou actrice, auteur-compositeur-interprète ou ...",
+"description": "Compositeur, pianiste, chanteuruse, acteur, auteur-compositeur-interprète-compositrice-interprète",
 "siecle": "21e",
 "wikidata": "Q160433",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Becaud-Rome-1958.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Becaud-Rome-1958.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père-Lachaise_008.JPG"
 },
 {
 "tri": "Caillebotte",
@@ -104,10 +101,11 @@
 "lat": 48.862414,
 "long": 2.392123,
 "categorie": "Peintre",
-"description": "artiste peintre, collectionneur ou collectionneuse d'œuvres d'art, mécène, philatéliste, architecte naval, skipper, avocat ou avocate, ...",
+"description": "Artiste peintre, collectionneur d'œuvres d'art, mécène, philatéliste, architecte naval, skipper, avocat, ingénieur, artiste graphique",
 "siecle": "19e",
 "wikidata": "Q295144",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Caillebotteautoportrait.jpg/600px-Caillebotteautoportrait.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Caillebotteautoportrait.jpg/600px-Caillebotteautoportrait.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_70_-_Caillebotte_01.jpg"
 },
 {
 "tri": "Cambacérès",
@@ -115,10 +113,11 @@
 "lat": 48.859252,
 "long": 2.396457,
 "categorie": "Politique",
-"description": "juriste, personnalité politique",
+"description": "Juriste, personnalité politique",
 "siecle": "19e",
 "wikidata": "Q290045",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Maurin_-_Cambaceres.png/600px-Maurin_-_Cambaceres.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Maurin_-_Cambaceres.png/600px-Maurin_-_Cambaceres.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grab_Cambacérès.jpg"
 },
 {
 "tri": "Champollion",
@@ -126,10 +125,11 @@
 "lat": 48.8599858,
 "long": 2.3940879,
 "categorie": "Scientifique",
-"description": "égyptologue, professeur d'université, linguiste, archéologue, philosophe, épigraphiste, professeur, auteur, entomologiste, érudit classique",
+"description": "Égyptologue, professeur d'université, linguiste, archéologue, philosophe, épigraphiste, professeur, auteur, entomologiste, érudit classique",
 "siecle": "19e",
 "wikidata": "Q260",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Leon_Cogniet_-_Jean-Francois_Champollion.jpg/960px-Leon_Cogniet_-_Jean-Francois_Champollion.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Leon_Cogniet_-_Jean-Francois_Champollion.jpg/960px-Leon_Cogniet_-_Jean-Francois_Champollion.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Champollion_grave.jpg"
 },
 {
 "tri": "Chappe",
@@ -137,10 +137,11 @@
 "lat": 48.859068,
 "long": 2.395148,
 "categorie": "Scientifique",
-"description": "inventeur, ingénieur",
+"description": "Inventeur, ingénieur",
 "siecle": "19e",
 "wikidata": "Q361305",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG/960px-AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG/960px-AduC_175_Chappe_%28Claude%2C_1765-1828%29.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Chappe_(division_29).JPG"
 },
 {
 "tri": "Chopin",
@@ -148,10 +149,11 @@
 "lat": 48.8601213,
 "long": 2.392808,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, pianiste, professeur ou professeure de piano, virtuose, musicien ou musicienne, pédagogue",
+"description": "Compositeur, pianiste, professeurure de piano, virtuose, musicien, pédagogue",
 "siecle": "19e",
 "wikidata": "Q1268",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chopin%2C_by_Wodzinska.JPG/960px-Chopin%2C_by_Wodzinska.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chopin%2C_by_Wodzinska.JPG/960px-Chopin%2C_by_Wodzinska.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pere-Lachaise_Chopin_grave.jpg"
 },
 {
 "tri": "Chéreau",
@@ -159,10 +161,11 @@
 "lat": 48.858886615906286,
 "long": 2.394626335603573,
 "categorie": "Réalisateur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, metteur ou metteuse en scène, scénariste, écrivain ou écrivaine, producteur ou ...",
+"description": "Acteur, réalisateur de cinéma, metteuruse en scène, scénariste, écrivain, producteur de cinéma, acteur de cinéma, acteur de télévision, ...",
 "siecle": "21e",
 "wikidata": "Q366057",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Patrice_Ch%C3%A9reau_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg/960px-Patrice_Ch%C3%A9reau_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Patrice_Ch%C3%A9reau_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg/960px-Patrice_Ch%C3%A9reau_66%C3%A8me_Festival_de_Venise_%28Mostra%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Patrice_Chéreau_tombe.jpg"
 },
 {
 "tri": "Colette",
@@ -170,10 +173,11 @@
 "lat": 48.860703501124966,
 "long": 2.3906911644439046,
 "categorie": "Acteur",
-"description": "romancier ou romancière, prête-plume, journaliste, librettiste, scénariste, nouvelliste, dramaturge, prosateur ou prosatrice, acteur ou ...",
+"description": "Romancière, prête-plume, journaliste, librettiste, scénariste, nouvelliste, dramaturge, prosatrice, actrice, écrivaine",
 "siecle": "20e",
 "wikidata": "Q218679",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colette_-_photo.jpg/960px-Colette_-_photo.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colette_-_photo.jpg/960px-Colette_-_photo.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colette_tombestone.jpg"
 },
 {
 "tri": "Coquatrix",
@@ -181,10 +185,11 @@
 "lat": 48.859393,
 "long": 2.398152,
 "categorie": "Réalisateur",
-"description": "producteur de musique, personnalité du monde des affaires, auteur-compositeur ou autrice-compositrice, directeur de salle de spectacle",
+"description": "Producteur de musique, personnalité du monde des affaires, auteur-compositeur-compositrice, directeur de salle de spectacle",
 "siecle": "20e",
 "wikidata": "Q2661519",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Identite-Coquatrix-1940-Sacem.png/960px-Identite-Coquatrix-1940-Sacem.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Identite-Coquatrix-1940-Sacem.png/960px-Identite-Coquatrix-1940-Sacem.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_96_-_Coquatrix_01.jpg"
 },
 {
 "tri": "Couture",
@@ -192,10 +197,11 @@
 "lat": 48.8607223,
 "long": 2.3916025,
 "categorie": "Peintre",
-"description": "artiste peintre, enseignant ou enseignante",
+"description": "Artiste peintre, enseignantignante",
 "siecle": "19e",
 "wikidata": "Q326434",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Thomas_Couture_Carjat_BNF.jpg/960px-Thomas_Couture_Carjat_BNF.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Thomas_Couture_Carjat_BNF.jpg/960px-Thomas_Couture_Carjat_BNF.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_4_-_Couture_06.jpg"
 },
 {
 "tri": "Crozatier",
@@ -203,10 +209,11 @@
 "lat": 48.862357,
 "long": 2.39341,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, fondeur ou fondeuse, mécène",
+"description": "Sculpteur, fondeur, mécène",
 "siecle": "19e",
 "wikidata": "Q785956",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Charles_Crozatier.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Charles_Crozatier.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Charles_Crozatier_01.jpg"
 },
 {
 "tri": "Barbusse",
@@ -214,10 +221,11 @@
 "lat": 48.860169,
 "long": 2.399848,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, journaliste, scénariste, biographe, romancier ou romancière, personnalité politique, artiste peintre, poète ou ...",
+"description": "Écrivain, journaliste, scénariste, biographe, romancier, personnalité politique, artiste peintre, poètese, historien",
 "siecle": "20e",
 "wikidata": "Q18404",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/91/%D0%90%D0%BD%D1%80%D0%B8_%D0%91%D0%B0%D1%80%D0%B1%D1%8E%D1%81_%281928%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/9/91/%D0%90%D0%BD%D1%80%D0%B8_%D0%91%D0%B0%D1%80%D0%B1%D1%8E%D1%81_%281928%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Barbusse_01.jpg"
 },
 {
 "tri": "Barras",
@@ -225,10 +233,11 @@
 "lat": 48.859139,
 "long": 2.395985,
 "categorie": "Politique",
-"description": "personnalité politique, salonnier ou salonnière, juge",
+"description": "Personnalité politique, salonnier, juge",
 "siecle": "19e",
 "wikidata": "Q333843",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Paul_Barras.jpg/960px-Paul_Barras.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Paul_Barras.jpg/960px-Paul_Barras.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_28_-_Barras_01.jpg"
 },
 {
 "tri": "Baudelocque",
@@ -236,21 +245,11 @@
 "lat": 48.861482,
 "long": 2.394698,
 "categorie": "Scientifique",
-"description": "médecin, professeur d'université, gynécologue, obstétricien ou obstétricienne, chirurgien ou chirurgienne",
+"description": "Médecin, professeur d'université, gynécologue, obstétricien, chirurgien",
 "siecle": "19e",
 "wikidata": "Q545477",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Jean-Louis_Baudelocque_by_Antoine_Vestier.jpg/960px-Jean-Louis_Baudelocque_by_Antoine_Vestier.jpg"
-},
-{
-"tri": "Bazar de la Charité",
-"nom": "Monument au Bazar de la Charité",
-"lat": 48.86103593791053,
-"long": 2.3968598315112555,
-"categorie": "Monument",
-"description": null,
-"siecle": "e",
-"wikidata": "Q661950",
-"pic": null
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Jean-Louis_Baudelocque_by_Antoine_Vestier.jpg/960px-Jean-Louis_Baudelocque_by_Antoine_Vestier.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_45_-_Baudelocque_01.jpg"
 },
 {
 "tri": "Bellini",
@@ -258,10 +257,11 @@
 "lat": 48.860438,
 "long": 2.393024,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice",
+"description": "Compositeur",
 "siecle": "19e",
 "wikidata": "Q170209",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lucchini-Bellini.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lucchini-Bellini.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_11_-_Vincenzo_Bellini_09.jpg"
 },
 {
 "tri": "Bernard",
@@ -269,10 +269,11 @@
 "lat": 48.860635,
 "long": 2.393582,
 "categorie": "Scientifique",
-"description": "médecin écrivain, personnalité politique, psychologue, professeur, physiologiste, médecin, épistémologue",
+"description": "Médecin écrivain, personnalité politique, psychologue, professeur, physiologiste, médecin, épistémologue",
 "siecle": "19e",
 "wikidata": "Q208230",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Claude_Bernard_5.jpg/600px-Claude_Bernard_5.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Claude_Bernard_5.jpg/600px-Claude_Bernard_5.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_20_-_Bernard_01.jpg"
 },
 {
 "tri": "Dragon",
@@ -283,7 +284,8 @@
 "description": null,
 "siecle": "e",
 "wikidata": "Q3531119",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg/960px-P%C3%A8re-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
 },
 {
 "tri": "Duclos",
@@ -291,10 +293,11 @@
 "lat": 48.859887,
 "long": 2.399826,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste, résistant ou résistante",
+"description": "Personnalité politique, syndicaliste, résistant",
 "siecle": "20e",
 "wikidata": "Q377790",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jacques_Duclos_en_1959.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jacques_Duclos_en_1959.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Duclos_01.jpg"
 },
 {
 "tri": "Duncan",
@@ -302,10 +305,11 @@
 "lat": 48.8624253,
 "long": 2.3954178,
 "categorie": "Acteur",
-"description": "danseur ou danseuse, chorégraphe, autobiographe, scénariste, danseur ou danseuse classique, écrivain ou écrivaine",
+"description": "Danseuse, chorégraphe, autobiographe, scénariste, danseuse classique, écrivaine",
 "siecle": "20e",
 "wikidata": "Q483512",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Isadora_Duncan_portrait_cropped.jpg/600px-Isadora_Duncan_portrait_cropped.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Isadora_Duncan_portrait_cropped.jpg/600px-Isadora_Duncan_portrait_cropped.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AX_Isadora_Duncan_Tomb_crop.jpg"
 },
 {
 "tri": "Fabien",
@@ -313,10 +317,11 @@
 "lat": 48.859703,
 "long": 2.399611,
 "categorie": "Militaire",
-"description": "résistant ou résistante",
+"description": "Résistant",
 "siecle": "20e",
 "wikidata": "Q1110656",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/GEORGES_Pierre_La_Defense_1945.jpg/500px-GEORGES_Pierre_La_Defense_1945.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/GEORGES_Pierre_La_Defense_1945.jpg/500px-GEORGES_Pierre_La_Defense_1945.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Édicule_Guimard_-_station_Colonel_Fabien.jpg"
 },
 {
 "tri": "Falguière",
@@ -324,10 +329,11 @@
 "lat": 48.860875,
 "long": 2.392187,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice, artiste peintre, artiste",
+"description": "Sculpteur, artiste peintre, artiste",
 "siecle": "20e",
 "wikidata": "Q2140000",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alexandre_Falgui%C3%A8re_%28_%C3%A0_Rome%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Alexandre_Falgui%C3%A8re_%28_%C3%A0_Rome%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Alexandre_Falguière_(division_4).JPG"
 },
 {
 "tri": "Lyotard",
@@ -335,10 +341,11 @@
 "lat": 48.858729,
 "long": 2.393517,
 "categorie": "Ecrivain",
-"description": "philosophe, philologue, écrivain ou écrivaine, linguiste, épistémologue, sociologue, théoricien ou théoricienne de la littérature, ...",
+"description": "Philosophe, philologue, écrivain, linguiste, épistémologue, sociologue, théoricien de la littérature, professeur d'université, critique ...",
 "siecle": "20e",
 "wikidata": "Q193257",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jean-Francois_Lyotard_cropped.jpg/600px-Jean-Francois_Lyotard_cropped.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jean-Francois_Lyotard_cropped.jpg/600px-Jean-Francois_Lyotard_cropped.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jean-François_Lyotard_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Manoir",
@@ -346,10 +353,11 @@
 "lat": 48.859718,
 "long": 2.394783,
 "categorie": "Autres",
-"description": "joueur ou joueuse de rugby à XV, militaire",
+"description": "Joueur de rugby à xv, militaire",
 "siecle": "20e",
 "wikidata": "Q2602308",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Yves_du_Manoir_1925_%28cropped%29.jpg/960px-Yves_du_Manoir_1925_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Yves_du_Manoir_1925_%28cropped%29.jpg/960px-Yves_du_Manoir_1925_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_19_-_Le_Pelley_Dumanoir_01.jpg"
 },
 {
 "tri": "Marchais",
@@ -357,10 +365,11 @@
 "lat": 48.859746,
 "long": 2.399676,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste",
+"description": "Personnalité politique, syndicaliste",
 "siecle": "20e",
 "wikidata": "Q182192",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Georges_Marchais.JPG/960px-Georges_Marchais.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Georges_Marchais.JPG/960px-Georges_Marchais.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Georges_Marchais.JPG"
 },
 {
 "tri": "Masséna",
@@ -368,10 +377,11 @@
 "lat": 48.859012,
 "long": 2.396586,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "Personnalité politique, militaire",
 "siecle": "19e",
 "wikidata": "Q242609",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg/600px-Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg/600px-Renault_-_Andr%C3%A9_Mass%C3%A9na%2C_duc_de_Rivoli%2C_prince_d%27Essling%2C_mar%C3%A9chal_de_France_%281756-1817%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_28_-_Masséna_01.jpg"
 },
 {
 "tri": "Michelet",
@@ -379,10 +389,11 @@
 "lat": 48.862569,
 "long": 2.393045,
 "categorie": "Ecrivain",
-"description": "historien ou historienne, archiviste, écrivain ou écrivaine, diariste, professeur, traducteur ou traductrice, philosophe",
+"description": "Historien, archiviste, écrivain, diariste, professeur, traducteur, philosophe",
 "siecle": "19e",
 "wikidata": "Q310791",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jules_Michelet_par_Thomas_Couture.jpg/960px-Jules_Michelet_par_Thomas_Couture.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jules_Michelet_par_Thomas_Couture.jpg/960px-Jules_Michelet_par_Thomas_Couture.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Jules_Michelet_01.jpg"
 },
 {
 "tri": "Miolan-Carvalho",
@@ -390,10 +401,11 @@
 "lat": 48.8629618,
 "long": 2.3902204,
 "categorie": "Acteur",
-"description": "artiste lyrique",
+"description": "Artiste lyrique",
 "siecle": "19e",
 "wikidata": "Q1630239",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg/960px-Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg/960px-Caroline_Carvalho_as_Marguerite_in_Faust_by_Gounod_1873_-_Gallica.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fleury_-_Le_Père_Lachaise_historique_-_034_-_Carvalho.jpg"
 },
 {
 "tri": "Molière",
@@ -401,10 +413,11 @@
 "lat": 48.860536,
 "long": 2.395105,
 "categorie": "Ecrivain",
-"description": "dramaturge, acteur ou actrice de théâtre, poète ou poétesse, satiriste, metteur ou metteuse en scène, dramaturge, écrivain ou écrivaine, ...",
+"description": "Dramaturge, acteur de théâtre, poètese, satiriste, metteuruse en scène, écrivain, directeur de théâtre",
 "siecle": "17e",
 "wikidata": "Q687",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/960px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/960px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_de_La_Fontaine_&_Molière_(Père_Lachaise).jpg"
 },
 {
 "tri": "Morrison",
@@ -412,10 +425,11 @@
 "lat": 48.8592676,
 "long": 2.393752,
 "categorie": "Chanteur",
-"description": "vocaliste, réalisateur ou réalisatrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, parolier ou parolière, ...",
+"description": "Vocaliste, réalisateur, auteur-compositeur-interprète-compositrice-interprète, parolier, compositeur, acteur, poètese, chanteuruse",
 "siecle": "20e",
 "wikidata": "Q44301",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Morrison_1969.JPG/600px-Jim_Morrison_1969.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Morrison_1969.JPG/600px-Jim_Morrison_1969.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jim_Morrison_-_Père_Lachaise.jpg"
 },
 {
 "tri": "Mouloudji",
@@ -423,10 +437,11 @@
 "lat": 48.861157,
 "long": 2.395277,
 "categorie": "Chanteur",
-"description": "acteur ou actrice de cinéma, chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste ...",
+"description": "Acteur de cinéma, chanteuruse, auteur-compositeur-interprète-compositrice-interprète, artiste d'enregistrement",
 "siecle": "20e",
 "wikidata": "Q993521",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Mouloudji-1954-StudioHarcourt.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Mouloudji-1954-StudioHarcourt.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_42_-_Mouloudji_-_02.jpg"
 },
 {
 "tri": "Mur des Fédérés",
@@ -437,18 +452,8 @@
 "description": null,
 "siecle": "e",
 "wikidata": "Q22924034",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/5/57/Plaque_f%C3%A9d%C3%A9r%C3%A9s.JPG"
-},
-{
-"tri": "Murat",
-"nom": "Joachim Murat",
-"lat": 48.859068,
-"long": 2.396672,
-"categorie": "Militaire",
-"description": "personnalité politique, officier, militaire",
-"siecle": "19e",
-"wikidata": "Q151173",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Murat2.jpg/600px-Murat2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/5/57/Plaque_f%C3%A9d%C3%A9r%C3%A9s.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaque_fédérés.JPG"
 },
 {
 "tri": "Fourier",
@@ -456,10 +461,11 @@
 "lat": 48.8600462,
 "long": 2.3938832,
 "categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, physicien ou physicienne, historien ou historienne, archéologue, professeur d'université, haut ...",
+"description": "Mathématicien, physicien, historien, archéologue, professeur d'université, haut fonctionnaire fonctionnaire, ingénieur, écrivain",
 "siecle": "19e",
 "wikidata": "Q8772",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fourier2.jpg/960px-Fourier2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fourier2.jpg/960px-Fourier2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_18_-_Joseph_Fourier_01.jpg"
 },
 {
 "tri": "Noailles",
@@ -467,10 +473,11 @@
 "lat": 48.85904,
 "long": 2.395706,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, salonnier ou salonnière, poète ou poétesse, mannequin, romancier ou romancière, aristocrate, monarque",
+"description": "Écrivaine, salonnière, poétesse, mannequin, romancière, aristocrate, monarque",
 "siecle": "20e",
 "wikidata": "Q6050",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Noailles_b_Meurisse_1922.jpg/960px-Noailles_b_Meurisse_1922.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Noailles_b_Meurisse_1922.jpg/960px-Noailles_b_Meurisse_1922.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père_Lachaise_Cemetery_@_Paris_(30636727413).jpg"
 },
 {
 "tri": "Noir",
@@ -478,10 +485,11 @@
 "lat": 48.860819,
 "long": 2.396543,
 "categorie": "Ecrivain",
-"description": "journaliste",
+"description": "Journaliste",
 "siecle": "19e",
 "wikidata": "Q714788",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Victor_Noir_par_Appert.jpg/600px-Victor_Noir_par_Appert.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Victor_Noir_par_Appert.jpg/600px-Victor_Noir_par_Appert.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_Victor_Noir.jpg"
 },
 {
 "tri": "Ophüls",
@@ -489,10 +497,11 @@
 "lat": 48.862569,
 "long": 2.395363,
 "categorie": "Réalisateur",
-"description": "réalisateur ou réalisatrice de cinéma, scénariste, acteur ou actrice de théâtre, metteur ou metteuse en scène, réalisateur ou réalisatrice",
+"description": "Réalisateur de cinéma, scénariste, acteur de théâtre, metteuruse en scène, réalisateur",
 "siecle": "20e",
 "wikidata": "Q55410",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Max_Ophüls_-_commemorative_plaque.JPG"
 },
 {
 "tri": "Oussekine",
@@ -500,10 +509,11 @@
 "lat": 48.858038,
 "long": 2.395556,
 "categorie": "Autres",
-"description": "étudiant ou étudiante",
+"description": "Étudiant",
 "siecle": "20e",
 "wikidata": "Q112335024",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Paris_75-_Pere_Lachaise_Graveyard-_In_the_left_the_tomb_of_Malik_Oussekine%2C_died_in_december_1986_during_a_manifestation_%28cropped%29.jpg/960px-Paris_75-_Pere_Lachaise_Graveyard-_In_the_left_the_tomb_of_Malik_Oussekine%2C_died_in_december_1986_during_a_manifestation_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Paris_75-_Pere_Lachaise_Graveyard-_In_the_left_the_tomb_of_Malik_Oussekine%2C_died_in_december_1986_during_a_manifestation_%28cropped%29.jpg/960px-Paris_75-_Pere_Lachaise_Graveyard-_In_the_left_the_tomb_of_Malik_Oussekine%2C_died_in_december_1986_during_a_manifestation_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_75-_Pere_Lachaise_Graveyard-_In_the_left_the_tomb_of_Malik_Oussekine,_died_in_december_1986_during_a_manifestation_(cropped).jpg"
 },
 {
 "tri": "Ozanian",
@@ -511,10 +521,11 @@
 "lat": 48.86048,
 "long": 2.399418,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "Personnalité politique, militaire",
 "siecle": "20e",
 "wikidata": "Q278864",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/19/AndranikOzanian.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/19/AndranikOzanian.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_General_Antranik.jpg"
 },
 {
 "tri": "Perier",
@@ -522,21 +533,11 @@
 "lat": 48.8600225,
 "long": 2.3936303,
 "categorie": "Entrepreneur",
-"description": "banquier, personnalité politique",
+"description": "Banquier, personnalité politique",
 "siecle": "19e",
 "wikidata": "Q284683",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Perier%2C_Casimir.jpg/600px-Perier%2C_Casimir.jpg"
-},
-{
-"tri": "Petrucciani",
-"nom": "Michel Petrucciani",
-"lat": 48.860056,
-"long": 2.392874,
-"categorie": "Musicien",
-"description": "Pianiste et compositeur de Jazz",
-"siecle": "20e",
-"wikidata": "Q317155",
-"pic": null
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Perier%2C_Casimir.jpg/600px-Perier%2C_Casimir.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casimir_perier_tomb_pere_lachaise.jpg"
 },
 {
 "tri": "Galli-Marié",
@@ -544,10 +545,11 @@
 "lat": 48.8615073,
 "long": 2.3918887,
 "categorie": "Chanteur",
-"description": "artiste lyrique",
+"description": "Artiste lyrique",
 "siecle": "20e",
 "wikidata": "Q2413117",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg/960px-Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg/960px-Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_57_-_Galli-Marié_01.jpg"
 },
 {
 "tri": "Gay-Lussac",
@@ -555,10 +557,11 @@
 "lat": 48.860649,
 "long": 2.394655,
 "categorie": "Scientifique",
-"description": "physicien ou physicienne, chimiste, personnalité politique, ingénieur, professeur d'université, administrateur ou administratrice de société",
+"description": "Physicien, chimiste, personnalité politique, ingénieur, professeur d'université, administrateur de société",
 "siecle": "19e",
 "wikidata": "Q153185",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Gaylussac.jpg/960px-Gaylussac.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Gaylussac.jpg/960px-Gaylussac.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gay_Lussac_grave.jpg"
 },
 {
 "tri": "Geoffroy Saint-Hilaire",
@@ -566,10 +569,11 @@
 "lat": 48.85952,
 "long": 2.394998,
 "categorie": "Scientifique",
-"description": "biologiste, personnalité politique, zoologiste, naturaliste, ornithologue, collectionneur ou collectionneuse de plantes",
+"description": "Biologiste, personnalité politique, zoologiste, naturaliste, ornithologue, collectionneur de plantes",
 "siecle": "19e",
 "wikidata": "Q192428",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Geoffroy_Saint-Hilaire_%C3%89tienne_1772-1844.jpg/960px-Geoffroy_Saint-Hilaire_%C3%89tienne_1772-1844.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Geoffroy_Saint-Hilaire_%C3%89tienne_1772-1844.jpg/960px-Geoffroy_Saint-Hilaire_%C3%89tienne_1772-1844.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_19_-_Geoffroy_Saint-Hilaire_02.jpg"
 },
 {
 "tri": "Girardot",
@@ -577,10 +581,11 @@
 "lat": 48.862089,
 "long": 2.39356,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, acteur ou actrice de cinéma, acteur ou actrice, acteur ou actrice de télévision, chanteur ou chanteuse",
+"description": "Actrice de théâtre, actrice de cinéma, actrice, actrice de télévision, chanteuse",
 "siecle": "21e",
 "wikidata": "Q106443",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Annie_Girardot_C%C3%A9sars.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Annie_Girardot_C%C3%A9sars.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_49_-_Girardot_05.jpg"
 },
 {
 "tri": "Gouvion-Saint-Cyr",
@@ -588,21 +593,11 @@
 "lat": 48.858555,
 "long": 2.39619,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "Personnalité politique, militaire",
 "siecle": "19e",
 "wikidata": "Q347652",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Laurent_de_Gouvion-Saint-Cyr.jpg/960px-Laurent_de_Gouvion-Saint-Cyr.jpg"
-},
-{
-"tri": "Grappelli",
-"nom": "Stéphane Grappelli",
-"lat": 48.862174,
-"long": 2.395663,
-"categorie": "Musicien",
-"description": "artiste de rue, compositeur ou compositrice, musicien ou musicienne de jazz, violoniste, acteur ou actrice de cinéma, artiste ...",
-"siecle": "20e",
-"wikidata": "Q206244",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Stephane_Grappelli_Allan_Warren.jpg/960px-Stephane_Grappelli_Allan_Warren.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Laurent_de_Gouvion-Saint-Cyr.jpg/960px-Laurent_de_Gouvion-Saint-Cyr.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Laurent_Gouvion_Saint_Cyr_05.jpg"
 },
 {
 "tri": "Greffulhe",
@@ -613,7 +608,8 @@
 "description": "Banquier et politicien",
 "siecle": "19e",
 "wikidata": "Q3166123",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cimetière_du_Père_Lachaise_Paris_20ème.jpg"
 },
 {
 "tri": "Grouchy",
@@ -621,10 +617,11 @@
 "lat": 48.8611069,
 "long": 2.3916616,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire, soldat",
+"description": "Personnalité politique, militaire, soldat",
 "siecle": "19e",
 "wikidata": "Q333821",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/4/45/EMMANUEL_DE_GROUCHY%281766-1847%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/45/EMMANUEL_DE_GROUCHY%281766-1847%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_57_-_Grouchy_04.jpg"
 },
 {
 "tri": "Guët",
@@ -635,7 +632,8 @@
 "description": null,
 "siecle": "e",
 "wikidata": "Q21558259",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Georges_Guët_01.jpg"
 },
 {
 "tri": "Géricault",
@@ -643,10 +641,11 @@
 "lat": 48.86096,
 "long": 2.392831,
 "categorie": "Peintre",
-"description": "artiste peintre, artiste graphique, sculpteur ou sculptrice, lithographe, dessinateur ou dessinatrice en bâtiment, dessinateur ou ...",
+"description": "Artiste peintre, artiste graphique, sculpteur, lithographe, dessinateur en bâtiment, dessinateur, artiste visuel visuelle",
 "siecle": "19e",
 "wikidata": "Q184212",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg/960px-Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg/960px-Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Théodore_Géricault_01.jpg"
 },
 {
 "tri": "Hahnemann",
@@ -654,10 +653,11 @@
 "lat": 48.860536,
 "long": 2.39429,
 "categorie": "Scientifique",
-"description": "médecin, homéopathe, pharmacologue, chimiste, pharmacien ou pharmacienne, professeur d'université, bibliothécaire",
+"description": "Médecin, homéopathe, pharmacologue, chimiste, pharmacien, professeur d'université, bibliothécaire",
 "siecle": "19e",
 "wikidata": "Q157056",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samuel_Hahnemann_1841.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samuel_Hahnemann_1841.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_19_-_Hahnemann_01.jpg"
 },
 {
 "tri": "Hersent",
@@ -665,10 +665,11 @@
 "lat": 48.858574,
 "long": 2.39484,
 "categorie": "Peintre",
-"description": "artiste peintre, graveur ou graveuse d'estampes",
+"description": "Artiste peintre, graveur d'estampes",
 "siecle": "19e",
 "wikidata": "Q761853",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Louis_Hersent_-_Self-portrait_1848.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Louis_Hersent_-_Self-portrait_1848.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_32_-_Mauduit_03.jpg"
 },
 {
 "tri": "Hoff",
@@ -676,21 +677,11 @@
 "lat": 48.860889,
 "long": 2.39223,
 "categorie": "Militaire",
-"description": "soldat",
+"description": "Soldat",
 "siecle": "20e",
 "wikidata": "Q3148168",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ignace_Hoff_-_photo_Ferdinand_Mulnier.jpg/960px-Ignace_Hoff_-_photo_Ferdinand_Mulnier.jpg"
-},
-{
-"tri": "Holgado",
-"nom": "Ticky Holgado",
-"lat": 48.861666,
-"long": 2.394526,
-"categorie": "Acteur",
-"description": "secrétaire, acteur ou actrice de cinéma, acteur ou actrice de théâtre",
-"siecle": "21e",
-"wikidata": "Q2121322",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/3/31/Toulouse-Ticky-Holgado-15Fi12113.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ignace_Hoff_-_photo_Ferdinand_Mulnier.jpg/960px-Ignace_Hoff_-_photo_Ferdinand_Mulnier.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_4_-_Hoff_01.jpg"
 },
 {
 "tri": "Itasse",
@@ -698,10 +689,11 @@
 "lat": 48.858459,
 "long": 2.395362,
 "categorie": "Sculpteur",
-"description": "sculpteur ou sculptrice",
+"description": "Sculpteur",
 "siecle": "19e",
 "wikidata": "Q14660072",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/P%C3%A8re-Lachaise_-_Division_31_-_Adolphe_Itasse_08.jpg/960px-P%C3%A8re-Lachaise_-_Division_31_-_Adolphe_Itasse_08.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/P%C3%A8re-Lachaise_-_Division_31_-_Adolphe_Itasse_08.jpg/960px-P%C3%A8re-Lachaise_-_Division_31_-_Adolphe_Itasse_08.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_31_-_Adolphe_Itasse_01.jpg"
 },
 {
 "tri": "Joffrin",
@@ -709,10 +701,11 @@
 "lat": 48.860226,
 "long": 2.39826,
 "categorie": "Politique",
-"description": "personnalité politique, communard",
+"description": "Personnalité politique, communard",
 "siecle": "19e",
 "wikidata": "Q3188690",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jules_Joffrin_by_Marius.png/960px-Jules_Joffrin_by_Marius.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jules_Joffrin_by_Marius.png/960px-Jules_Joffrin_by_Marius.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_95_-_Joffrin_05.jpg"
 },
 {
 "tri": "Jouhaux",
@@ -720,10 +713,11 @@
 "lat": 48.863049,
 "long": 2.397015,
 "categorie": "Politique",
-"description": "syndicaliste",
+"description": "Syndicaliste",
 "siecle": "20e",
 "wikidata": "Q155415",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/c/c9/L%C3%A9on_Jouhaux_nobel.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/c/c9/L%C3%A9on_Jouhaux_nobel.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_88_-_Jouhaux_02.jpg"
 },
 {
 "tri": "Kellermann",
@@ -731,10 +725,11 @@
 "lat": 48.859774,
 "long": 2.394569,
 "categorie": "Politique",
-"description": "personnalité politique, officier, militaire",
+"description": "Personnalité politique, officier, militaire",
 "siecle": "19e",
 "wikidata": "Q138105",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/0/00/G%C3%A9n%C3%A9ral_Fran%C3%A7ois_%C3%89tienne_Kellermann.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/00/G%C3%A9n%C3%A9ral_Fran%C3%A7ois_%C3%89tienne_Kellermann.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_30_-_Kellermann_08.jpg"
 },
 {
 "tri": "Krasucki",
@@ -742,10 +737,11 @@
 "lat": 48.859417,
 "long": 2.399038,
 "categorie": "Politique",
-"description": "personnalité politique, syndicaliste, résistant ou résistante",
+"description": "Personnalité politique, syndicaliste, résistant",
 "siecle": "21e",
 "wikidata": "Q477747",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Henri_Krasucki_1983.jpg/600px-Henri_Krasucki_1983.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Henri_Krasucki_1983.jpg/600px-Henri_Krasucki_1983.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Krasucki_01.jpg"
 },
 {
 "tri": "Lavallée",
@@ -753,10 +749,11 @@
 "lat": 48.860649,
 "long": 2.39532,
 "categorie": "Entrepreneur",
-"description": "personnalité du monde des affaires",
+"description": "Personnalité du monde des affaires",
 "siecle": "19e",
 "wikidata": "Q1327266",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png/600px-Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png/600px-Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_43_-_Lavallée_-_01.jpg"
 },
 {
 "tri": "Daladier",
@@ -764,10 +761,11 @@
 "lat": 48.863538262706115,
 "long": 2.3909474528493586,
 "categorie": "Politique",
-"description": "personnalité politique",
+"description": "Personnalité politique",
 "siecle": "20e",
 "wikidata": "Q213526",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C3%89douard_Daladier.jpg/960px-%C3%89douard_Daladier.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C3%89douard_Daladier.jpg/960px-%C3%89douard_Daladier.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_d'Édouard_Daladier_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Daumier",
@@ -775,10 +773,11 @@
 "lat": 48.8611655,
 "long": 2.3949235,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, scénariste, acteur ou actrice",
+"description": "Actrice de cinéma, actrice de théâtre, scénariste, actrice",
 "siecle": "21e",
 "wikidata": "Q3490902",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a4/SophieDaumier-StudioHarcourt-1959.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a4/SophieDaumier-StudioHarcourt-1959.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Sophie_Daumier_(division_45).JPG"
 },
 {
 "tri": "Daumier",
@@ -786,10 +785,11 @@
 "lat": 48.860875,
 "long": 2.394698,
 "categorie": "Peintre",
-"description": "artiste peintre, dessinateur ou dessinatrice en bâtiment, caricaturiste, sculpteur ou sculptrice, lithographe, orfèvre graveur ou graveuse, ...",
+"description": "Artiste peintre, dessinateur en bâtiment, caricaturiste, sculpteur, lithographe, orfèvre graveur, illustrateur, artiste graphique, artiste ...",
 "siecle": "19e",
 "wikidata": "Q187506",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Honore_Daumier-Nadar.jpg/960px-Honore_Daumier-Nadar.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Honore_Daumier-Nadar.jpg/960px-Honore_Daumier-Nadar.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Honoré_Daumier_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Del Duca",
@@ -797,10 +797,11 @@
 "lat": 48.861525,
 "long": 2.392509,
 "categorie": "Entrepreneur",
-"description": "entrepreneur ou entrepreneuse, éditeur ou éditrice, producteur ou productrice de cinéma, philanthrope",
+"description": "Entrepreneur, éditeur, producteur de cinéma, philanthrope",
 "siecle": "20e",
 "wikidata": "Q1069399",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cino_del_duca.jpg/960px-Cino_del_duca.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cino_del_duca.jpg/960px-Cino_del_duca.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_53_-_Del_Duca_01.jpg"
 },
 {
 "tri": "Desproges",
@@ -808,10 +809,11 @@
 "lat": 48.860056,
 "long": 2.392809,
 "categorie": "Ecrivain",
-"description": "humoriste, journaliste, animateur ou animatrice de radio, publiciste",
+"description": "Humoriste, journaliste, animateur de radio, publiciste",
 "siecle": "20e",
 "wikidata": "Q2196",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pierre_Desproges17.jpg/960px-Pierre_Desproges17.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pierre_Desproges17.jpg/960px-Pierre_Desproges17.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Desproges_(Père_Lachaise).jpg"
 },
 {
 "tri": "Brillat-Savarin",
@@ -819,10 +821,11 @@
 "lat": 48.859774,
 "long": 2.395513,
 "categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, écrivain ou écrivaine, juge, juriste, musicien ou musicienne",
+"description": "Avocat, personnalité politique, écrivain, juge, juriste, musicien",
 "siecle": "19e",
 "wikidata": "Q313027",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/17/Le_Vachez_Collection_-_Jean_Anthelme_Brillat-Savarin_%281755-1826%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/17/Le_Vachez_Collection_-_Jean_Anthelme_Brillat-Savarin_%281755-1826%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_28_-_Brillat-Savarin_01.jpg"
 },
 {
 "tri": "Chamans de Lavalette",
@@ -830,10 +833,11 @@
 "lat": 48.8587457,
 "long": 2.3966952,
 "categorie": "Militaire",
-"description": "personnalité politique, diplomate, militaire",
+"description": "Personnalité politique, diplomate, militaire",
 "siecle": "19e",
 "wikidata": "Q43246365",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_(1769-1830),_greve_och_generalpostdirektör_-_NMB_952_-_Nationalmuseum.jpg"
 },
 {
 "tri": "Courteline",
@@ -841,10 +845,11 @@
 "lat": 48.862329,
 "long": 2.397316,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, journaliste, romancier ou romancière, poète ou poétesse",
+"description": "Écrivain, dramaturge, journaliste, romancier, poètese",
 "siecle": "20e",
 "wikidata": "Q51107",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/960px-Georges_Courteline_1921.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/960px-Georges_Courteline_1921.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_89_-_Courteline_02.jpg"
 },
 {
 "tri": "Musset",
@@ -852,10 +857,11 @@
 "lat": 48.86072,
 "long": 2.391114,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, poète ou poétesse, dramaturge, romancier ou romancière, bibliothécaire, problémiste",
+"description": "Écrivain, poètese, dramaturge, romancier, bibliothécaire, problémiste",
 "siecle": "19e",
 "wikidata": "Q179680",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Alfred_de_musset.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Alfred_de_musset.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Tombe_Musset_2013.jpg"
 },
 {
 "tri": "Nadar",
@@ -863,10 +869,11 @@
 "lat": 48.858983,
 "long": 2.397037,
 "categorie": "Scientifique",
-"description": "photographe, aérostier, dessinateur ou dessinatrice humoristique, caricaturiste, écrivain ou écrivaine, journaliste",
+"description": "Photographe, aérostier, dessinateur humoristique, caricaturiste, écrivain, journaliste",
 "siecle": "20e",
 "wikidata": "Q40116",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg/960px-Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg/960px-Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Nadar_(division_36).JPG"
 },
 {
 "tri": "Popesco",
@@ -874,10 +881,11 @@
 "lat": 48.86319,
 "long": 2.395985,
 "categorie": "Réalisateur",
-"description": "metteur ou metteuse en scène, acteur ou actrice de théâtre, acteur ou actrice de cinéma",
+"description": "Metteuse en scène, actrice de théâtre, actrice de cinéma",
 "siecle": "20e",
 "wikidata": "Q455878",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elvira-Popescu-2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elvira-Popescu-2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_85_-_Popesco_01.jpg"
 },
 {
 "tri": "Topart",
@@ -885,10 +893,11 @@
 "lat": 48.8615364,
 "long": 2.3918726,
 "categorie": "Acteur",
-"description": "acteur ou actrice, acteur ou actrice de doublage",
+"description": "Acteur, acteur de doublage",
 "siecle": "21e",
 "wikidata": "Q2110802",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jean_Topart.jpg/600px-Jean_Topart.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jean_Topart.jpg/600px-Jean_Topart.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_57_-_Topart_02.jpg"
 },
 {
 "tri": "Vivant Denon",
@@ -896,10 +905,11 @@
 "lat": 48.8601567,
 "long": 2.3927356,
 "categorie": "Ecrivain",
-"description": "historien ou historienne de l'art, égyptologue, diplomate, chroniqueur de voyage, dessinateur ou dessinatrice, archéologue, artiste ...",
+"description": "Historien de l'art, égyptologue, diplomate, chroniqueur de voyage, dessinateur, archéologue, artiste peintre, personnalité politique, ...",
 "siecle": "19e",
 "wikidata": "Q468618",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg/960px-Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg/960px-Vivant_Denon_par_Robert_Lef%C3%A8vre_%281809%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perelachaise-VivantDenon-p1000350.jpg"
 },
 {
 "tri": "Macdonald",
@@ -907,10 +917,11 @@
 "lat": 48.8586237,
 "long": 2.396391,
 "categorie": "Politique",
-"description": "personnalité politique, diplomate, officier, militaire",
+"description": "Personnalité politique, diplomate, officier, militaire",
 "siecle": "19e",
 "wikidata": "Q298784",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MacDonald_par_Antoine_Jean_Gros.jpg/960px-MacDonald_par_Antoine_Jean_Gros.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MacDonald_par_Antoine_Jean_Gros.jpg/960px-MacDonald_par_Antoine_Jean_Gros.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_37_-_Macdonald_05.jpg"
 },
 {
 "tri": "Raspail",
@@ -918,10 +929,11 @@
 "lat": 48.860141,
 "long": 2.393904,
 "categorie": "Scientifique",
-"description": "chimiste, biologiste, personnalité politique, botaniste, physiologiste",
+"description": "Chimiste, biologiste, personnalité politique, botaniste, physiologiste",
 "siecle": "19e",
 "wikidata": "Q682230",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_18_-_Raspail_01.jpg"
 },
 {
 "tri": "Gaudin",
@@ -929,10 +941,11 @@
 "lat": 48.86048,
 "long": 2.394376,
 "categorie": "Politique",
-"description": "personnalité politique",
+"description": "Personnalité politique",
 "siecle": "19e",
 "wikidata": "Q708596",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg/960px-Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg/960px-Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_27_-_Gaudin_01.jpg"
 },
 {
 "tri": "Corot",
@@ -940,10 +953,11 @@
 "lat": 48.860903,
 "long": 2.394612,
 "categorie": "Peintre",
-"description": "artiste peintre, photographe, graveur ou graveuse d'estampes, dessinateur ou dessinatrice, dessinateur ou dessinatrice en bâtiment, artiste ...",
+"description": "Artiste peintre, photographe, graveur d'estampes, dessinateur, dessinateur en bâtiment, artiste visuel visuelle",
 "siecle": "19e",
 "wikidata": "Q148475",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jean-Baptiste_Camille_Corot_-_autoportrait.jpg/960px-Jean-Baptiste_Camille_Corot_-_autoportrait.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jean-Baptiste_Camille_Corot_-_autoportrait.jpg/960px-Jean-Baptiste_Camille_Corot_-_autoportrait.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_24_-_Corot_07.jpg"
 },
 {
 "tri": "Bernardin de Saint-Pierre",
@@ -951,10 +965,11 @@
 "lat": 48.860423,
 "long": 2.392917,
 "categorie": "Ecrivain",
-"description": "ingénieur géographe, romancier ou romancière, botaniste, écrivain ou écrivaine",
+"description": "Ingénieur géographe, romancier, botaniste, écrivain",
 "siecle": "19e",
 "wikidata": "Q361976",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg/960px-Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg/960px-Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_11_-_Bernardin_de_Saint-Pierre_02.JPG"
 },
 {
 "tri": "Haussmann",
@@ -962,10 +977,11 @@
 "lat": 48.860748,
 "long": 2.391179,
 "categorie": "Politique",
-"description": "personnalité politique, haut fonctionnaire ou haute fonctionnaire, architecte, urbaniste",
+"description": "Personnalité politique, haut fonctionnaire fonctionnaire, architecte, urbaniste",
 "siecle": "19e",
 "wikidata": "Q191798",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg/960px-Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg/960px-Georges-Eug%C3%A8ne_Haussmann_-_BNF_Gallica.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_4_-_Haussmann_13.jpg"
 },
 {
 "tri": "Apollinaire",
@@ -973,10 +989,11 @@
 "lat": 48.8626557,
 "long": 2.3947199,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, dramaturge, critique d'art, diariste, censeur, conteur ou conteuse, épistolier ou épistolière, ...",
+"description": "Poètese, écrivain, dramaturge, critique d'art, diariste, censeur, conteuruse, épistolier, critique littéraire, dessinateur, acteur de ...",
 "siecle": "20e",
 "wikidata": "Q133855",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guillaume_Apollinaire_1914.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guillaume_Apollinaire_1914.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Guillaume_Apollinaire_(Père_Lachaise).jpg"
 },
 {
 "tri": "Bienvenüe",
@@ -984,10 +1001,11 @@
 "lat": 48.864009,
 "long": 2.394676,
 "categorie": "Scientifique",
-"description": "ingénieur des ponts et chaussées, ingénieur civil, ingénieur, architecte",
+"description": "Ingénieur des ponts, ingénieur civil, ingénieur, architecte",
 "siecle": "20e",
 "wikidata": "Q964297",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bienvenue.jpg/960px-Bienvenue.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bienvenue.jpg/960px-Bienvenue.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Fulgence_Bienvenüe_-_Père_Lachaise_-_2.JPG"
 },
 {
 "tri": "Blanc",
@@ -995,10 +1013,11 @@
 "lat": 48.861779,
 "long": 2.391286,
 "categorie": "Politique",
-"description": "journaliste, personnalité politique, historien ou historienne, écrivain ou écrivaine, rédacteur ou rédactrice en chef",
+"description": "Journaliste, personnalité politique, historien, écrivain, rédacteur en chef",
 "siecle": "19e",
 "wikidata": "Q355112",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Louis_Blanc_by_Carjat_1848.jpg/960px-Louis_Blanc_by_Carjat_1848.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Louis_Blanc_by_Carjat_1848.jpg/960px-Louis_Blanc_by_Carjat_1848.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_67_-_Blanc_01.jpg"
 },
 {
 "tri": "Pineau",
@@ -1006,10 +1025,11 @@
 "lat": 48.859576,
 "long": 2.398882,
 "categorie": "Politique",
-"description": "personnalité politique, diplomate, syndicaliste, auteur ou autrice de littérature pour la jeunesse, économiste, écrivain ou écrivaine",
+"description": "Personnalité politique, diplomate, syndicaliste, auteur de littérature pour la jeunesse, économiste, écrivain",
 "siecle": "20e",
 "wikidata": "Q661825",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Christian_Pineu%2C_Ministro_do_Exterior_da_Fran%C3%A7a..tif/lossy-page1-440px-Christian_Pineu%2C_Ministro_do_Exterior_da_Fran%C3%A7a..tif.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Christian_Pineu%2C_Ministro_do_Exterior_da_Fran%C3%A7a..tif/lossy-page1-440px-Christian_Pineu%2C_Ministro_do_Exterior_da_Fran%C3%A7a..tif.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Pineau_02.jpg"
 },
 {
 "tri": "Pissarro",
@@ -1017,10 +1037,11 @@
 "lat": 48.8591071,
 "long": 2.3914902,
 "categorie": "Peintre",
-"description": "pastelliste, dessinateur ou dessinatrice en bâtiment, lithographe, graveur ou graveuse d'estampes, artiste peintre, artiste graphique",
+"description": "Pastelliste, dessinateur en bâtiment, lithographe, graveur d'estampes, artiste peintre, artiste graphique",
 "siecle": "20e",
 "wikidata": "Q134741",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pissarro-portrait-c1900.jpg/960px-Pissarro-portrait-c1900.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pissarro-portrait-c1900.jpg/960px-Pissarro-portrait-c1900.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Pissaro_01.jpg"
 },
 {
 "tri": "Pleyel",
@@ -1028,10 +1049,11 @@
 "lat": 48.860508,
 "long": 2.393131,
 "categorie": "Entrepreneur",
-"description": "facteur ou factrice de pianos, éditeur musical, compositeur ou compositrice, pianiste",
+"description": "Facteur de pianos, éditeur musical, compositeur, pianiste",
 "siecle": "19e",
 "wikidata": "Q314019",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Pleyel_after_Hardy.jpg/960px-Pleyel_after_Hardy.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Pleyel_after_Hardy.jpg/960px-Pleyel_after_Hardy.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Ignace_Joseph_Pleyel_04.jpg"
 },
 {
 "tri": "Rossini",
@@ -1039,10 +1061,11 @@
 "lat": 48.860706,
 "long": 2.39105,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice",
+"description": "Compositeur",
 "siecle": "19e",
 "wikidata": "Q9726",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Composer_Rossini_G_1865_by_Carjat.jpg/960px-Composer_Rossini_G_1865_by_Carjat.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Composer_Rossini_G_1865_by_Carjat.jpg/960px-Composer_Rossini_G_1865_by_Carjat.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père_Lachaise_Rossini.JPG"
 },
 {
 "tri": "Rothschild",
@@ -1053,18 +1076,8 @@
 "description": null,
 "siecle": "e",
 "wikidata": "Q922667",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png/600px-James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png"
-},
-{
-"tri": "Sans-Gêne",
-"nom": "Madame Sans-Gêne",
-"lat": 48.85904,
-"long": 2.396586,
-"categorie": "Acteur",
-"description": null,
-"siecle": "e",
-"wikidata": "Q3275319",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Madame_Sans-G%C3%AAne.jpg/960px-Madame_Sans-G%C3%AAne.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png/600px-James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Rothschild_01.jpg"
 },
 {
 "tri": "Say",
@@ -1072,10 +1085,11 @@
 "lat": 48.858578,
 "long": 2.396377,
 "categorie": "Scientifique",
-"description": "économiste",
+"description": "Économiste",
 "siecle": "19e",
 "wikidata": "Q3140480",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Horace_Say2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Horace_Say2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_36_-_Say_01.jpg"
 },
 {
 "tri": "Seurat",
@@ -1083,10 +1097,11 @@
 "lat": 48.8623521,
 "long": 2.390531,
 "categorie": "Peintre",
-"description": "artiste peintre, dessinateur ou dessinatrice, dessinateur ou dessinatrice en bâtiment",
+"description": "Artiste peintre, dessinateur, dessinateur en bâtiment",
 "siecle": "19e",
 "wikidata": "Q34013",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Georges_Seurat_1888_%28cropped%29.jpg/960px-Georges_Seurat_1888_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Georges_Seurat_1888_%28cropped%29.jpg/960px-Georges_Seurat_1888_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_66_-_Seurat_01.jpg"
 },
 {
 "tri": "Soulié",
@@ -1094,10 +1109,11 @@
 "lat": 48.8628596,
 "long": 2.392869,
 "categorie": "Ecrivain",
-"description": "romancier ou romancière, journaliste, dramaturge, écrivain ou écrivaine, bibliothécaire",
+"description": "Romancier, journaliste, dramaturge, écrivain, bibliothécaire",
 "siecle": "19e",
 "wikidata": "Q2031275",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Souli%C3%A9%2C_Fr%C3%A9d%C3%A9ric.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Souli%C3%A9%2C_Fr%C3%A9d%C3%A9ric.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_48_-_Soulié_05.jpg"
 },
 {
 "tri": "Suchet",
@@ -1105,10 +1121,11 @@
 "lat": 48.859351,
 "long": 2.396929,
 "categorie": "Militaire",
-"description": "personnalité politique, militaire",
+"description": "Personnalité politique, militaire",
 "siecle": "19e",
 "wikidata": "Q316518",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Gault_-_Le_mar%C3%A9chal_Suchet%2C_duc_d%27Albufera_%281770-1826%29.jpg/600px-Gault_-_Le_mar%C3%A9chal_Suchet%2C_duc_d%27Albufera_%281770-1826%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Gault_-_Le_mar%C3%A9chal_Suchet%2C_duc_d%27Albufera_%281770-1826%29.jpg/600px-Gault_-_Le_mar%C3%A9chal_Suchet%2C_duc_d%27Albufera_%281770-1826%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Louis_Gabriel_Suchet_02.jpg"
 },
 {
 "tri": "Sèze",
@@ -1116,10 +1133,11 @@
 "lat": 48.8614688,
 "long": 2.3925529,
 "categorie": "Politique",
-"description": "personnalité politique, avocat ou avocate, magistrat ou magistrate",
+"description": "Personnalité politique, avocat, magistrat",
 "siecle": "19e",
 "wikidata": "Q1357659",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Raymond-de-Seze.jpg/600px-Raymond-de-Seze.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Raymond-de-Seze.jpg/600px-Raymond-de-Seze.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Raymond_de_Sèze_01.jpg"
 },
 {
 "tri": "Thorez",
@@ -1127,10 +1145,11 @@
 "lat": 48.859943,
 "long": 2.39989,
 "categorie": "Politique",
-"description": "personnalité politique, mineur ou mineuse",
+"description": "Personnalité politique, mineur",
 "siecle": "20e",
 "wikidata": "Q345408",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg/960px-Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg/960px-Maurice_Thorez_-_VIIIe_Congr%C3%A8s_national_du_PCF.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Thorez_02.jpg"
 },
 {
 "tri": "Toscan du Plantier",
@@ -1138,10 +1157,11 @@
 "lat": 48.861214,
 "long": 2.394891,
 "categorie": "Réalisateur",
-"description": "producteur ou productrice de cinéma, producteur délégué ou productrice déléguée",
+"description": "Producteur de cinéma, producteur délégué déléguée",
 "siecle": "21e",
 "wikidata": "Q325453",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/f/fe/DTDP-1982-Venise.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/f/fe/DTDP-1982-Venise.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grave_of_Toscan_du_Plantier.JPG"
 },
 {
 "tri": "Trintignant",
@@ -1149,10 +1169,11 @@
 "lat": 48.861186,
 "long": 2.394912,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"description": "Actrice de cinéma, actrice de théâtre",
 "siecle": "21e",
 "wikidata": "Q235641",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tableau_de_Marie_Trintignant_par_Jean-Loup_Othenin-Girard.jpg/960px-Tableau_de_Marie_Trintignant_par_Jean-Loup_Othenin-Girard.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tableau_de_Marie_Trintignant_par_Jean-Loup_Othenin-Girard.jpg/960px-Tableau_de_Marie_Trintignant_par_Jean-Loup_Othenin-Girard.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père-Lachaise_007.JPG"
 },
 {
 "tri": "Vaillant-Couturier",
@@ -1160,10 +1181,11 @@
 "lat": 48.860141,
 "long": 2.399869,
 "categorie": "Politique",
-"description": "personnalité politique, écrivain ou écrivaine, journaliste",
+"description": "Personnalité politique, écrivain, journaliste",
 "siecle": "20e",
 "wikidata": "Q3372335",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Paul_Vaillant-Couturier_1921.jpg/960px-Paul_Vaillant-Couturier_1921.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Paul_Vaillant-Couturier_1921.jpg/960px-Paul_Vaillant-Couturier_1921.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Paul_Vaillant-Couturier_01.jpg"
 },
 {
 "tri": "Vallès",
@@ -1171,10 +1193,11 @@
 "lat": 48.862287,
 "long": 2.390342,
 "categorie": "Ecrivain",
-"description": "journaliste, écrivain ou écrivaine, romancier ou romancière, autobiographe, communard, personnalité politique, prosateur ou prosatrice",
+"description": "Journaliste, écrivain, romancier, autobiographe, communard, personnalité politique, prosateur",
 "siecle": "19e",
 "wikidata": "Q551597",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jules_Vall%C3%A8s_%282%29.jpg/600px-Jules_Vall%C3%A8s_%282%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jules_Vall%C3%A8s_%282%29.jpg/600px-Jules_Vall%C3%A8s_%282%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_66_-_Jules_Vallès_01.jpg"
 },
 {
 "tri": "Vania Vilers",
@@ -1182,10 +1205,11 @@
 "lat": 48.85994,
 "long": 2.39293,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"description": "Actrice de cinéma, actrice de théâtre",
 "siecle": "21e",
 "wikidata": "Q3554585",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_11_-_Vilers_02.jpg"
 },
 {
 "tri": "Wilde",
@@ -1193,21 +1217,11 @@
 "lat": 48.8618038,
 "long": 2.3979473,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, nouvelliste, journaliste, auteur ou autrice de littérature pour la jeunesse, romancier ou romancière, ...",
+"description": "Poètese, dramaturge, nouvelliste, journaliste, auteur de littérature pour la jeunesse, romancier, écrivain, auteur, prosateur, publiciste, ...",
 "siecle": "20e",
 "wikidata": "Q30875",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg/960px-Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg"
-},
-{
-"tri": "Yves Montand et Simone Signoret",
-"nom": "Yves Montand et Simone Signoret",
-"lat": 48.861892,
-"long": 2.395535,
-"categorie": "Acteur",
-"description": null,
-"siecle": "e",
-"wikidata": "Q106057",
-"pic": null
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg/960px-Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oscar_Wilde_tombe.jpg"
 },
 {
 "tri": "Zavatta",
@@ -1215,10 +1229,11 @@
 "lat": 48.862146,
 "long": 2.396071,
 "categorie": "Acteur",
-"description": "clown, trompettiste, acteur ou actrice, saxophoniste, artiste de cirque, mime, forain ou foraine",
+"description": "Clown, trompettiste, acteur, saxophoniste, artiste de cirque, mime, forain",
 "siecle": "20e",
 "wikidata": "Q340260",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg/960px-Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg/960px-Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Achille_Zavatta's_commemorative_plaque.JPG"
 },
 {
 "tri": "Asturias",
@@ -1226,10 +1241,11 @@
 "lat": 48.8597856,
 "long": 2.3928042,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, écrivain ou écrivaine, diplomate, journaliste, personnalité politique, juriste-poète",
+"description": "Poètese, écrivain, diplomate, journaliste, personnalité politique, juriste-poète",
 "siecle": "20e",
 "wikidata": "Q75603",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Miguel_Angel_Asturias.jpg/960px-Miguel_Angel_Asturias.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Miguel_Angel_Asturias.jpg/960px-Miguel_Angel_Asturias.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asturias_grave.jpg"
 },
 {
 "tri": "Modigliani",
@@ -1237,10 +1253,11 @@
 "lat": 48.8598029,
 "long": 2.3985154,
 "categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, dessinateur ou dessinatrice",
+"description": "Artiste peintre, sculpteur, dessinateur",
 "siecle": "20e",
 "wikidata": "Q120993",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Amedeo_Modigliani_1918_restored.jpg/600px-Amedeo_Modigliani_1918_restored.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Amedeo_Modigliani_1918_restored.jpg/600px-Amedeo_Modigliani_1918_restored.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Modigliani_gravestone.jpg"
 },
 {
 "tri": "Monfort",
@@ -1248,10 +1265,11 @@
 "lat": 48.861242,
 "long": 2.39841,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine",
+"description": "Actrice de cinéma, actrice de théâtre, écrivaine",
 "siecle": "20e",
 "wikidata": "Q3320631",
-"pic": "https://www.chartres-tourisme.com/sites/chartres-tourisme/files/styles/gallery_lightbox/public/content/images/1539874776-909480332.jpg?itok=vz5NqoDz"
+"pic": "https://www.chartres-tourisme.com/sites/chartres-tourisme/files/styles/gallery_lightbox/public/content/images/1539874776-909480332.jpg?itok=vz5NqoDz",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monfort-Jeanne.jpg"
 },
 {
 "tri": "Mouchotte",
@@ -1259,10 +1277,11 @@
 "lat": 48.8631279,
 "long": 2.3912635,
 "categorie": "Militaire",
-"description": "diariste, militaire, aviateur ou aviatrice",
+"description": "Diariste, militaire, aviateur",
 "siecle": "20e",
 "wikidata": "Q3426652",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_69_-_Mouchotte_01.jpg"
 },
 {
 "tri": "Méliès",
@@ -1270,10 +1289,11 @@
 "lat": 48.863331,
 "long": 2.390664,
 "categorie": "Réalisateur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, animateur ou animatrice, monteur ou monteuse, scénariste, prestidigitateur ou ...",
+"description": "Acteur, réalisateur de cinéma, animateur, monteuruse, scénariste, prestidigitateur, cinéaste, producteur de cinéma, directeur de la ...",
 "siecle": "20e",
 "wikidata": "Q152272",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/960px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/960px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Georges_Melies_(cimetière_du_Père_Lachaise).JPG"
 },
 {
 "tri": "Nerval",
@@ -1281,10 +1301,11 @@
 "lat": 48.862739,
 "long": 2.393174,
 "categorie": "Ecrivain",
-"description": "poète ou poétesse, dramaturge, romancier ou romancière, nouvelliste, écrivain ou écrivaine, traducteur ou traductrice, librettiste",
+"description": "Poètese, dramaturge, romancier, nouvelliste, écrivain, traducteur, librettiste",
 "siecle": "19e",
 "wikidata": "Q191305",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/960px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/960px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_49_-_Nerval_01.jpg"
 },
 {
 "tri": "Oberkampf",
@@ -1292,10 +1313,11 @@
 "lat": 48.859689,
 "long": 2.396071,
 "categorie": "Entrepreneur",
-"description": "personnalité du monde des affaires, personnalité politique",
+"description": "Personnalité du monde des affaires, personnalité politique",
 "siecle": "19e",
 "wikidata": "Q74518",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/d/de/Christophe-Philippe_Oberkampf_%281738-1815%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/d/de/Christophe-Philippe_Oberkampf_%281738-1815%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christophe-Philippe_Oberkampf_(1738-1815).jpg"
 },
 {
 "tri": "Panhard",
@@ -1303,10 +1325,11 @@
 "lat": 48.858475,
 "long": 2.395771,
 "categorie": "Entrepreneur",
-"description": "ingénieur, personnalité politique, pilote de course automobile, personnalité du monde des affaires",
+"description": "Ingénieur, personnalité politique, pilote de course automobile, personnalité du monde des affaires",
 "siecle": "20e",
 "wikidata": "Q266561",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WP-Rene_Panhard.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WP-Rene_Panhard.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_36_-_Panhard_01.jpg"
 },
 {
 "tri": "Perrin",
@@ -1314,10 +1337,11 @@
 "lat": 48.859627,
 "long": 2.394392,
 "categorie": "Politique",
-"description": "personnalité politique, militaire",
+"description": "Personnalité politique, militaire",
 "siecle": "19e",
 "wikidata": "Q372750",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Claude-Victor_Perrin.jpg/600px-Claude-Victor_Perrin.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Claude-Victor_Perrin.jpg/600px-Claude-Victor_Perrin.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_17_-_Victor_06.jpg"
 },
 {
 "tri": "Fresnel",
@@ -1325,21 +1349,11 @@
 "lat": 48.8597319,
 "long": 2.3936651,
 "categorie": "Scientifique",
-"description": "physicien ou physicienne, ingénieur civil, ingénieur",
+"description": "Physicien, ingénieur civil, ingénieur",
 "siecle": "19e",
 "wikidata": "Q187241",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg/960px-Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg"
-},
-{
-"tri": "Garnier-Pagès",
-"nom": "Louis-Antoine Garnier-Pagès",
-"lat": 48.859463,
-"long": 2.395062,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "19e",
-"wikidata": "Q601266",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg/960px-Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg/960px-Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1_%28page_6_crop%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_14_-_Fresnel_01.jpg"
 },
 {
 "tri": "Gobert",
@@ -1347,10 +1361,11 @@
 "lat": 48.8588,
 "long": 2.39635,
 "categorie": "Militaire",
-"description": "officier",
+"description": "Officier",
 "siecle": "19e",
 "wikidata": "Q3159659",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg/960px-Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg/960px-Lecl%C3%A8re_-_Monument_fun%C3%A9raire_du_G%C3%A9n%C3%A9ral_Gobert_au_cimeti%C3%A8re_du_P%C3%A8re_Lachaise.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_37_-_Gobert_05.jpg"
 },
 {
 "tri": "Gramme",
@@ -1358,10 +1373,11 @@
 "lat": 48.860833,
 "long": 2.397895,
 "categorie": "Scientifique",
-"description": "physicien ou physicienne, inventeur",
+"description": "Physicien, inventeur",
 "siecle": "20e",
 "wikidata": "Q247603",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/88/Z%C3%A9nobe_Gramme_1893.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/88/Z%C3%A9nobe_Gramme_1893.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zénobe-Théophile_Gramme_(Père_Lachaise).jpg"
 },
 {
 "tri": "Guesde",
@@ -1369,10 +1385,11 @@
 "lat": 48.862541,
 "long": 2.395384,
 "categorie": "Politique",
-"description": "personnalité politique, journaliste, écrivain ou écrivaine",
+"description": "Personnalité politique, journaliste, écrivain",
 "siecle": "20e",
 "wikidata": "Q379699",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jules_Guesde.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jules_Guesde.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_87_-_Columbarium_-_Octobre_2015_-_18.jpg"
 },
 {
 "tri": "David",
@@ -1380,10 +1397,11 @@
 "lat": 48.861355,
 "long": 2.392359,
 "categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, dessinateur ou dessinatrice en bâtiment",
+"description": "Artiste peintre, personnalité politique, dessinateur en bâtiment",
 "siecle": "19e",
 "wikidata": "Q83155",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/960px-David_Self_Portrait.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/960px-David_Self_Portrait.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cimetière_de_Bruxelles_11.jpg"
 },
 {
 "tri": "Alamo",
@@ -1391,10 +1409,11 @@
 "lat": 48.861065,
 "long": 2.39491,
 "categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice de cinéma, industriel ou industrielle",
+"description": "Chanteuruse, acteur de cinéma, industriel ou industrielle",
 "siecle": "21e",
 "wikidata": "Q112324100",
-"pic": "https://i.ytimg.com/vi/Po-Njvz1U_M/hqdefault.jpg"
+"pic": "https://i.ytimg.com/vi/Po-Njvz1U_M/hqdefault.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_25_-_Frank_Alamo_01.jpg"
 },
 {
 "tri": "Piaf",
@@ -1402,10 +1421,11 @@
 "lat": 48.8596833,
 "long": 2.3988939,
 "categorie": "Chanteur",
-"description": "chanteur ou chanteuse, acteur ou actrice, artiste d'enregistrement, chansonnier, artiste de rue, auteur-compositeur ou autrice-compositrice",
+"description": "Chanteuse, actrice, artiste d'enregistrement, chansonnier, artiste de rue, autrice-compositrice",
 "siecle": "20e",
 "wikidata": "Q1631",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Piaf_Harcourt_1946_2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Piaf_Harcourt_1946_2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Piaf_01.jpg"
 },
 {
 "tri": "Planchon",
@@ -1413,10 +1433,11 @@
 "lat": 48.86076,
 "long": 2.3938,
 "categorie": "Réalisateur",
-"description": "scénariste, metteur ou metteuse en scène, acteur ou actrice, réalisateur ou réalisatrice de cinéma, dramaturge, auteur, réalisateur ou ...",
+"description": "Scénariste, metteuruse en scène, acteur, réalisateur de cinéma, dramaturge, auteur, réalisateur",
 "siecle": "21e",
 "wikidata": "Q374912",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg/960px-Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg/960px-Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_22_-_Roger_Planchon_01.jpg"
 },
 {
 "tri": "Poulenc",
@@ -1424,21 +1445,11 @@
 "lat": 48.858758,
 "long": 2.393088,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, pianiste, critique de musique",
+"description": "Compositeur, pianiste, critique de musique",
 "siecle": "20e",
 "wikidata": "Q191408",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francis_Poulenc_and_Wanda_Landowska_%28cropped%29.jpg"
-},
-{
-"tri": "Proust",
-"nom": "Marcel Proust",
-"lat": 48.8630712,
-"long": 2.394975,
-"categorie": "Ecrivain",
-"description": "romancier ou romancière, essayiste, écrivain ou écrivaine, critique littéraire, poète ou poétesse, prosateur ou prosatrice",
-"siecle": "20e",
-"wikidata": "Q7199",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Marcel_Proust_1895.jpg/960px-Marcel_Proust_1895.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francis_Poulenc_and_Wanda_Landowska_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Francis_Poulenc_01.jpg"
 },
 {
 "tri": "Romains",
@@ -1446,10 +1457,11 @@
 "lat": 48.860113,
 "long": 2.390428,
 "categorie": "Ecrivain",
-"description": "dramaturge, écrivain ou écrivaine, poète ou poétesse",
+"description": "Dramaturge, écrivain, poètese",
 "siecle": "20e",
 "wikidata": "Q334983",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jules_Romains-crop.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jules_Romains-crop.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_3_-_Romains_01.jpg"
 },
 {
 "tri": "Salvador",
@@ -1457,10 +1469,11 @@
 "lat": 48.859633,
 "long": 2.398839,
 "categorie": "Chanteur",
-"description": "chanteur ou chanteuse, humoriste, compositeur ou compositrice, animateur ou animatrice de télévision, guitariste de jazz, artiste ...",
+"description": "Chanteuruse, humoriste, compositeur, animateur de télévision, guitariste de jazz, artiste d'enregistrement, ...",
 "siecle": "21e",
 "wikidata": "Q318060",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/3/36/Salvador_Harcourt_1946_2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/3/36/Salvador_Harcourt_1946_2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/HENRI_SALVADOR_PERE_LACHAISE.JPG"
 },
 {
 "tri": "Schœlcher",
@@ -1468,10 +1481,11 @@
 "lat": 48.861412,
 "long": 2.393947,
 "categorie": "Politique",
-"description": "personnalité politique, écrivain ou écrivaine",
+"description": "Personnalité politique, écrivain",
 "siecle": "19e",
 "wikidata": "Q120417",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg/960px-Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg/960px-Victor_Sch%C5%93lcher_par_Henri_Decaisne.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père-Lachaise_013.JPG"
 },
 {
 "tri": "Thiers",
@@ -1479,10 +1493,11 @@
 "lat": 48.861087,
 "long": 2.392895,
 "categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journaliste, historien ou historienne, écrivain ou écrivaine",
+"description": "Avocat, personnalité politique, journaliste, historien, écrivain",
 "siecle": "19e",
 "wikidata": "Q5738",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Adolphe_Thiers_par_Nadar.jpg/960px-Adolphe_Thiers_par_Nadar.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Adolphe_Thiers_par_Nadar.jpg/960px-Adolphe_Thiers_par_Nadar.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_55_-_Thiers_40.jpg"
 },
 {
 "tri": "Verneuil",
@@ -1490,10 +1505,11 @@
 "lat": 48.86367,
 "long": 2.396157,
 "categorie": "Acteur",
-"description": "acteur ou actrice de théâtre, scénariste, dramaturge, réalisateur ou réalisatrice, acteur ou actrice",
+"description": "Acteur de théâtre, scénariste, dramaturge, réalisateur, acteur",
 "siecle": "20e",
 "wikidata": "Q3098317",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg/960px-Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg/960px-Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Louis_Verneuil_(division_84).JPG"
 },
 {
 "tri": "Hugo",
@@ -1501,10 +1517,11 @@
 "lat": 48.85983,
 "long": 2.395406,
 "categorie": "Militaire",
-"description": "officier, militaire",
+"description": "Officier, militaire",
 "siecle": "19e",
 "wikidata": "Q2299673",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg/960px-G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg/960px-G%C3%A9n%C3%A9ral_Joseph-Leopold_Sigisbert_Hugo.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_27_-_Hugo_01.jpg"
 },
 {
 "tri": "Ingres",
@@ -1512,10 +1529,11 @@
 "lat": 48.861412,
 "long": 2.394333,
 "categorie": "Peintre",
-"description": "artiste peintre, personnalité politique, violoniste, dessinateur ou dessinatrice, graveur ou graveuse d'estampes, artiste graphique, ...",
+"description": "Artiste peintre, personnalité politique, violoniste, dessinateur, graveur d'estampes, artiste graphique, architecte, dessinateur en ...",
 "siecle": "19e",
 "wikidata": "Q23380",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ingres%2C_Self-portrait.jpg/960px-Ingres%2C_Self-portrait.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ingres%2C_Self-portrait.jpg/960px-Ingres%2C_Self-portrait.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_23_-_Ingres_03.jpg"
 },
 {
 "tri": "Khorsand",
@@ -1523,10 +1541,11 @@
 "lat": 48.8613527,
 "long": 2.3946884,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"description": "Acteur de cinéma, acteur de théâtre",
 "siecle": "21e",
 "wikidata": "Q2087624",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_23_-_Philippe_Khorsand_01.jpg"
 },
 {
 "tri": "La Fontaine",
@@ -1534,10 +1553,11 @@
 "lat": 48.860565,
 "long": 2.395062,
 "categorie": "Ecrivain",
-"description": "fabuliste, poète ou poétesse, avocat ou avocate, auteur ou autrice de littérature pour la jeunesse, moraliste, écrivain ou écrivaine, ...",
+"description": "Fabuliste, poètese, avocat, auteur de littérature pour la jeunesse, moraliste, écrivain, dramaturge",
 "siecle": "17e",
 "wikidata": "Q49496",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg/960px-Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg/960px-Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_La_Fontaine_(2)_(division_25).JPG"
 },
 {
 "tri": "Lazareff",
@@ -1548,7 +1568,8 @@
 "description": null,
 "siecle": "e",
 "wikidata": "Q1235630",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_la_famille_Lazareff_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Dabadie de Bernet",
@@ -1556,10 +1577,11 @@
 "lat": 48.859051,
 "long": 2.397138,
 "categorie": "Politique",
-"description": "personnalité politique, officier, militaire",
+"description": "Personnalité politique, officier, militaire",
 "siecle": "19e",
 "wikidata": "Q1429885",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean-Melchior_Dabadie_de_Bernet.jpg/600px-Jean-Melchior_Dabadie_de_Bernet.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean-Melchior_Dabadie_de_Bernet.jpg/600px-Jean-Melchior_Dabadie_de_Bernet.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_35_-_Dabadie_01.jpg"
 },
 {
 "tri": "Daudet",
@@ -1567,10 +1589,11 @@
 "lat": 48.860198,
 "long": 2.395277,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, dramaturge, poète ou poétesse, romancier ou romancière, autobiographe, scénariste, prosateur ou prosatrice, ...",
+"description": "Écrivain, dramaturge, poètese, romancier, autobiographe, scénariste, prosateur, nouvelliste",
 "siecle": "19e",
 "wikidata": "Q228546",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Alphonse_Daudet_2.jpg/600px-Alphonse_Daudet_2.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Alphonse_Daudet_2.jpg/600px-Alphonse_Daudet_2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Alphonse_Daudet_(cimetière_du_Père_Lachaise).JPG"
 },
 {
 "tri": "Davout",
@@ -1578,10 +1601,11 @@
 "lat": 48.8589314,
 "long": 2.3964384,
 "categorie": "Militaire",
-"description": "personnalité politique, officier, chef militaire, maréchal",
+"description": "Personnalité politique, officier, chef militaire, maréchal",
 "siecle": "19e",
 "wikidata": "Q158778",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Louis_nicolas_davout.jpg/960px-Louis_nicolas_davout.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Louis_nicolas_davout.jpg/960px-Louis_nicolas_davout.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Davout_Tombeau_Pere_Lachaise.JPG"
 },
 {
 "tri": "Delacroix",
@@ -1589,10 +1613,11 @@
 "lat": 48.862763666467465,
 "long": 2.393266993307617,
 "categorie": "Peintre",
-"description": "artiste peintre, diariste, lithographe, photographe, dessinateur ou dessinatrice, peintre muraliste, dessinateur ou dessinatrice en ...",
+"description": "Artiste peintre, diariste, lithographe, photographe, dessinateur, peintre muraliste, dessinateur en bâtiment, pastelliste, artiste visuel ...",
 "siecle": "19e",
 "wikidata": "Q33477",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg/960px-Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg/960px-Eug%C3%A8ne_Delacroix_-_Portrait_de_l%27artiste_%28ca.1837%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Eugène_Delacroix_01.jpg"
 },
 {
 "tri": "Sieyès",
@@ -1600,10 +1625,11 @@
 "lat": 48.858532,
 "long": 2.395599,
 "categorie": "Politique",
-"description": "personnalité politique, diplomate, sociologue, écrivain ou écrivaine, théoricien ou théoricienne politique, auteur ou autrice de ...",
+"description": "Personnalité politique, diplomate, sociologue, écrivain, théoricien politique, auteur de non-fiction, prêtre catholique de rite romain",
 "siecle": "19e",
 "wikidata": "Q294344",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg/960px-Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg/960px-Emmanuel_Joseph_Siey%C3%A8s%2C_by_Jacques_Louis_David.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_30_-_Siéyès_01.jpg"
 },
 {
 "tri": "Trelliard",
@@ -1611,10 +1637,11 @@
 "lat": 48.8584651,
 "long": 2.3953018,
 "categorie": "Militaire",
-"description": "militaire",
+"description": "Militaire",
 "siecle": "19e",
 "wikidata": "Q2850778",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/93/GralTreillard_%281%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/9/93/GralTreillard_%281%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_31_-_Trelliard_01.jpg"
 },
 {
 "tri": "Bourdieu",
@@ -1622,10 +1649,11 @@
 "lat": 48.859703,
 "long": 2.395651,
 "categorie": "Ecrivain",
-"description": "philosophe, sociologue, anthropologue, écrivain ou écrivaine, photographe, traducteur ou traductrice, chercheur ou chercheuse",
+"description": "Philosophe, sociologue, anthropologue, écrivain, photographe, traducteur, chercheur",
 "siecle": "21e",
 "wikidata": "Q156268",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Pierre_Bourdieu_%281%29.jpg/960px-Pierre_Bourdieu_%281%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Pierre_Bourdieu_%281%29.jpg/960px-Pierre_Bourdieu_%281%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_Bourdieu.JPG"
 },
 {
 "tri": "Brosset",
@@ -1633,10 +1661,11 @@
 "lat": 48.858196,
 "long": 2.395227,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, acteur ou actrice de doublage",
+"description": "Acteur de cinéma, acteur de théâtre, acteur de doublage",
 "siecle": "21e",
 "wikidata": "Q2977082",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Claude_Brosset_en_1989.jpg/960px-Claude_Brosset_en_1989.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Claude_Brosset_en_1989.jpg/960px-Claude_Brosset_en_1989.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_32_-_Claude_Brosset_01.jpg"
 },
 {
 "tri": "Cachin",
@@ -1644,10 +1673,11 @@
 "lat": 48.8599157,
 "long": 2.3998601,
 "categorie": "Politique",
-"description": "personnalité politique, éditeur ou éditrice, professeur d'université",
+"description": "Personnalité politique, éditeur, professeur d'université",
 "siecle": "20e",
 "wikidata": "Q658479",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marcel_Cachin_b_Meurisse_1918.jpg/960px-Marcel_Cachin_b_Meurisse_1918.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marcel_Cachin_b_Meurisse_1918.jpg/960px-Marcel_Cachin_b_Meurisse_1918.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Cachin_01.jpg"
 },
 {
 "tri": "Caron de Beaumarchais",
@@ -1655,10 +1685,11 @@
 "lat": 48.858842,
 "long": 2.396264,
 "categorie": "Musicien",
-"description": "musicien ou musicienne, poète ou poétesse, personnalité du monde des affaires, éditeur ou éditrice, dramaturge, diplomate, financier, ...",
+"description": "Musicien, poètese, personnalité du monde des affaires, éditeur, dramaturge, diplomate, financier, publiciste, marchand d'armes, espion ou ...",
 "siecle": "18e",
 "wikidata": "Q70326",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_28_-_Delarue_de_Beaumarchais_01.jpg"
 },
 {
 "tri": "Chaptal",
@@ -1666,10 +1697,11 @@
 "lat": 48.86192,
 "long": 2.39826,
 "categorie": "Scientifique",
-"description": "chimiste, personnalité politique",
+"description": "Chimiste, personnalité politique",
 "siecle": "19e",
 "wikidata": "Q708011",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg/600px-Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg/600px-Jean-Antoine_Chaptal_%281756-1832%29%2C_comte_de_Chanteloup.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jean-Antoine_Chaptal_-_Père_Lachaise.JPG"
 },
 {
 "tri": "Constant",
@@ -1677,10 +1709,11 @@
 "lat": 48.859096,
 "long": 2.39547,
 "categorie": "Peintre",
-"description": "artiste peintre, biographe, graveur ou graveuse d'estampes",
+"description": "Artiste peintre, biographe, graveur d'estampes",
 "siecle": "20e",
 "wikidata": "Q968357",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg/600px-Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg/600px-Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_du_peintre_Benjamin_CONSTANT_-_Cimetière_Montmartre.JPG"
 },
 {
 "tri": "Cuvier",
@@ -1688,10 +1721,11 @@
 "lat": 48.8599553,
 "long": 2.3920732,
 "categorie": "Scientifique",
-"description": "géologue, paléontologue, personnalité politique, zoologiste, ornithologue, professeur d'université, professeur, biologiste, malacologiste, ...",
+"description": "Géologue, paléontologue, personnalité politique, zoologiste, ornithologue, professeur d'université, professeur, biologiste, malacologiste, ...",
 "siecle": "19e",
 "wikidata": "Q171969",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Georges_Cuvier_3.jpg/960px-Georges_Cuvier_3.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Georges_Cuvier_3.jpg/960px-Georges_Cuvier_3.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_8_-_Cuvier_07.jpg"
 },
 {
 "tri": "Faure",
@@ -1699,10 +1733,11 @@
 "lat": 48.860734,
 "long": 2.391651,
 "categorie": "Politique",
-"description": "personnalité politique",
+"description": "Personnalité politique",
 "siecle": "19e",
 "wikidata": "Q296076",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/President_F%C3%A9lix_Faure_%28cropped%29.jpg/600px-President_F%C3%A9lix_Faure_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/President_F%C3%A9lix_Faure_%28cropped%29.jpg/600px-President_F%C3%A9lix_Faure_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_4_-_Faure_02.jpg"
 },
 {
 "tri": "Ledru-Rollin",
@@ -1710,10 +1745,11 @@
 "lat": 48.860706,
 "long": 2.391565,
 "categorie": "Politique",
-"description": "avocat ou avocate, personnalité politique, journaliste",
+"description": "Avocat, personnalité politique, journaliste",
 "siecle": "19e",
 "wikidata": "Q1382222",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ledru-Rollin.jpg/960px-Ledru-Rollin.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ledru-Rollin.jpg/960px-Ledru-Rollin.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Alexandre_Ledru-Rollin_01.jpg"
 },
 {
 "tri": "Lesseps",
@@ -1721,10 +1757,11 @@
 "lat": 48.8588033,
 "long": 2.3945025,
 "categorie": "Entrepreneur",
-"description": "diplomate, entrepreneur ou entrepreneuse, écrivain ou écrivaine",
+"description": "Diplomate, entrepreneur, écrivain",
 "siecle": "19e",
 "wikidata": "Q209169",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg/960px-Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg/960px-Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_6_-_Lesseps_02.jpg"
 },
 {
 "tri": "Marceau",
@@ -1732,10 +1769,11 @@
 "lat": 48.860879,
 "long": 2.393314,
 "categorie": "Acteur",
-"description": "mime, acteur ou actrice, clown, artiste de cirque, résistant ou résistante, artiste peintre, lithographe, acteur ou actrice de cinéma, ...",
+"description": "Mime, acteur, clown, artiste de cirque, résistant, artiste peintre, lithographe, acteur de cinéma, artiste visuel visuelle, humoriste",
 "siecle": "21e",
 "wikidata": "Q157191",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marcel_Marceau_-_1971.jpg/600px-Marcel_Marceau_-_1971.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marcel_Marceau_-_1971.jpg/600px-Marcel_Marceau_-_1971.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_21_-_Marceau_07.jpg"
 },
 {
 "tri": "Merleau-Ponty",
@@ -1743,21 +1781,11 @@
 "lat": 48.862287,
 "long": 2.393196,
 "categorie": "Ecrivain",
-"description": "philosophe, professeur, théoricien ou théoricienne de l'art, philosophe de l'esthétique",
+"description": "Philosophe, professeur, théoricien de l'art, philosophe de l'esthétique",
 "siecle": "20e",
 "wikidata": "Q212639",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maurice_Merleau-Ponty.jpg"
-},
-{
-"tri": "Scribe",
-"nom": "Eugène Scribe",
-"lat": 48.859365,
-"long": 2.397187,
-"categorie": "Ecrivain",
-"description": "dramaturge, librettiste, écrivain ou écrivaine, compositeur ou compositrice, romancier ou romancière",
-"siecle": "19e",
-"wikidata": "Q319261",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eug%C3%A8ne_Scribe_par_Nadar.png/960px-Eug%C3%A8ne_Scribe_par_Nadar.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maurice_Merleau-Ponty.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Merleau-Ponty's_grave.jpeg"
 },
 {
 "tri": "Jolly",
@@ -1765,10 +1793,11 @@
 "lat": 48.86053348548295,
 "long": 2.3952934089497635,
 "categorie": "Acteur",
-"description": "acteur ou actrice, humoriste, avocat ou avocate, acteur ou actrice de cinéma, acteur ou actrice de théâtre",
+"description": "Actrice, humoriste, avocate, actrice de cinéma, actrice de théâtre",
 "siecle": "21e",
 "wikidata": "Q3507343",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/0/09/SylvieJoly-StudioHarcourt-1988.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/09/SylvieJoly-StudioHarcourt-1988.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_25_-_Joly_08.jpg"
 },
 {
 "tri": "Ogier",
@@ -1776,10 +1805,11 @@
 "lat": 48.86178531605534,
 "long": 2.393403671980956,
 "categorie": "Acteur",
-"description": "acteur ou actrice, scénariste, acteur ou actrice de cinéma, costumier ou costumière",
+"description": "Actrice, scénariste, actrice de cinéma, costumière",
 "siecle": "20e",
 "wikidata": "Q446055",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Pascale_Ogier_%28cropped%29.jpg/500px-Pascale_Ogier_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Pascale_Ogier_%28cropped%29.jpg/500px-Pascale_Ogier_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_52_-_Ogier_01.jpg"
 },
 {
 "tri": "Pascal",
@@ -1787,10 +1817,23 @@
 "lat": 48.85974384960216,
 "long": 2.391625857627751,
 "categorie": "Acteur",
-"description": "acteur ou actrice, réalisateur ou réalisatrice de cinéma, scénariste, acteur ou actrice de cinéma, réalisateur ou réalisatrice",
+"description": "Actrice, réalisatrice de cinéma, scénariste, actrice de cinéma, réalisatrice",
 "siecle": "20e",
 "wikidata": "Q451637",
-"pic": "https://geneacdn.net/bundles/geneanetgeneastar/images/celebrites/200px/pascalchris.jpg"
+"pic": "https://geneacdn.net/bundles/geneanetgeneastar/images/celebrites/200px/pascalchris.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_8_-_Pascal_01.jpg"
+},
+{
+"tri": "Sans-Gêne",
+"nom": "Madame Sans-Gêne",
+"lat": 48.85904,
+"long": 2.396586,
+"categorie": "Acteur",
+"description": null,
+"siecle": "e",
+"wikidata": "Q3275319",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Madame_Sans-G%C3%AAne.jpg/960px-Madame_Sans-G%C3%AAne.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madame_Sans-Gene_(SAYRE_14792).jpg"
 },
 {
 "tri": "Roussel",
@@ -1798,197 +1841,35 @@
 "lat": 48.86198026385854,
 "long": 2.3984502454768672,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, pianiste, poète ou poétesse, dramaturge, joueur ou joueuse d'échecs, musicien ou musicienne",
+"description": "Écrivain, pianiste, poètese, dramaturge, joueur d'échecs, musicien",
 "siecle": "20e",
 "wikidata": "Q462662",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Roussel_19ans.JPG/600px-Roussel_19ans.JPG"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Roussel_19ans.JPG/600px-Roussel_19ans.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_89_-_Raymond_Roussel_01.jpg"
 },
 {
-"tri": "Cristiani",
-"nom": "Hervé Cristiani",
-"lat": 48.85939243981312,
-"long": 2.3939027346403896,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, compositeur ou compositrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste ...",
-"siecle": "21e",
-"wikidata": "Q3134460",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG/500px-Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG"
-},
-{
-"tri": "Callas",
-"nom": "Maria Callas",
-"lat": 48.86260878415607,
-"long": 2.3959194332140235,
-"categorie": "Chanteur",
-"description": "cantatrice grecque (1923-1977)",
-"siecle": "20e",
-"wikidata": "Q128297",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Maria_Callas_1958.jpg/960px-Maria_Callas_1958.jpg"
-},
-{
-"tri": "Brazza",
-"nom": "Brazza",
-"lat": 48.85871517483853,
-"long": 2.3967051534718364,
-"categorie": "Autres",
-"description": "explorateur ou exploratrice, colon, collectionneur ou collectionneuse de plantes",
-"siecle": "20e",
-"wikidata": "Q319834",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/18/Pierre_Savorgnan_de_Brazza_by_Paul_Nadar.jpg"
-},
-{
-"tri": "Legrand",
-"nom": "Michel Legrand",
-"lat": 48.86196596242055,
-"long": 2.3955547628821834,
-"categorie": "Musicien",
-"description": "chef ou cheffe d'orchestre ou de chœur, compositeur ou compositrice, acteur ou actrice, chanteur ou chanteuse, pianiste, arrangeur musical, ...",
-"siecle": "21e",
-"wikidata": "Q313281",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michel_Legrand_Cabourg_2015.jpg"
-},
-{
-"tri": "Balzac",
-"nom": "Honoré de Balzac",
-"lat": 48.8627718,
-"long": 2.3931199,
-"categorie": "Ecrivain",
-"description": "romancier ou romancière, critique littéraire, écrivain ou écrivaine, prosateur ou prosatrice, journaliste, critique d'art, essayiste, ...",
-"siecle": "19e",
-"wikidata": "Q9711",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Honor%C3%A9_de_Balzac_%281842%29_detail.jpg"
-},
-{
-"tri": "Chabrol",
-"nom": "Claude Chabrol",
-"lat": 48.860558,
-"long": 2.392547,
-"categorie": "Réalisateur",
-"description": "acteur ou actrice de cinéma, scénariste de cinéma, critique de cinéma, réalisateur ou réalisatrice, producteur ou productrice artistique",
-"siecle": "21e",
-"wikidata": "Q55375",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/6/65/Chabrol-italie-1985.png"
-},
-{
-"tri": "Comte",
-"nom": "Auguste Comte",
-"lat": 48.8597855,
-"long": 2.3942322,
-"categorie": "Scientifique",
-"description": "philosophe, sociologue, mathématicien ou mathématicienne, écrivain ou écrivaine, répétiteur ou répétitrice",
-"siecle": "19e",
-"wikidata": "Q12718",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg/960px-Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg"
-},
-{
-"tri": "Lebrun",
-"nom": "Charles-François Lebrun",
-"lat": 48.859181,
-"long": 2.39356,
+"tri": "Garnier-Pagès",
+"nom": "Louis-Antoine Garnier-Pagès",
+"lat": 48.859463,
+"long": 2.395062,
 "categorie": "Politique",
-"description": "personnalité politique, linguiste, traducteur ou traductrice, juriste, financier",
+"description": "Personnalité politique",
 "siecle": "19e",
-"wikidata": "Q707712",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg/960px-Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg"
+"wikidata": "Q601266",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg/960px-Garnier-Pages%2C_Louis-Antoine%2C_Reutlinger%2C_BNF_Gallica.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_19_-_Garnier-Pagès_04.jpg"
 },
 {
-"tri": "Monge",
-"nom": "Gaspard Monge",
-"lat": 48.860212,
-"long": 2.393603,
-"categorie": "Scientifique",
-"description": "mathématicien ou mathématicienne, personnalité politique, physicien ou physicienne, professeur d'université, ingénieur, chimiste, chargé de ...",
+"tri": "Scribe",
+"nom": "Eugène Scribe",
+"lat": 48.859365,
+"long": 2.397187,
+"categorie": "Ecrivain",
+"description": "Dramaturge, librettiste, écrivain, compositeur, romancier",
 "siecle": "19e",
-"wikidata": "Q206832",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg"
-},
-{
-"tri": "Alain",
-"nom": "Alain",
-"lat": 48.861016,
-"long": 2.399096,
-"categorie": "Ecrivain",
-"description": "philosophe, écrivain ou écrivaine, journaliste, enseignant ou enseignante",
-"siecle": "20e",
-"wikidata": "Q275003",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg"
-},
-{
-"tri": "Delpech",
-"nom": "Michel Delpech",
-"lat": 48.862215703714625,
-"long": 2.3939962973258826,
-"categorie": "Chanteur",
-"description": "chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, acteur ou actrice de cinéma, compositeur de ...",
-"siecle": "21e",
-"wikidata": "Q972386",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Delpech-1970-Italie-colorise.jpg"
-},
-{
-"tri": "Caillaux",
-"nom": "Joseph Caillaux",
-"lat": 48.86253995905876,
-"long": 2.392534709757924,
-"categorie": "Politique",
-"description": "personnalité politique",
-"siecle": "20e",
-"wikidata": "Q450463",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg/500px-%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg"
-},
-{
-"tri": "Michel Blanc",
-"nom": "Michel Blanc",
-"lat": 48.862319811839875,
-"long": 2.3934069379310206,
-"categorie": "Acteur",
-"description": "scénariste, acteur ou actrice, acteur ou actrice de cinéma, acteur ou actrice de télévision, réalisateur ou réalisatrice, réalisateur ou ...",
-"siecle": "21e",
-"wikidata": "Q1398256",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/2/27/Michel_Blanc_2009.jpg"
-},
-{
-"tri": "Perec",
-"nom": "Georges Perec",
-"lat": 48.86252251721545,
-"long": 2.3961831147077786,
-"categorie": "Ecrivain",
-"description": "réalisateur ou réalisatrice de cinéma, poète ou poétesse, romancier ou romancière, essayiste, critique littéraire, verbicruciste, ...",
-"siecle": "20e",
-"wikidata": "Q157303",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/7/76/Myart_georges-perec_1978.jpg"
-},
-{
-"tri": "Radiguet",
-"nom": "Raymond Radiguet",
-"lat": 48.86206038208127,
-"long": 2.3917068370405796,
-"categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, journaliste, poète ou poétesse, romancier ou romancière",
-"siecle": "21e",
-"wikidata": "Q333615",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/3/32/Raymond_Radiguet.jpg"
-},
-{
-"tri": "Doris",
-"nom": "Pierre Doris",
-"lat": 48.86199688398224,
-"long": 2.391093939722256,
-"categorie": "Acteur",
-"description": "chansonnier, acteur ou actrice, acteur ou actrice de télévision",
-"siecle": "21e",
-"wikidata": "Q2015052",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/PierreDoris-1939-Harcourt.png/500px-PierreDoris-1939-Harcourt.png"
-},
-{
-"tri": "Audin",
-"nom": "Maurice Audin",
-"lat": 48.86350929025466,
-"long": 2.397271805297125,
-"categorie": "Autres",
-"description": "mathématicien ou mathématicienne, militant ou militante politique",
-"siecle": "20e",
-"wikidata": "Q3182348",
-"pic": "https://img.lemde.fr/2018/09/13/0/0/2853/2400/1112/0/75/0/150f046_d2_-rKzFq2i91rF1AHH_U1N0.jpg"
+"wikidata": "Q319261",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eug%C3%A8ne_Scribe_par_Nadar.png/960px-Eug%C3%A8ne_Scribe_par_Nadar.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eugene_Scribe_grave.jpg"
 },
 {
 "tri": "Percy",
@@ -1996,10 +1877,215 @@
 "lat": 48.86039536280218,
 "long": 2.393959567069695,
 "categorie": "Militaire",
-"description": "médecin, personnalité politique",
+"description": "Médecin, personnalité politique",
 "siecle": "19e",
 "wikidata": "Q1270800",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pierre-Fran%C3%A7ois_Percy.jpg/600px-Pierre-Fran%C3%A7ois_Percy.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pierre-Fran%C3%A7ois_Percy.jpg/600px-Pierre-Fran%C3%A7ois_Percy.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_18_-_Percy_01.jpg"
+},
+{
+"tri": "Cristiani",
+"nom": "Hervé Cristiani",
+"lat": 48.85939243981312,
+"long": 2.3939027346403896,
+"categorie": "Chanteur",
+"description": "Chanteuruse, compositeur, auteur-compositeur-interprète-compositrice-interprète, artiste d'enregistrement",
+"siecle": "21e",
+"wikidata": "Q3134460",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG/500px-Herv%C3%A9_Cristiani_-_Juan-les-Pins.JPG",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_16_-_Christiani_03.jpg"
+},
+{
+"tri": "Callas",
+"nom": "Maria Callas",
+"lat": 48.86260878415607,
+"long": 2.3959194332140235,
+"categorie": "Chanteur",
+"description": "Cantatrice grecque (1923-1977)",
+"siecle": "20e",
+"wikidata": "Q128297",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Maria_Callas_1958.jpg/960px-Maria_Callas_1958.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grave_callas_pere_lachaise.jpg"
+},
+{
+"tri": "Brazza",
+"nom": "Brazza",
+"lat": 48.85871517483853,
+"long": 2.3967051534718364,
+"categorie": "Autres",
+"description": "Explorateur, colon, collectionneur de plantes",
+"siecle": "20e",
+"wikidata": "Q319834",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/18/Pierre_Savorgnan_de_Brazza_by_Paul_Nadar.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_36_-_Esnée_06.jpg"
+},
+{
+"tri": "Legrand",
+"nom": "Michel Legrand",
+"lat": 48.86196596242055,
+"long": 2.3955547628821834,
+"categorie": "Musicien",
+"description": "Chef ou cheffe d'orchestre ou de chœur, compositeur, acteur, chanteuruse, pianiste, arrangeur musical, musicien de jazz, scénariste, ...",
+"siecle": "21e",
+"wikidata": "Q313281",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michel_Legrand_Cabourg_2015.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_44_-_Legrand_05.jpg"
+},
+{
+"tri": "Balzac",
+"nom": "Honoré de Balzac",
+"lat": 48.8627718,
+"long": 2.3931199,
+"categorie": "Ecrivain",
+"description": "Romancier, critique littéraire, écrivain, prosateur, journaliste, critique d'art, essayiste, dramaturge, éditeur",
+"siecle": "19e",
+"wikidata": "Q9711",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Honor%C3%A9_de_Balzac_%281842%29_detail.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_48_-_Balzac_03.jpg"
+},
+{
+"tri": "Chabrol",
+"nom": "Claude Chabrol",
+"lat": 48.860558,
+"long": 2.392547,
+"categorie": "Réalisateur",
+"description": "Acteur de cinéma, scénariste de cinéma, critique de cinéma, réalisateur, producteur artistique",
+"siecle": "21e",
+"wikidata": "Q55375",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/6/65/Chabrol-italie-1985.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_Chabrol_tombe.jpg"
+},
+{
+"tri": "Comte",
+"nom": "Auguste Comte",
+"lat": 48.8597855,
+"long": 2.3942322,
+"categorie": "Scientifique",
+"description": "Philosophe, sociologue, mathématicien, écrivain, répétiteur",
+"siecle": "19e",
+"wikidata": "Q12718",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg/960px-Portrait_dAuguste_Comte_%28maison_dA._Comte%2C_Paris%29_%282424895050%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yehoshua_Ellis.jpg"
+},
+{
+"tri": "Lebrun",
+"nom": "Charles-François Lebrun",
+"lat": 48.859181,
+"long": 2.39356,
+"categorie": "Politique",
+"description": "Personnalité politique, linguiste, traducteur, juriste, financier",
+"siecle": "19e",
+"wikidata": "Q707712",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg/960px-Charles_Fran%C3%A7ois_Lebrun_prince_architr%C3%A9sorier_de_l%27Empire.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_5_-_Lebrun_01.jpg"
+},
+{
+"tri": "Monge",
+"nom": "Gaspard Monge",
+"lat": 48.860212,
+"long": 2.393603,
+"categorie": "Scientifique",
+"description": "Mathématicien, personnalité politique, physicien, professeur d'université, ingénieur, chimiste, chargé de mission, enseignantignante",
+"siecle": "19e",
+"wikidata": "Q206832",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaspard_monge_litho_delpech.jpg"
+},
+{
+"tri": "Alain",
+"nom": "Alain",
+"lat": 48.861016,
+"long": 2.399096,
+"categorie": "Ecrivain",
+"description": "Philosophe, écrivain, journaliste, enseignantignante",
+"siecle": "20e",
+"wikidata": "Q275003",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_94_-_Alain_01.jpg"
+},
+{
+"tri": "Delpech",
+"nom": "Michel Delpech",
+"lat": 48.862215703714625,
+"long": 2.3939962973258826,
+"categorie": "Chanteur",
+"description": "Chanteuruse, auteur-compositeur-interprète-compositrice-interprète, acteur de cinéma, compositeur de musique de film, écrivain, artiste ...",
+"siecle": "21e",
+"wikidata": "Q972386",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Delpech-1970-Italie-colorise.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_49_-_Delpech_10.jpg"
+},
+{
+"tri": "Caillaux",
+"nom": "Joseph Caillaux",
+"lat": 48.86253995905876,
+"long": 2.392534709757924,
+"categorie": "Politique",
+"description": "Personnalité politique",
+"siecle": "20e",
+"wikidata": "Q450463",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg/500px-%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_54_-_Caillaux_02.jpg"
+},
+{
+"tri": "Michel Blanc",
+"nom": "Michel Blanc",
+"lat": 48.862319811839875,
+"long": 2.3934069379310206,
+"categorie": "Acteur",
+"description": "Scénariste, acteur, acteur de cinéma, acteur de télévision, réalisateur, réalisateur de cinéma",
+"siecle": "21e",
+"wikidata": "Q1398256",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/2/27/Michel_Blanc_2009.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_Blanc_tombe.jpg"
+},
+{
+"tri": "Perec",
+"nom": "Georges Perec",
+"lat": 48.86252251721545,
+"long": 2.3961831147077786,
+"categorie": "Ecrivain",
+"description": "Réalisateur de cinéma, poètese, romancier, essayiste, critique littéraire, verbicruciste, documentaliste, scénariste de cinéma, écrivain, ...",
+"siecle": "20e",
+"wikidata": "Q157303",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/76/Myart_georges-perec_1978.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_87_-_Perec_01.jpg"
+},
+{
+"tri": "Radiguet",
+"nom": "Raymond Radiguet",
+"lat": 48.86206038208127,
+"long": 2.3917068370405796,
+"categorie": "Ecrivain",
+"description": "Écrivain, journaliste, poètese, romancier",
+"siecle": "21e",
+"wikidata": "Q333615",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/3/32/Raymond_Radiguet.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_56_-_Radiguet_02.jpg"
+},
+{
+"tri": "Doris",
+"nom": "Pierre Doris",
+"lat": 48.86199688398224,
+"long": 2.391093939722256,
+"categorie": "Acteur",
+"description": "Chansonnier, acteur, acteur de télévision",
+"siecle": "21e",
+"wikidata": "Q2015052",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/PierreDoris-1939-Harcourt.png/500px-PierreDoris-1939-Harcourt.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_67_-_Doris_01.jpg"
+},
+{
+"tri": "Audin",
+"nom": "Maurice Audin",
+"lat": 48.86350929025466,
+"long": 2.397271805297125,
+"categorie": "Autres",
+"description": "Mathématicien, militant politique",
+"siecle": "20e",
+"wikidata": "Q3182348",
+"pic": "https://img.lemde.fr/2018/09/13/0/0/2853/2400/1112/0/75/0/150f046_d2_-rKzFq2i91rF1AHH_U1N0.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_76_-_Audin_01.jpg"
 },
 {
 "tri": "Larrey",
@@ -2007,10 +2093,11 @@
 "lat": 48.85890573526013,
 "long": 2.3965813456640856,
 "categorie": "Militaire",
-"description": "médecin militaire, chirurgien ou chirurgienne",
+"description": "Médecin militaire, chirurgien",
 "siecle": "19e",
 "wikidata": "Q468413",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg/560px-Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg/560px-Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_37_-_Larrey_03.jpg"
 },
 {
 "tri": "Foy",
@@ -2018,10 +2105,11 @@
 "lat": 48.859096,
 "long": 2.395577,
 "categorie": "Politique",
-"description": "personnalité politique, officier",
+"description": "Personnalité politique, officier",
 "siecle": "19e",
 "wikidata": "Q633498",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg/960px-Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg/960px-Pierre_Roch_Vigneron_-_Portrait_du_g%C3%A9n%C3%A9ral_Foy_%281775-1825%29_-_P763_-_Mus%C3%A9e_Carnavalet.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perelachaise-Foy-p1000367.jpg"
 },
 {
 "tri": "Dac",
@@ -2029,10 +2117,11 @@
 "lat": 48.862767,
 "long": 2.396243,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, acteur ou actrice de théâtre, écrivain ou écrivaine, humoriste, chansonnier, résistant ou résistante",
+"description": "Acteur de cinéma, acteur de théâtre, écrivain, humoriste, chansonnier, résistant",
 "siecle": "20e",
 "wikidata": "Q165910",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dac-1947-Colorise.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dac-1947-Colorise.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Dac_-_commemorative_plaque.JPG"
 },
 {
 "tri": "Laforêt",
@@ -2043,7 +2132,8 @@
 "description": "Chanteuse",
 "siecle": "21e",
 "wikidata": "Q239807",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lafor%C3%AAt2_%28cropped%29.jpg/960px-Lafor%C3%AAt2_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lafor%C3%AAt2_%28cropped%29.jpg/960px-Lafor%C3%AAt2_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_49_-_Laforêt_01.jpg"
 },
 {
 "tri": "Brasseur",
@@ -2051,10 +2141,11 @@
 "lat": 48.860853361815224,
 "long": 2.389257963298601,
 "categorie": "Acteur",
-"description": "pilote de course automobile, acteur ou actrice de théâtre, acteur ou actrice de cinéma, bobeur ou bobeuse, acteur ou actrice de télévision, ...",
+"description": "Pilote de course automobile, acteur de théâtre, acteur de cinéma, bobeur, acteur de télévision, acteur",
 "siecle": "21e",
 "wikidata": "Q106544",
-"pic": "https://fr.wikipedia.org/wiki/Claude_Brasseur#/media/Fichier:ClaudeBrasseur-1965-StudioHarcourt.png"
+"pic": "https://fr.wikipedia.org/wiki/Claude_Brasseur#/media/Fichier:ClaudeBrasseur-1965-StudioHarcourt.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_et_Claude_Brasseur_tombe.jpg"
 },
 {
 "tri": "Lachambeaudie",
@@ -2062,10 +2153,11 @@
 "lat": 48.86291386597095,
 "long": 2.3930149221792107,
 "categorie": "Ecrivain",
-"description": "chansonnier, poète ou poétesse, écrivain ou écrivaine, goguettier, enseignant ou enseignante",
+"description": "Chansonnier, poètese, écrivain, goguettier, enseignantignante",
 "siecle": "19e",
 "wikidata": "Q1346280",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg/960px-Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg/960px-Mus%C3%A9e_d%27art_et_d%27arch%C3%A9ologie_du_P%C3%A9rigord_-_Philippe_F%C3%A9lix_Dupuis_-_Portrait_de_Pierre_Lachambeaudie.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_48_-_Lachambeaudie_01.jpg"
 },
 {
 "tri": "Parmentier",
@@ -2073,10 +2165,11 @@
 "lat": 48.860141,
 "long": 2.395492,
 "categorie": "Scientifique",
-"description": "botaniste, pharmacien ou pharmacienne, agronome, diététicien ou diététicienne, censeur royal, inspecteur général des armées",
+"description": "Botaniste, pharmacien, agronome, diététicien, censeur royal, inspecteur général des armées",
 "siecle": "19e",
 "wikidata": "Q360312",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg/960px-Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg/960px-Antoine-Auguste_Parmentier_%281737-1813%29%2C_agronome_et_philanthrope.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_39_-_Parmentier_01.jpg"
 },
 {
 "tri": "Cherubini",
@@ -2084,10 +2177,11 @@
 "lat": 48.8601705,
 "long": 2.3927894,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, chef ou cheffe d'orchestre ou de chœur, musicologue, professeur ou professeure de musique, théoricien ou ...",
+"description": "Compositeur, chef ou cheffe d'orchestre ou de chœur, musicologue, professeurure de musique, théoricien de la musique",
 "siecle": "19e",
 "wikidata": "Q20721",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Luigi_Cherubini_-_Google_Art_Project.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_11_-_Cherubini_04.jpg"
 },
 {
 "tri": "Ernst",
@@ -2095,10 +2189,11 @@
 "lat": 48.8622181,
 "long": 2.3963152,
 "categorie": "Peintre",
-"description": "artiste peintre, sculpteur ou sculptrice, poète ou poétesse, artiste graphique, lithographe, collagiste, designer ou designeuse, créateur ...",
+"description": "Artiste peintre, sculpteur, poètese, artiste graphique, lithographe, collagiste, designer, créateur de bijoux, orfèvre graveur, psychiatre, ...",
 "siecle": "20e",
 "wikidata": "Q154842",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/960px-Max_Ernst_1968.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/960px-Max_Ernst_1968.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_87_-_Max_Ernst_01.jpg"
 },
 {
 "tri": "Patachou",
@@ -2106,10 +2201,11 @@
 "lat": 48.86001001374767,
 "long": 2.3895146491990533,
 "categorie": "Chanteur",
-"description": "chanteuse et actrice française",
+"description": "Actrice française",
 "siecle": "21e",
 "wikidata": "Q290345",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Patachou_%281961%29.jpg/960px-Patachou_%281961%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Patachou_%281961%29.jpg/960px-Patachou_%281961%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_2_-_Patachou_03.jpg"
 },
 {
 "tri": "Crespin",
@@ -2117,10 +2213,11 @@
 "lat": 48.86253661708963,
 "long": 2.3957061057191065,
 "categorie": "Chanteur",
-"description": "artiste lyrique, autobiographe",
+"description": "Artiste lyrique, autobiographe",
 "siecle": "21e",
 "wikidata": "Q290464",
-"pic": "https://medicitv.imgix.net/artist/regine-crespin.jpg?ixlib=vue-2.9.1&auto=format&q=85&width=248&height=248&fit=crop&crop=faces%2Ccenter&mask=ellipse"
+"pic": "https://medicitv.imgix.net/artist/regine-crespin.jpg?ixlib=vue-2.9.1&auto=format&q=85&width=248&height=248&fit=crop&crop=faces%2Ccenter&mask=ellipse",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_87_-_Columbarium_40499.jpg"
 },
 {
 "tri": "Savary",
@@ -2128,10 +2225,11 @@
 "lat": 48.86253661708963,
 "long": 2.3957061057191065,
 "categorie": "Réalisateur",
-"description": "acteur ou actrice, metteur ou metteuse en scène, dramaturge, réalisateur ou réalisatrice de cinéma, trompettiste, scénariste, réalisateur ...",
+"description": "Acteur, metteuruse en scène, dramaturge, réalisateur de cinéma, trompettiste, scénariste, réalisateur",
 "siecle": "21e",
 "wikidata": "Q1367105",
-"pic": null
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jérôme_Savary_tombe.jpg"
 },
 {
 "tri": "Guattari",
@@ -2139,10 +2237,11 @@
 "lat": 48.86068938258388,
 "long": 2.395635679260878,
 "categorie": "Ecrivain",
-"description": "psychiatre, philosophe, psychanalyste, psychologue, marxiste",
+"description": "Psychiatre, philosophe, psychanalyste, psychologue, marxiste",
 "siecle": "20e",
 "wikidata": "Q352465",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%83%95%E3%82%A7%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%AC%E3%82%BF%E3%83%AA.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%83%95%E3%82%A7%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%AC%E3%82%BF%E3%83%AA.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_42_-_Guattari_02.jpg"
 },
 {
 "tri": "Visconti",
@@ -2150,10 +2249,11 @@
 "lat": 48.860649,
 "long": 2.390878,
 "categorie": "Autres",
-"description": "architecte",
+"description": "Architecte",
 "siecle": "19e",
 "wikidata": "Q794916",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg/960px-Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg/960px-Louis_Visconti_by_Th%C3%A9ophile_Vauchelet.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Tombe_L._Visconti_2013b.jpg"
 },
 {
 "tri": "Nohain",
@@ -2161,10 +2261,11 @@
 "lat": 48.862089,
 "long": 2.39738,
 "categorie": "Ecrivain",
-"description": "écrivain ou écrivaine, parolier ou parolière, auteur-compositeur ou autrice-compositrice, auteur ou autrice de littérature pour la ...",
+"description": "Écrivain, parolier, auteur-compositeur-compositrice, auteur de littérature pour la jeunesse, scénariste",
 "siecle": "20e",
 "wikidata": "Q963719",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Jean_Nohain.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Jean_Nohain.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_89_-_Nohain_09.jpg"
 },
 {
 "tri": "Solo",
@@ -2172,10 +2273,11 @@
 "lat": 48.860452,
 "long": 2.392552,
 "categorie": "Chanteur",
-"description": "chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, artiste peintre, guitariste, écrivain ou ...",
+"description": "Chanteuruse, auteur-compositeur-interprète-compositrice-interprète, artiste peintre, guitariste, écrivain, poètese, animateur de radio",
 "siecle": "21e",
 "wikidata": "Q1335349",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mano_Solo_2007-04a.jpg/960px-Mano_Solo_2007-04a.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mano_Solo_2007-04a.jpg/960px-Mano_Solo_2007-04a.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Mano_Solo_(cimetière_du_Père_Lachaise).JPG"
 },
 {
 "tri": "Bashung",
@@ -2183,10 +2285,11 @@
 "lat": 48.860254,
 "long": 2.39341,
 "categorie": "Chanteur",
-"description": "acteur ou actrice, auteur-compositeur-interprète ou autrice-compositrice-interprète",
+"description": "Acteur, auteur-compositeur-interprète-compositrice-interprète",
 "siecle": "21e",
 "wikidata": "Q380045",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/5/54/BASHUNG_Alain-24x30-2007b.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/5/54/BASHUNG_Alain-24x30-2007b.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_d'Alain_Bashung_00.JPG"
 },
 {
 "tri": null,
@@ -2197,7 +2300,8 @@
 "description": "Ecrivain journaliste historien",
 "siecle": "21e",
 "wikidata": "Q1235728",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Alain_Decaux_en_2002.jpg/960px-Alain_Decaux_en_2002.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Alain_Decaux_en_2002.jpg/960px-Alain_Decaux_en_2002.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_10_-_Decaux_06.jpg"
 },
 {
 "tri": "Fabrega",
@@ -2205,10 +2309,11 @@
 "lat": 48.85885648791956,
 "long": 2.3976887503624686,
 "categorie": "Acteur",
-"description": "acteur ou actrice de cinéma, animateur ou animatrice de télévision, acteur ou actrice de télévision, acteur ou actrice de théâtre, ...",
+"description": "Actrice de cinéma, animatrice de télévision, actrice de télévision, actrice de théâtre, animatrice de radio",
 "siecle": "20e",
 "wikidata": "Q2965925",
-"pic": "https://medias.unifrance.org/medias/100/136/165988/format_page/christine-fabrega.jpg"
+"pic": "https://medias.unifrance.org/medias/100/136/165988/format_page/christine-fabrega.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_36_-_Vaillant_01.jpg"
 },
 {
 "tri": "Kardec",
@@ -2216,10 +2321,11 @@
 "lat": 48.862360552430935,
 "long": 2.3943464318705647,
 "categorie": "Autres",
-"description": "traducteur ou traductrice, philosophe, écrivain ou écrivaine, directeur ou directrice d'école",
+"description": "Traducteur, philosophe, écrivain, directeur d'école",
 "siecle": "19e",
 "wikidata": "Q240643",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Photo_Kardec.jpg/500px-Photo_Kardec.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Photo_Kardec.jpg/500px-Photo_Kardec.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père_Lachaise_Alan_Kardec.JPG"
 },
 {
 "tri": null,
@@ -2227,10 +2333,11 @@
 "lat": 48.86172834285385,
 "long": 2.3942670931743946,
 "categorie": "Peintre",
-"description": "Dessinateur BD",
+"description": "Dessinateur bd",
 "siecle": "21e",
 "wikidata": "Q112512072",
-"pic": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYDu93yox81IF3xL0wFI_3l6aP-8rEYqRqKpycRBdkhge4vTunOApJlzEVhj3KOk5Lc6fguMrtkly_BNSkBRdh6bugPFpe5vp9g4kaoRwhJA"
+"pic": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYDu93yox81IF3xL0wFI_3l6aP-8rEYqRqKpycRBdkhge4vTunOApJlzEVhj3KOk5Lc6fguMrtkly_BNSkBRdh6bugPFpe5vp9g4kaoRwhJA",
+"pic_tombe_url": null
 },
 {
 "tri": null,
@@ -2241,7 +2348,8 @@
 "description": "Acteur",
 "siecle": "e",
 "wikidata": "Q553331",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/JulesBerry-1937-StarPresse.png/500px-JulesBerry-1937-StarPresse.png"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/JulesBerry-1937-StarPresse.png/500px-JulesBerry-1937-StarPresse.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jules_Berry_(division_80).JPG"
 },
 {
 "tri": null,
@@ -2252,7 +2360,68 @@
 "description": "Paléoanthropologue",
 "siecle": "21e",
 "wikidata": "Q1382212",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yves_Coppens_detail.jpg/960px-Yves_Coppens_detail.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yves_Coppens_detail.jpg/960px-Yves_Coppens_detail.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yves_Coppens_tombe_2025.jpg"
+},
+{
+"tri": "Branly",
+"nom": "Édouard Branly",
+"lat": 48.860536,
+"long": 2.392423,
+"categorie": "Scientifique",
+"description": "Physicien, médecin, professeur d'université",
+"siecle": "20e",
+"wikidata": "Q274251",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%89douard_Branly_1.jpg/960px-%C3%89douard_Branly_1.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Édouard_Branly_01.jpg"
+},
+{
+"tri": "Bazar de la Charité",
+"nom": "Monument au Bazar de la Charité",
+"lat": 48.86103593791053,
+"long": 2.3968598315112555,
+"categorie": "Monument",
+"description": null,
+"siecle": "e",
+"wikidata": "Q661950",
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_Petit_Journal_-_Bazar_de_la_Charité.jpg"
+},
+{
+"tri": "Murat",
+"nom": "Joachim Murat",
+"lat": 48.859068,
+"long": 2.396672,
+"categorie": "Militaire",
+"description": "Personnalité politique, officier, militaire",
+"siecle": "19e",
+"wikidata": "Q151173",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Murat2.jpg/600px-Murat2.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_39_-_Murat_01.jpg"
+},
+{
+"tri": "Petrucciani",
+"nom": "Michel Petrucciani",
+"lat": 48.860056,
+"long": 2.392874,
+"categorie": "Musicien",
+"description": "Pianisteur de jazz",
+"siecle": "20e",
+"wikidata": "Q317155",
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Michel_Petrucciani.JPG"
+},
+{
+"tri": "Grappelli",
+"nom": "Stéphane Grappelli",
+"lat": 48.862174,
+"long": 2.395663,
+"categorie": "Musicien",
+"description": "Artiste de rue, compositeur, musicien de jazz, violoniste, acteur de cinéma, artiste d'enregistrement",
+"siecle": "20e",
+"wikidata": "Q206244",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Stephane_Grappelli_Allan_Warren.jpg/960px-Stephane_Grappelli_Allan_Warren.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_87_-_Columbarium_381-462_-_Grappelli_01.jpg"
 },
 {
 "tri": "Wallace",
@@ -2263,7 +2432,8 @@
 "description": "Collectionneur",
 "siecle": "19e",
 "wikidata": "Q2033868",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/8/83/Sir_Richard_Wallace.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/83/Sir_Richard_Wallace.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_28_-_Wallace_01.jpg"
 },
 {
 "tri": "Éluard",
@@ -2274,7 +2444,8 @@
 "description": "Poète",
 "siecle": "20e",
 "wikidata": "Q152176",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_97_-_Eluard_01.jpg"
 },
 {
 "tri": "Higelin",
@@ -2282,10 +2453,11 @@
 "lat": 48.86036996724876,
 "long": 2.393625433499502,
 "categorie": "Chanteur",
-"description": "acteur ou actrice, chanteur ou chanteuse, auteur-compositeur-interprète ou autrice-compositrice-interprète, acteur ou actrice de cinéma, ...",
+"description": "Acteur, chanteuruse, auteur-compositeur-interprète-compositrice-interprète, acteur de cinéma, artiste d'enregistrement",
 "siecle": "21e",
 "wikidata": "Q1339711",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jacques_Higelin_2007_%28cropped%29.jpg/600px-Jacques_Higelin_2007_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jacques_Higelin_2007_%28cropped%29.jpg/600px-Jacques_Higelin_2007_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_20_-_Higelin_01.jpg"
 },
 {
 "tri": "Moustaki",
@@ -2293,10 +2465,23 @@
 "lat": 48.860134541010254,
 "long": 2.397308940872024,
 "categorie": "Chanteur",
-"description": "compositeur ou compositrice, auteur-compositeur-interprète ou autrice-compositrice-interprète, chanteur ou chanteuse, artiste peintre, ...",
+"description": "Compositeur, auteur-compositeur-interprète-compositrice-interprète, chanteuruse, artiste peintre, scénariste, artiste d'enregistrement",
 "siecle": "21e",
 "wikidata": "Q293985",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Georges_Moustaki.jpg/500px-Georges_Moustaki.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Georges_Moustaki.jpg/500px-Georges_Moustaki.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Georges_Moustaki_tombe.jpg"
+},
+{
+"tri": "Holgado",
+"nom": "Ticky Holgado",
+"lat": 48.861666,
+"long": 2.394526,
+"categorie": "Acteur",
+"description": "Secrétaire, acteur de cinéma, acteur de théâtre",
+"siecle": "21e",
+"wikidata": "Q2121322",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/3/31/Toulouse-Ticky-Holgado-15Fi12113.png",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_45_-_Holgado_01.jpg"
 },
 {
 "tri": "Dibango",
@@ -2304,9 +2489,34 @@
 "lat": 48.86229959600919,
 "long": 2.3953664988568137,
 "categorie": "Musicien",
-"description": "compositeur ou compositrice, saxophoniste, chanteur ou chanteuse, artiste d'enregistrement, musicien ou musicienne",
+"description": "Compositeur, saxophoniste, chanteuruse, artiste d'enregistrement, musicien",
 "siecle": "21e",
 "wikidata": "Q445829",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LesEscales2019ManuDibango_03_%28cropped%29.jpg/500px-LesEscales2019ManuDibango_03_%28cropped%29.jpg"
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LesEscales2019ManuDibango_03_%28cropped%29.jpg/500px-LesEscales2019ManuDibango_03_%28cropped%29.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manu_Dibango_tombe.jpg"
+},
+{
+"tri": "Yves Montand et Simone Signoret",
+"nom": "Yves Montand et Simone Signoret",
+"lat": 48.861892,
+"long": 2.395535,
+"categorie": "Acteur",
+"description": null,
+"siecle": "e",
+"wikidata": "Q106057",
+"pic": null,
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg"
+},
+{
+"tri": "Proust",
+"nom": "Marcel Proust",
+"lat": 48.8630712,
+"long": 2.394975,
+"categorie": "Ecrivain",
+"description": "Romancier, essayiste, écrivain, critique littéraire, poètese, prosateur",
+"siecle": "20e",
+"wikidata": "Q7199",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Marcel_Proust_1895.jpg/960px-Marcel_Proust_1895.jpg",
+"pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcel_Proust_(Père_Lachaise).jpg"
 }
 ]
