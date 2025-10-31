@@ -629,8 +629,8 @@
 "lat": 48.85961233161604,
 "long": 2.3949533074317424,
 "categorie": "Monument",
-"description": null,
-"siecle": "e",
+"description": "Architecte",
+"siecle": "20e",
 "wikidata": "Q21558259",
 "pic": null,
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Georges_Guët_01.jpg"
@@ -1073,8 +1073,8 @@
 "lat": 48.859351,
 "long": 2.391286,
 "categorie": "Entrepreneur",
-"description": null,
-"siecle": "e",
+"description": "Banquier, Financier",
+"siecle": "19e",
 "wikidata": "Q922667",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png/600px-James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Rothschild_01.jpg"
@@ -1561,12 +1561,12 @@
 },
 {
 "tri": "Lazareff",
-"nom": "Pierre et Hélène Lazareff",
+"nom": "Pierre Lazareff",
 "lat": 48.859365,
 "long": 2.391479,
 "categorie": "Ecrivain",
-"description": null,
-"siecle": "e",
+"description": "Journaliste, patron de presse",
+"siecle": "20e",
 "wikidata": "Q1235630",
 "pic": null,
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_la_famille_Lazareff_-_Père_Lachaise.JPG"
@@ -1828,9 +1828,9 @@
 "nom": "Madame Sans-Gêne",
 "lat": 48.85904,
 "long": 2.396586,
-"categorie": "Acteur",
-"description": null,
-"siecle": "e",
+"categorie": "Autres",
+"description": "l'épouse du maréchal d'empire Lefebvre, duc de Dantzig",
+"siecle": "19e",
 "wikidata": "Q3275319",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Madame_Sans-G%C3%AAne.jpg/960px-Madame_Sans-G%C3%AAne.jpg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madame_Sans-Gene_(SAYRE_14792).jpg"
@@ -1882,6 +1882,30 @@
 "wikidata": "Q1270800",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pierre-Fran%C3%A7ois_Percy.jpg/600px-Pierre-Fran%C3%A7ois_Percy.jpg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_18_-_Percy_01.jpg"
+},
+{
+"tri": "Simone Signoret",
+"nom": "Simone Signoret",
+"lat": 48.861892,
+"long": 2.395535,
+"categorie": "Acteur",
+"description": "Actrice",
+"siecle": "20e",
+"wikidata": "Q106126",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Simone_Signoret.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/P%C3%A8re-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg/500px-P%C3%A8re-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg"
+},
+{
+"tri": "Lazareff",
+"nom": "Hélène Lazareff",
+"lat": 48.859365,
+"long": 2.391479,
+"categorie": "Ecrivain",
+"description": "Journaliste",
+"siecle": "20e",
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null
 },
 {
 "tri": "Cristiani",
@@ -2292,7 +2316,7 @@
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_d'Alain_Bashung_00.JPG"
 },
 {
-"tri": null,
+"tri": "Decaux",
 "nom": "Alain Decaux",
 "lat": 48.860918932231954,
 "long": 2.392184374275871,
@@ -2328,7 +2352,7 @@
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Père_Lachaise_Alan_Kardec.JPG"
 },
 {
-"tri": null,
+"tri": "Fred",
 "nom": "Fred Dewilde",
 "lat": 48.86172834285385,
 "long": 2.3942670931743946,
@@ -2337,22 +2361,22 @@
 "siecle": "21e",
 "wikidata": "Q112512072",
 "pic": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYDu93yox81IF3xL0wFI_3l6aP-8rEYqRqKpycRBdkhge4vTunOApJlzEVhj3KOk5Lc6fguMrtkly_BNSkBRdh6bugPFpe5vp9g4kaoRwhJA",
-"pic_tombe_url": null
+"pic_tombe_url": "https://images.findagrave.com/photos/2025/214/285441793_bfdc93b5-d505-4470-b30e-e9c43771bda1.jpeg?size=photos250"
 },
 {
-"tri": null,
+"tri": "Berry",
 "nom": "Jules Berry",
 "lat": 48.86403739162246,
 "long": 2.3941514669972324,
 "categorie": "Acteur",
 "description": "Acteur",
-"siecle": "e",
+"siecle": "20e",
 "wikidata": "Q553331",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/JulesBerry-1937-StarPresse.png/500px-JulesBerry-1937-StarPresse.png",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jules_Berry_(division_80).JPG"
 },
 {
-"tri": null,
+"tri": "Coppens",
 "nom": "Yves Coppens",
 "lat": 48.86200616682173,
 "long": 2.3934478209991186,
@@ -2381,10 +2405,10 @@
 "lat": 48.86103593791053,
 "long": 2.3968598315112555,
 "categorie": "Monument",
-"description": null,
-"siecle": "e",
+"description": "Drame du 16 mai 1897 à Paris",
+"siecle": "19e",
 "wikidata": "Q661950",
-"pic": null,
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Le_Petit_Journal_-_Bazar_de_la_Charit%C3%A9.jpg/960px-Le_Petit_Journal_-_Bazar_de_la_Charit%C3%A9.jpg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_Petit_Journal_-_Bazar_de_la_Charité.jpg"
 },
 {
@@ -2497,14 +2521,14 @@
 },
 {
 "tri": "Yves Montand et Simone Signoret",
-"nom": "Yves Montand et Simone Signoret",
+"nom": "Yves Montand",
 "lat": 48.861892,
 "long": 2.395535,
 "categorie": "Acteur",
-"description": null,
-"siecle": "e",
+"description": "Acteur",
+"siecle": "20e",
 "wikidata": "Q106057",
-"pic": null,
+"pic": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Montand-PaysBas.png",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg"
 },
 {
