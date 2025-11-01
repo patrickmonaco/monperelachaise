@@ -125,9 +125,9 @@
   <div id="accordion-content" class="p-4 space-y-4">
     <!-- Champ Siècle -->
     <div>
-      <label class="font-semibold text-sm text-gray-600 block mb-1">Siècle</label>
+      <label class="font-semibold text-sm text-gray-600 block mb-1">Période</label>
       <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
-        <option value="">Tous</option>
+        <option value="">Toutes</option>
       </select>
     </div>
 
@@ -516,7 +516,7 @@ tabMap.onclick = () => {
       `<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`
     ).join("");
     const centuries=[...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
-    centurySelect.innerHTML='<option value="">Tous</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
+    centurySelect.innerHTML='<option value="">Toutes</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
     searchInput.disabled=false;centurySelect.disabled=false;
     searchInput.oninput=applyFilters;centurySelect.onchange=applyFilters;
     categoryContainer.querySelectorAll("input").forEach(cb=>cb.onchange=applyFilters);
