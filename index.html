@@ -568,7 +568,12 @@ tabMap.onclick = () => {
     let listen=false;const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
     const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
     micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
-    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();}}};
+    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();
+    // ✅ Afficher le bouton clearBtn après la dictée
+        if (searchInput.value.trim()) {
+          clearBtn.classList.remove("hidden");
+        }   
+    }}};
     r.onerror=stop;r.onend=stop;})();
 
   // --- Wiki
