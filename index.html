@@ -704,12 +704,16 @@ document.addEventListener('keydown', (e) => {
 });
   
 
-// ✅ fermeture de la modale au clic
-imageModal.onclick = () => {
-  imageModal.classList.add("hidden");
-  imageModal.classList.remove("flex");
-  imageModalContent.src = "";
-  imageModalCaption.textContent = "";
+// ✅ Fermeture de la modale au clic sur le fond UNIQUEMENT
+imageModal.onclick = (e) => {
+  // Ne fermer que si on clique directement sur la modale (fond noir)
+  // et pas sur un élément enfant (image, boutons, etc.)
+  if (e.target === imageModal) {
+    imageModal.classList.add("hidden");
+    imageModal.classList.remove("flex");
+    imageModalContent.src = "";
+    imageModalCaption.textContent = "";
+  }
 };
 
 
