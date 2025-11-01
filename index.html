@@ -476,7 +476,7 @@ tabMap.onclick = () => {
   const htmlParts = items.map(item => {
     const pic = item.pic
       ? `<img src="${item.pic}" loading="lazy" 
-         class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+         class="w-14 h-14 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
          onload="this.classList.add('loaded')" 
          onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${(item.pic_tombe_url || '').replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')"
          alt="Portrait de ${item.nom}">`
