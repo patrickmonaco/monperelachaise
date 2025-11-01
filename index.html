@@ -497,6 +497,7 @@ tabMap.onclick = () => {
   
           </div>
           <p class="text-gray-700 text-sm mt-1 leading-tight">${item.description || ""}</p>
+          ${item.tagline ? `<p class="text-gray-600 text-sm italic mt-1">${item.tagline}</p>` : ''}
         </div>
       </div>`;
   });
