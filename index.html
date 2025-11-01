@@ -379,7 +379,7 @@ tabMap.onclick = () => {
         ? `<img src="${item.pic}" loading="lazy" 
      class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
      onload="this.classList.add('loaded')" 
-     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${item.pic.replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
      alt="Portrait de ${item.nom}">`
         : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
 
@@ -471,7 +471,7 @@ tabMap.onclick = () => {
       ? `<img src="${item.pic}" loading="lazy" 
          class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
          onload="this.classList.add('loaded')" 
-         onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}','${item.pic_tombe_url.replace(/'/g, "\\'")}' ,'${item.nom.replace(/'/g, "\\'")}')" 
+         onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}','${item.pic.replace(/'/g, "\\'")}' ,'${item.nom.replace(/'/g, "\\'")}')" 
          alt="Portrait de ${item.nom}">`
       : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
     
