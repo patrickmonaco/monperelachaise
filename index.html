@@ -488,7 +488,7 @@ tabMap.onclick = () => {
         <div class="flex-1">
           <div class="flex justify-between items-center">
             <h2 class="font-medium text-blue-700 text-lg cursor-pointer hover:underline"
-                onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}</h2>(${item.birth} - ${item.death})
+                onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}<span class="text-sm text-gray-500 font-normal ml-1">(${item.birth || '?'} - ${item.death || '?'})</span> </h2>        
            ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}','${item.nom.replace(/'/g, "&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
     <circle cx="12" cy="12" r="10"/>
     <path d="M12 16v-4m0-4h.01" stroke-linecap="round" stroke-width="2"/>
