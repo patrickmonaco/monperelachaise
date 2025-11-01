@@ -8,7 +8,7 @@
 "description": "Divers",
 "siecle": "12e",
 "wikidata": "Q3323370",
-"pic": "https://fr.vikidia.org/wiki/H%C3%A9lo%C3%AFse_et_Ab%C3%A9lard#/media/Fichier:Abelard_and_Heloise.jpeg",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Abelard_and_Heloise.jpeg",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Division_7_-_Abélard_15.jpg"
 },
 {
@@ -1908,6 +1908,18 @@
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Père-Lachaise_-_Antoine_de_Guillaume_Lagrange_02.jpg"
 },
 {
+"tri": "Nodier",
+"nom": "Charles Nodier",
+"lat": 48.863925676413984,
+"long": 2.394120978843775,
+"categorie": "Monument",
+"description": "Ecrivain",
+"siecle": "19e",
+"wikidata": "Q336010",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/7/76/Charles_Nodier_par_Gu%C3%A9rin.jpg?20231125210056",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/P%C3%A8re-Lachaise_-_Division_49_-_Nodier_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_49_-_Nodier_01.jpg"
+},
+{
 "tri": "Cristiani",
 "nom": "Hervé Cristiani",
 "lat": 48.85939243981312,
@@ -2165,10 +2177,10 @@
 "lat": 48.860853361815224,
 "long": 2.389257963298601,
 "categorie": "Acteur",
-"description": "Pilote de course automobile, acteur de théâtre, acteur de cinéma, bobeur, acteur de télévision, acteur",
+"description": "Acteur de théâtre, acteur de cinéma, bobeur, acteur de télévision, acteur",
 "siecle": "21e",
 "wikidata": "Q106544",
-"pic": "https://commons.wikimedia.org/wiki/File:ClaudeBrasseur-1965-StudioHarcourt.png",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ClaudeBrasseur-1965-StudioHarcourt.png/500px-ClaudeBrasseur-1965-StudioHarcourt.png",
 "pic_tombe_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_et_Claude_Brasseur_tombe.jpg"
 },
 {
