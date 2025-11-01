@@ -20,7 +20,14 @@
 /* --- MODALE IMAGE (avec légende et effet fade-in) --- */
 #image-modal {
   animation: fadeIn 0.25s ease-out;
+  z-index: 9999 !important;
 }
+
+/* Si nécessaire, forcer aussi pour le contenu */
+#image-modal > div {
+  z-index: 10000;
+}
+  
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
