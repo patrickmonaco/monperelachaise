@@ -635,17 +635,17 @@ function showImage(index) {
   }
 }
 
-function nextImage() {
+window.nextImage = function() {
   if (currentImageIndex < imageUrls.length - 1) {
     showImage(currentImageIndex + 1);
   }
-}
+};
 
-function previousImage() {
+window.previousImage = function() {
   if (currentImageIndex > 0) {
     showImage(currentImageIndex - 1);
   }
-}
+};
 
 function updateNavigationButtons() {
   const prevBtn = document.getElementById('prev-image-btn');
