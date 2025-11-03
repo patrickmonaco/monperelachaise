@@ -91,10 +91,12 @@
   </h1>
 
   <!-- Onglets -->
+<!--  
 <div class="flex justify-center mb-6">
   <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
   <button id="tab-map" class="px-4 py-2 border rounded-r-lg text-gray-700 bg-gray-200 hover:bg-gray-300">Carte</button>
 </div>
+-->
 
   <!-- Vue Liste -->
   <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
@@ -162,18 +164,29 @@
       </div>
     </aside>
 
-    <main>
+
+      <main class="pb-20">
       <div id="results" class="space-y-2 text-gray-600">
         <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
       </div>
     </main>
   </div>
-
+<!--
   <footer class="bg-gray-800 text-gray-300 text-center py-3 text-sm fixed bottom-0 left-0 w-full">
   <p>
     <a href="https://www.gpmfactory.com" class="hover:text-white transition">GPM Factory</a> 
     - v1.0 - 2025
   </p>
+</footer>
+-->
+
+  <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-gray-300 text-center py-3 text-sm flex justify-center space-x-2">
+  <button id="tab-list" class="px-4 py-2 rounded-l-lg border border-gray-600 bg-gray-700 hover:bg-gray-600 tab-active">
+    Liste
+  </button>
+  <button id="tab-map" class="px-4 py-2 rounded-r-lg border border-gray-600 bg-gray-700 hover:bg-gray-600">
+    Carte
+  </button>
 </footer>
 
   <!-- Vue Carte -->
