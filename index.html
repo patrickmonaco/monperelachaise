@@ -101,9 +101,7 @@
   <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
     <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
       <div>
-        <!--
         <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
-        -->
         <div class="relative mt-1">
           <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
                  class="w-full border border-gray-300 rounded-lg p-2 pr-16" disabled />
@@ -158,7 +156,8 @@
   });
 </script>
 
-     <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+
+      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
         <span id="result-count">0 résultat</span>
         <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
       </div>
@@ -171,7 +170,7 @@
       </div>
     </main>
   </div>
-  
+
   <!-- Footer sticky bleu avec ombre et centrage parfait -->
 <footer class="fixed bottom-0 left-0 w-full bg-blue-800/95 text-gray-200 text-sm flex items-center justify-center pt-3 pb-[calc(env(safe-area-inset-bottom)+8px)] shadow-[0_-2px_10px_rgba(0,0,0,0.3)] backdrop-blur-sm z-40">
 
