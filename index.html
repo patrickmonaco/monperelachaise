@@ -179,17 +179,22 @@
 </footer>
 -->
 
-  <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-gray-300 text-center py-3 text-sm flex justify-center space-x-2">
-  <button id="tab-list" class="px-4 py-2 rounded-l-lg border border-gray-600 bg-gray-700 hover:bg-gray-600 tab-active">
-    Liste
-  </button>
-  <button id="tab-map" class="px-4 py-2 rounded-r-lg border border-gray-600 bg-gray-700 hover:bg-gray-600">
-    Carte
-  </button>
-  !-- Icône d'information -->
-  <button id="info-btn" class="text-gray-400 hover:text-white transition">
-    ℹ️
-  </button>
+  <div class="flex items-center justify-center relative w-full max-w-md">
+    <!-- Boutons navigation -->
+    <div class="flex space-x-2 mx-auto">
+      <button id="tab-list" class="px-4 py-2 rounded-l-lg border border-gray-600 bg-gray-700 hover:bg-gray-600 tab-active">
+        Liste
+      </button>
+      <button id="tab-map" class="px-4 py-2 rounded-r-lg border border-gray-600 bg-gray-700 hover:bg-gray-600">
+        Carte
+      </button>
+    </div>
+
+    <!-- Icône d'information (alignée à droite) -->
+    <button id="info-btn" class="absolute right-0 text-gray-400 hover:text-white transition text-xl leading-none">
+      ℹ️
+    </button>
+  </div>
 </footer>
 
   <!-- Modale d'information -->
