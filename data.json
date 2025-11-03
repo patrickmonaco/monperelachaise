@@ -151,7 +151,7 @@
 },
 {
 "tri": "Cambacérès",
-"nom": "Jean-Jacques-Régis de Cambacérès",
+"nom": "Cambacérès",
 "lat": 48.859252,
 "long": 2.396457,
 "birth": "1753",
@@ -676,7 +676,7 @@
 },
 {
 "tri": "Gay-Lussac",
-"nom": "Louis Joseph Gay-Lussac",
+"nom": "Gay-Lussac",
 "lat": 48.860649,
 "long": 2.394655,
 "birth": "1778",
@@ -721,7 +721,7 @@
 },
 {
 "tri": "Gouvion-Saint-Cyr",
-"nom": "Laurent de Gouvion-Saint-Cyr",
+"nom": "Gouvion-Saint-Cyr",
 "lat": 48.858555,
 "long": 2.39619,
 "birth": "1764",
@@ -751,7 +751,7 @@
 },
 {
 "tri": "Grouchy",
-"nom": "Emmanuel de Grouchy",
+"nom": "Grouchy",
 "lat": 48.8611069,
 "long": 2.3916616,
 "birth": "1766",
@@ -766,7 +766,7 @@
 },
 {
 "tri": "Guët",
-"nom": "Monument funéraire de Georges Guët",
+"nom": "Georges Guët",
 "lat": 48.85961233161604,
 "long": 2.3949533074317424,
 "birth": "1866",
@@ -777,7 +777,7 @@
 "wikidata": "Q21558259",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/P%C3%A8re-Lachaise_-_Georges_Gu%C3%ABt_01.jpg/960px-P%C3%A8re-Lachaise_-_Georges_Gu%C3%ABt_01.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/P%C3%A8re-Lachaise_-_Georges_Gu%C3%ABt_01.jpg/960px-P%C3%A8re-Lachaise_-_Georges_Gu%C3%ABt_01.jpg",
-"tagline": "Belle tombe Arts-deco 1907"
+"tagline": "Belle tombe Art nouveau  1907"
 },
 {
 "tri": "Géricault",
@@ -961,7 +961,7 @@
 },
 {
 "tri": "Brillat-Savarin",
-"nom": "Jean Anthelme Brillat-Savarin",
+"nom": "Brillat-Savarin",
 "lat": 48.859774,
 "long": 2.395513,
 "birth": "1755",
@@ -984,7 +984,7 @@
 "categorie": "Militaire",
 "description": "Personnalité politique, diplomate, militaire",
 "siecle": "Période napoléonienne",
-"wikidata": "Q43246365",
+"wikidata": "Q1961152",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/P%C3%A8re-Lachaise_-_Division_36_-_Lavalette_01.jpg/500px-P%C3%A8re-Lachaise_-_Division_36_-_Lavalette_01.jpg",
 "tagline": "Evasion célèbre"
@@ -1096,7 +1096,7 @@
 },
 {
 "tri": "Bernardin de Saint-Pierre",
-"nom": "Jacques-Henri Bernardin de Saint-Pierre",
+"nom": "Bernardin de Saint-Pierre",
 "lat": 48.860423,
 "long": 2.392917,
 "birth": "1737",
@@ -1107,7 +1107,7 @@
 "wikidata": "Q361976",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg/960px-Portrait_of_Bernardin_de_Saint-Pierre_%28by_Paul_Carpentier%2C_after_Elizabeth_Harvey_-_copy_of_Versailles%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/P%C3%A8re-Lachaise_-_Division_11_-_Bernardin_de_Saint-Pierre_02.JPG/960px-P%C3%A8re-Lachaise_-_Division_11_-_Bernardin_de_Saint-Pierre_02.JPG",
-"tagline": null
+"tagline": "\"Paul et Virginie\""
 },
 {
 "tri": "Haussmann",
@@ -1362,7 +1362,7 @@
 "wikidata": "Q30875",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg/960px-Oscar_Wilde_%281854-1900%29_1889%2C_May_23._Picture_by_W._and_D._Downey.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oscar_Wilde_tombe.jpg/960px-Oscar_Wilde_tombe.jpg",
-"tagline": null
+"tagline": "\"Le portrait de Dorian Gray\""
 },
 {
 "tri": "Zavatta",
@@ -1377,7 +1377,7 @@
 "wikidata": "Q340260",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg/960px-Achille_Zavatta_par_Claude_Truong-Ngoc_1974.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Achille_Zavatta%27s_commemorative_plaque.JPG/960px-Achille_Zavatta%27s_commemorative_plaque.JPG",
-"tagline": null
+"tagline": "Créateur de cirque"
 },
 {
 "tri": "Asturias",
@@ -1407,7 +1407,7 @@
 "wikidata": "Q120993",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Amedeo_Modigliani_1918_restored.jpg/600px-Amedeo_Modigliani_1918_restored.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Modigliani_gravestone.jpg/960px-Modigliani_gravestone.jpg",
-"tagline": null
+"tagline": "Nus féminin et portraits"
 },
 {
 "tri": "Monfort",
@@ -1437,7 +1437,7 @@
 "wikidata": "Q3426652",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/P%C3%A8re-Lachaise_-_Division_69_-_Mouchotte_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_69_-_Mouchotte_01.jpg",
-"tagline": null
+"tagline": "Aviateur de la 2ieme guerre mondiale"
 },
 {
 "tri": "Méliès",
@@ -1452,7 +1452,7 @@
 "wikidata": "Q152272",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/960px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tombe_de_Georges_Melies_%28cimeti%C3%A8re_du_P%C3%A8re_Lachaise%29.JPG/960px-Tombe_de_Georges_Melies_%28cimeti%C3%A8re_du_P%C3%A8re_Lachaise%29.JPG",
-"tagline": null
+"tagline": "Créateur des premiers trucages au cinéma"
 },
 {
 "tri": "Nerval",
@@ -1467,11 +1467,11 @@
 "wikidata": "Q191305",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/960px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/P%C3%A8re-Lachaise_-_Division_49_-_Nerval_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_49_-_Nerval_01.jpg",
-"tagline": null
+"tagline": "Figure majeure du romantisme"
 },
 {
 "tri": "Oberkampf",
-"nom": "Christophe-Philippe Oberkampf",
+"nom": "Oberkampf",
 "lat": 48.859689,
 "long": 2.396071,
 "birth": "1738",
@@ -2322,7 +2322,7 @@
 "wikidata": "Q206832",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gaspard_monge_litho_delpech.jpg/600px-Gaspard_monge_litho_delpech.jpg",
 "pic_tombe_url": null,
-"tagline": null
+"tagline": "Un des fondateurs de l'école polytechnique"
 },
 {
 "tri": "Delpech",
@@ -2352,7 +2352,7 @@
 "wikidata": "Q450463",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg/500px-%28Joseph_Caillaux%29_-_%28photographie_de_presse%29_-_%28Agence_Rol%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/P%C3%A8re-Lachaise_-_Division_54_-_Caillaux_02.jpg/960px-P%C3%A8re-Lachaise_-_Division_54_-_Caillaux_02.jpg",
-"tagline": null
+"tagline": "Ministre des finances sous Clémenceau"
 },
 {
 "tri": "Michel Blanc",
@@ -2382,7 +2382,7 @@
 "wikidata": "Q157303",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/7/76/Myart_georges-perec_1978.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/P%C3%A8re-Lachaise_-_Division_87_-_Perec_01.jpg",
-"tagline": null
+"tagline": "La disparition de la lettre \"e\""
 },
 {
 "tri": "Radiguet",
@@ -2412,7 +2412,7 @@
 "wikidata": "Q2015052",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/PierreDoris-1939-Harcourt.png/500px-PierreDoris-1939-Harcourt.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C3%A8re-Lachaise_-_Division_67_-_Doris_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_67_-_Doris_01.jpg",
-"tagline": null
+"tagline": "Spécialiste de l'humour noir"
 },
 {
 "tri": "Audin",
@@ -2442,7 +2442,7 @@
 "wikidata": "Q468413",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg/560px-Portrait_of_Baron_Larrey_by_Marie-Guillemine_Benoist.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/P%C3%A8re-Lachaise_-_Division_37_-_Larrey_03.jpg/960px-P%C3%A8re-Lachaise_-_Division_37_-_Larrey_03.jpg",
-"tagline": null
+"tagline": "Père de la médecine d'urgence"
 },
 {
 "tri": "Foy",
@@ -2536,7 +2536,7 @@
 },
 {
 "tri": "Patachou",
-"nom": "Henriette Lesser - Patachou",
+"nom": "Patachou",
 "lat": 48.86001001374767,
 "long": 2.3895146491990533,
 "birth": "1918",
@@ -2742,7 +2742,7 @@
 "wikidata": "Q274251",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%89douard_Branly_1.jpg/960px-%C3%89douard_Branly_1.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/P%C3%A8re-Lachaise_-_%C3%89douard_Branly_01.jpg/960px-P%C3%A8re-Lachaise_-_%C3%89douard_Branly_01.jpg",
-"tagline": null
+"tagline": "Précurseur de la radio"
 },
 {
 "tri": "Murat",
@@ -2757,7 +2757,7 @@
 "wikidata": "Q151173",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Murat2.jpg/600px-Murat2.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/P%C3%A8re-Lachaise_-_Division_39_-_Murat_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_39_-_Murat_01.jpg",
-"tagline": null
+"tagline": "La charge de cavalerie à Eylau"
 },
 {
 "tri": "Petrucciani",
@@ -2772,7 +2772,7 @@
 "wikidata": "Q317155",
 "pic": null,
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tombe_de_Michel_Petrucciani.JPG/960px-Tombe_de_Michel_Petrucciani.JPG",
-"tagline": null
+"tagline": "Pianiste de Jazz"
 },
 {
 "tri": "Grappelli",
@@ -2787,7 +2787,7 @@
 "wikidata": "Q206244",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Stephane_Grappelli_Allan_Warren.jpg/960px-Stephane_Grappelli_Allan_Warren.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/P%C3%A8re-Lachaise_-_Division_87_-_Columbarium_381-462_-_Grappelli_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_87_-_Columbarium_381-462_-_Grappelli_01.jpg",
-"tagline": null
+"tagline": "Un des plus grands violonistes de jazz du XXe siècle"
 },
 {
 "tri": "Wallace",
@@ -2865,21 +2865,6 @@
 "tagline": "\"Une époque formidable\""
 },
 {
-"tri": "Dibango",
-"nom": "Manu Dibango",
-"lat": 48.86229959600919,
-"long": 2.3953664988568137,
-"birth": "1933",
-"death": "2020",
-"categorie": "Musicien",
-"description": "Compositeur, saxophoniste, chanteur, artiste d'enregistrement, musicien",
-"siecle": null,
-"wikidata": "Q445829",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LesEscales2019ManuDibango_03_%28cropped%29.jpg/500px-LesEscales2019ManuDibango_03_%28cropped%29.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Manu_Dibango_tombe.jpg/960px-Manu_Dibango_tombe.jpg",
-"tagline": null
-},
-{
 "tri": "Yves Montand et Simone Signoret",
 "nom": "Yves Montand",
 "lat": 48.861892,
@@ -2892,7 +2877,7 @@
 "wikidata": "Q106057",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Montand-PaysBas.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/P%C3%A8re-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg/960px-P%C3%A8re-Lachaise_-_Division_44_-_Montand-Signoret_03.jpg",
-"tagline": "A bicyclette"
+"tagline": "\"La bicyclette\""
 },
 {
 "tri": "Proust",
@@ -2911,7 +2896,7 @@
 },
 {
 "tri": "Bazar de la Charité",
-"nom": "Monument au Bazar de la Charité",
+"nom": "Bazar de la Charité",
 "lat": 48.86103593791053,
 "long": 2.3968598315112555,
 "birth": "1897",
@@ -2967,7 +2952,7 @@
 "wikidata": "Q1069399",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cino_del_duca.jpg/960px-Cino_del_duca.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/P%C3%A8re-Lachaise_-_Division_53_-_Del_Duca_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_53_-_Del_Duca_01.jpg",
-"tagline": null
+"tagline": "Le roi de la presse du cœur"
 },
 {
 "tri": "Nadar",
@@ -2982,7 +2967,7 @@
 "wikidata": "Q40116",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg/960px-Autoportrait_de_F%C3%A9lix_Nadar_-_edit.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Tombe_de_Nadar_%28division_36%29.JPG/960px-Tombe_de_Nadar_%28division_36%29.JPG",
-"tagline": null
+"tagline": "Caricaturiste et photographe"
 },
 {
 "tri": "Bienvenüe",
@@ -3012,7 +2997,7 @@
 "wikidata": "Q325453",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/f/fe/DTDP-1982-Venise.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Grave_of_Toscan_du_Plantier.JPG/960px-Grave_of_Toscan_du_Plantier.JPG",
-"tagline": null
+"tagline": "Critique de cinéma"
 },
 {
 "tri": "La Fontaine",
@@ -3075,6 +3060,21 @@
 "tagline": "La liberté guidant le peuple\""
 },
 {
+"tri": "Dibango",
+"nom": "Manu Dibango",
+"lat": 48.86229959600919,
+"long": 2.3953664988568137,
+"birth": "1933",
+"death": "2020",
+"categorie": "Musicien",
+"description": "Compositeur, saxophoniste, chanteur, artiste d'enregistrement, musicien",
+"siecle": null,
+"wikidata": "Q445829",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LesEscales2019ManuDibango_03_%28cropped%29.jpg/500px-LesEscales2019ManuDibango_03_%28cropped%29.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Manu_Dibango_tombe.jpg/960px-Manu_Dibango_tombe.jpg",
+"tagline": "Saxophoniste et chanteur camerounais"
+},
+{
 "tri": "Sieyès",
 "nom": "Emmanuel-Joseph Sieyès",
 "lat": 48.858532,
@@ -3091,7 +3091,7 @@
 },
 {
 "tri": "Beaumarchais",
-"nom": "Pierre-Augustin Caron de Beaumarchais",
+"nom": "Beaumarchais",
 "lat": 48.858842,
 "long": 2.396264,
 "birth": "1732",
