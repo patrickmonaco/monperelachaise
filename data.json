@@ -27,7 +27,7 @@
 "wikidata": "Q275003",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/P%C3%A8re-Lachaise_-_Division_94_-_Alain_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_94_-_Alain_01.jpg",
-"tagline": null
+"tagline": "Enseigner la réflexion et l’articuler à une pensée rationnelle"
 },
 {
 "tri": "Arago",
@@ -42,7 +42,7 @@
 "wikidata": "Q154353",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg/600px-Fran%C3%A7ois_Arago_par_Ary_Scheffer.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/P%C3%A8re-Lachaise_-_Division_4_-_Arago_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_4_-_Arago_01.jpg",
-"tagline": null
+"tagline": "Physicien, directeur de l'Observatoire et abolisseur de l'esclavage"
 },
 {
 "tri": "Bernhardt",
@@ -72,7 +72,7 @@
 "wikidata": "Q56158",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Georges_bizet.jpg/960px-Georges_bizet.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/P%C3%A8re-Lachaise_-_Division_68_-_tombe_Bizet_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_68_-_tombe_Bizet_01.jpg",
-"tagline": "Carmen"
+"tagline": "\"Carmen\""
 },
 {
 "tri": "Blanqui",
@@ -87,7 +87,7 @@
 "wikidata": "Q309722",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Louis_Auguste_Blanqui.JPG/960px-Louis_Auguste_Blanqui.JPG",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/P%C3%A8re-Lachaise_-_Division_92_-_Blanqui_02.jpg/960px-P%C3%A8re-Lachaise_-_Division_92_-_Blanqui_02.jpg",
-"tagline": null
+"tagline": "Révolutionnaire socialiste français"
 },
 {
 "tri": "Brasseur",
@@ -147,7 +147,7 @@
 "wikidata": "Q295144",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Caillebotteautoportrait.jpg/600px-Caillebotteautoportrait.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/P%C3%A8re-Lachaise_-_Division_70_-_Caillebotte_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_70_-_Caillebotte_01.jpg",
-"tagline": null
+"tagline": "\" Les Raboteurs de parquet\""
 },
 {
 "tri": "Cambacérès",
@@ -158,11 +158,11 @@
 "death": "1824",
 "categorie": "Politique",
 "description": "Juriste, personnalité politique",
-"siecle": null,
+"siecle": "Période napoléonienne",
 "wikidata": "Q290045",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Maurin_-_Cambaceres.png/600px-Maurin_-_Cambaceres.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Grab_Cambac%C3%A9r%C3%A8s.jpg/960px-Grab_Cambac%C3%A9r%C3%A8s.jpg",
-"tagline": null
+"tagline": "le deuxième personnage de l'État après Napoléon"
 },
 {
 "tri": "Champollion",
@@ -282,7 +282,7 @@
 "wikidata": "Q785956",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Charles_Crozatier.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/P%C3%A8re-Lachaise_-_Charles_Crozatier_01.jpg/960px-P%C3%A8re-Lachaise_-_Charles_Crozatier_01.jpg",
-"tagline": null
+"tagline": "bronzier d'art, fondeur et mécène français"
 },
 {
 "tri": "Barbusse",
@@ -312,7 +312,7 @@
 "wikidata": "Q333843",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Paul_Barras.jpg/960px-Paul_Barras.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/P%C3%A8re-Lachaise_-_Division_28_-_Barras_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_28_-_Barras_01.jpg",
-"tagline": null
+"tagline": "Un des principaux Directeurs de la 1iere République"
 },
 {
 "tri": "Baudelocque",
@@ -507,7 +507,7 @@
 "wikidata": "Q687",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg/960px-Pierre_Mignard_-_Portrait_de_Jean-Baptiste_Poquelin_dit_Moli%C3%A8re_%281622-1673%29_-_Google_Art_Project_%28cropped%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Jean_de_La_Fontaine_%26_Moli%C3%A8re_%28P%C3%A8re_Lachaise%29.jpg/960px-Jean_de_La_Fontaine_%26_Moli%C3%A8re_%28P%C3%A8re_Lachaise%29.jpg",
-"tagline": null
+"tagline": "Le plus célèbre des comédiens et dramaturges de la langue française"
 },
 {
 "tri": "Morrison",
@@ -522,7 +522,7 @@
 "wikidata": "Q44301",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Jim_Morrison_1969.JPG/600px-Jim_Morrison_1969.JPG",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tombe_de_Jim_Morrison_-_P%C3%A8re_Lachaise.jpg/960px-Tombe_de_Jim_Morrison_-_P%C3%A8re_Lachaise.jpg",
-"tagline": "La tombe la plus visitée"
+"tagline": "La tombe la plus visitée du PL"
 },
 {
 "tri": "Mouloudji",
@@ -600,21 +600,6 @@
 "tagline": "Sa tombe est très convoitée"
 },
 {
-"tri": "Ophüls",
-"nom": "Max Ophüls",
-"lat": 48.862569,
-"long": 2.395363,
-"birth": "1902",
-"death": "1957",
-"categorie": "Réalisateur",
-"description": "Réalisateur de cinéma, scénariste, acteur de théâtre, metteuruse en scène, ...",
-"siecle": null,
-"wikidata": "Q55410",
-"pic": "https://upload.wikimedia.org/wikipedia/en/d/d2/MaxOph%C3%BCls.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Max_Oph%C3%BCls_-_commemorative_plaque.JPG/960px-Max_Oph%C3%BCls_-_commemorative_plaque.JPG",
-"tagline": null
-},
-{
 "tri": "Oussekine",
 "nom": "Malik Oussekine",
 "lat": 48.858038,
@@ -660,23 +645,8 @@
 "tagline": "Figure de l'opposition libérale"
 },
 {
-"tri": "Galli-Marié",
-"nom": "Célestine Galli-Marié",
-"lat": 48.8615073,
-"long": 2.3918887,
-"birth": "1840",
-"death": "1905",
-"categorie": "Chanteur",
-"description": "Artiste lyrique",
-"siecle": "Troisième République",
-"wikidata": "Q2413117",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg/960px-Atelier_Nadar_-_Galli-Mari%C3%A9_in_Bizet%27s_Carmen.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/P%C3%A8re-Lachaise_-_Division_57_-_Galli-Mari%C3%A9_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_57_-_Galli-Mari%C3%A9_01.jpg",
-"tagline": "Créatrice du rôle de Carmen"
-},
-{
 "tri": "Gay-Lussac",
-"nom": "Gay-Lussac",
+"nom": "Louis Joseph Gay-Lussac",
 "lat": 48.860649,
 "long": 2.394655,
 "birth": "1778",
@@ -733,21 +703,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Laurent_de_Gouvion-Saint-Cyr.jpg/960px-Laurent_de_Gouvion-Saint-Cyr.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/P%C3%A8re-Lachaise_-_Laurent_Gouvion_Saint_Cyr_05.jpg/960px-P%C3%A8re-Lachaise_-_Laurent_Gouvion_Saint_Cyr_05.jpg",
 "tagline": "Une carrière de dessinateur contrariée"
-},
-{
-"tri": "Greffulhe",
-"nom": "Jean-Henry-Louis Greffulhe",
-"lat": 48.860536,
-"long": 2.395406,
-"birth": "1774",
-"death": "1820",
-"categorie": "Entrepreneur",
-"description": "Banquier et politicien",
-"siecle": null,
-"wikidata": "Q3166123",
-"pic": null,
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Cimeti%C3%A8re_du_P%C3%A8re_Lachaise_Paris_20%C3%A8me.jpg/960px-Cimeti%C3%A8re_du_P%C3%A8re_Lachaise_Paris_20%C3%A8me.jpg",
-"tagline": null
 },
 {
 "tri": "Grouchy",
@@ -837,7 +792,7 @@
 "wikidata": "Q3188690",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jules_Joffrin_by_Marius.png/960px-Jules_Joffrin_by_Marius.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/P%C3%A8re-Lachaise_-_Division_95_-_Joffrin_05.jpg/960px-P%C3%A8re-Lachaise_-_Division_95_-_Joffrin_05.jpg",
-"tagline": null
+"tagline": "Un des chefs de file des socialistes possibilistes"
 },
 {
 "tri": "Jouhaux",
@@ -882,22 +837,7 @@
 "wikidata": "Q477747",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Henri_Krasucki_1983.jpg/600px-Henri_Krasucki_1983.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/P%C3%A8re-Lachaise_-_Division_97_-_Krasucki_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_97_-_Krasucki_01.jpg",
-"tagline": null
-},
-{
-"tri": "Lavallée",
-"nom": "Alphonse Lavallée",
-"lat": 48.860649,
-"long": 2.39532,
-"birth": "1797",
-"death": "1873",
-"categorie": "Entrepreneur",
-"description": "Personnalité du monde des affaires",
-"siecle": null,
-"wikidata": "Q1327266",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png/600px-Alphonse_Jean_Robert_Martin-Lavall%C3%A9e.png",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/P%C3%A8re-Lachaise_-_Division_43_-_Lavall%C3%A9e_-_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_43_-_Lavall%C3%A9e_-_01.jpg",
-"tagline": "Fondateur de l'école Centrale de Paris"
+"tagline": "Partisan d'un syndicalisme dur"
 },
 {
 "tri": "Daladier",
@@ -912,7 +852,7 @@
 "wikidata": "Q213526",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C3%89douard_Daladier.jpg/960px-%C3%89douard_Daladier.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tombe_d%27%C3%89douard_Daladier_-_P%C3%A8re_Lachaise.JPG/960px-Tombe_d%27%C3%89douard_Daladier_-_P%C3%A8re_Lachaise.JPG",
-"tagline": null
+"tagline": "Il signe les accords de Munich en 1938"
 },
 {
 "tri": "Daumier",
@@ -927,7 +867,7 @@
 "wikidata": "Q3490902",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/a/a4/SophieDaumier-StudioHarcourt-1959.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tombe_de_Sophie_Daumier_%28division_45%29.JPG/960px-Tombe_de_Sophie_Daumier_%28division_45%29.JPG",
-"tagline": null
+"tagline": "Humoriste partenaire de Guy Bedos"
 },
 {
 "tri": "Daumier",
@@ -961,7 +901,7 @@
 },
 {
 "tri": "Brillat-Savarin",
-"nom": "Brillat-Savarin",
+"nom": "Jean Anthelme Brillat-Savarin",
 "lat": 48.859774,
 "long": 2.395513,
 "birth": "1755",
@@ -972,22 +912,7 @@
 "wikidata": "Q313027",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/1/17/Le_Vachez_Collection_-_Jean_Anthelme_Brillat-Savarin_%281755-1826%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/P%C3%A8re-Lachaise_-_Division_28_-_Brillat-Savarin_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_28_-_Brillat-Savarin_01.jpg",
-"tagline": "Le prince du gout"
-},
-{
-"tri": "Chamans de Lavalette",
-"nom": "Antoine Marie Chamans de Lavalette",
-"lat": 48.8587457,
-"long": 2.3966952,
-"birth": "1769",
-"death": "1830",
-"categorie": "Militaire",
-"description": "Personnalité politique, diplomate, militaire",
-"siecle": "Période napoléonienne",
-"wikidata": "Q1961152",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg/960px-Nicolas_Jacques_-_Antoine_Marie_Chamans_de_Lavalette_%281769-1830%29%2C_greve_och_generalpostdirekt%C3%B6r_-_NMB_952_-_Nationalmuseum.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/P%C3%A8re-Lachaise_-_Division_36_-_Lavalette_01.jpg/500px-P%C3%A8re-Lachaise_-_Division_36_-_Lavalette_01.jpg",
-"tagline": "Evasion célèbre"
+"tagline": "L'un des fondateurs de la gastronomie"
 },
 {
 "tri": "Courteline",
@@ -1002,7 +927,7 @@
 "wikidata": "Q51107",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/960px-Georges_Courteline_1921.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/P%C3%A8re-Lachaise_-_Division_89_-_Courteline_02.jpg/960px-P%C3%A8re-Lachaise_-_Division_89_-_Courteline_02.jpg",
-"tagline": "Messieurs les ronds-de-cuir"
+"tagline": "\"Messieurs les ronds-de-cuir\""
 },
 {
 "tri": "Musset",
@@ -1018,21 +943,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Alfred_de_musset.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Paris_Tombe_Musset_2013.jpg/960px-Paris_Tombe_Musset_2013.jpg",
 "tagline": "\"Mes chers amis, quand je mourrai,\r\nPlantez un saule...\""
-},
-{
-"tri": "Popesco",
-"nom": "Elvire Popesco",
-"lat": 48.86319,
-"long": 2.395985,
-"birth": "1894",
-"death": "1993",
-"categorie": "Réalisateur",
-"description": "Metteuse en scène, actrice de théâtre, actrice de cinéma",
-"siecle": null,
-"wikidata": "Q455878",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Elvira-Popescu-2.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/P%C3%A8re-Lachaise_-_Division_85_-_Popesco_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_85_-_Popesco_01.jpg",
-"tagline": null
 },
 {
 "tri": "Topart",
@@ -1077,7 +987,7 @@
 "wikidata": "Q298784",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MacDonald_par_Antoine_Jean_Gros.jpg/960px-MacDonald_par_Antoine_Jean_Gros.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/P%C3%A8re-Lachaise_-_Division_37_-_Macdonald_05.jpg/960px-P%C3%A8re-Lachaise_-_Division_37_-_Macdonald_05.jpg",
-"tagline": null
+"tagline": "Jemmapes, Wagram"
 },
 {
 "tri": "Raspail",
@@ -1092,7 +1002,7 @@
 "wikidata": "Q682230",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/P%C3%A8re-Lachaise_-_Division_18_-_Raspail_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_18_-_Raspail_01.jpg",
-"tagline": "Robin des Bois de la santé"
+"tagline": "\"Robin des Bois\" de la santé"
 },
 {
 "tri": "Bernardin de Saint-Pierre",
@@ -1137,7 +1047,7 @@
 "wikidata": "Q133855",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guillaume_Apollinaire_1914.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Guillaume_Apollinaire_%28P%C3%A8re_Lachaise%29.jpg/960px-Guillaume_Apollinaire_%28P%C3%A8re_Lachaise%29.jpg",
-"tagline": null
+"tagline": "Poète de la modernité et précurseur du surréalisme"
 },
 {
 "tri": "Blanc",
@@ -1152,7 +1062,7 @@
 "wikidata": "Q355112",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Louis_Blanc_by_Carjat_1848.jpg/960px-Louis_Blanc_by_Carjat_1848.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/P%C3%A8re-Lachaise_-_Division_67_-_Blanc_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_67_-_Blanc_01.jpg",
-"tagline": null
+"tagline": "Théoricien du socialisme et du droit au travail"
 },
 {
 "tri": "Pineau",
@@ -1182,7 +1092,7 @@
 "wikidata": "Q134741",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pissarro-portrait-c1900.jpg/960px-Pissarro-portrait-c1900.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/P%C3%A8re-Lachaise_-_Division_7_-_Pissaro_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_7_-_Pissaro_01.jpg",
-"tagline": null
+"tagline": "\"Les toits rouge\""
 },
 {
 "tri": "Pleyel",
@@ -1227,7 +1137,7 @@
 "wikidata": "Q922667",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png/600px-James_Mayer_de_Rothschild_by_Southworth_%26_Hawes.png",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/P%C3%A8re-Lachaise_-_Division_7_-_Rothschild_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_7_-_Rothschild_01.jpg",
-"tagline": null
+"tagline": "Fondateur de la branche de Paris de la famille Rothschild"
 },
 {
 "tri": "Say",
@@ -1242,7 +1152,7 @@
 "wikidata": "Q3140480",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Horace_Say2.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/P%C3%A8re-Lachaise_-_Division_36_-_Say_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_36_-_Say_01.jpg",
-"tagline": "Plaidoyer pour la suppression de l'octroi"
+"tagline": "négociant et un économiste français"
 },
 {
 "tri": "Seurat",
@@ -1335,21 +1245,6 @@
 "tagline": "Fondation du Parti communiste français."
 },
 {
-"tri": "Vania Vilers",
-"nom": "Vania Vilers",
-"lat": 48.85994,
-"long": 2.39293,
-"birth": "1938",
-"death": "2009",
-"categorie": "Acteur",
-"description": "Actrice de cinéma, actrice de théâtre",
-"siecle": null,
-"wikidata": "Q3554585",
-"pic": null,
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/P%C3%A8re-Lachaise_-_Division_11_-_Vilers_02.jpg/960px-P%C3%A8re-Lachaise_-_Division_11_-_Vilers_02.jpg",
-"tagline": "Plus belle la vie"
-},
-{
 "tri": "Wilde",
 "nom": "Oscar Wilde",
 "lat": 48.8618038,
@@ -1392,7 +1287,7 @@
 "wikidata": "Q75603",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Miguel_Angel_Asturias.jpg/960px-Miguel_Angel_Asturias.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Asturias_grave.jpg/960px-Asturias_grave.jpg",
-"tagline": null
+"tagline": "Prix Nobel de littérature en 1967"
 },
 {
 "tri": "Modigliani",
@@ -1422,22 +1317,7 @@
 "wikidata": "Q3320631",
 "pic": "https://www.chartres-tourisme.com/sites/chartres-tourisme/files/styles/gallery_lightbox/public/content/images/1539874776-909480332.jpg?itok=vz5NqoDz",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Monfort-Jeanne.jpg/960px-Monfort-Jeanne.jpg",
-"tagline": null
-},
-{
-"tri": "Mouchotte",
-"nom": "René Mouchotte",
-"lat": 48.8631279,
-"long": 2.3912635,
-"birth": "1914",
-"death": "1943",
-"categorie": "Militaire",
-"description": "Diariste, militaire, aviateur",
-"siecle": null,
-"wikidata": "Q3426652",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rene_mouchotte_jack_charles.jpg/600px-Rene_mouchotte_jack_charles.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/P%C3%A8re-Lachaise_-_Division_69_-_Mouchotte_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_69_-_Mouchotte_01.jpg",
-"tagline": "Aviateur de la 2ieme guerre mondiale"
+"tagline": "Militante du théâtre populaire."
 },
 {
 "tri": "Méliès",
@@ -1498,21 +1378,6 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WP-Rene_Panhard.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/P%C3%A8re-Lachaise_-_Division_36_-_Panhard_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_36_-_Panhard_01.jpg",
 "tagline": "La Dyna Panhard"
-},
-{
-"tri": "Perrin",
-"nom": "Claude-Victor Perrin",
-"lat": 48.859627,
-"long": 2.394392,
-"birth": "1764",
-"death": "1841",
-"categorie": "Politique",
-"description": "Personnalité politique, militaire",
-"siecle": "Période napoléonienne",
-"wikidata": "Q372750",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Claude-Victor_Perrin.jpg/600px-Claude-Victor_Perrin.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/P%C3%A8re-Lachaise_-_Division_17_-_Victor_06.jpg/960px-P%C3%A8re-Lachaise_-_Division_17_-_Victor_06.jpg",
-"tagline": null
 },
 {
 "tri": "Fresnel",
@@ -1617,22 +1482,7 @@
 "wikidata": "Q1631",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Piaf_Harcourt_1946_2.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/P%C3%A8re-Lachaise_-_Division_97_-_Piaf_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_97_-_Piaf_01.jpg",
-"tagline": null
-},
-{
-"tri": "Planchon",
-"nom": "Roger Planchon",
-"lat": 48.86076,
-"long": 2.3938,
-"birth": "1931",
-"death": "2009",
-"categorie": "Réalisateur",
-"description": "Scénariste, metteuruse en scène, acteur, réalisateur de cinéma, dramaturge, ...",
-"siecle": null,
-"wikidata": "Q374912",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg/960px-Roger_Planchon_-_portrait_de_Fernand_Michaud_-_btv1b10329556v.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/P%C3%A8re-Lachaise_-_Division_22_-_Roger_Planchon_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_22_-_Roger_Planchon_01.jpg",
-"tagline": null
+"tagline": "Édith Giovanna Gassion dite \"la môme piaf\""
 },
 {
 "tri": "Poulenc",
@@ -1662,7 +1512,7 @@
 "wikidata": "Q334983",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jules_Romains-crop.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/P%C3%A8re-Lachaise_-_Division_3_-_Romains_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_3_-_Romains_01.jpg",
-"tagline": null
+"tagline": "\"Les Hommes de bonne volonté\""
 },
 {
 "tri": "Salvador",
@@ -1707,22 +1557,7 @@
 "wikidata": "Q5738",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Adolphe_Thiers_par_Nadar.jpg/960px-Adolphe_Thiers_par_Nadar.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/P%C3%A8re-Lachaise_-_Division_55_-_Thiers_40.jpg/960px-P%C3%A8re-Lachaise_-_Division_55_-_Thiers_40.jpg",
-"tagline": null
-},
-{
-"tri": "Verneuil",
-"nom": "Louis Verneuil",
-"lat": 48.86367,
-"long": 2.396157,
-"birth": "1893",
-"death": "1952",
-"categorie": "Acteur",
-"description": "Acteur de théâtre, scénariste, dramaturge, réalisateur, acteur",
-"siecle": null,
-"wikidata": "Q3098317",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg/960px-Recueil._%22Le_train_pour_Venise%22_de_Georges_Berr_et_Louis_Verneuil_-_btv1b10501816h_%2811_of_63%29.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tombe_de_Louis_Verneuil_%28division_84%29.JPG/960px-Tombe_de_Louis_Verneuil_%28division_84%29.JPG",
-"tagline": null
+"tagline": "\"bourreau de la Commune\" et fondateur de la République"
 },
 {
 "tri": "Hugo",
@@ -1752,7 +1587,7 @@
 "wikidata": "Q23380",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ingres%2C_Self-portrait.jpg/960px-Ingres%2C_Self-portrait.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/P%C3%A8re-Lachaise_-_Division_23_-_Ingres_03.jpg/960px-P%C3%A8re-Lachaise_-_Division_23_-_Ingres_03.jpg",
-"tagline": null
+"tagline": "2ieme violon de Toulouse avant de devenir peintre"
 },
 {
 "tri": "Khorsand",
@@ -1783,21 +1618,6 @@
 "pic": null,
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tombe_de_la_famille_Lazareff_-_P%C3%A8re_Lachaise.JPG/960px-Tombe_de_la_famille_Lazareff_-_P%C3%A8re_Lachaise.JPG",
 "tagline": "\"Cinq colonnes à la une\""
-},
-{
-"tri": "Dabadie de Bernet",
-"nom": "Jean Melchior Dabadie de Bernet",
-"lat": 48.859051,
-"long": 2.397138,
-"birth": "1748",
-"death": "1820",
-"categorie": "Politique",
-"description": "Personnalité politique, officier, militaire",
-"siecle": "Période napoléonienne",
-"wikidata": "Q1429885",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean-Melchior_Dabadie_de_Bernet.jpg/600px-Jean-Melchior_Dabadie_de_Bernet.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P%C3%A8re-Lachaise_-_Division_35_-_Dabadie_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_35_-_Dabadie_01.jpg",
-"tagline": "Spécialiste des fortifications"
 },
 {
 "tri": "Daudet",
@@ -1845,21 +1665,6 @@
 "tagline": "Grand précurseur de la muséologie,"
 },
 {
-"tri": "Trelliard",
-"nom": "Anne-François-Charles Trelliard",
-"lat": 48.8584651,
-"long": 2.3953018,
-"birth": "1764",
-"death": "1832",
-"categorie": "Militaire",
-"description": "Militaire",
-"siecle": "Période napoléonienne",
-"wikidata": "Q2850778",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/9/93/GralTreillard_%281%29.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/P%C3%A8re-Lachaise_-_Division_31_-_Trelliard_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_31_-_Trelliard_01.jpg",
-"tagline": null
-},
-{
 "tri": "Bourdieu",
 "nom": "Pierre Bourdieu",
 "lat": 48.859703,
@@ -1887,7 +1692,7 @@
 "wikidata": "Q2977082",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Claude_Brosset_en_1989.jpg/960px-Claude_Brosset_en_1989.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/P%C3%A8re-Lachaise_-_Division_32_-_Claude_Brosset_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_32_-_Claude_Brosset_01.jpg",
-"tagline": null
+"tagline": "\"Le Marginal\", \"Les ripoux\""
 },
 {
 "tri": "Vallès",
@@ -1932,7 +1737,7 @@
 "wikidata": "Q968357",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg/600px-Benjamin-Constant_Autoportrait_%282011_1_3%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tombe_du_peintre_Benjamin_CONSTANT_-_Cimeti%C3%A8re_Montmartre.JPG/960px-Tombe_du_peintre_Benjamin_CONSTANT_-_Cimeti%C3%A8re_Montmartre.JPG",
-"tagline": null
+"tagline": "Auteur d'Adolphe et théoricien du libéralisme"
 },
 {
 "tri": "Cuvier",
@@ -1977,7 +1782,7 @@
 "wikidata": "Q1382222",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ledru-Rollin.jpg/960px-Ledru-Rollin.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/P%C3%A8re-Lachaise_-_Alexandre_Ledru-Rollin_01.jpg/960px-P%C3%A8re-Lachaise_-_Alexandre_Ledru-Rollin_01.jpg",
-"tagline": null
+"tagline": "Campagne menant à la révolution de 1848"
 },
 {
 "tri": "Lesseps",
@@ -1992,7 +1797,7 @@
 "wikidata": "Q209169",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg/960px-Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/P%C3%A8re-Lachaise_-_Division_6_-_Lesseps_02.jpg/960px-P%C3%A8re-Lachaise_-_Division_6_-_Lesseps_02.jpg",
-"tagline": null
+"tagline": "Canal de Suez"
 },
 {
 "tri": "Marceau",
@@ -2007,7 +1812,7 @@
 "wikidata": "Q157191",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marcel_Marceau_-_1971.jpg/600px-Marcel_Marceau_-_1971.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/P%C3%A8re-Lachaise_-_Division_21_-_Marceau_07.jpg/960px-P%C3%A8re-Lachaise_-_Division_21_-_Marceau_07.jpg",
-"tagline": null
+"tagline": "\"Je serai mime ou rien\""
 },
 {
 "tri": "Merleau-Ponty",
@@ -2022,7 +1827,7 @@
 "wikidata": "Q212639",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maurice_Merleau-Ponty.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Merleau-Ponty%27s_grave.jpeg/960px-Merleau-Ponty%27s_grave.jpeg",
-"tagline": null
+"tagline": "Le primat de la perception"
 },
 {
 "tri": "Jolly",
@@ -2217,7 +2022,7 @@
 "wikidata": "Q128297",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Maria_Callas_1958.jpg/960px-Maria_Callas_1958.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Grave_callas_pere_lachaise.jpg/800px-Grave_callas_pere_lachaise.jpg",
-"tagline": null
+"tagline": "A bouleversé l'art lyrique du XXe"
 },
 {
 "tri": "Brazza",
@@ -3105,18 +2910,18 @@
 "tagline": "Sans la liberté de blâmer, il n'est point d'éloge flatteur"
 },
 {
-"tri": "Gaudin",
-"nom": "Martin Michel Charles Gaudin",
-"lat": 48.86048,
-"long": 2.394376,
-"birth": "1756",
-"death": "1841",
-"categorie": "Politique",
-"description": "Personnalité politique",
-"siecle": "Période napoléonienne",
-"wikidata": "Q708596",
-"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg/960px-Constance_Mayer-p043-MArtin_Michel_Gaudin%2C_duc_de_Ga%C3%ABte_%28cropped%29.jpg",
-"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/P%C3%A8re-Lachaise_-_Division_27_-_Gaudin_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_27_-_Gaudin_01.jpg",
-"tagline": "Ministre des finances"
+"tri": "Perrin",
+"nom": "Jacques Perrin",
+"lat": 48.86190720197286,
+"long": 2.395383568504889,
+"birth": "1941",
+"death": "2022",
+"categorie": "Acteur",
+"description": "Acteur, téalisateur producteur",
+"siecle": null,
+"wikidata": "Q561124",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Jacques_Perrin_2009_%28cropped%29.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Jacques_Perrin_tombe.jpg/500px-Jacques_Perrin_tombe.jpg",
+"tagline": "\"La 317e Section\""
 }
 ]
