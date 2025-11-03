@@ -155,20 +155,21 @@
     document.getElementById("accordion-icon").classList.toggle("rotate-180");
   });
 </script>
-
-
-      <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
-        <span id="result-count">0 résultat</span>
-        <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
-      </div>
+      <!--
+        <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+          <span id="result-count">0 résultat</span>
+          <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
+        </div>
+      -->
     </aside>
-
 
       <main class="pb-20">
       <div id="results" class="space-y-2 text-gray-600">
-        <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+        <!--
+          <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+        -->
       </div>
-    </main>
+      </main>
   </div>
 
   <!-- Footer sticky bleu avec ombre et centrage parfait -->
@@ -302,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let data = [], fuse = null, map = null, markers = [];
 
   const resultsDiv = document.getElementById("results");
-  const resultCount = document.getElementById("result-count");
+  // const resultCount = document.getElementById("result-count");
   const categoryContainer = document.getElementById("category-checkboxes");
   const centurySelect = document.getElementById("filter-century");
   const searchInput = document.getElementById("searchInput");
@@ -554,7 +555,8 @@ tabMap.onclick = () => {
   // --- Affichage liste
   function renderResults(items) {
   resultsDiv.innerHTML = "";
-  resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
+    
+  //resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
   
   if (!items.length) {
     resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
