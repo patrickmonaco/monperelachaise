@@ -722,8 +722,8 @@
 {
 "tri": "Guët",
 "nom": "Georges Guët",
-"lat": 48.85961233161604,
-"long": 2.3949533074317424,
+"lat": 48.85952529097784,
+"long": 2.394963279535997,
 "birth": "1866",
 "death": "1936",
 "categorie": "Monument",
@@ -747,7 +747,7 @@
 "wikidata": "Q184212",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg/960px-Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/P%C3%A8re-Lachaise_-_Th%C3%A9odore_G%C3%A9ricault_01.jpg/960px-P%C3%A8re-Lachaise_-_Th%C3%A9odore_G%C3%A9ricault_01.jpg",
-"tagline": "Son radeau flotte encore"
+"tagline": "Son radeau est allé loin"
 },
 {
 "tri": "Hahnemann",
@@ -1018,6 +1018,36 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg/960px-Fran%C3%A7ois_Vincent_Raspail_Neurdein_Gallica.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/P%C3%A8re-Lachaise_-_Division_18_-_Raspail_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_18_-_Raspail_01.jpg",
 "tagline": "\"Robin des Bois\" de la santé"
+},
+{
+"tri": "Rodenbach",
+"nom": "Georges Rodenbach",
+"lat": 48.85845155953885,
+"long": 2.3947662261593328,
+"birth": "1855",
+"death": "1898",
+"categorie": "Ecrivain",
+"description": "Ecrivain symboliste",
+"siecle": null,
+"wikidata": "Q378240",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Georges_Rodenbach%2C_portrait.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tombeau_Georges_Rodenbach.jpg/500px-Tombeau_Georges_Rodenbach.jpg",
+"tagline": "Ecrivain symboliste -  Bruges-la-Morte."
+},
+{
+"tri": "Arbelot",
+"nom": "Fernand Arbelot",
+"lat": 48.86088832787349,
+"long": 2.392790007837917,
+"birth": "1880",
+"death": "1942",
+"categorie": "Entrepreneur",
+"description": "Banquier",
+"siecle": null,
+"wikidata": "Q18663424",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tombe_de_Fernand_Arbelot.jpg/500px-Tombe_de_Fernand_Arbelot.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tombe_de_Fernand_Arbelot.jpg/500px-Tombe_de_Fernand_Arbelot.jpg",
+"tagline": "contempler le visage de son épouse pour l’éternité"
 },
 {
 "tri": "Bernardin de Saint-Pierre",
@@ -2947,7 +2977,7 @@
 "birth": "1732",
 "death": "1799",
 "categorie": "Musicien",
-"description": "Musicien, poète, éditeur, dramaturge, diplomate, financier, publiciste, ...",
+"description": "Ecrivain dramaturge, musicien, homme d'affaires",
 "siecle": null,
 "wikidata": "Q70326",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg",
@@ -2968,5 +2998,20 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Jacques_Perrin_2009_%28cropped%29.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Jacques_Perrin_tombe.jpg/500px-Jacques_Perrin_tombe.jpg",
 "tagline": "\"La 317e Section\""
+},
+{
+"tri": "Savoire",
+"nom": "Edmée Savoire",
+"lat": 48.86088340322066,
+"long": 2.392885009175604,
+"birth": "1869",
+"death": "1951",
+"categorie": "Autres",
+"description": "Epouse de Camille Savoire",
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": "Menhir avec un hublot"
 }
 ]
