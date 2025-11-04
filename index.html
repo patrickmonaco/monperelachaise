@@ -172,21 +172,21 @@
       </main>
   </div>
 
-  <!-- Footer sticky gris clair avec ombre et centrage parfait -->
-<footer class="fixed bottom-0 left-0 w-full bg-gray-200/95 text-gray-700 text-sm flex items-center justify-center pt-2 pb-[calc(env(safe-area-inset-bottom)+8px)] shadow-[0_-2px_10px_rgba(0,0,0,0.2)] backdrop-blur-sm z-40">
+ <!-- Footer sticky gris clair avec bouton actif et position stable -->
+<footer class="fixed bottom-0 left-0 w-full bg-gray-200 text-gray-700 text-sm flex items-center justify-center pt-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_10px_rgba(0,0,0,0.2)] backdrop-blur-sm border-t border-gray-300 z-40">
 
   <div class="flex items-center justify-center relative w-full max-w-md">
     <!-- Boutons navigation centrés -->
     <div class="flex space-x-6 mx-auto">
-      <button id="tab-list" class="px-4 py-2.5 rounded-lg border border-gray-400 bg-gray-100 hover:bg-gray-300 tab-active transition">
+      <button id="tab-list" class="px-4 py-2.5 rounded-lg border border-gray-400 bg-gray-800 text-white hover:bg-gray-700 tab-active transition">
         Liste
       </button>
-      <button id="tab-map" class="px-4 py-2.5 rounded-lg border border-gray-400 bg-gray-100 hover:bg-gray-300 transition">
+      <button id="tab-map" class="px-4 py-2.5 rounded-lg border border-gray-400 bg-gray-200 text-gray-800 hover:bg-gray-300 transition">
         Carte
       </button>
     </div>
 
-    <!-- Icône d'information (arrondie, grise) -->
+    <!-- Icône d'information -->
     <button id="info-btn" class="absolute right-3 text-gray-600 hover:text-gray-800 transition">
       <div class="flex items-center justify-center w-7 h-7 rounded-full bg-gray-300 hover:bg-gray-400 shadow-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -204,13 +204,13 @@
     <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-lg">&times;</button>
     <h2 class="text-xl font-semibold mb-2 text-gray-800">À propos</h2>
     <p class="text-gray-700 mb-1">
-      MON PERE LACHAISE<br>
       Créé par
       <a href="https://www.gpmfactory.com" class="text-gray-800 hover:underline">GPM Factory</a>
     </p>
     <p class="text-gray-600">Version : <strong>v1.1 - 2025</strong></p>
   </div>
 </div>
+
 
   
   <!-- Vue Carte -->
@@ -322,8 +322,11 @@ infoModal.addEventListener("click", (e) => {
 
  // --- Navigation entre onglets
 tabList.onclick = () => {
-  tabList.classList.add("tab-active");
-  tabMap.classList.remove("tab-active");
+  // Styles actifs/inactifs
+  tabList.classList.add("bg-gray-800", "text-white");
+  tabList.classList.remove("bg-gray-200", "text-gray-800");
+  tabMap.classList.add("bg-gray-200", "text-gray-800");
+  tabMap.classList.remove("bg-gray-800", "text-white");
 
   // Animation fluide
   viewList.classList.remove("hidden");
@@ -331,8 +334,10 @@ tabList.onclick = () => {
 };
 
 tabMap.onclick = () => {
-  tabMap.classList.add("tab-active");
-  tabList.classList.remove("tab-active");
+  tabMap.classList.add("bg-gray-800", "text-white");
+  tabMap.classList.remove("bg-gray-200", "text-gray-800");
+  tabList.classList.add("bg-gray-200", "text-gray-800");
+  tabList.classList.remove("bg-gray-800", "text-white");
 
   // Animation fluide
   viewList.classList.add("hidden");
