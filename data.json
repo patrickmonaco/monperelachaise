@@ -747,7 +747,7 @@
 "wikidata": "Q184212",
 "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg/960px-Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/P%C3%A8re-Lachaise_-_Th%C3%A9odore_G%C3%A9ricault_01.jpg/960px-P%C3%A8re-Lachaise_-_Th%C3%A9odore_G%C3%A9ricault_01.jpg",
-"tagline": "Son radeau est allé loin"
+"tagline": "Un célèbre radeau"
 },
 {
 "tri": "Hahnemann",
@@ -1037,8 +1037,8 @@
 {
 "tri": "Arbelot",
 "nom": "Fernand Arbelot",
-"lat": 48.86088832787349,
-"long": 2.392790007837917,
+"lat": 48.86071363068951,
+"long": 2.3928964162292865,
 "birth": "1880",
 "death": "1942",
 "categorie": "Insolite",
@@ -1637,8 +1637,8 @@
 {
 "tri": "Khorsand",
 "nom": "Philippe Khorsand",
-"lat": 48.8613527,
-"long": 2.3946884,
+"lat": 48.861486731742005,
+"long": 2.3946278967724317,
 "birth": "1948",
 "death": "2008",
 "categorie": "Cinéma Théâtre",
@@ -2027,8 +2027,8 @@
 {
 "tri": "Dragon",
 "nom": "Tombe du Dragon",
-"lat": 48.85924758348845,
-"long": 2.395818626644382,
+"lat": 48.85904524111105,
+"long": 2.395483755573403,
 "birth": "1781",
 "death": "1807",
 "categorie": "Monument",
@@ -2132,8 +2132,8 @@
 {
 "tri": "Chabrol",
 "nom": "Claude Chabrol",
-"lat": 48.860558,
-"long": 2.392547,
+"lat": 48.86040438356427,
+"long": 2.3925715528505456,
 "birth": "1930",
 "death": "2010",
 "categorie": "Cinéma Théâtre",
@@ -2282,8 +2282,8 @@
 {
 "tri": "Audin",
 "nom": "Maurice Audin",
-"lat": 48.85947465725404,
-"long": 2.3994454088796284,
+"lat": 48.85959239542032,
+"long": 2.399601750727891,
 "birth": "1932",
 "death": "1957",
 "categorie": "Politique",
@@ -2357,8 +2357,8 @@
 {
 "tri": "Brasseur",
 "nom": "Claude Brasseur",
-"lat": 48.860853361815224,
-"long": 2.389257963298601,
+"lat": 48.860849394074236,
+"long": 2.389257787392685,
 "birth": "1936",
 "death": "2020",
 "categorie": "Cinéma Théâtre",
@@ -2552,8 +2552,8 @@
 {
 "tri": "Fred",
 "nom": "Fred Dewilde",
-"lat": 48.86172834285385,
-"long": 2.3942670931743946,
+"lat": 48.86154723036625,
+"long": 2.394308075313358,
 "birth": "1966",
 "death": "2024",
 "categorie": "Arts graphiques",
@@ -2582,8 +2582,8 @@
 {
 "tri": "Coppens",
 "nom": "Yves Coppens",
-"lat": 48.86200616682173,
-"long": 2.3934478209991186,
+"lat": 48.86189415451909,
+"long": 2.393460655336922,
 "birth": "1934",
 "death": "2022",
 "categorie": "Sciences",
@@ -2912,8 +2912,8 @@
 {
 "tri": "Delacroix",
 "nom": "Eugène Delacroix",
-"lat": 48.862763666467465,
-"long": 2.393266993307617,
+"lat": 48.862606775145444,
+"long": 2.3932513260132557,
 "birth": "1798",
 "death": "1863",
 "categorie": "Arts graphiques",
@@ -3032,8 +3032,8 @@
 {
 "tri": "Savoire",
 "nom": "Edmée Savoire",
-"lat": 48.86088340322066,
-"long": 2.392885009175604,
+"lat": 48.86067166067628,
+"long": 2.3929633997027593,
 "birth": "1869",
 "death": "1951",
 "categorie": "Insolite",
