@@ -523,7 +523,7 @@ setInterval(checkProximity, 8000);
     let closest = null;
     let minDist = Infinity;
 
-    for (const t of gTombes) {
+    for (const t of data) {
       const d = distanceMeters(latitude, longitude, t.lat, t.lon);
       if (d < minDist) {
         minDist = d;
