@@ -78,6 +78,14 @@
   opacity: 1;
 }
 
+#navSwitch:checked + div {
+  background-color: #4b5563; /* gray-700 */
+}
+
+#navSwitch:checked + div + .dot {
+  transform: translateX(24px);
+}
+  
 </style>
 
 </head>
@@ -231,26 +239,32 @@
   <!-- Modale Réglages -->
 <div id="settings-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999]">
   <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-11/12 text-center relative">
-    <button id="close-settings" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+    
+    <!-- Bouton fermeture -->
+    <button id="close-settings" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
-    <h2 class="text-lg font-semibold mb-3 text-gray-800">Réglages</h2>
 
-    <div class="text-left space-y-2">
-      <label class="flex items-center space-x-2">
-        <input type="radio" name="navmode" value="C" class="nav-radio">
-        <span>Itinéraire seulement</span>
+    <h2 class="text-lg font-semibold mb-4 text-gray-800">Réglages</h2>
+
+    <!-- Switch -->
+    <div class="flex items-center justify-between px-1">
+      <span class="text-gray-700 text-sm">Itinéraire seulement</span>
+
+      <label class="relative cursor-pointer select-none">
+        <input type="checkbox" id="navSwitch" class="sr-only">
+        <div class="block w-12 h-6 rounded-full bg-gray-300 transition"></div>
+        <div class="dot absolute left-1 top-1 w-4 h-4 rounded-full bg-white transition"></div>
       </label>
 
-      <label class="flex items-center space-x-2">
-        <input type="radio" name="navmode" value="N" class="nav-radio" checked>
-        <span>Navigation</span>
-      </label>
+      <span class="text-gray-700 text-sm">Navigation</span>
     </div>
+
   </div>
 </div>
+
 
 
   
@@ -373,21 +387,31 @@ function getCookie(name) {
   return document.cookie.split('; ').find(row => row.startsWith(name + '='))?.split('=')[1];
 }
 
-// Lecture du cookie au chargement
+// Lecture cookie
 const saved = getCookie("optionNav");
 if (saved === "C" || saved === "N") {
   gOptionNav = saved;
-  document.querySelector(`input[name="navmode"][value="${saved}"]`).checked = true;
+  document.getElementById("navSwitch").checked = (saved === "N");
+} else {
+  document.getElementById("navSwitch").checked = true; // N par défaut
 }
+  
   // Ouverture/fermeture modale
 const settingsBtn = document.getElementById("settings-btn");
 const settingsModal = document.getElementById("settings-modal");
 const closeSettings = document.getElementById("close-settings");
 
+// Ouverture/fermeture modale
 settingsBtn.onclick = () => settingsModal.classList.remove("hidden");
 closeSettings.onclick = () => settingsModal.classList.add("hidden");
 settingsModal.addEventListener("click", (e) => { if (e.target === settingsModal) settingsModal.classList.add("hidden"); });
 
+// Switch → met à jour variable + cookie
+document.getElementById("navSwitch").addEventListener("change", (e) => {
+  gOptionNav = e.target.checked ? "N" : "C";
+  setCookie("optionNav", gOptionNav);
+});
+  
 // Gestion du changement de choix
 document.querySelectorAll(".nav-radio").forEach(radio => {
   radio.addEventListener("change", (e) => {
