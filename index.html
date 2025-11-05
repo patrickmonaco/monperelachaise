@@ -609,6 +609,14 @@ tabMap.onclick = () => {
   // --- Carte
   function initMap() {
     map = L.map("map").setView([48.8606, 2.3934], 16);
+    // ✅ Limitation stricte à la zone du Père-Lachaise
+  map.setMaxBounds([
+    [48.8646, 2.3872], // Nord-Ouest
+    [48.8574, 2.4058]  // Sud-Est
+  ]);
+
+  // (Optionnel, mais recommandé pour éviter "l'effet rebond")
+  map.setMinZoom(15);
 
       L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> contributors',
@@ -618,13 +626,6 @@ tabMap.onclick = () => {
     updateMapMarkers(data);
 
   }
-
-  map.setMaxBounds([
-    [48.8646, 2.3872], // coin NW
-    [48.8574, 2.4058]  // coin SE
-  ]);
-
-  map.setMinZoom(16);
 
   
       // Ajout Boussole
