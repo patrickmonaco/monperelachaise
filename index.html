@@ -376,6 +376,8 @@ const closeModal = document.getElementById("close-modal");
 // Variable globale
 let gOptionNav = "N"; // Valeur par défaut
 let gProximityMode = false;  // mode OFF par défaut
+let gLastAnnounced = null;
+
   
   
 infoBtn.onclick = () => {
@@ -448,10 +450,18 @@ document.querySelectorAll(".nav-radio").forEach(radio => {
   });
 });
 
+if (gProximityMode) {
+  startProximityListening();
+}
+
 document.getElementById("proxSwitch").addEventListener("change", (e) => {
   gProximityMode = e.target.checked;
   setCookie("proximityMode", gProximityMode ? "1" : "0");
+  if (gProximityMode) {
+    startProximityListening();
+  }
 });
+
 
 //Calcul distance  
   function distanceMeters(lat1, lon1, lat2, lon2) {
@@ -501,7 +511,54 @@ function checkProximity() {
 // Vérification automatique périodique
 setInterval(checkProximity, 8000);
 
-  
+  function startProximityListening() {
+  if (!gProximityMode) return;
+
+  navigator.geolocation.watchPosition(pos => {
+
+    const { latitude, longitude } = pos.coords;
+    let closest = null;
+    let minDist = Infinity;
+
+    for (const t of gTombes) {
+      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
+      if (d < minDist) {
+        minDist = d;
+        closest = t;
+      }
+    }
+
+    // Seuil validé : 20 m
+    if (closest && minDist < 20) {
+      // Évite répétition si on reste dans la zone
+      if (closest.nom !== gLastAnnounced) {
+        speakProximity(closest.nom);
+        gLastAnnounced = closest.nom;
+      }
+    }
+
+    // Quand on s'éloigne → reset
+    if (minDist >= 25) {  
+      gLastAnnounced = null;
+    }
+
+  }, 
+  err => {
+    console.log("GPS error:", err);
+  }, {
+    enableHighAccuracy: true,     // précision GPS
+    maximumAge: 7000,            // ne recalculer que si mouvement réel
+    timeout: 8000
+  });
+}
+function speakProximity(name) {
+  const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name + ".");
+  msg.lang = "fr-FR";
+  msg.rate = 0.9;   // rythme calme
+  msg.pitch = 1.0;
+  msg.volume = 1.0; // volume normal, réglable
+  window.speechSynthesis.speak(msg);
+}
 
  // --- Navigation entre onglets
 tabList.onclick = () => {
