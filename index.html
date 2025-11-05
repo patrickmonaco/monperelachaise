@@ -598,18 +598,40 @@ tabMap.onclick = () => {
     }
   });
 
-  // 🔹 Navigation Google Maps (inchangée)
-  const ua = navigator.userAgent || navigator.vendor || window.opera;
-  let url = "";
-  if (/android/i.test(ua)) {
-    url = `google.navigation:q=${lat},${long}&mode=w`;
-  } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-    url = `maps://?daddr=${lat},${long}&dirflg=w`;
-  } else {
-    url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
-  }
-  window.open(url, "_blank");
-};
+  // 🔹 Navigation / Itinéraire selon gOptionNav
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    let url = "";
+    
+    // --- Android
+    if (/android/i.test(ua)) {
+      if (gOptionNav === "N") {
+        // Navigation guidée
+        url = `google.navigation:q=${lat},${long}&mode=w`;
+      } else {
+        // Itinéraire affiché (pas guidé)
+        url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+      }
+    }
+    
+    // --- iOS
+    else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      if (gOptionNav === "N") {
+        // Navigation guidée Apple/Maps
+        url = `maps://?daddr=${lat},${long}&dirflg=w`;
+      } else {
+        // Itinéraire simple dans l’app Plans
+        url = `maps://?saddr=Current%20Location&daddr=${lat},${long}`;
+      }
+    }
+    
+    // --- Ordinateurs / fallback
+    else {
+      // Google Maps web
+      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    }
+    
+    window.open(url, "_blank");
+
 
 
   // --- Affichage liste
