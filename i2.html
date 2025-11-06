@@ -93,7 +93,8 @@
 #proxSwitch:checked + div + .dot {
   transform: translateX(24px);
 }
-
+#debugProx { display: none !important; }
+  
 </style>
 
 </head>
@@ -365,6 +366,7 @@
 // Il faut rendre data globale sinon elle n'est pas visible  
 let data = [];
 let lastSpeakTime = 0;  
+let DEBUG_MODE = false;
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data2.json";
   const CACHE_KEY = "faceted_data_cache_v12";
@@ -485,15 +487,18 @@ document.getElementById("proxSwitch").addEventListener("change", (e) => {
 });
 
   function updateDebug(lat, lon, targetName, dist) {
+  if (!DEBUG_MODE) return; // ⬅️ Ajout important
+
   if (!gDebugDiv) gDebugDiv = document.getElementById("debugProx");
 
   gDebugDiv.innerHTML = `
-    GPS: ${lat?.toFixed(6)} , ${lon?.toFixed(6)} <br>
+    GPS: ${lat?.toFixed(6)}, ${lon?.toFixed(6)} <br>
     Cible: ${targetName ?? "(aucune)"} <br>
     Dist: ${dist !== null ? dist.toFixed(1) + " m" : "--"} <br>
     Dernière annonce: ${gLastAnnounced ?? "(aucune)"}
   `;
 }
+
 
 
 //Calcul distance  
