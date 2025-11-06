@@ -1,0 +1,32 @@
+[
+{
+"tri": "Abélard et Héloïse",
+"nom": "Abélard et Héloïse",
+"lat": 48.898694194901026, 
+"long": 2.253719661576646,
+"birth": "1092",
+"death": "1164",
+"categorie": "Insolite",
+"description": "Deux amants célèbres du Moyen Âge",
+"siecle": null,
+"wikidata": "Q3323370",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/8/82/Abelard_and_Heloise.jpeg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/P%C3%A8re-Lachaise_-_Division_7_-_Ab%C3%A9lard_15.jpg/960px-P%C3%A8re-Lachaise_-_Division_7_-_Ab%C3%A9lard_15.jpg",
+"tagline": "Le mythe de l'amour impossible"
+},
+{
+"tri": "Alain",
+"nom": "Alain",
+"lat": 48.89873246307105, 
+"long": 2.2537300282286217,
+"birth": "1868",
+"death": "1951",
+"categorie": "Littérature",
+"description": "Philosophe, écrivain, journaliste, enseignant",
+"siecle": "Epoque contemporaine",
+"wikidata": "Q275003",
+"pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%89mile_Chartier_portrait.jpg/960px-%C3%89mile_Chartier_portrait.jpg",
+"pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/P%C3%A8re-Lachaise_-_Division_94_-_Alain_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_94_-_Alain_01.jpg",
+"tagline": "Enseigner la réflexion et l’articuler à une pensée rationnelle"
+}
+]
