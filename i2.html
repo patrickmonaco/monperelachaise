@@ -508,19 +508,24 @@ document.getElementById("proxSwitch").addEventListener("change", (e) => {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
   
-function notifyProximity(name) {
-  // Visuel
+function notifyProximity(name, lat, long) {
+  // Visuel cliquable
   const div = document.createElement("div");
-  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg";
-  div.textContent = "Vous êtes proche de : " + name;
-  document.body.appendChild(div);
-  setTimeout(() => div.remove(), 5000);
+  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-lg shadow-xl cursor-pointer text-center w-[260px]";
+  div.innerHTML = `
+    <div class="font-semibold text-lg">${name}</div>
+    <div class="text-xs opacity-80">(Touchez pour naviguer)</div>
+  `;
+  
+  div.onclick = () => goToGrave(lat, long);
 
-  // Audio (optionnel)
-  const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name);
-  msg.lang = "fr-FR";
-  window.speechSynthesis.speak(msg);
+  document.body.appendChild(div);
+  setTimeout(() => div.remove(), 6000);
+
+  // Voix + vibration
+  speakProximity(name);
 }
+
   
 function checkProximity() {
   if (!gProximityMode) return;
@@ -538,7 +543,7 @@ function checkProximity() {
     }
     updateDebug(latitude, longitude, closest?.nom, minDist);
     if (closest && minDist < 20) {
-      notifyProximity(closest.nom);
+      notifyProximity(closest.nom, closest.lat, closest.long);
       gLastAnnounced = closest.nom;
     }
   }, err => {
@@ -864,6 +869,31 @@ tabMap.onclick = () => {
     
     window.open(url, "_blank");
  };
+
+  function goToGrave(lat, long) {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  let url = "";
+
+  if (/android/i.test(ua)) {
+    if (gOptionNav === "N") {
+      url = `google.navigation:q=${lat},${long}&mode=w`;
+    } else {
+      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    }
+  }
+  else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    if (gOptionNav === "N") {
+      url = `maps://?daddr=${lat},${long}&dirflg=w`;
+    } else {
+      url = `maps://?saddr=Current%20Location&daddr=${lat},${long}`;
+    }
+  }
+  else {
+    url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+  }
+
+  window.open(url, "_blank");
+}
 
 
   // --- Affichage liste
