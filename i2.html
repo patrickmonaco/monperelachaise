@@ -500,10 +500,10 @@ function checkProximity() {
   if (!gProximityMode) return;
 
   navigator.geolocation.getCurrentPosition(pos => {
-    const { latitude, itude } = pos.coords;
+    const { latitude, longitude } = pos.coords;
 
     for (const t of data) {
-      const d = distanceMeters(latitude, itude, t.lat, t.lon);
+      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
       if (d < 20) {   // ✅ seuil validé : 20 mètres
         notifyProximity(t.nom);
         return;       // éviter plusieurs alertes à la fois
