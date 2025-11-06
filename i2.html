@@ -362,11 +362,14 @@
 </div>
   
 <script>
+// Il faut rendre data globale sinon elle n'est pas visible  
+let data = [];  
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data2.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
-  let data = [], fuse = null, map = null, markers = [];
+  data = [];
+  let fuse = null, map = null, markers = [];
  
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
