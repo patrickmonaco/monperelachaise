@@ -529,7 +529,7 @@ function checkProximity() {
     let minDist = Infinity;
 
     for (const t of data) {
-      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
+      const d = distanceMeters(latitude, longitude, t.lat, t.long);
       if (d < minDist) {
         minDist = d;
         closest = t;
