@@ -393,7 +393,9 @@ const closeModal = document.getElementById("close-modal");
 let gOptionNav = "N"; // Valeur par défaut
 let gProximityMode = false;  // mode OFF par défaut
 let gLastAnnounced = null;
+
 let gDebugDiv = null;
+
   
   
 infoBtn.onclick = () => {
@@ -478,7 +480,6 @@ document.getElementById("proxSwitch").addEventListener("change", (e) => {
   }
 });
 
-  // Pour debug
   function updateDebug(lat, lon, targetName, dist) {
   if (!gDebugDiv) gDebugDiv = document.getElementById("debugProx");
 
@@ -519,10 +520,8 @@ function notifyProximity(name) {
   
 function checkProximity() {
   if (!gProximityMode) return;
-
   navigator.geolocation.getCurrentPosition(pos => {
     const { latitude, longitude } = pos.coords;
-
     let closest = null;
     let minDist = Infinity;
 
@@ -533,56 +532,45 @@ function checkProximity() {
         closest = t;
       }
     }
-
     updateDebug(latitude, longitude, closest?.nom, minDist);
-
     if (closest && minDist < 20) {
       notifyProximity(closest.nom);
       gLastAnnounced = closest.nom;
     }
-
   }, err => {
     console.log("GPS error:", err);
   }, { enableHighAccuracy: true });
 }
 
 
+
+
+  
 // Vérification automatique périodique
 setInterval(checkProximity, 8000);
 
-  function startProximityListening() {
+function startProximityListening() {
   if (!gProximityMode) return;
 
   navigator.geolocation.watchPosition(pos => {
-  const { latitude, longitude } = pos.coords;
+    const { latitude, longitude } = pos.coords;
 
-  let closest = null;
-  let minDist = Infinity;
+    let closest = null;
+    let minDist = Infinity;
 
-  for (const t of data) {
-    const d = distanceMeters(latitude, longitude, t.lat, t.lon);
-    if (d < minDist) {
-      minDist = d;
-      closest = t;
+    // Trouve la cible la plus proche
+    for (const t of data) {
+      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
+      if (d < minDist) {
+        minDist = d;
+        closest = t;
+      }
     }
-  }
 
-  updateDebug(latitude, longitude, closest?.nom, minDist);
+    // 🟢 Mise à jour de l’overlay debug
+    updateDebug(latitude, longitude, closest?.nom ?? null, minDist);
 
-  if (closest && minDist < 20) {
-    if (closest.nom !== gLastAnnounced) {
-      speakProximity(closest.nom);
-      gLastAnnounced = closest.nom;
-    }
-  }
-
-  if (minDist >= 25) {
-    gLastAnnounced = null;
-  }
-});
-
-
-    // Seuil validé : 20 m
+    // ✅ Seuil d’entrée dans la zone : 20 m
     if (closest && minDist < 20) {
       // Évite répétition si on reste dans la zone
       if (closest.nom !== gLastAnnounced) {
@@ -591,20 +579,23 @@ setInterval(checkProximity, 8000);
       }
     }
 
-    // Quand on s'éloigne → reset
-    if (minDist >= 25) {  
+    // 🔄 Réinitialisation lorsqu’on sort de la zone
+    if (minDist >= 25) {
       gLastAnnounced = null;
     }
 
-  }, 
+  },
   err => {
     console.log("GPS error:", err);
-  }, {
-    enableHighAccuracy: true,     // précision GPS
-    maximumAge: 7000,            // ne recalculer que si mouvement réel
+  },
+  {
+    enableHighAccuracy: true,  // GPS haute précision
+    maximumAge: 7000,          // utilise dernière position si récente
     timeout: 8000
   });
 }
+
+  
 function speakProximity(name) {
   const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name + ".");
   msg.lang = "fr-FR";
@@ -614,12 +605,6 @@ function speakProximity(name) {
   window.speechSynthesis.speak(msg);
 }
 
-// POur le debug de la notification
-  
-
-
-
-  
  // --- Navigation entre onglets
 tabList.onclick = () => {
   // Styles actifs/inactifs
