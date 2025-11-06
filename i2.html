@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Mon Père Lachaise</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#1d4ed8" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.offline"></script>
+
+  <!-- Leaflet Simple Locate plugin -->
+<script src="dist/leaflet-simple-locate.min.js"></script>
+<link rel="stylesheet" href="dist/demo.css" />
+  
+<style>
+  
+/* --- MODALE IMAGE (avec légende et effet fade-in) --- */
+#image-modal {
+  animation: fadeIn 0.25s ease-out;
+  z-index: 9999 !important;
+}
+
+/* Si nécessaire, forcer aussi pour le contenu */
+#image-modal > div {
+  z-index: 10000;
+}
+  
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#image-modal-caption {
+  max-width: 90vw;
+  line-height: 1.4;
+}
+
+  body {
+            padding: 0;
+            margin: 0;
+    
+            --primary-rgb: 25, 135, 84;
+        }
+  
+/* Transitions douces entre la liste et la carte */
+#viewList, #viewMap {
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+/* pour le switch Liste/Carte   */
+
+  .tab-active {
+  background-color: #3b82f6; /* ou bg-blue-500 en Tailwind */
+  color: white;
+  border-color: #3b82f6;
+}
+  
+.hidden {
+  opacity: 0 !important;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+  
+@keyframes pulseSlow {
+  0%,100%{transform:scale(1);opacity:1;}
+  50%{transform:scale(1.05);opacity:0.9;}
+}
+.animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
+/* .tab-active{background-color:#2563eb;color:white;}   */
+
+/* --- effet fade-in pour les images --- */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-in.loaded {
+  opacity: 1;
+}
+
+#navSwitch:checked + div {
+  background-color: #4b5563; /* gray-700 */
+}
+
+#navSwitch:checked + div + .dot {
+  transform: translateX(24px);
+}
+
+  #proxSwitch:checked + div {
+  background-color: #4b5563;
+}
+#proxSwitch:checked + div + .dot {
+  transform: translateX(24px);
+}
+
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+<div class="max-w-7xl mx-auto py-10 px-4">
+  <h1 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+    <img src="icons/icone_pl.png" alt="Icône gauche" class="w-12 h-12 animate-pulse-slow">Mon Père Lachaise
+    <img src="icons/icone_pl.png" alt="Icône droite" class="w-12 h-12 animate-pulse-slow">
+  </h1>
+
+  <!-- Onglets -->
+<!--  
+<div class="flex justify-center mb-6">
+  <button id="tab-list" class="px-4 py-2 border rounded-l-lg tab-active">Liste</button>
+  <button id="tab-map" class="px-4 py-2 border rounded-r-lg text-gray-700 bg-gray-200 hover:bg-gray-300">Carte</button>
+</div>
+-->
+
+  <!-- Vue Liste -->
+  <div id="view-list" class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8">
+    <aside class="bg-white p-5 rounded-2xl shadow space-y-6 h-fit md:sticky md:top-6">
+      <div>
+        <!--
+        <label class="font-semibold text-sm text-gray-600">Recherche texte</label>
+        -->
+        <div class="relative mt-1">
+          <input id="searchInput" type="text" placeholder="Nom ou mot-clé..."
+                 class="w-full border border-gray-300 rounded-lg p-2 pr-16" disabled />
+          <button id="clearButton"
+            class="absolute right-11 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-500 hidden p-1 rounded-full hover:bg-gray-100 transition"
+            title="Effacer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+          </button>
+          <button id="micButton"
+                  title="Recherche vocale"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-600 text-xl"
+                  aria-label="Micro">🎤</button>
+        </div>
+        <div id="micStatus" class="text-xs text-gray-500 mt-1 h-4"></div>
+      </div>
+
+      <!-- Conteneur global -->
+<div class="border border-gray-300 rounded-xl overflow-hidden">
+  <!-- En-tête de l’accordéon -->
+  <button 
+    id="accordion-toggle"
+    class="w-full flex justify-between items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-sm"
+    onclick="document.getElementById('accordion-content').classList.toggle('hidden');">
+    <span>Filtres</span>
+    <svg id="accordion-icon" class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <!-- Contenu de l’accordéon -->
+  <div id="accordion-content" class="hidden p-4 space-y-4">
+    <!-- Champ Siècle -->
+    <div>
+      <label class="font-semibold text-sm text-gray-600 block mb-1">Période</label>
+      <select id="filter-century" class="w-full border border-gray-300 rounded-lg p-2" disabled>
+        <option value="">Toutes</option>
+      </select>
+    </div>
+
+    <!-- Champ Catégories -->
+    <div>
+      <span class="font-semibold text-sm text-gray-600 block mb-2">Catégories</span>
+      <div id="category-checkboxes" class="grid grid-cols-2 gap-x-4 gap-y-2 text-base text-gray-700 leading-snug">
+        <p class="text-gray-400 text-sm">Chargement...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- (Optionnel) petit script pour faire tourner la flèche -->
+<script>
+  document.getElementById("accordion-toggle").addEventListener("click", () => {
+    document.getElementById("accordion-icon").classList.toggle("rotate-180");
+  });
+</script>
+      
+        <div class="border-t pt-3 text-sm text-gray-500 flex justify-between items-center">
+          <span id="result-count">0 résultat</span>
+          <button id="refresh-btn" class="text-blue-600 hover:underline text-xs">🔄 Actualiser</button>
+        </div>
+      
+    </aside>
+
+      <main class="pb-20">
+      <div id="results" class="space-y-2 text-gray-600">
+        
+          <p class="text-center text-gray-400 animate-pulse">⏳ Chargement...</p>
+        
+      </div>
+      </main>
+  </div>
+
+ <!-- Footer sticky gris clair avec boutons bien centrés -->
+<footer class="fixed bottom-0 left-0 w-full bg-gray-200 text-gray-700 text-sm flex items-center justify-center pt-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_10px_rgba(0,0,0,0.2)] backdrop-blur-sm border-t border-gray-300 z-40">
+
+  <div class="flex items-center justify-center relative w-full max-w-md">
+
+  <!-- Bouton Réglages (à gauche) -->
+  <button id="settings-btn" class="absolute left-6 top-[47%] -translate-y-1/2 text-gray-600 hover:text-gray-800 transition">
+  Réglages
+  </button>
+
+  <!-- Boutons navigation -->
+  <div class="flex space-x-6 mx-auto">
+    <button id="tab-list" class="px-4 py-[0.7rem] mb-2 rounded-lg border border-gray-400 bg-gray-800 text-white hover:bg-gray-700 tab-active transition">
+      Liste
+    </button>
+    <button id="tab-map" class="px-4 py-[0.7rem] mb-2 rounded-lg border border-gray-400 bg-gray-200 text-gray-800 hover:bg-gray-300 transition">
+      Carte
+    </button>
+  </div>
+
+  <!-- Icône Info (déjà décalée) -->
+  <button id="info-btn" class="absolute right-6 top-[47%] -translate-y-1/2 text-gray-600 hover:text-gray-800 transition">
+    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 hover:bg-gray-400 shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+      </svg>
+    </div>
+  </button>
+
+</div>
+
+</footer>
+
+
+
+<!-- Modale d'information -->
+<div id="info-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999]">
+  <div id="info-modal-content" class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-11/12 text-center relative transform transition-all scale-95 opacity-0 duration-200 ease-out">
+    <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-lg">&times;</button>
+    <h2 class="text-xl font-semibold mb-2 text-gray-800">À propos</h2>
+    MON PERE LACHAISE <br>
+    <p class="text-gray-700 mb-1">
+      Créé par
+      <a href="https://www.gpmfactory.com" class="text-gray-800 hover:underline">GPM Factory</a>
+      
+    </p>
+    <p class="text-gray-600">Version : <strong>v1.1 - 2025</strong></p>
+    <p class="text-blue-600">
+      <a href="https://www.google.com/maps/d/edit?mid=1on1NGIDsfombZvUyGSWMsLA29lQcQdk&usp=sharing">Accès à la carte Google My Maps</a>
+    </p>
+  </div>
+</div>
+
+ <!-- Modale Réglages -->
+<div id="settings-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999]">
+  <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-11/12 text-center relative">
+
+    <!-- Bouton fermeture -->
+    <button id="close-settings" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <h2 class="text-lg font-semibold text-gray-800">Réglages</h2>
+
+    <!-- ✅ Ajout de l'espace vertical -->
+    <div class="h-6"></div> <!-- = ~ deux lignes -->
+
+    <!-- Switch Itinéraire / Navigation -->
+    <div class="flex items-center justify-between px-1 mb-6">
+      <span class="text-gray-700 text-sm">Itinéraire seulement</span>
+
+      <label class="relative cursor-pointer select-none">
+        <input type="checkbox" id="navSwitch" class="sr-only">
+        <div class="block w-12 h-6 rounded-full bg-gray-300 transition"></div>
+        <div class="dot absolute left-1 top-1 w-4 h-4 rounded-full bg-white transition"></div>
+      </label>
+
+      <span class="text-gray-700 text-sm">Navigation</span>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Notification audio -->
+<div class="flex items-center justify-between px-1">
+  <span class="text-gray-800 text-sm font-medium">Notification audio</span>
+
+  <label class="relative cursor-pointer select-none">
+    <input type="checkbox" id="proxSwitch" class="sr-only">
+    <div class="block w-12 h-6 rounded-full bg-gray-300 transition"></div>
+    <div class="dot absolute left-1 top-1 w-4 h-4 rounded-full bg-white transition"></div>
+  </label>
+</div>
+
+  </div>
+</div>
+  
+  <!-- Vue Carte -->
+  <div id="view-map" class="hidden h-[75vh] rounded-2xl overflow-hidden shadow">
+    <div id="map" class="w-full h-full"></div>
+  </div>
+</div>
+
+<!-- Modale Wiki -->
+<div id="wikidata-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-white w-[95%] md:w-[75%] lg:w-[60%] h-[80%] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+    <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
+      <h3 id="wikidata-title" class="font-semibold text-lg">Informations</h3>
+      <button id="wikidata-close" class="text-white text-2xl leading-none" aria-label="Fermer">×</button>
+    </div>
+    <iframe id="wikidata-frame" src="" class="flex-1 w-full border-0" referrerpolicy="no-referrer"></iframe>
+  </div>
+</div>
+
+<!-- Bannière MAJ -->
+<div id="updateBanner" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg cursor-pointer z-50">
+  🔄 Nouvelle version disponible — cliquez pour recharger
+</div>
+
+
+<!-- MODALE IMAGE AVEC LÉGENDE ET NAVIGATION -->
+<div id="image-modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-4">
+  <div class="relative flex flex-col items-center">
+    <!-- Bouton Précédent -->
+    <button id="prev-image-btn" 
+            onclick="previousImage()" 
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm transition hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    
+    <!-- Image -->
+    <img id="image-modal-content" 
+         src="" 
+         alt="Aperçu" 
+         class="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-white cursor-pointer transition-transform duration-300 select-none" />
+    
+    <!-- Bouton Suivant -->
+    <button id="next-image-btn" 
+            onclick="nextImage()" 
+            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm transition hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+    
+    <!-- Indicateur de position -->
+    <div id="image-indicator" class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm hidden">
+      1 / 2
+    </div>
+    
+    <p id="image-modal-caption" class="text-white text-center mt-3 text-lg font-medium drop-shadow-lg"></p>
+  </div>
+</div>
+  
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data2.json";
+  const CACHE_KEY = "faceted_data_cache_v12";
+  const CACHE_TTL = 1000 * 60 * 60 * 24;
+  let data = [], fuse = null, map = null, markers = [];
+ 
+  const resultsDiv = document.getElementById("results");
+  const resultCount = document.getElementById("result-count");
+  const categoryContainer = document.getElementById("category-checkboxes");
+  const centurySelect = document.getElementById("filter-century");
+  const searchInput = document.getElementById("searchInput");
+  const refreshBtn = document.getElementById("refresh-btn");
+  const clearBtn = document.getElementById("clearButton");
+  const micButton = document.getElementById("micButton");
+  const micStatus = document.getElementById("micStatus");
+  const updateBanner = document.getElementById("updateBanner");
+  const tabList = document.getElementById("tab-list");
+  const tabMap = document.getElementById("tab-map");
+  const viewList = document.getElementById("view-list");
+  const viewMap = document.getElementById("view-map");
+
+// --- Gestion de la modale info avec animation fluide
+const infoBtn = document.getElementById("info-btn");
+const infoModal = document.getElementById("info-modal");
+const infoModalContent = document.getElementById("info-modal-content");
+const closeModal = document.getElementById("close-modal");
+
+// Variable globale
+let gOptionNav = "N"; // Valeur par défaut
+let gProximityMode = false;  // mode OFF par défaut
+let gLastAnnounced = null;
+
+  
+  
+infoBtn.onclick = () => {
+  infoModal.classList.remove("hidden");
+  setTimeout(() => {
+    infoModalContent.classList.remove("scale-95", "opacity-0");
+    infoModalContent.classList.add("scale-100", "opacity-100");
+  }, 20);
+};
+
+const closeInfoModal = () => {
+  infoModalContent.classList.add("scale-95", "opacity-0");
+  setTimeout(() => infoModal.classList.add("hidden"), 200);
+};
+
+closeModal.onclick = closeInfoModal;
+
+infoModal.addEventListener("click", (e) => {
+  if (e.target === infoModal) closeInfoModal();
+});
+
+// Fonction utilitaire cookie
+function setCookie(name, value, days = 365) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days*24*60*60*1000));
+  document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+}
+function getCookie(name) {
+  return document.cookie.split('; ').find(row => row.startsWith(name + '='))?.split('=')[1];
+}
+
+// Lecture cookie
+const saved = getCookie("optionNav");
+if (saved === "C" || saved === "N") {
+  gOptionNav = saved;
+  document.getElementById("navSwitch").checked = (saved === "N");
+} else {
+  document.getElementById("navSwitch").checked = true; // N par défaut
+}
+
+// Pour notif proximité 
+const savedProx = getCookie("proximityMode");
+if (savedProx === "1") {
+  gProximityMode = true;
+  document.getElementById("proxSwitch").checked = true;
+}
+
+  
+  // Ouverture/fermeture modale
+const settingsBtn = document.getElementById("settings-btn");
+const settingsModal = document.getElementById("settings-modal");
+const closeSettings = document.getElementById("close-settings");
+
+// Ouverture/fermeture modale
+settingsBtn.onclick = () => settingsModal.classList.remove("hidden");
+closeSettings.onclick = () => settingsModal.classList.add("hidden");
+settingsModal.addEventListener("click", (e) => { if (e.target === settingsModal) settingsModal.classList.add("hidden"); });
+
+// Switch → met à jour variable + cookie
+document.getElementById("navSwitch").addEventListener("change", (e) => {
+  gOptionNav = e.target.checked ? "N" : "C";
+  setCookie("optionNav", gOptionNav);
+});
+  
+// Gestion du changement de choix
+document.querySelectorAll(".nav-radio").forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    gOptionNav = e.target.value;      // met à jour la variable
+    setCookie("optionNav", gOptionNav); // sauvegarde
+  });
+});
+
+if (gProximityMode) {
+  startProximityListening();
+}
+
+document.getElementById("proxSwitch").addEventListener("change", (e) => {
+  gProximityMode = e.target.checked;
+  setCookie("proximityMode", gProximityMode ? "1" : "0");
+  if (gProximityMode) {
+    startProximityListening();
+  }
+});
+
+
+//Calcul distance  
+  function distanceMeters(lat1, lon1, lat2, lon2) {
+  const R = 6371e3;
+  const toRad = x => x * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2)**2 +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+            Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+  
+function notifyProximity(name) {
+  // Visuel
+  const div = document.createElement("div");
+  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg";
+  div.textContent = "Vous êtes proche de : " + name;
+  document.body.appendChild(div);
+  setTimeout(() => div.remove(), 5000);
+
+  // Audio (optionnel)
+  const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name);
+  msg.lang = "fr-FR";
+  window.speechSynthesis.speak(msg);
+}
+  
+function checkProximity() {
+  if (!gProximityMode) return;
+
+  navigator.geolocation.getCurrentPosition(pos => {
+    const { latitude, itude } = pos.coords;
+
+    for (const t of data) {
+      const d = distanceMeters(latitude, itude, t.lat, t.lon);
+      if (d < 20) {   // ✅ seuil validé : 20 mètres
+        notifyProximity(t.nom);
+        return;       // éviter plusieurs alertes à la fois
+      }
+    }
+
+  }, err => {
+    console.log("GPS error:", err);
+  }, { enableHighAccuracy: true });
+}
+
+// Vérification automatique périodique
+setInterval(checkProximity, 8000);
+
+  function startProximityListening() {
+  if (!gProximityMode) return;
+
+  navigator.geolocation.watchPosition(pos => {
+
+    const { latitude, longitude } = pos.coords;
+    let closest = null;
+    let minDist = Infinity;
+
+    for (const t of data) {
+      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
+      if (d < minDist) {
+        minDist = d;
+        closest = t;
+      }
+    }
+
+    // Seuil validé : 20 m
+    if (closest && minDist < 20) {
+      // Évite répétition si on reste dans la zone
+      if (closest.nom !== gLastAnnounced) {
+        speakProximity(closest.nom);
+        gLastAnnounced = closest.nom;
+      }
+    }
+
+    // Quand on s'éloigne → reset
+    if (minDist >= 25) {  
+      gLastAnnounced = null;
+    }
+
+  }, 
+  err => {
+    console.log("GPS error:", err);
+  }, {
+    enableHighAccuracy: true,     // précision GPS
+    maximumAge: 7000,            // ne recalculer que si mouvement réel
+    timeout: 8000
+  });
+}
+function speakProximity(name) {
+  const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name + ".");
+  msg.lang = "fr-FR";
+  msg.rate = 0.9;   // rythme calme
+  msg.pitch = 1.0;
+  msg.volume = 1.0; // volume normal, réglable
+  window.speechSynthesis.speak(msg);
+}
+
+ // --- Navigation entre onglets
+tabList.onclick = () => {
+  // Styles actifs/inactifs
+  tabList.classList.add("bg-gray-800", "text-white");
+  tabList.classList.remove("bg-gray-200", "text-gray-800");
+  tabMap.classList.add("bg-gray-200", "text-gray-800");
+  tabMap.classList.remove("bg-gray-800", "text-white");
+
+  // Animation fluide
+  viewList.classList.remove("hidden");
+  viewMap.classList.add("hidden");
+};
+
+tabMap.onclick = () => {
+  tabMap.classList.add("bg-gray-800", "text-white");
+  tabMap.classList.remove("bg-gray-200", "text-gray-800");
+  tabList.classList.add("bg-gray-200", "text-gray-800");
+  tabList.classList.remove("bg-gray-800", "text-white");
+
+  // Animation fluide
+  viewList.classList.add("hidden");
+  viewMap.classList.remove("hidden");
+
+  // Initialisation de la carte si nécessaire
+  if (!map) {
+    initMap();
+    addBoussole();
+    map.on("zoomend", toggleLabels);
+  }
+};
+
+
+// Ajout affiche nom apres zoom
+  function toggleLabels() {
+  const zoom = map.getZoom();
+  const showLabels = zoom >= 18;
+  document.querySelectorAll(".map-label span").forEach(el => {
+    el.style.display = showLabels ? "block" : "none";
+  });
+}
+
+
+  
+  // --- Carte
+  function initMap() {
+    map = L.map("map").setView([48.8606, 2.3934], 16);
+    // ✅ Limitation stricte à la zone du Père-Lachaise
+  map.setMaxBounds([
+    [48.8646, 2.3872], // Nord-Ouest
+    [48.8574, 2.4058]  // Sud-Est
+  ]);
+
+  // (Optionnel, mais recommandé pour éviter "l'effet rebond")
+  map.setMinZoom(15);
+
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> contributors',
+        maxZoom: 21
+      }).addTo(map);
+    
+    updateMapMarkers(data);
+
+  }
+
+  
+      // Ajout Boussole
+  function addBoussole() {
+  try {
+    if (typeof L === "undefined" || !L.Control || !L.Control.SimpleLocate) {
+      console.warn("⚠️ Plugin Leaflet SimpleLocate non disponible.");
+      return;
+    }
+    if (typeof map === "undefined") {
+      console.warn("⚠️ Carte Leaflet non initialisée.");
+      return;
+    }
+
+    const control = new L.Control.SimpleLocate({
+      position: "topleft",
+      className: "button-locate",
+      afterClick: (result) => {
+        try {
+          console.log("afterClick", result);
+          if (!result.geolocation) console.log("Geolocation Error");
+          if (!result.orientation) console.log("Orientation Error");
+        } catch (err) {
+          console.error("Erreur dans afterClick:", err);
+        }
+      },
+      afterMarkerAdd: () => {
+        try {
+          console.log("afterMarkerAdded");
+          const elem = document.getElementById("leaflet-simple-locate-icon-spot");
+          if (elem) {
+            elem.addEventListener("click", (event) => {
+              try {
+                if (!control || !map) return;
+                const latlng = control.getLatLng?.();
+                const accuracy = control.getAccuracy?.();
+                const angle = control.getAngle?.();
+
+                if (!latlng) return;
+
+                const latlng_str = `geolocation: [${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}]`;
+                const accuracy_str = accuracy ? `accuracy: ${Math.round(accuracy)} m` : "";
+                const angle_str = angle ? `orientation: ${Math.round(angle)}°` : "";
+
+                L.popup()
+                  .setLatLng(latlng)
+                  .setContent(
+                    `<p style="margin:0.25rem 0">${latlng_str}</p>
+                     <p style="margin:0.25rem 0">${accuracy_str}</p>
+                     <p style="margin:0.25rem 0">${angle_str}</p>`
+                  )
+                  .openOn(map);
+
+                event.stopPropagation();
+                event.preventDefault();
+              } catch (err) {
+                console.error("Erreur dans le gestionnaire de clic:", err);
+              }
+            });
+          }
+        } catch (err) {
+          console.error("Erreur dans afterMarkerAdd:", err);
+        }
+      },
+    }).addTo(map);
+
+    console.log("✅ Boussole ajoutée avec succès !");
+  } catch (err) {
+    console.error("💥 Erreur lors de l’ajout de la boussole:", err);
+  }
+}
+
+    // -- Fin Boussole
+  
+  function updateMapMarkers(items) {
+  if (!map) return;
+
+   // 🚫 Désactive les events pour éviter les redraws pendant la mise à jour
+   // map.off('move');
+    
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  items.forEach(item => {
+    if (item.lat && item.long) {
+      const pic = item.pic
+        ? `<img src="${item.pic}" loading="lazy" 
+     class="w-10 h-10 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+     onload="this.classList.add('loaded')" 
+     onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${(item.pic_tombe_url || '').replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')" 
+     alt="Portrait de ${item.nom}">`
+        : `<div class='w-10 h-10 mr-2 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400'>🪦</div>`;
+
+      const popup = `
+        <div class="flex items-center">
+          ${pic}
+          <div>
+            <b>${item.nom}</b> (${item.birth} - ${item.death})<br>
+            <button onclick="openNavigation('${item.lat}','${item.long}')"
+              class="text-blue-600 underline mt-1">🚶 Naviguer</button>
+          </div>
+        </div>`;
+
+      // Création du marqueur
+      const marker = L.marker([item.lat, item.long]).bindPopup(popup).addTo(map);
+      markers.push(marker);
+
+      // Création du label (invisible au départ)
+      const label = L.divIcon({
+        className: "map-label",
+        html: `<span>${item.nom}</span>`,
+        iconSize: null
+      });
+      const labelMarker = L.marker([item.lat, item.long], { icon: label }).addTo(map);
+      labelMarker._isLabel = true;
+      labelMarker._nom = item.nom;
+      markers.push(labelMarker);
+    }
+
+    // ✅ Réactive les events une fois la mise à jour terminée
+    //map.on('move', updateMarkers);
+    
+  });
+
+  toggleLabels();
+}
+
+
+  // --- Navigation (iPhone / Android / Desktop)
+ window.openNavigation = function(lat,long){
+  if(!lat||!long) return;
+
+  // 🔹 Change la couleur du point correspondant
+  markers.forEach(m => {
+    if (m.getLatLng && !m._isLabel) {
+      const pos = m.getLatLng();
+      if (Math.abs(pos.lat - lat) < 0.0001 && Math.abs(pos.lng - long) < 0.0001) {
+        m.setIcon(L.icon({
+          iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png', // point orange
+          shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+          iconSize: [32, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34]
+        }));
+      }
+    }
+  });
+
+  // 🔹 Navigation / Itinéraire selon gOptionNav
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    let url = "";
+    
+    // --- Android
+    if (/android/i.test(ua)) {
+      if (gOptionNav === "N") {
+        // Navigation guidée
+        url = `google.navigation:q=${lat},${long}&mode=w`;
+      } else {
+        // Itinéraire affiché (pas guidé)
+        url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+      }
+    }
+    
+    // --- iOS
+    else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      if (gOptionNav === "N") {
+        // Navigation guidée Apple/Maps
+        url = `maps://?daddr=${lat},${long}&dirflg=w`;
+      } else {
+        // Itinéraire simple dans l’app Plans
+        url = `maps://?saddr=Current%20Location&daddr=${lat},${long}`;
+      }
+    }
+    
+    // --- Ordinateurs / fallback
+    else {
+      // Google Maps web
+      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    }
+    
+    window.open(url, "_blank");
+ };
+
+
+  // --- Affichage liste
+  function renderResults(items) {
+  resultsDiv.innerHTML = "";
+    
+  resultCount.textContent = `${items.length} résultat${items.length > 1 ? "s" : ""}`;
+  
+  if (!items.length) {
+    resultsDiv.innerHTML = `<p class="text-center text-gray-500">Aucun résultat</p>`;
+    updateMapMarkers([]);
+    return;
+  }
+  
+  items.sort((a, b) => (a.tri || "").localeCompare(b.tri || "", "fr", {numeric: true}));
+  
+  // Construire tout le HTML en une seule fois avec un tableau
+  const htmlParts = items.map(item => {
+    const pic = item.pic
+      ? `<img src="${item.pic}" loading="lazy" 
+         class="w-14 h-14 rounded-lg mr-3 object-cover fade-in cursor-zoom-in"
+         onload="this.classList.add('loaded')" 
+         onclick="openImageModal('${item.pic.replace(/'/g, "\\'")}', '${(item.pic_tombe_url || '').replace(/'/g, "\\'")}', '${item.nom.replace(/'/g, "\\'")}')"
+         alt="Portrait de ${item.nom}">`
+      : `<div class="w-10 h-10 mr-3 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">🪦</div>`;
+    
+    return `
+      <div class="bg-white p-3 rounded-xl shadow-sm hover:shadow transition flex items-center">
+        ${pic}
+        <div class="flex-1">
+          <div class="flex justify-between items-center">
+            <h2 class="font-medium text-blue-700 text-lg cursor-pointer hover:underline"
+                onclick="openNavigation('${item.lat}','${item.long}')">${item.nom}<span class="text-sm text-gray-500 font-normal ml-1">(${item.birth || '?'} - ${item.death || '?'})</span> </h2>        
+           ${item.wikidata ? `<button title="Voir la fiche" onclick="openWikiInfo('${item.wikidata}','${item.nom.replace(/'/g, "&#39;")}')" class="text-gray-500 hover:text-blue-600 transition text-xl"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M12 16v-4m0-4h.01" stroke-linecap="round" stroke-width="2"/>
+  </svg></button>` : ""}
+
+  
+          </div>
+          <p class="text-gray-700 text-sm mt-1 leading-tight">${item.description || ""}</p>
+          ${item.tagline ? `<p class="text-gray-600 text-sm italic mt-1">${item.tagline}</p>` : ''}
+        </div>
+      </div>`;
+  });
+  
+  // Une seule affectation innerHTML
+  resultsDiv.innerHTML = htmlParts.join('');
+  
+  updateMapMarkers(items);
+}
+
+  // --- Filtres
+  function applyFilters() {
+    const txt = searchInput.value.trim().toLowerCase();
+    const century = centurySelect.value;
+    const cats = [...categoryContainer.querySelectorAll("input:checked")].map(c => c.value);
+    let filtered = data;
+    if (txt) {
+      let exact = data.filter(it => (it.nom||"").toLowerCase().includes(txt));
+      if (!exact.length) exact = fuse.search(txt).map(r=>r.item);
+      filtered = exact;
+    }
+    filtered = filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
+    renderResults(filtered);
+  }
+
+  function setupFilters() {
+    const cats=[...new Set(data.map(d=>d.categorie))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr"));
+    categoryContainer.innerHTML=cats.map(c=>
+      `<label class="flex items-center space-x-2"><input type="checkbox" value="${c}" class="w-4 h-4 accent-blue-600"><span>${c}</span></label>`
+    ).join("");
+    const centuries=[...new Set(data.map(d=>d.siecle))].filter(Boolean).sort();
+    centurySelect.innerHTML='<option value="">Toutes</option>'+centuries.map(c=>`<option value="${c}">${c}</option>`).join("");
+    searchInput.disabled=false;centurySelect.disabled=false;
+    searchInput.oninput=applyFilters;centurySelect.onchange=applyFilters;
+    categoryContainer.querySelectorAll("input").forEach(cb=>cb.onchange=applyFilters);
+    applyFilters();
+  }
+
+  // --- Données
+  async function loadData(force=false){
+    try{
+      const cached=!force&&localStorage.getItem(CACHE_KEY);
+      if(cached){
+        const parsed=JSON.parse(cached);
+        if(Date.now()-parsed.timestamp<CACHE_TTL){data=parsed.data;initFuse();setupFilters();return;}
+      }
+      const resp=await fetch(DATA_URL,{cache:"no-store"});
+      const j=await resp.json();
+      data = Array.isArray(j) ? j : (j.data || []); // ✅ correctif ajouté
+      initFuse();setupFilters();
+      localStorage.setItem(CACHE_KEY,JSON.stringify({timestamp:Date.now(),data:data}));
+    }catch(e){
+      resultsDiv.innerHTML=`<p class='text-center text-red-500'>${e.message}</p>`;
+    }
+  }
+
+  function initFuse(){
+    fuse=new Fuse(data,{keys:[{name:"nom",weight:.8},{name:"description",weight:.15},{name:"categorie",weight:.05}],threshold:.2,distance:50});
+  }
+
+  // --- Bouton effacer
+  searchInput.addEventListener("input",()=>{clearBtn.classList.toggle("hidden",!searchInput.value.trim());});
+  clearBtn.onclick=()=>{searchInput.value="";clearBtn.classList.add("hidden");applyFilters();};
+
+  // --- Micro simple
+  (()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){micButton.classList.add("opacity-40","cursor-not-allowed");return;}
+    const r=new SR();r.lang="fr-FR";r.continuous=false;r.interimResults=true;
+    let listen=false;const start=()=>{if(listen)return;listen=true;micButton.classList.add("text-red-500");micStatus.textContent="Écoute…";r.start();};
+    const stop=()=>{listen=false;micButton.classList.remove("text-red-500");micStatus.textContent="";r.stop();};
+    micButton.onclick=e=>{e.preventDefault();listen?stop():start();};
+    r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal){searchInput.value=t;applyFilters();
+    // ✅ Afficher le bouton clearBtn après la dictée
+        if (searchInput.value.trim()) {
+          clearBtn.classList.remove("hidden");
+        }   
+    }}};
+    r.onerror=stop;r.onend=stop;})();
+
+  // --- Wiki
+  window.openWikiInfo=async(qid,name)=>{
+    const modal=document.getElementById("wikidata-modal");
+    const frame=document.getElementById("wikidata-frame");
+    const title=document.getElementById("wikidata-title");
+    title.textContent=name||"Informations";
+    modal.classList.remove("hidden");modal.classList.add("flex");
+    frame.src="";
+    try{
+      const resp=await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`);
+      const json=await resp.json();const entity=json.entities?.[qid];
+      const fr=entity?.sitelinks?.["frwiki"]?.title;const en=entity?.sitelinks?.["enwiki"]?.title;
+      frame.src=fr?`https://fr.wikipedia.org/wiki/${encodeURIComponent(fr)}`:en?`https://en.wikipedia.org/wiki/${encodeURIComponent(en)}`:`https://www.wikidata.org/wiki/${qid}`;
+    }catch{frame.src=`https://www.wikidata.org/wiki/${qid}`;}
+  };
+  document.getElementById("wikidata-close").onclick=()=>{const m=document.getElementById("wikidata-modal");m.classList.add("hidden");m.classList.remove("flex");document.getElementById("wikidata-frame").src="";};
+  document.getElementById("wikidata-modal").onclick=e=>{if(e.target.id==="wikidata-modal")document.getElementById("wikidata-close").click();};
+
+  // --- Refresh
+  refreshBtn.onclick=()=>{localStorage.removeItem(CACHE_KEY);loadData(true);};
+
+  // --- Service Worker
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("service-worker.js").then(reg=>{
+      reg.onupdatefound=()=>{
+        const newWorker=reg.installing;
+        newWorker.onstatechange=()=>{
+          if(newWorker.state==="installed"&&navigator.serviceWorker.controller){
+            updateBanner.classList.remove("hidden");
+            updateBanner.onclick=()=>{newWorker.postMessage({action:"skipWaiting"});location.reload();};
+          }
+        };
+      };
+    });
+  }
+
+   // --- MODALE IMAGE AGRANDIE AVEC LÉGENDE ---
+const imageModal = document.getElementById("image-modal");
+const imageModalContent = document.getElementById("image-modal-content");
+const imageModalCaption = document.getElementById("image-modal-caption");
+
+// ✅ rendre la fonction accessible globalement (pour onclick)
+
+let currentImageIndex = 0;
+let imageUrls = [];
+let touchStartX = 0;
+let touchEndX = 0;
+
+window.openImageModal = function (url1, url2, captionText) {
+  if (!imageModal || !imageModalContent || !imageModalCaption) {
+    console.error("Modale image non trouvée dans le DOM.");
+    return;
+  }
+  
+  // Stocker les URLs (filtrer les valeurs vides/nulles)
+  imageUrls = [url1, url2].filter(url => url);
+  currentImageIndex = 0;
+  
+  // Afficher la première image
+  showImage(currentImageIndex);
+  imageModalCaption.textContent = captionText || "";
+  
+  imageModal.classList.remove("hidden");
+  imageModal.classList.add("flex");
+  
+  // Afficher/masquer les indicateurs selon le nombre d'images
+  updateNavigationButtons();
+};
+
+function showImage(index) {
+  if (index >= 0 && index < imageUrls.length) {
+    currentImageIndex = index;
+    imageModalContent.src = imageUrls[index];
+    updateImageIndicator();
+  }
+}
+
+window.nextImage = function() {
+  if (currentImageIndex < imageUrls.length - 1) {
+    showImage(currentImageIndex + 1);
+  }
+};
+
+window.previousImage = function() {
+  if (currentImageIndex > 0) {
+    showImage(currentImageIndex - 1);
+  }
+};
+
+function updateNavigationButtons() {
+  const prevBtn = document.getElementById('prev-image-btn');
+  const nextBtn = document.getElementById('next-image-btn');
+  const indicator = document.getElementById('image-indicator');
+  
+  if (imageUrls.length > 1) {
+    prevBtn?.classList.remove('hidden');
+    nextBtn?.classList.remove('hidden');
+    indicator?.classList.remove('hidden');
+  } else {
+    prevBtn?.classList.add('hidden');
+    nextBtn?.classList.add('hidden');
+    indicator?.classList.add('hidden');
+  }
+}
+
+function updateImageIndicator() {
+  const indicator = document.getElementById('image-indicator');
+  if (indicator && imageUrls.length > 1) {
+    indicator.textContent = `${currentImageIndex + 1} / ${imageUrls.length}`;
+  }
+}
+
+// Gestion du swipe tactile
+imageModalContent?.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+imageModalContent?.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeThreshold = 50; // Distance minimale pour détecter un swipe
+  
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swipe vers la gauche -> image suivante
+    nextImage();
+  }
+  
+  if (touchEndX > touchStartX + swipeThreshold) {
+    // Swipe vers la droite -> image précédente
+    previousImage();
+  }
+}
+
+  
+// Navigation au clavier (flèches gauche/droite)
+document.addEventListener('keydown', (e) => {
+  if (!imageModal.classList.contains('hidden')) {
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') previousImage();
+  }
+});
+  
+
+// ✅ Fermeture de la modale au clic sur le fond UNIQUEMENT
+imageModal.onclick = (e) => {
+  // Ne fermer que si on clique directement sur la modale (fond noir)
+  // et pas sur un élément enfant (image, boutons, etc.)
+  if (e.target === imageModal) {
+    imageModal.classList.add("hidden");
+    imageModal.classList.remove("flex");
+    imageModalContent.src = "";
+    imageModalCaption.textContent = "";
+  }
+};
+
+
+  loadData();
+});
+</script>
+</body>
+</html>
