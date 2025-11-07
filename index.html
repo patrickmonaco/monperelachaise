@@ -571,9 +571,9 @@ function startProximityListening() {
     let minDist = Infinity;
 
     // Trouve la cible la plus proche
-    for (const t of data) {
-    //const list = currentList.length ? currentList : data;
-    //for (const t of list) {
+    //for (const t of data) {
+    const list = currentList.length ? currentList : data;
+    for (const t of list) {
       const d = distanceMeters(latitude, longitude, t.lat, t.long);
       if (d < minDist) {
         minDist = d;
@@ -970,15 +970,11 @@ tabMap.onclick = () => {
     if (txt) {
       let exact = data.filter(it => (it.nom||"").toLowerCase().includes(txt));
       if (!exact.length) exact = fuse.search(txt).map(r=>r.item);
-      filtered = exact;
-      // ✅ La liste filtrée devient la base pour la proximité
-      currentList = filtered;
-    }else {
-      // ✅ Si aucun texte → on réinitialise sur data complète
-      currentList = data;
+      filtered = exact; 
     }
     filtered = filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
-    
+    // Pour limiter notifications
+    currentList = filtered;
     
     renderResults(filtered);
   }
