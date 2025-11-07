@@ -370,6 +370,20 @@ let DEBUG_MODE = false;
 let watchId = null;
 let gDismissedName = null;
 let dismissedSet = new Set();
+let maleVoice = null;
+
+function loadVoices() {
+  const voices = speechSynthesis.getVoices();
+  maleVoice = voices.find(v =>
+    v.lang === "fr-FR" &&
+    /Hortense|Thomas|Loïc|Paul|Yannick|Google français \(Homme\)/i.test(v.name)
+  ) || voices.find(v => v.lang === "fr-FR"); // fallback
+}
+
+// Certains navigateurs nécessitent cet event
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
@@ -619,6 +633,7 @@ function speakProximity(name) {
   audio.onended = () => {
     const msg = new SpeechSynthesisUtterance(name + ".");
     msg.lang = "fr-FR";
+    msg.voice = maleVoice || null;  // ✅ Sélectionne la voix masculine si trouvée
     msg.rate = 0.9;
     msg.pitch = 1.0;
     msg.volume = 1.0;
