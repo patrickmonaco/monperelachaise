@@ -374,10 +374,11 @@ let maleVoice = null;
 
 function loadVoices() {
   const voices = speechSynthesis.getVoices();
-  maleVoice = voices.find(v =>
-    v.lang === "fr-FR" &&
-    /Hortense|Thomas|Loïc|Paul|Yannick|Google français \(Homme\)/i.test(v.name)
-  ) || voices.find(v => v.lang === "fr-FR"); // fallback
+  // ✅ On cible explicitement la voix masculine "Microsoft Paul"
+  maleVoice = voices.find(v => v.name.includes("Microsoft Paul"))
+             || voices.find(v => v.name.includes("Google français"))
+             || voices.find(v => v.lang === "fr-FR"); // fallback
+}
 }
 
 // Certains navigateurs nécessitent cet event
