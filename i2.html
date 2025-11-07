@@ -544,8 +544,12 @@ function notifyProximity(name, lat, long) {
 };
 
 
-  // ✅ Navigation si clic sur le reste
-  div.onclick = () => goToGrave(lat, long);
+  // ✅ Clic sur le reste → navigation + acquittement
+div.onclick = () => {
+  dismissedSet.add(name);   // <- ajoute à la liste des tombes ignorées
+  goToGrave(lat, long);
+  div.remove();             // enlève la bulle proprement
+};
 
   document.body.appendChild(div);
   setTimeout(() => div.remove(), 10000); // ← affichage 10 sec
