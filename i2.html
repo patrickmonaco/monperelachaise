@@ -587,14 +587,18 @@ function startProximityListening() {
 
     // ✅ Seuil d’entrée dans la zone : 20 m
     if (closest && minDist < 20) {
-      // Évite répétition si on reste dans la zone
-      const now = Date.now();
-      if (closest.nom !== gLastAnnounced && (now - lastSpeakTime > 20000)) { // 20s
-        speakProximity(closest.nom);
-        gLastAnnounced = closest.nom;
-        lastSpeakTime = now;
-      }
+  const now = Date.now();
+
+    // Ne pas répéter plus d’une fois toutes les 20 secondes
+    if (closest.nom !== gLastAnnounced || (now - lastSpeakTime > 20000)) {
+  
+      speakProximity(closest.nom);
+      notifyProximity(closest.nom, closest.lat, closest.long);
+  
+      gLastAnnounced = closest.nom;
+      lastSpeakTime = now;
     }
+  }
 
     // 🔄 Réinitialisation lorsqu’on sort de la zone
     if (minDist >= 25) {
