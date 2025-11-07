@@ -371,7 +371,7 @@ let watchId = null;
 let gDismissedName = null;
 let dismissedSet = new Set();
 let maleVoice = null;
-
+/*
 function loadVoices() {
   const voices = speechSynthesis.getVoices();
   // ✅ On cible explicitement la voix masculine "Microsoft Paul"
@@ -379,7 +379,7 @@ function loadVoices() {
              || voices.find(v => v.name.includes("Google français"))
              || voices.find(v => v.lang === "fr-FR"); // fallback
 }
-}
+*/
 
 // Certains navigateurs nécessitent cet event
 speechSynthesis.onvoiceschanged = loadVoices;
@@ -634,7 +634,7 @@ function speakProximity(name) {
   audio.onended = () => {
     const msg = new SpeechSynthesisUtterance(name + ".");
     msg.lang = "fr-FR";
-    msg.voice = maleVoice || null;  // ✅ Sélectionne la voix masculine si trouvée
+    //msg.voice = maleVoice || null;   ✅ Sélectionne la voix masculine si trouvée
     msg.rate = 0.9;
     msg.pitch = 1.0;
     msg.volume = 1.0;
