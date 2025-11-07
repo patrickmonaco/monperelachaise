@@ -368,6 +368,7 @@ let data = [];
 let lastSpeakTime = 0;  
 let DEBUG_MODE = false;
 let watchId = null;
+let gDismissedName = null;
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
@@ -523,22 +524,32 @@ document.getElementById("proxSwitch").addEventListener("change", (e) => {
 }
   
 function notifyProximity(name, lat, long) {
-  // Visuel cliquable
+
   const div = document.createElement("div");
-  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-lg shadow-xl cursor-pointer text-center w-[260px]";
+  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 w-[280px] cursor-pointer";
+
   div.innerHTML = `
-    <div class="font-semibold text-lg">${name}</div>
-    <div class="text-xs opacity-80">(Touchez pour naviguer)</div>
+    <div id="dismissBtn" class="text-red-400 text-lg font-bold pr-1 cursor-pointer select-none">✕</div>
+    <div class="flex-1">
+      <div class="font-semibold text-lg">${name}</div>
+      <div class="text-xs opacity-80">(Toucher pour naviguer)</div>
+    </div>
   `;
-  
+
+  // ✅ Acquittement → empêche répétition future
+  div.querySelector("#dismissBtn").onclick = (e) => {
+    e.stopPropagation();             // Empêche l’ouverture navigation
+    gDismissedName = name;           // Mémorise l’annulation
+    div.remove();                    // Cache la bulle
+  };
+
+  // ✅ Navigation si clic sur le reste
   div.onclick = () => goToGrave(lat, long);
 
   document.body.appendChild(div);
-  setTimeout(() => div.remove(), 6000);
-
-  // Voix + vibration
-  //speakProximity(name);
+  setTimeout(() => div.remove(), 10000); // ← affichage 10 sec
 }
+
 
 function startProximityListening() {
   if (!gProximityMode) return;
@@ -568,21 +579,21 @@ function startProximityListening() {
     if (closest && minDist < 20) {
   const now = Date.now();
 
-    // Ne pas répéter plus d’une fois toutes les 20 secondes
-    if (closest.nom !== gLastAnnounced || (now - lastSpeakTime > 20000)) {
-  
-      speakProximity(closest.nom);
-      notifyProximity(closest.nom, closest.lat, closest.long);
-  
-      gLastAnnounced = closest.nom;
-      lastSpeakTime = now;
-    }
-  }
+    // ✅ Ne pas re-notifier si acquittée
+  if (closest.nom === gDismissedName) return;
 
-    // 🔄 Réinitialisation lorsqu’on sort de la zone
-    if (minDist >= 25) {
-      gLastAnnounced = null;
-    }
+  if (closest.nom !== gLastAnnounced || (now - lastSpeakTime > 20000)) {
+    speakProximity(closest.nom);
+    notifyProximity(closest.nom, closest.lat, closest.long);
+    gLastAnnounced = closest.nom;
+    lastSpeakTime = now;
+  }
+}
+
+if (minDist >= 25) {
+  gLastAnnounced = null;
+  gDismissedName = null; // ✅ On re-autorise cette tombe plus tard
+}
 
   },
   err => {
