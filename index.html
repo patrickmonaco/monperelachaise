@@ -570,9 +570,9 @@ function startProximityListening() {
     let minDist = Infinity;
 
     // Trouve la cible la plus proche
-    //for (const t of data) {
-    const list = currentList.length ? currentList : data;
-    for (const t of list) {
+    for (const t of data) {
+    //const list = currentList.length ? currentList : data;
+    //for (const t of list) {
       const d = distanceMeters(latitude, longitude, t.lat, t.long);
       if (d < minDist) {
         minDist = d;
