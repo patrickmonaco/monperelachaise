@@ -93,7 +93,8 @@
 #proxSwitch:checked + div + .dot {
   transform: translateX(24px);
 }
-
+#debugProx { display: none !important; }
+  
 </style>
 
 </head>
@@ -194,6 +195,15 @@
       </main>
   </div>
 
+  <div id="debugProx" class="fixed top-2 left-2 bg-black/70 text-white text-sm p-3 rounded backdrop-blur-md z-50"
+     style="font-family: monospace; width: 260px; line-height: 1.3;">
+  GPS: ---, --- <br>
+  Cible: (aucune) <br>
+  Dist: -- m <br>
+  Dernière annonce: (aucune)
+</div>
+
+  
  <!-- Footer sticky gris clair avec boutons bien centrés -->
 <footer class="fixed bottom-0 left-0 w-full bg-gray-200 text-gray-700 text-sm flex items-center justify-center pt-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_10px_rgba(0,0,0,0.2)] backdrop-blur-sm border-t border-gray-300 z-40">
 
@@ -241,7 +251,7 @@
       <a href="https://www.gpmfactory.com" class="text-gray-800 hover:underline">GPM Factory</a>
       
     </p>
-    <p class="text-gray-600">Version : <strong>v1.1 - 2025</strong></p>
+    <p class="text-gray-600">Version : <strong>v1.2 - 2025</strong></p>
     <p class="text-blue-600">
       <a href="https://www.google.com/maps/d/edit?mid=1on1NGIDsfombZvUyGSWMsLA29lQcQdk&usp=sharing">Accès à la carte Google My Maps</a>
     </p>
@@ -353,11 +363,17 @@
 </div>
   
 <script>
+// Il faut rendre data globale sinon elle n'est pas visible  
+let data = [];
+let lastSpeakTime = 0;  
+let DEBUG_MODE = false;
+let watchId = null;
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
-  let data = [], fuse = null, map = null, markers = [];
+  data = [];
+  let fuse = null, map = null, markers = [];
  
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
@@ -384,6 +400,8 @@ const closeModal = document.getElementById("close-modal");
 let gOptionNav = "N"; // Valeur par défaut
 let gProximityMode = false;  // mode OFF par défaut
 let gLastAnnounced = null;
+
+let gDebugDiv = null;
 
   
   
@@ -464,10 +482,32 @@ if (gProximityMode) {
 document.getElementById("proxSwitch").addEventListener("change", (e) => {
   gProximityMode = e.target.checked;
   setCookie("proximityMode", gProximityMode ? "1" : "0");
+
   if (gProximityMode) {
     startProximityListening();
+  } else {
+    // ✅ Stop du GPS quand on désactive
+    if (watchId !== null) {
+      navigator.geolocation.clearWatch(watchId);
+      watchId = null;
+      gLastAnnounced = null; // reset pour ne pas réannoncer à la reprise
+    }
   }
 });
+
+  function updateDebug(lat, lon, targetName, dist) {
+  if (!DEBUG_MODE) return; // ⬅️ Ajout important
+
+  if (!gDebugDiv) gDebugDiv = document.getElementById("debugProx");
+
+  gDebugDiv.innerHTML = `
+    GPS: ${lat?.toFixed(6)}, ${lon?.toFixed(6)} <br>
+    Cible: ${targetName ?? "(aucune)"} <br>
+    Dist: ${dist !== null ? dist.toFixed(1) + " m" : "--"} <br>
+    Dernière annonce: ${gLastAnnounced ?? "(aucune)"}
+  `;
+}
+
 
 
 //Calcul distance  
@@ -482,90 +522,95 @@ document.getElementById("proxSwitch").addEventListener("change", (e) => {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
   
-function notifyProximity(name) {
-  // Visuel
+function notifyProximity(name, lat, long) {
+  // Visuel cliquable
   const div = document.createElement("div");
-  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg";
-  div.textContent = "Vous êtes proche de : " + name;
-  document.body.appendChild(div);
-  setTimeout(() => div.remove(), 5000);
-
-  // Audio (optionnel)
-  const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name);
-  msg.lang = "fr-FR";
-  window.speechSynthesis.speak(msg);
-}
+  div.className = "fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-lg shadow-xl cursor-pointer text-center w-[260px]";
+  div.innerHTML = `
+    <div class="font-semibold text-lg">${name}</div>
+    <div class="text-xs opacity-80">(Touchez pour naviguer)</div>
+  `;
   
-function checkProximity() {
-  if (!gProximityMode) return;
+  div.onclick = () => goToGrave(lat, long);
 
-  navigator.geolocation.getCurrentPosition(pos => {
-    const { latitude, itude } = pos.coords;
+  document.body.appendChild(div);
+  setTimeout(() => div.remove(), 6000);
 
-    for (const t of data) {
-      const d = distanceMeters(latitude, itude, t.lat, t.lon);
-      if (d < 20) {   // ✅ seuil validé : 20 mètres
-        notifyProximity(t.nom);
-        return;       // éviter plusieurs alertes à la fois
-      }
-    }
-
-  }, err => {
-    console.log("GPS error:", err);
-  }, { enableHighAccuracy: true });
+  // Voix + vibration
+  //speakProximity(name);
 }
 
-// Vérification automatique périodique
-setInterval(checkProximity, 8000);
-
-  function startProximityListening() {
+function startProximityListening() {
   if (!gProximityMode) return;
-
-  navigator.geolocation.watchPosition(pos => {
-
+ // ✅ Empêche plusieurs watchers en même temps
+  if (watchId !== null) return;
+  
+  watchId =  navigator.geolocation.watchPosition(pos => {
     const { latitude, longitude } = pos.coords;
+
     let closest = null;
     let minDist = Infinity;
 
+    // Trouve la cible la plus proche
     for (const t of data) {
-      const d = distanceMeters(latitude, longitude, t.lat, t.lon);
+      const d = distanceMeters(latitude, longitude, t.lat, t.long);
       if (d < minDist) {
         minDist = d;
         closest = t;
       }
     }
 
-    // Seuil validé : 20 m
-    if (closest && minDist < 20) {
-      // Évite répétition si on reste dans la zone
-      if (closest.nom !== gLastAnnounced) {
-        speakProximity(closest.nom);
-        gLastAnnounced = closest.nom;
-      }
-    }
+    // 🟢 Mise à jour de l’overlay debug
+    updateDebug(latitude, longitude, closest ? closest.nom : null, minDist);
 
-    // Quand on s'éloigne → reset
-    if (minDist >= 25) {  
+
+    // ✅ Seuil d’entrée dans la zone : 20 m
+    if (closest && minDist < 20) {
+  const now = Date.now();
+
+    // Ne pas répéter plus d’une fois toutes les 20 secondes
+    if (closest.nom !== gLastAnnounced || (now - lastSpeakTime > 20000)) {
+  
+      speakProximity(closest.nom);
+      notifyProximity(closest.nom, closest.lat, closest.long);
+  
+      gLastAnnounced = closest.nom;
+      lastSpeakTime = now;
+    }
+  }
+
+    // 🔄 Réinitialisation lorsqu’on sort de la zone
+    if (minDist >= 25) {
       gLastAnnounced = null;
     }
 
-  }, 
+  },
   err => {
     console.log("GPS error:", err);
-  }, {
-    enableHighAccuracy: true,     // précision GPS
-    maximumAge: 7000,            // ne recalculer que si mouvement réel
+  },
+  {
+    enableHighAccuracy: true,  // GPS haute précision
+    maximumAge: 7000,          // utilise dernière position si récente
     timeout: 8000
   });
 }
+
+  
 function speakProximity(name) {
+  // 🎤 Voix
   const msg = new SpeechSynthesisUtterance("Vous êtes proche de " + name + ".");
   msg.lang = "fr-FR";
-  msg.rate = 0.9;   // rythme calme
+  msg.rate = 0.9;
   msg.pitch = 1.0;
-  msg.volume = 1.0; // volume normal, réglable
+  msg.volume = 1.0;
   window.speechSynthesis.speak(msg);
+
+  // 📳 Vibration douce (si supportée)
+  if (navigator.vibrate) {
+    navigator.vibrate([0, 60]); // léger tap, non agressif
+  }
 }
+
 
  // --- Navigation entre onglets
 tabList.onclick = () => {
@@ -812,6 +857,31 @@ tabMap.onclick = () => {
     
     window.open(url, "_blank");
  };
+
+  function goToGrave(lat, long) {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  let url = "";
+
+  if (/android/i.test(ua)) {
+    if (gOptionNav === "N") {
+      url = `google.navigation:q=${lat},${long}&mode=w`;
+    } else {
+      url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+    }
+  }
+  else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    if (gOptionNav === "N") {
+      url = `maps://?daddr=${lat},${long}&dirflg=w`;
+    } else {
+      url = `maps://?saddr=Current%20Location&daddr=${lat},${long}`;
+    }
+  }
+  else {
+    url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=walking`;
+  }
+
+  window.open(url, "_blank");
+}
 
 
   // --- Affichage liste
