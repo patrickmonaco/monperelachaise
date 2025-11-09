@@ -587,8 +587,8 @@
 {
 "tri": "Noir",
 "nom": "Victor Noir",
-"lat": 48.860819,
-"long": 2.396543,
+"lat": 48.86083342825234,
+"long": 2.39659279824888,
 "birth": "1848",
 "death": "1870",
 "categorie": "Littérature",
@@ -2042,8 +2042,8 @@
 {
 "tri": "Nodier",
 "nom": "Charles Nodier",
-"lat": 48.863925676413984,
-"long": 2.394120978843775,
+"lat": 48.86299444071781,
+"long": 2.3933256734869506,
 "birth": "1780",
 "death": "1844",
 "categorie": "Insolite",
@@ -2252,8 +2252,8 @@
 {
 "tri": "Radiguet",
 "nom": "Raymond Radiguet",
-"lat": 48.86206038208127,
-"long": 2.3917068370405796,
+"lat": 48.86193789919684,
+"long": 2.3917137058051954,
 "birth": "1903",
 "death": "2023",
 "categorie": "Littérature",
