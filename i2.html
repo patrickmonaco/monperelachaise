@@ -550,7 +550,16 @@ function notifyProximity(name, lat, long) {
   // ✅ Clic sur le reste → navigation + acquittement
 div.onclick = () => {
   dismissedSet.add(name);   // <- ajoute à la liste des tombes ignorées
-  goToGrave(lat, long);
+  // ✅ On retrouve les données complètes de la tombe
+  const t = currentList.find(x => x.nom === name) || data.find(x => x.nom === name)
+  if (t) {
+    openImageModal(t.pic, t.pic_tombe_url , t.nom);
+  }
+  // ⏱ Navigation ensuite (1.5 à 2 sec = temps fluide)
+  setTimeout(() => {
+    goToGrave(t.lat, t.long);
+  }, 1800);
+  
   div.remove();             // enlève la bulle proprement
 };
 
