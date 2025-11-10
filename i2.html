@@ -370,12 +370,15 @@ let DEBUG_MODE = false;
 let watchId = null;
 let gDismissedName = null;
 let dismissedSet = new Set();
+let currentList = []; // Liste des tombes actuellement visibles oetfiltrées
+
 document.addEventListener("DOMContentLoaded", () => {
   const DATA_URL = "https://patrickmonaco.github.io/monperelachaise/data2.json";
   const CACHE_KEY = "faceted_data_cache_v12";
   const CACHE_TTL = 1000 * 60 * 60 * 24;
   data = [];
   let fuse = null, map = null, markers = [];
+
  
   const resultsDiv = document.getElementById("results");
   const resultCount = document.getElementById("result-count");
@@ -568,7 +571,9 @@ function startProximityListening() {
     let minDist = Infinity;
 
     // Trouve la cible la plus proche
-    for (const t of data) {
+    //for (const t of data) {
+    const list = currentList.length ? currentList : data;
+    for (const t of list) {
       const d = distanceMeters(latitude, longitude, t.lat, t.long);
       if (d < minDist) {
         minDist = d;
@@ -965,9 +970,12 @@ tabMap.onclick = () => {
     if (txt) {
       let exact = data.filter(it => (it.nom||"").toLowerCase().includes(txt));
       if (!exact.length) exact = fuse.search(txt).map(r=>r.item);
-      filtered = exact;
+      filtered = exact; 
     }
     filtered = filtered.filter(it=>(!century||it.siecle===century)&&(!cats.length||cats.includes(it.categorie)));
+    // Pour limiter notifications
+    currentList = filtered;
+    
     renderResults(filtered);
   }
 
