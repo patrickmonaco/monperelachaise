@@ -553,7 +553,7 @@ div.onclick = () => {
   // ✅ On retrouve les données complètes de la tombe
   const t = currentList.find(x => x.nom === name) || data.find(x => x.nom === name)
   if (t) {
-    openImageModal(t.pic, t.pic_tombe_url , t.nom);
+    openImageModal(t.pic_tombe_url,t.pic,t.nom);
   }
   // ⏱ Navigation ensuite (1.5 à 2 sec = temps fluide)
   setTimeout(() => {
