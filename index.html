@@ -251,7 +251,7 @@
       <a href="https://www.gpmfactory.com" class="text-gray-800 hover:underline">GPM Factory</a>
       
     </p>
-    <p class="text-gray-600">Version : <strong>v1.2 - 2025</strong></p>
+    <p class="text-gray-600">Version : <strong>v1.3.0 - 2025</strong></p>
     <p class="text-blue-600">
       <a href="https://www.google.com/maps/d/edit?mid=1on1NGIDsfombZvUyGSWMsLA29lQcQdk&usp=sharing">Accès à la carte Google My Maps</a>
     </p>
@@ -550,7 +550,16 @@ function notifyProximity(name, lat, long) {
   // ✅ Clic sur le reste → navigation + acquittement
 div.onclick = () => {
   dismissedSet.add(name);   // <- ajoute à la liste des tombes ignorées
-  goToGrave(lat, long);
+  // ✅ On retrouve les données complètes de la tombe
+  const t = currentList.find(x => x.nom === name) || data.find(x => x.nom === name)
+  if (t) {
+    openImageModal(t.pic_tombe_url,t.pic,t.nom);
+  }
+  // ⏱ Navigation ensuite (1.5 à 2 sec = temps fluide)
+  setTimeout(() => {
+    goToGrave(t.lat, t.long);
+  }, 1000);
+  
   div.remove();             // enlève la bulle proprement
 };
 
