@@ -2790,6 +2790,66 @@
 "tagline": "Héros populaire du siège de Paris en 1871"
 },
 {
+"tri": "ZZ accès Gambetta",
+"nom": "Accès Gambetta",
+"lat": 48.86344670120719,
+"long": 2.397243968641277,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
+"tri": "ZZ accès Principal",
+"nom": "Accès Principal",
+"lat": 48.859965785599364,
+"long": 2.389171705831669,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
+"tri": "ZZ accès Amandiers",
+"nom": "Accès Amandiers",
+"lat": 48.86256792147214,
+"long": 2.3878599150856554,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
+"tri": "ZZ accès Repos",
+"nom": "Accès Repos",
+"lat": 48.85978841217195,
+"long": 2.3908072615173515,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
 "tri": "Manoir",
 "nom": "Yves du Manoir",
 "lat": 48.859718,
@@ -2970,6 +3030,21 @@
 "tagline": null
 },
 {
+"tri": "ZZ Toilettes Repos",
+"nom": "Toilettes Repos",
+"lat": 48.85995619629827,
+"long": 2.3908850453667623,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
 "tri": "Ziem",
 "nom": "Félix Ziem",
 "lat": 48.86153331030884,
@@ -3013,6 +3088,51 @@
 "pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/D%27apr%C3%A8s_Jean-Marc_Nattier%2C_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_%28Biblioth%C3%A8que-mus%C3%A9e_de_la_Com%C3%A9die-Fran%C3%A7aise%29_-001.jpg",
 "pic_tombe_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/P%C3%A8re-Lachaise_-_Division_28_-_Delarue_de_Beaumarchais_01.jpg/960px-P%C3%A8re-Lachaise_-_Division_28_-_Delarue_de_Beaumarchais_01.jpg",
 "tagline": "Sans la liberté de blâmer, il n'est point d'éloge flatteur"
+},
+{
+"tri": "ZZ accès Réunion",
+"nom": "Accès Réunion",
+"lat": 48.858577346185086,
+"long": 2.398407182982716,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
+"tri": "ZZ Toilettes principales",
+"nom": "Toilettes Principales",
+"lat": 48.860016453061384,
+"long": 2.3891766510144654,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
+},
+{
+"tri": "ZZ Toilettes Gambetta",
+"nom": "Toilettes Gambetta",
+"lat": 48.863822649905366,
+"long": 2.3967318066908394,
+"birth": null,
+"death": null,
+"categorie": "Infos",
+"description": null,
+"siecle": null,
+"wikidata": null,
+"pic": null,
+"pic_tombe_url": null,
+"tagline": null
 },
 {
 "tri": "Perrin",
@@ -3060,4 +3180,3 @@
 "tagline": "sculpteur animalier"
 }
 ]
-
