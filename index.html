@@ -394,6 +394,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabMap = document.getElementById("tab-map");
   const viewList = document.getElementById("view-list");
   const viewMap = document.getElementById("view-map");
+  const input = document.getElementById('searchInput');
 
 // --- Gestion de la modale info avec animation fluide
 const infoBtn = document.getElementById("info-btn");
@@ -471,6 +472,15 @@ document.getElementById("navSwitch").addEventListener("change", (e) => {
   gOptionNav = e.target.checked ? "N" : "C";
   setCookie("optionNav", gOptionNav);
 });
+
+  // displiss keyboard
+input.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // optionnel, évite un rechargement de page
+        input.blur();           // retire le focus → ferme le clavier mobile
+    }
+});
+  
   
 // Gestion du changement de choix
 document.querySelectorAll(".nav-radio").forEach(radio => {
