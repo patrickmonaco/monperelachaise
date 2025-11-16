@@ -1194,6 +1194,10 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') nextImage();
     if (e.key === 'ArrowLeft') previousImage();
   }
+  if (event.key === "Enter") {
+        event.preventDefault(); // optionnel, évite un rechargement de page
+        input.blur();           // retire le focus → ferme le clavier mobile
+    }
 });
   
 
